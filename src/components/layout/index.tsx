@@ -1,6 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
 
+import "./styles.module.css";
+
 declare var __PATH_PREFIX__: string;
 
 interface ILayoutProps {
