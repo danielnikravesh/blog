@@ -1,0 +1,7 @@
+node_modules
+public
+.cache
+yarn-error.log
+tmp/*
+.env
+.DS_Store
