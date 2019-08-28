@@ -31,6 +31,7 @@
   "dependencies": {
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
+    "github-markdown-css": "^3.0.1",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
