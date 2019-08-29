@@ -7,6 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "serve": "gatsby serve",
     "start": "yarn develop",
     "typecheck": "tsc --noEmit",
     "lint-ts": "tslint --project .",
