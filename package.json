@@ -30,6 +30,7 @@
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
     "github-markdown-css": "^3.0.1",
@@ -39,7 +40,10 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@types/classnames": "^2.2.9",
     "@types/react-helmet": "^5.0.9",
+    "eslint-plugin-graphql": "^3.0.3",
     "gatsby-plugin-feed": "^2.3.7",
     "gatsby-plugin-google-analytics": "^2.1.8",
     "gatsby-plugin-manifest": "^2.2.6",
@@ -55,6 +59,7 @@
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-transformer-remark": "^2.6.15",
     "gatsby-transformer-sharp": "^2.2.7",
+    "graphql": "^14.5.4",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
