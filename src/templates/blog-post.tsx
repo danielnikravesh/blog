@@ -1,8 +1,8 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
 
-import Bio from "../components/bio";
 import Layout from "../components/layout";
+import Post from "../components/post";
 import SEO from "../components/seo";
 
 interface IBlogPostTemplateProps {
@@ -37,18 +37,11 @@ function BlogPostTemplate({
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article className="markdown-body">
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-
+      <Post
+        date={post.frontmatter.date}
+        title={post.frontmatter.title}
+        html={post.html}
+      />
       <nav>
         <ul>
           <li>

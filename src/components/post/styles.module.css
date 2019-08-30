@@ -1,0 +1,11 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.wrapper :global(.gatsby-resp-image-wrapper) + em {
+  display: block;
+  margin: 10px 0 0;
+  font-size: 80%;
+  text-align: center;
+}
