@@ -24,6 +24,10 @@
       "yarn lint-ts",
       "git add"
     ],
+    "*.md": [
+      "yarn prettier --write",
+      "git add"
+    ],
     "*.css": [
       "yarn stylelint --fix",
       "git add"
