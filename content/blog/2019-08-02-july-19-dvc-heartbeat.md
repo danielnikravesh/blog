@@ -12,7 +12,7 @@ Some of those are related to our brainchild
 journey. The others are a collection of exciting stories and ideas centered
 around ML best practices and workflow.
 
-![T-Shirt](./t-shirt.png)
+![T-Shirt](/uploads/t-shirt.png)
 _[Special edition DVC shirt](https://twitter.com/rkuprieiev/status/1144298339200098306).
 We made this one for [Ruslan](https://github.com/efiop) — DVC maintainer and
 the best tech lead._
