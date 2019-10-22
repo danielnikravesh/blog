@@ -1,0 +1,52 @@
+.wrapper {
+  --header-height: 78px;
+
+  .placeholder {
+    height: var(--header-height);
+  }
+
+  .header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1005px;
+    min-height: var(--header-height);
+    width: auto;
+    z-index: 3;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    transition: height 0.2s linear;
+    will-change: height;
+
+    @media (--md-scr) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      height: auto;
+    }
+  }
+
+  .logo {
+    display: block;
+    padding-top: 10px;
+    z-index: 999;
+
+    @media (--md-scr) {
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+  }
+}

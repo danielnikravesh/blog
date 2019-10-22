@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+
+  @media (--sm-scr) {
+    display: none;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  margin-left: 30px;
+  padding: 10px 0 3px;
+  border-bottom: 1.5px solid #fff;
+  font-family: var(--font-brandon);
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-gray);
+
+  &:hover {
+    color: var(--color-gray-hover);
+    border-color: currentColor;
+  }
+}
+
+.getStartedButton {
+  @mixin button-small;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 38px;
+  margin-left: 40px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--color-azure);
+  transition: 0.2s background-color ease-out;
+
+  &:hover {
+    background-color: #13a3bd;
+  }
+}
