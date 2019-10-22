@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@svgr/webpack": "^4.3.3",
     "@types/classnames": "^2.2.9",
     "@types/react-helmet": "^5.0.12",
     "autoprefixer": "^9.6.5",
@@ -57,6 +58,7 @@
     "gatsby-plugin-postcss": "^2.1.13",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.32",
+    "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.1.15",
     "gatsby-remark-copy-linked-files": "^2.1.28",
