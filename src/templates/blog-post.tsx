@@ -1,9 +1,46 @@
+import { FixedObject, FluidObject } from "gatsby-image";
+
 import { graphql, Link } from "gatsby";
 import React from "react";
+
+import { IBlogPostData } from "../templates/blog-post";
 
 import Layout from "../components/layout";
 import Post from "../components/post";
 import SEO from "../components/seo";
+
+export interface IBlogPostFrontmatter {
+  title: string;
+  date: string;
+  description: string;
+  descriptionLong?: string;
+  picture?: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
+  author: {
+    childMarkdownRemark: {
+      frontmatter: {
+        name: string;
+        avatar: {
+          childImageSharp: {
+            fixed: FixedObject;
+          };
+        };
+      };
+    };
+  };
+}
+
+export interface IBlogPostData {
+  id: string;
+  html: string;
+  fields: {
+    slug: string;
+  };
+  frontmatter: IBlogPostFrontmatter;
+}
 
 interface IBlogPostTemplateProps {
   data: {
@@ -35,29 +72,25 @@ function BlogPostTemplate({
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.description}
       />
-      <Post
-        date={post.frontmatter.date}
-        title={post.frontmatter.title}
-        html={post.html}
-      />
+      <Post {...post} />
       <nav>
         <ul>
-          <li>
-            {previous && (
+          {previous && (
+            <li>
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            )}
-          </li>
-          <li>
-            {next && (
+            </li>
+          )}
+          {next && (
+            <li>
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            )}
-          </li>
+            </li>
+          )}
         </ul>
       </nav>
     </Layout>
@@ -76,12 +109,34 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(format: HTML)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        descriptionLong
+        author {
+          childMarkdownRemark {
+            frontmatter {
+              name
+              avatar {
+                childImageSharp {
+                  fixed(width: 30, height: 30) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          }
+        }
+        picture {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

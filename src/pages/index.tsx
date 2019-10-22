@@ -1,6 +1,8 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
 
+import { IBlogPostData } from "../templates/blog-post";
+
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -41,13 +43,7 @@ function BlogIndex({ data, location }: IBlogIndexProps) {
               </h3>
               <small>{node.frontmatter.date}</small>
             </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt
-                }}
-              />
-            </section>
+            <section>{node.frontmatter.description}</section>
           </article>
         );
       })}
@@ -64,7 +60,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+    ) {
       edges {
         node {
           excerpt

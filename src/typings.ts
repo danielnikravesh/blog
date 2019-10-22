@@ -21,17 +21,3 @@ declare module "*.svg" {
   const svg: IReactSVGR;
   export = svg;
 }
-
-interface IBlogPostData {
-  id: string;
-  excerpt: string;
-  html: string;
-  fields: {
-    slug: string;
-  };
-  frontmatter: {
-    title: string;
-    date: string;
-    description: string;
-  };
-}

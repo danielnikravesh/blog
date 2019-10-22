@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
@@ -12,15 +14,29 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: path.join(__dirname, "content", "blog"),
         name: `blog`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: path.join(__dirname, "content", "authors"),
+        name: `authors`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, "content", "assets"),
         name: `assets`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `static`, `uploads`),
+        name: `images`
       }
     },
     {
@@ -30,7 +46,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590
+              maxWidth: 700
             }
           },
           `gatsby-remark-responsive-iframe`,

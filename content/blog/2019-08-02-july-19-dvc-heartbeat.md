@@ -1,21 +1,18 @@
 ---
 title: July ’19 DVC❤️Heartbeat
 date: 2019-08-02
-description: ""
+description: |
+  Every month we are sharing here our news, findings, interesting reads,
+  community takeaways, and everything along the way.
+descriptionLong: |
+  Every month we are sharing here our news, findings, interesting reads,
+  community takeaways, and everything along the way.
+  Some of those are related to our brainchild DVC and its
+  journey. The others are a collection of exciting stories and ideas centered
+  around ML best practices and workflow.
+picture: ../../static/uploads/t-shirt.png
+author: ../authors/svetlana_grinchenko.md
 ---
-
-Every month we are sharing here our news, findings, interesting reads,
-community takeaways, and everything along the way.
-
-Some of those are related to our brainchild
-[DVC](https://dvc.org/?source=post_page---------------------------) and its
-journey. The others are a collection of exciting stories and ideas centered
-around ML best practices and workflow.
-
-![T-Shirt](/uploads/t-shirt.png)
-_[Special edition DVC shirt](https://twitter.com/rkuprieiev/status/1144298339200098306).
-We made this one for [Ruslan](https://github.com/efiop) — DVC maintainer and
-the best tech lead._
 
 ## News and links
 
