@@ -1,0 +1,14 @@
+:root {
+  --color-black: #24292e;
+  --color-gray: #838d93;
+  --color-gray-hover: #40364d;
+  --color-azure: #13adc7;
+  --color-blue: #0366d6;
+  --color-light-blue: #eef4f8;
+  --font-brandon: "Brandon Grotesque", Tahoma, Arial, sans-serif;
+  --font-fira: "Fira Mono", monospace;
+}
+
+body {
+  font-family: var(--font-brandon);
+}

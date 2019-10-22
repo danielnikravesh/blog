@@ -1,9 +1,8 @@
-import { Link } from "gatsby";
 import React from "react";
 
-import "./styles.module.css";
-
-declare var __PATH_PREFIX__: string;
+import "./base.css";
+import "./fonts/fonts.css";
+import styles from "./styles.module.css";
 
 interface ILayoutProps {
   location: Location;
@@ -11,32 +10,10 @@ interface ILayoutProps {
   children: React.ReactNode;
 }
 
-function Layout({ location, title, children }: ILayoutProps) {
-  const rootPath = `${__PATH_PREFIX__}/`;
-  let header;
-
-  if (location.pathname === rootPath) {
-    header = (
-      <h1>
-        <Link to={`/`}>{title}</Link>
-      </h1>
-    );
-  } else {
-    header = (
-      <h3>
-        <Link to={`/`}>{title}</Link>
-      </h3>
-    );
-  }
+function Layout({ children }: ILayoutProps) {
   return (
-    <div>
-      <header>{header}</header>
+    <div className={styles.wrapper}>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
     </div>
   );
 }
