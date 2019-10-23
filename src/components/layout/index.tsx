@@ -1,5 +1,6 @@
 import React from "react";
 
+import Footer from "../footer";
 import Header from "../header";
 
 import "./base.css";
@@ -14,10 +15,11 @@ interface ILayoutProps {
 
 function Layout({ children }: ILayoutProps) {
   return (
-    <div className={styles.wrapper}>
+    <>
       <Header />
-      <main>{children}</main>
-    </div>
+      <div className={styles.content}>{children}</div>
+      <Footer />
+    </>
   );
 }
 
