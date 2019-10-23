@@ -1,0 +1,87 @@
+.wrapper {
+  position: relative;
+  background-color: var(--color-light-blue);
+
+  @media (--lg-scr) {
+    width: 1000px;
+    height: 450px;
+  }
+}
+
+.picture {
+  float: left;
+  width: 650px;
+  height: 450px;
+  margin-right: 50px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.body {
+  margin: 30px 30px;
+
+  .big & {
+    margin-top: 30px;
+  }
+}
+
+.title {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-black);
+
+  @media (--sm-scr) {
+    @mixin h2-mobile;
+
+    max-height: 70px;
+
+    .big & {
+      @mixin h1-mobile;
+
+      max-height: 80px;
+    }
+  }
+
+  @media (--lg-scr) {
+    @mixin h2-desktop;
+
+    max-height: 80px;
+
+    .big & {
+      @mixin h1-desktop;
+
+      max-height: 120px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.description {
+  @mixin text-secondary;
+
+  overflow: hidden;
+  max-height: 240px;
+  margin-top: 40px;
+  color: var(--color-gray);
+
+  .big & {
+    max-height: 192px;
+  }
+}
+
+.meta {
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  left: 700px;
+
+  .big & {
+    left: 30px;
+  }
+}

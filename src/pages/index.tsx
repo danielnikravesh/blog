@@ -1,11 +1,41 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import { FixedObject } from "gatsby-image";
 import React from "react";
 
-import { IBlogPostData } from "../templates/blog-post";
-
-import Bio from "../components/bio";
+import Feed from "../components/feed";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
+export interface IFeedPostData {
+  id: string;
+  timeToRead: string;
+  fields: {
+    slug: string;
+  };
+  frontmatter: {
+    title: string;
+    date: string;
+    description: string;
+    descriptionLong: string;
+    picture?: {
+      childImageSharp: {
+        fixed: FixedObject;
+      };
+    };
+    author: {
+      childMarkdownRemark: {
+        frontmatter: {
+          name: string;
+          avatar: {
+            childImageSharp: {
+              fixed: FixedObject;
+            };
+          };
+        };
+      };
+    };
+  };
+}
 
 interface IBlogIndexProps {
   data: {
@@ -14,10 +44,17 @@ interface IBlogIndexProps {
         title: string;
       };
     };
-    allMarkdownRemark: {
+    mainPost: {
       edges: [
         {
-          node: IBlogPostData;
+          node: IFeedPostData;
+        }
+      ];
+    };
+    restPosts: {
+      edges: [
+        {
+          node: IFeedPostData;
         }
       ];
     };
@@ -27,26 +64,12 @@ interface IBlogIndexProps {
 
 function BlogIndex({ data, location }: IBlogIndexProps) {
   const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
+  const mainPost = data.mainPost.edges[0].node;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug;
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>{node.frontmatter.description}</section>
-          </article>
-        );
-      })}
+      <Feed mainPost={mainPost} posts={data.restPosts.edges} />
     </Layout>
   );
 }
@@ -60,20 +83,69 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    mainPost: allMarkdownRemark(
+      limit: 1
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/content/blog/" } }
     ) {
       edges {
         node {
-          excerpt
-          fields {
-            slug
-          }
+          ...itemContent
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
+            picture {
+              childImageSharp {
+                fixed(width: 650, height: 450) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    restPosts: allMarkdownRemark(
+      skip: 1
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+    ) {
+      edges {
+        node {
+          ...itemContent
+          frontmatter {
+            picture {
+              childImageSharp {
+                fixed(width: 300, height: 250) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fragment itemContent on MarkdownRemark {
+    excerpt
+    timeToRead
+    fields {
+      slug
+    }
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      title
+      description
+      descriptionLong
+      author {
+        childMarkdownRemark {
+          frontmatter {
+            name
+            avatar {
+              childImageSharp {
+                fixed(width: 30, height: 30) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }

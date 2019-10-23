@@ -1,0 +1,39 @@
+.wrapper {
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.meta {
+  width: 650px;
+
+  @media (--sm-scr) {
+    margin: 10px 0 30px;
+  }
+
+  @media (--lg-scr) {
+    margin: 20px 0 40px;
+  }
+}
+
+.header {
+  @media (--sm-scr) {
+    @mixin h1-mobile;
+  }
+
+  @media (--lg-scr) {
+    @mixin h1-desktop;
+  }
+}
+
+.lead {
+  @mixin text-secondary;
+
+  margin-top: 10px;
+  color: var(--color-gray);
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1050px;
+}

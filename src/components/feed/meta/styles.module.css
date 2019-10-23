@@ -1,0 +1,22 @@
+.wrapper {
+  height: 44px;
+}
+
+.avatar {
+  float: left;
+  margin: 7px 5px 7px 0;
+  border-radius: 15px;
+}
+
+.author {
+  @mixin text-secondary;
+
+  color: var(--color-gray);
+}
+
+.other {
+  @mixin text-secondary;
+
+  margin-top: -4px;
+  color: var(--color-gray);
+}
