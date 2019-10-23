@@ -22,8 +22,8 @@ module.exports = {
     },
     "h1-mobile": {
       "font-weight": "500",
-      "font-size": "40px",
-      "line-height": "60px"
+      "font-size": "30px",
+      "line-height": "40px"
     },
     "h2-desktop": {
       "font-weight": "500",
