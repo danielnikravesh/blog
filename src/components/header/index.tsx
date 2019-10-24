@@ -1,6 +1,6 @@
 import React from "react";
 
-import Nav from "../Nav";
+import Nav from "../nav";
 
 import { ReactComponent as LogoSVG } from "./logo.svg";
 import styles from "./styles.module.css";

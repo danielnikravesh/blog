@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-export default function Nav() {
+function Nav() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.links}>
@@ -31,3 +31,5 @@ export default function Nav() {
     </div>
   );
 }
+
+export default Nav;
