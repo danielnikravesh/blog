@@ -3,7 +3,7 @@
   max-width: 1000px;
   margin: 0 auto;
 
-  @media (--sm-scr) {
+  @media (--md-scr) {
     box-sizing: border-box;
     max-width: 800px;
     padding: 0 15px;
@@ -13,7 +13,7 @@
 .meta {
   max-width: 650px;
 
-  @media (--sm-scr) {
+  @media (--md-scr) {
     margin: 10px 0 30px;
   }
 
@@ -23,7 +23,7 @@
 }
 
 .header {
-  @media (--sm-scr) {
+  @media (--md-scr) {
     @mixin h1-mobile;
   }
 

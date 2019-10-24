@@ -2,7 +2,7 @@
   position: relative;
   background-color: var(--color-light-blue);
 
-  @media (--sm-scr) {
+  @media (--md-scr) {
     & + & {
       margin-top: 10px;
     }
@@ -57,7 +57,7 @@
   text-decoration: none;
   color: var(--color-black);
 
-  @media (--sm-scr) {
+  @media (--md-scr) {
     @mixin h3-mobile;
 
     .pictureless & {
@@ -105,7 +105,7 @@
 }
 
 .meta {
-  @media (--sm-scr) {
+  @media (--md-scr) {
     padding: 0 30px 15px;
   }
 
