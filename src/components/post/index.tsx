@@ -4,9 +4,12 @@ import React from "react";
 
 import { IBlogPostData } from "../../templates/blog-post";
 
+import Markdown from "../markdown";
+import Meta from "../meta";
+
 import styles from "./styles.module.css";
 
-function Post({ html, frontmatter }: IBlogPostData) {
+function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
   const {
     title,
     date,
@@ -21,22 +24,32 @@ function Post({ html, frontmatter }: IBlogPostData) {
   } = frontmatter;
 
   return (
-    <article className={cn("markdown-body", styles.wrapper)}>
-      <header>
-        <h1>{title}</h1>
-        <p>{date}</p>
-      </header>
-      <div>{descriptionLong || description}</div>
-      <div>{name}</div>
-      <Image fixed={avatar.childImageSharp.fixed} className={styles.picture} />
-      {picture && (
-        <Image
-          fluid={picture.childImageSharp.fluid}
-          alt="Gatsby Docs are awesome"
-        />
-      )}
-      <section dangerouslySetInnerHTML={{ __html: html }} />
-    </article>
+    <div className={styles.wrapper}>
+      <div className={styles.head}>
+        <div className={styles.headContent}>
+          <h1 className={styles.title}>{title}</h1>
+          <div className={styles.description}>
+            {descriptionLong || description}
+          </div>
+          <Meta
+            name={name}
+            avatar={avatar}
+            date={date}
+            timeToRead={timeToRead}
+          />
+          {picture && (
+            <Image
+              fluid={picture.childImageSharp.fluid}
+              className={styles.picture}
+              alt="Gatsby Docs are awesome"
+            />
+          )}
+        </div>
+      </div>
+      <div className={styles.content}>
+        <Markdown html={html} />
+      </div>
+    </div>
   );
 }
 
