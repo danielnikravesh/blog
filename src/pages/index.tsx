@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { FixedObject } from "gatsby-image";
+import { FixedObject, FluidObject } from "gatsby-image";
 import React from "react";
 
 import Feed from "../components/feed";
@@ -19,7 +19,7 @@ export interface IFeedPostData {
     descriptionLong: string;
     picture?: {
       childImageSharp: {
-        fixed: FixedObject;
+        fluid: FluidObject;
       };
     };
     author: {
@@ -44,14 +44,7 @@ interface IBlogIndexProps {
         title: string;
       };
     };
-    mainPost: {
-      edges: [
-        {
-          node: IFeedPostData;
-        }
-      ];
-    };
-    restPosts: {
+    posts: {
       edges: [
         {
           node: IFeedPostData;
@@ -64,12 +57,11 @@ interface IBlogIndexProps {
 
 function BlogIndex({ data, location }: IBlogIndexProps) {
   const siteTitle = data.site.siteMetadata.title;
-  const mainPost = data.mainPost.edges[0].node;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Feed mainPost={mainPost} posts={data.restPosts.edges} />
+      <Feed posts={data.posts.edges} />
     </Layout>
   );
 }
@@ -83,66 +75,40 @@ export const pageQuery = graphql`
         title
       }
     }
-    mainPost: allMarkdownRemark(
-      limit: 1
+    posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/content/blog/" } }
     ) {
       edges {
         node {
-          ...itemContent
+          excerpt
+          timeToRead
+          fields {
+            slug
+          }
           frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            descriptionLong
             picture {
               childImageSharp {
-                fixed(width: 650, height: 450) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
-          }
-        }
-      }
-    }
-    restPosts: allMarkdownRemark(
-      skip: 1
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
-    ) {
-      edges {
-        node {
-          ...itemContent
-          frontmatter {
-            picture {
-              childImageSharp {
-                fixed(width: 300, height: 250) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  fragment itemContent on MarkdownRemark {
-    excerpt
-    timeToRead
-    fields {
-      slug
-    }
-    frontmatter {
-      date(formatString: "MMMM DD, YYYY")
-      title
-      description
-      descriptionLong
-      author {
-        childMarkdownRemark {
-          frontmatter {
-            name
-            avatar {
-              childImageSharp {
-                fixed(width: 30, height: 30) {
-                  ...GatsbyImageSharpFixed
+            author {
+              childMarkdownRemark {
+                frontmatter {
+                  name
+                  avatar {
+                    childImageSharp {
+                      fixed(width: 30, height: 30) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
                 }
               }
             }

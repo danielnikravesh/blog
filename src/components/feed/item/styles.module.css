@@ -1,0 +1,122 @@
+.wrapper {
+  position: relative;
+  background-color: var(--color-light-blue);
+
+  @media (--sm-scr) {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  @media (--lg-scr) {
+    width: 300px;
+    height: 500px;
+    margin: 50px 50px 0 0;
+
+    &.big {
+      width: 1000px;
+      height: 450px;
+      margin: 0;
+    }
+  }
+}
+
+.picture {
+  @media (--lg-scr) {
+    width: 300px;
+    height: 250px;
+
+    .big & {
+      float: left;
+      width: 650px;
+      height: 450px;
+      margin-right: 50px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.body {
+  padding: 10px 30px;
+
+  .big & {
+    padding: 30px;
+  }
+
+  .pictureless & {
+    padding-top: 30px;
+  }
+}
+
+.title {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-black);
+
+  @media (--sm-scr) {
+    @mixin h3-mobile;
+
+    .pictureless & {
+      @mixin h2-mobile;
+    }
+  }
+
+  @media (--lg-scr) {
+    @mixin h3-desktop;
+
+    max-height: 60px;
+
+    .big &,
+    .pictureless & {
+      @mixin h2-desktop;
+
+      max-height: 80px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.description {
+  @mixin text-secondary;
+
+  margin-top: 10px;
+  color: var(--color-gray);
+
+  @media (--lg-scr) {
+    overflow: hidden;
+    max-height: 96px;
+
+    .pictureless & {
+      max-height: 312px;
+    }
+
+    .big & {
+      max-height: 240px;
+      margin-top: 40px;
+    }
+  }
+}
+
+.meta {
+  @media (--sm-scr) {
+    padding: 0 30px 15px;
+  }
+
+  @media (--lg-scr) {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    left: 30px;
+
+    .big & {
+      left: 700px;
+    }
+  }
+}

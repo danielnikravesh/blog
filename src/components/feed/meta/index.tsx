@@ -18,10 +18,12 @@ function FeedMeta({ avatar, date, name, timeToRead }: IFeedMetaProps) {
   return (
     <div className={styles.wrapper}>
       <Image fixed={avatar.childImageSharp.fixed} className={styles.avatar} />
-      <div className={styles.author}>{name}</div>
-      <div className={styles.other}>
-        {date} • {timeToRead} min.
-      </div>
+      <ul className={styles.list}>
+        <li className={styles.item}>{name}</li>
+        <li className={styles.item}>
+          {date} • {timeToRead} min.
+        </li>
+      </ul>
     </div>
   );
 }

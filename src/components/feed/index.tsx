@@ -2,13 +2,11 @@ import React from "react";
 
 import { IFeedPostData } from "../../pages/index";
 
-import FeedItemBig from "./item-big";
-import FeedItemSmall from "./item-small";
+import FeedItem from "./item";
 
 import styles from "./styles.module.css";
 
 interface IFeedProps {
-  mainPost: IFeedPostData;
   posts: [
     {
       node: IFeedPostData;
@@ -16,7 +14,7 @@ interface IFeedProps {
   ];
 }
 
-function Feed({ mainPost, posts }: IFeedProps) {
+function Feed({ posts }: IFeedProps) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.meta}>
@@ -27,9 +25,8 @@ function Feed({ mainPost, posts }: IFeedProps) {
         </div>
       </div>
       <div className={styles.posts}>
-        <FeedItemBig {...mainPost} />
-        {posts.map(({ node }) => (
-          <FeedItemSmall {...node} key={node.id} />
+        {posts.map(({ node }, index) => (
+          <FeedItem {...node} key={node.id} big={index === 0} />
         ))}
       </div>
     </div>

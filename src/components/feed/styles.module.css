@@ -1,10 +1,14 @@
 .wrapper {
   overflow: hidden;
   max-width: 1000px;
+
+  @media (--sm-scr) {
+    margin: 0 15px;
+  }
 }
 
 .meta {
-  width: 650px;
+  max-width: 650px;
 
   @media (--sm-scr) {
     margin: 10px 0 30px;
@@ -33,7 +37,9 @@
 }
 
 .posts {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1050px;
+  @media (--lg-scr) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+  }
 }

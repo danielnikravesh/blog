@@ -9,7 +9,11 @@ import FeedMeta from "../meta";
 
 import styles from "./styles.module.css";
 
-function FeedItemSmall({ fields, frontmatter, timeToRead }: IFeedPostData) {
+interface IFeedItemPorps extends IFeedPostData {
+  big?: boolean;
+}
+
+function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
   const {
     title,
     description,
@@ -21,11 +25,17 @@ function FeedItemSmall({ fields, frontmatter, timeToRead }: IFeedPostData) {
   const { avatar, name } = author.childMarkdownRemark.frontmatter;
 
   return (
-    <div className={cn(styles.wrapper, !picture && styles.big)}>
+    <div
+      className={cn(
+        styles.wrapper,
+        !picture && styles.pictureless,
+        big && styles.big
+      )}
+    >
       {picture && (
         <Link to={fields.slug}>
           <Image
-            fixed={picture.childImageSharp.fixed}
+            fluid={picture.childImageSharp.fluid}
             className={styles.picture}
           />
         </Link>
@@ -50,4 +60,4 @@ function FeedItemSmall({ fields, frontmatter, timeToRead }: IFeedPostData) {
   );
 }
 
-export default FeedItemSmall;
+export default FeedItem;
