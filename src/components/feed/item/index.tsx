@@ -5,7 +5,7 @@ import React from "react";
 
 import { IFeedPostData } from "../../../pages/index";
 
-import FeedMeta from "../meta";
+import Meta from "../../meta";
 
 import styles from "./styles.module.css";
 
@@ -49,12 +49,7 @@ function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
         </div>
       </div>
       <div className={styles.meta}>
-        <FeedMeta
-          name={name}
-          avatar={avatar}
-          date={date}
-          timeToRead={timeToRead}
-        />
+        <Meta name={name} avatar={avatar} date={date} timeToRead={timeToRead} />
       </div>
     </div>
   );

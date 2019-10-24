@@ -1,9 +1,12 @@
 .wrapper {
   overflow: hidden;
   max-width: 1000px;
+  margin: 0 auto;
 
   @media (--sm-scr) {
-    margin: 0 15px;
+    box-sizing: border-box;
+    max-width: 800px;
+    padding: 0 15px;
   }
 }
 
