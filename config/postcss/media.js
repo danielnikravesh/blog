@@ -1,10 +1,13 @@
 const screens = {
-  large: 1000
+  desktop: 1170,
+  tablet: 768,
+  phone: 376
 };
 
 module.exports = {
   customMedia: {
-    "--sm-scr": `(max-width: ${screens.large - 1}px)`,
-    "--lg-scr": `(min-width: ${screens.large}px)`
+    "--sm-scr": `(max-width: ${screens.phone}px)`,
+    "--md-scr": `(max-width: ${screens.tablet - 1}px)`,
+    "--lg-scr": `(min-width: ${screens.desktop}px)`
   }
 };
