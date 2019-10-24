@@ -1,4 +1,9 @@
 .content {
-  max-width: 1000px;
-  margin: 0 auto;
+  @media (--md-scr) {
+    padding-bottom: 20px;
+  }
+
+  @media (--lg-scr) {
+    padding-bottom: 50px;
+  }
 }

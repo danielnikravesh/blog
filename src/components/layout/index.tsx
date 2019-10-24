@@ -2,9 +2,11 @@ import React from "react";
 
 import Footer from "../footer";
 import Header from "../header";
+import Subscribe from "../subscribe";
 
 import "./base.css";
 import "./fonts/fonts.css";
+
 import styles from "./styles.module.css";
 
 interface ILayoutProps {
@@ -18,6 +20,7 @@ function Layout({ children }: ILayoutProps) {
     <>
       <Header />
       <div className={styles.content}>{children}</div>
+      <Subscribe />
       <Footer />
     </>
   );

@@ -1,0 +1,84 @@
+.wrapper {
+  position: relative;
+  height: 300px;
+  background-color: #13adc7;
+
+  @media (--md-src) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1035px;
+  padding-top: 90px;
+
+  @media (--md-scr) {
+    padding: 0 10px;
+  }
+}
+
+.glyph {
+  position: absolute;
+  z-index: 0;
+  width: 158px;
+  height: auto;
+  object-fit: contain;
+
+  @media (--md-scr) {
+    width: 110px;
+  }
+
+  @media (--sm-scr) {
+    display: none;
+  }
+
+  &.topleft {
+    top: -32px;
+    left: 28px;
+  }
+
+  &.rigthbottom {
+    bottom: -60px;
+    right: 28px;
+  }
+}
+
+.title {
+  font-family: var(--font-brandon);
+  min-width: 550px;
+  min-height: 44px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (--md-scr) {
+    min-width: auto;
+  }
+}
+
+.subscribeContainer {
+  margin: 0 auto;
+  margin-top: 15px;
+  max-width: 510px;
+  border-radius: 8px;
+  background-color: #fff;
+
+  @media (--sm-scr) {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-height: auto;
+  }
+
+  @media (--md-scr) {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-height: auto;
+  }
+}
