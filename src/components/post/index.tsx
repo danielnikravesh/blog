@@ -1,4 +1,3 @@
-import cn from "classnames";
 import Image from "gatsby-image";
 import React from "react";
 

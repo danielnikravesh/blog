@@ -1,11 +1,11 @@
 import React from "react";
 
+import "./fonts/fonts.css";
+import "./base.css"; // tslint:disable-line: ordered-imports
+
 import Footer from "../footer";
 import Header from "../header";
 import Subscribe from "../subscribe";
-
-import "./base.css";
-import "./fonts/fonts.css";
 
 import styles from "./styles.module.css";
 

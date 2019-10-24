@@ -1,6 +1,6 @@
 import { FixedObject, FluidObject } from "gatsby-image";
 
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import React from "react";
 
 import { IBlogPostData } from "../templates/blog-post";
