@@ -1,6 +1,6 @@
 const focus = {
   "&:focus": {
-    color: "var(--color-orange)",
+    opacity: 0.7,
     outline: "none"
   }
 };
@@ -66,9 +66,9 @@ module.exports = {
       "line-height": "25px"
     },
     link: {
-      color: "var(--color-green)",
+      color: "var(--color-blue)",
       "&:hover, &:active": {
-        opacity: "var(--normal-opacity)"
+        opacity: 0.7
       },
       ...focus,
       ...active

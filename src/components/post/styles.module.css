@@ -2,12 +2,6 @@
   margin: 0 auto;
 }
 
-.wrapper :global(.gatsby-resp-image-wrapper) + em {
-  display: block;
-  font-size: 80%;
-  text-align: center;
-}
-
 .head {
   @media (--lg-scr) {
     background: var(--color-light-blue);
@@ -63,11 +57,11 @@
 
 .content {
   @media (--md-scr) {
-    margin: 20px 15px 0;
+    margin: 0 15px 0;
   }
 
   @media (--lg-scr) {
     max-width: 700px;
-    margin: 40px auto 0;
+    margin: 0 auto 0;
   }
 }

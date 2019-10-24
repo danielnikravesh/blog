@@ -124,10 +124,21 @@ command will update the corresponding DVC- files (.dvc extension) and
 will move data to cache. After that you should be able to run `dvc push` to
 save your data on the external storage.
 
+![](../../static/uploads/dvc5.jpeg)
+_Subscript_
+
 Note, when you do an explicit commit like this you are potentially
 “breaking” the reproducibility. In a sense that there is no guarantee now
 that your directory can be produced by `dvc run/dvc repro` — since you
 changed it manually.
+
+```css{2}
+.code {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+```
 
 > [I’d like to transform my dataset in-place to avoid copying it, but I
 > can’t use `dvc run` to do this because it doesn’t allow the same

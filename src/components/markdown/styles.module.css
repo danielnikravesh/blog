@@ -1,0 +1,232 @@
+.wrapper {
+  --prism-base03: #002b36;
+  --prism-base02: #073642;
+  --prism-base01: #586e75;
+  --prism-base00: #657b83;
+  --prism-base0: #839496;
+  --prism-base1: #93a1a1;
+  --prism-base2: #eee8d5;
+  --prism-base3: var(--color-light-blue);
+  --prism-yellow: #b58900;
+  --prism-orange: #cb4b16;
+  --prism-red: #dc322f;
+  --prism-magenta: #d33682;
+  --prism-violet: #6c71c4;
+  --prism-blue: #268bd2;
+  --prism-cyan: #2aa198;
+  --prism-green: #859900;
+
+  @media (--md-scr) {
+    @mixin text-mobile;
+  }
+
+  @media (--lg-scr) {
+    @mixin text-desktop;
+  }
+
+  :global(.gatsby-resp-image-wrapper) {
+    margin-top: 40px;
+  }
+
+  :global(.gatsby-resp-image-wrapper) + em {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 80%;
+    text-align: center;
+    color: var(--color-gray);
+  }
+
+  h1 {
+    margin: 60px 0 25px;
+
+    @media (--md-scr) {
+      @mixin h1-mobile;
+    }
+
+    @media (--lg-scr) {
+      @mixin h1-desktop;
+    }
+  }
+
+  h2 {
+    margin: 60px 0 25px;
+
+    @media (--md-scr) {
+      @mixin h2-mobile;
+    }
+
+    @media (--lg-scr) {
+      @mixin h2-desktop;
+    }
+  }
+
+  h3 {
+    margin: 30px 0 15px;
+
+    @media (--md-scr) {
+      @mixin h3-mobile;
+    }
+
+    @media (--lg-scr) {
+      @mixin h3-desktop;
+    }
+  }
+
+  p {
+    margin: 15px 0 0;
+  }
+
+  blockquote {
+    margin: 15px 0 0;
+    padding-left: 15px;
+    border-left: 5px solid var(--color-light-blue);
+    font-style: italic;
+  }
+
+  :not(pre) code:not([class*="language-"]),
+  kbd,
+  samp {
+    padding: 0 5px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 20px;
+    background: var(--color-light-blue);
+  }
+
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 15px 0 0;
+    padding-left: 40px;
+  }
+
+  ul li {
+    position: relative;
+    list-style: none;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      margin-left: -30px;
+    }
+  }
+
+  a {
+    @mixin link;
+  }
+
+  pre,
+  pre[class*="language-"] {
+    box-sizing: border-box;
+    overflow: scroll;
+    padding: 15px;
+    background: var(--prism-base3);
+
+    @media (--sm-scr) {
+      max-width: 100%;
+      margin: 15px 0 0;
+    }
+
+    @media (--lg-scr) {
+      max-width: 100%;
+      margin: 15px 0 0;
+    }
+  }
+
+  /* prism theme */
+
+  pre[class*="language-"] {
+    background: var(--prism-base3);
+    color: var(--prism-base00);
+
+    /* this code fixes hilghlight with scroll */
+    code[class*="language-"] {
+      float: left;
+      min-width: 100%;
+    }
+
+    :global {
+      .gatsby-highlight-code-line {
+        display: block;
+        margin: 0 -15px;
+        padding: 0 15px 0 13px;
+        border-left: 2px solid var(--color-blue);
+        background: var(--prism-base2);
+      }
+
+      .token.comment,
+      .token.prolog,
+      .token.doctype,
+      .token.cdata {
+        color: #var(--prism-base1);
+      }
+
+      .token.punctuation {
+        color: var(--prism-base01);
+      }
+
+      .namespace {
+        opacity: 0.7;
+      }
+
+      .token.property,
+      .token.tag,
+      .token.boolean,
+      .token.number,
+      .token.constant,
+      .token.symbol,
+      .token.deleted {
+        color: var(--prism-blue);
+      }
+
+      .token.selector,
+      .token.attr-name,
+      .token.string,
+      .token.char,
+      .token.builtin,
+      .token.url,
+      .token.inserted {
+        color: var(--prism-cyan);
+      }
+
+      .token.entity {
+        color: var(--prism-base00);
+        background: var(--prism-base2);
+      }
+
+      .token.atrule,
+      .token.attr-value,
+      .token.keyword {
+        color: var(--prism-green);
+      }
+
+      .token.function,
+      .token.class-name {
+        color: var(--prism-yellow);
+      }
+
+      .token.regex,
+      .token.important,
+      .token.variable {
+        color: var(--prism-orange);
+      }
+
+      .token.important,
+      .token.bold {
+        font-weight: bold;
+      }
+
+      .token.italic {
+        font-style: italic;
+      }
+
+      .token.entity {
+        cursor: help;
+      }
+    }
+  }
+}

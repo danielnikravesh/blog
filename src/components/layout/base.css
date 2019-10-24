@@ -6,10 +6,12 @@
   --color-blue: #0366d6;
   --color-light-blue: #eef4f8;
   --font-brandon: "Brandon Grotesque", Tahoma, Arial, sans-serif;
-  --font-fira: "Fira Mono", monospace;
+  --font-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
 }
 
 body {
   margin: 0;
   font-family: var(--font-brandon);
+  color: var(--color-black);
 }
