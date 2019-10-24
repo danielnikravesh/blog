@@ -36,6 +36,7 @@ export interface IBlogPostFrontmatter {
 export interface IBlogPostData {
   id: string;
   html: string;
+  timeToRead: string;
   fields: {
     slug: string;
   };
@@ -59,14 +60,9 @@ interface IBlogPostTemplateProps {
   location: Location;
 }
 
-function BlogPostTemplate({
-  data,
-  location,
-  pageContext
-}: IBlogPostTemplateProps) {
+function BlogPostTemplate({ data, location }: IBlogPostTemplateProps) {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -75,24 +71,6 @@ function BlogPostTemplate({
         description={post.frontmatter.description}
       />
       <Post {...post} />
-      <nav>
-        <ul>
-          {previous && (
-            <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </li>
-          )}
-          {next && (
-            <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </li>
-          )}
-        </ul>
-      </nav>
     </Layout>
   );
 }
