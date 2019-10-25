@@ -1,4 +1,7 @@
+import cn from "classnames";
 import React from "react";
+
+import { siteLinks, topMenuItems } from "../../data";
 
 import styles from "./styles.module.css";
 
@@ -6,26 +9,17 @@ function Nav() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.links}>
-        <a className={styles.link} href="/features">
-          Features
-        </a>
-        <a className={styles.link} href="/doc">
-          Doc
-        </a>
-        <a className={styles.link} href="https://blog.dataversioncontrol.com">
-          Blog
-        </a>
-        <a className={styles.link} href="/chat">
-          Chat
-        </a>
-        <a className={styles.link} href="https://github.com/iterative/dvc">
-          GitHub
-        </a>
-        <a className={styles.link} href="/support">
-          Support
-        </a>
+        {topMenuItems.map(({ title, href, current }) => (
+          <a
+            className={cn(styles.link, current && styles.current)}
+            href={href}
+            key={title + href}
+          >
+            {title}
+          </a>
+        ))}
       </div>
-      <a className={styles.getStartedButton} href="/doc/get-started">
+      <a className={styles.getStartedButton} href={siteLinks.getStarted}>
         Get Started
       </a>
     </div>

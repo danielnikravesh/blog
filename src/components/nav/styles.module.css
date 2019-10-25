@@ -25,6 +25,11 @@
   text-transform: uppercase;
   color: var(--color-gray);
 
+  &.current {
+    pointer-events: none;
+    color: var(--color-black);
+  }
+
   &:hover {
     color: var(--color-gray-hover);
     border-color: currentColor;
