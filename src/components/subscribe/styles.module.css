@@ -1,23 +1,15 @@
 .wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 300px;
+  padding: 0 15px;
   background-color: #13adc7;
-
-  @media (--md-src) {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
-  max-width: 1035px;
-  padding-top: 90px;
-
-  @media (--md-scr) {
-    padding: 0 10px;
-  }
+  max-width: 1000px;
 }
 
 .glyph {
@@ -48,8 +40,6 @@
 
 .title {
   font-family: var(--font-brandon);
-  min-width: 550px;
-  min-height: 44px;
   font-size: 30px;
   font-weight: 500;
   color: #fff;
@@ -57,7 +47,11 @@
   text-align: center;
 
   @media (--md-scr) {
-    min-width: auto;
+    @mixin h2-mobile;
+  }
+
+  @media (--lg-scr) {
+    @mixin h2-desktop;
   }
 }
 

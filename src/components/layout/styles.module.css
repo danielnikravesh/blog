@@ -1,9 +1,3 @@
 .content {
-  @media (--md-scr) {
-    padding-bottom: 20px;
-  }
-
-  @media (--lg-scr) {
-    padding-bottom: 50px;
-  }
+  padding-bottom: 50px;
 }
