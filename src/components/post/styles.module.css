@@ -10,12 +10,13 @@
 
 .headContent {
   @media (--md-scr) {
-    padding: 0 15px;
+    padding: 0 15px 30px;
   }
 
   @media (--lg-scr) {
     max-width: 700px;
     margin: 0 auto;
+    padding-bottom: 40px;
   }
 }
 
@@ -44,14 +45,30 @@
   }
 }
 
-.picture {
+.pictureWrapper {
   @media (--md-scr) {
-    margin: 30px 0 0;
+    margin: 0 15px;
   }
 
   @media (--lg-scr) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 50%;
+      left: 0;
+      background-color: var(--color-light-blue);
+    }
+  }
+}
+
+.picture {
+  @media (--lg-scr) {
     width: 1000px;
-    margin: 40px -150px 0;
+    margin: 0 auto;
   }
 }
 

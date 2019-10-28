@@ -36,15 +36,18 @@ function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
             date={date}
             timeToRead={timeToRead}
           />
-          {picture && (
-            <Image
-              fluid={picture.childImageSharp.fluid}
-              className={styles.picture}
-              alt="Gatsby Docs are awesome"
-            />
-          )}
         </div>
       </div>
+      {picture && (
+        <div className={styles.pictureWrapper}>
+          <Image
+            fluid={picture.childImageSharp.fluid}
+            className={styles.picture}
+            alt="Gatsby Docs are awesome"
+          />
+        </div>
+      )}
+
       <div className={styles.content}>
         <Markdown html={html} />
       </div>
