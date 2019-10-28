@@ -1,0 +1,18 @@
+.button {
+  @mixin button-small;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  padding: 0 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--color-azure);
+  transition: 0.2s background-color ease-out;
+
+  &:hover {
+    background-color: #13a3bd;
+  }
+}

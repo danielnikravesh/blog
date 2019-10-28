@@ -3,6 +3,8 @@ import React from "react";
 
 import { siteLinks, topMenuItems } from "../../data";
 
+import PseudoButton from "../pseudo-button";
+
 import styles from "./styles.module.css";
 
 function Nav() {
@@ -19,9 +21,12 @@ function Nav() {
           </a>
         ))}
       </div>
-      <a className={styles.getStartedButton} href={siteLinks.getStarted}>
+      <PseudoButton
+        className={styles.getStartedButton}
+        href={siteLinks.getStarted}
+      >
         Get Started
-      </a>
+      </PseudoButton>
     </div>
   );
 }
