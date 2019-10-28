@@ -9,6 +9,8 @@
 }
 
 .headContent {
+  position: relative;
+
   @media (--md-scr) {
     padding: 0 15px 30px;
   }
@@ -17,6 +19,20 @@
     max-width: 700px;
     margin: 0 auto;
     padding-bottom: 40px;
+  }
+}
+
+.back {
+  position: absolute;
+  top: 40px;
+  left: -150px;
+
+  &::before {
+    content: "← ";
+  }
+
+  @media (--md-scr) {
+    display: none;
   }
 }
 
@@ -105,4 +121,29 @@
   border-radius: 4px;
   font-weight: 500;
   color: var(--color-gray);
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+
+  @media (--md-scr) {
+    margin-top: 30px 15px 0;
+  }
+
+  @media (--lg-scr) {
+    max-width: 700px;
+    margin: 40px auto 0;
+  }
+}
+
+.count {
+  margin-left: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-gray);
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

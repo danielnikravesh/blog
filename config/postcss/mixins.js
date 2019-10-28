@@ -66,6 +66,7 @@ module.exports = {
       "line-height": "25px"
     },
     link: {
+      "text-decoration": "none",
       color: "var(--color-blue)",
       "&:hover, &:active": {
         opacity: 0.7
