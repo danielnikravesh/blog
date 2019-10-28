@@ -12,6 +12,12 @@ descriptionLong: |
   around ML best practices and workflow.
 picture: ../../static/uploads/dvc2.jpeg
 author: ../authors/svetlana_grinchenko.md
+tags:
+  - Open Source
+  - Machine Learning
+  - Data Science
+  - Version Control
+  - AI
 ---
 
 ## News and links

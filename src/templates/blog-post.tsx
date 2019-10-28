@@ -14,6 +14,7 @@ export interface IBlogPostFrontmatter {
   date: string;
   description: string;
   descriptionLong?: string;
+  tags?: string[];
   picture?: {
     childImageSharp: {
       fluid: FluidObject;
@@ -95,6 +96,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         descriptionLong
+        tags
         author {
           childMarkdownRemark {
             frontmatter {

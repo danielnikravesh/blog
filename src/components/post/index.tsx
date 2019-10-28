@@ -15,6 +15,7 @@ function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
     picture,
     description,
     descriptionLong,
+    tags,
     author: {
       childMarkdownRemark: {
         frontmatter: { name, avatar }
@@ -51,6 +52,15 @@ function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
       <div className={styles.content}>
         <Markdown html={html} />
       </div>
+      {tags && (
+        <div className={styles.tags}>
+          {tags.map(tag => (
+            <div className={styles.tag} key={tag}>
+              {tag}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
