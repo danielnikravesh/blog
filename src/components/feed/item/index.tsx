@@ -9,44 +9,39 @@ import Meta from "../../meta";
 
 import styles from "./styles.module.css";
 
+import { ReactComponent as Placeholder } from "./placeholder.svg";
+
 interface IFeedItemPorps extends IFeedPostData {
   big?: boolean;
 }
 
 function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
-  const {
-    title,
-    description,
-    descriptionLong,
-    date,
-    picture,
-    author
-  } = frontmatter;
+  const { title, description, date, picture, author } = frontmatter;
   const { avatar, name } = author.childMarkdownRemark.frontmatter;
 
   return (
     <div
       className={cn(
         styles.wrapper,
-        !picture && styles.pictureless,
-        big && styles.big
+        big && styles.big,
+        !picture && styles.placeholder
       )}
     >
-      {picture && (
-        <Link to={fields.slug}>
+      <Link to={fields.slug}>
+        {picture ? (
           <Image
             fluid={picture.childImageSharp.fluid}
             className={styles.picture}
           />
-        </Link>
-      )}
+        ) : (
+          <Placeholder className={styles.picture} />
+        )}
+      </Link>
       <div className={styles.body}>
         <Link to={fields.slug} className={styles.title}>
           {title}
         </Link>
-        <div className={styles.description}>
-          {!picture && descriptionLong ? descriptionLong : description}
-        </div>
+        <div className={styles.description}>{description}</div>
       </div>
       <div className={styles.meta}>
         <Meta name={name} avatar={avatar} date={date} timeToRead={timeToRead} />

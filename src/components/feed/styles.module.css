@@ -4,21 +4,21 @@
   margin: 0 auto;
 
   @media (--md-scr) {
-    box-sizing: border-box;
-    max-width: 800px;
+    max-width: 650px;
+  }
+
+  @media (--sm-scr) {
     padding: 0 15px;
   }
 }
 
 .meta {
   max-width: 650px;
+  margin: 20px 0 40px;
 
-  @media (--md-scr) {
+  @media (--sm-scr) {
+    max-width: auto;
     margin: 10px 0 30px;
-  }
-
-  @media (--lg-scr) {
-    margin: 20px 0 40px;
   }
 }
 
@@ -40,9 +40,19 @@
 }
 
 .posts {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (--md-scr) {
+    width: 700px;
+  }
+
+  @media (--sm-scr) {
+    display: block;
+    width: auto;
+  }
+
   @media (--lg-scr) {
-    display: flex;
-    flex-wrap: wrap;
     width: 1050px;
   }
 }

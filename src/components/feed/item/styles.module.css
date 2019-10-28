@@ -1,18 +1,32 @@
 .wrapper {
   position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 0 50px 50px 0;
   background-color: var(--color-light-blue);
 
   @media (--md-scr) {
+    &.big {
+      width: 650px;
+      height: auto;
+    }
+  }
+
+  @media (--sm-scr) {
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    &.big {
+      width: auto;
+    }
+
     & + & {
       margin-top: 10px;
     }
   }
 
   @media (--lg-scr) {
-    width: 300px;
-    height: 500px;
-    margin: 50px 50px 0 0;
-
     &.big {
       width: 1000px;
       height: 450px;
@@ -22,10 +36,33 @@
 }
 
 .picture {
-  @media (--lg-scr) {
-    width: 300px;
-    height: 250px;
+  display: block;
+  width: 300px;
+  height: 250px;
+  background-color: #dee8ed;
 
+  @media (--md-scr) {
+    .big & {
+      width: 650px;
+      height: 450px;
+    }
+  }
+
+  @media (--sm-scr) {
+    width: auto;
+    height: auto;
+
+    .big & {
+      width: auto;
+      height: auto;
+    }
+
+    .placeholder & {
+      display: none;
+    }
+  }
+
+  @media (--lg-scr) {
     .big & {
       float: left;
       width: 650px;
@@ -42,36 +79,42 @@
 .body {
   padding: 10px 30px;
 
-  .big & {
-    padding: 30px;
-  }
-
-  .pictureless & {
-    padding-top: 30px;
-  }
-}
-
-.title {
-  display: block;
-  overflow: hidden;
-  text-decoration: none;
-  color: var(--color-black);
-
   @media (--md-scr) {
-    @mixin h3-mobile;
+    .big & {
+      padding-top: 30px;
+    }
+  }
 
-    .pictureless & {
-      @mixin h2-mobile;
+  @media (--sm-scr) {
+    .placeholder & {
+      padding-top: 30px;
     }
   }
 
   @media (--lg-scr) {
-    @mixin h3-desktop;
+    .big & {
+      padding: 30px;
+    }
+  }
+}
 
-    max-height: 60px;
+.title {
+  @mixin h3-desktop;
 
-    .big &,
-    .pictureless & {
+  display: block;
+  overflow: hidden;
+  max-height: 60px;
+  text-decoration: none;
+  color: var(--color-black);
+
+  @media (--sm-scr) {
+    @mixin h3-mobile;
+
+    max-height: auto;
+  }
+
+  @media (--lg-scr) {
+    .big & {
       @mixin h2-desktop;
 
       max-height: 80px;
@@ -86,17 +129,16 @@
 .description {
   @mixin text-secondary;
 
+  overflow: hidden;
+  max-height: 96px;
   margin-top: 10px;
   color: var(--color-gray);
 
+  @media (--sm-scr) {
+    max-height: auto;
+  }
+
   @media (--lg-scr) {
-    overflow: hidden;
-    max-height: 96px;
-
-    .pictureless & {
-      max-height: 312px;
-    }
-
     .big & {
       max-height: 240px;
       margin-top: 40px;
@@ -105,16 +147,24 @@
 }
 
 .meta {
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  left: 30px;
+
   @media (--md-scr) {
+    .big & {
+      position: static;
+      padding: 0 30px 15px;
+    }
+  }
+
+  @media (--sm-scr) {
+    position: static;
     padding: 0 30px 15px;
   }
 
   @media (--lg-scr) {
-    position: absolute;
-    right: 30px;
-    bottom: 15px;
-    left: 30px;
-
     .big & {
       left: 700px;
     }
