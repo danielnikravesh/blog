@@ -4,6 +4,7 @@
 
 .head {
   @media (--lg-scr) {
+    padding-bottom: 20px;
     background: var(--color-light-blue);
   }
 }
@@ -12,13 +13,12 @@
   position: relative;
 
   @media (--md-scr) {
-    padding: 0 15px 30px;
+    padding: 0 15px 0;
   }
 
   @media (--lg-scr) {
     max-width: 700px;
     margin: 0 auto;
-    padding-bottom: 40px;
   }
 }
 
@@ -50,20 +50,22 @@
 }
 
 .description {
-  margin: 30px 0 20px;
-
   @media (--md-scr) {
     @mixin text-mobile;
+
+    margin: 30px 0 5px;
   }
 
   @media (--lg-scr) {
     @mixin text-desktop;
+
+    margin: 30px 0 20px;
   }
 }
 
 .pictureWrapper {
   @media (--md-scr) {
-    margin: 0 15px;
+    margin: 10px 15px 0;
   }
 
   @media (--lg-scr) {
@@ -91,11 +93,13 @@
 .content {
   @media (--md-scr) {
     margin: 0 15px 0;
+    padding: 30px 0 0;
   }
 
   @media (--lg-scr) {
     max-width: 700px;
     margin: 0 auto 0;
+    padding: 30px 0 0;
   }
 }
 

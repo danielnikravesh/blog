@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 44px;
+  min-height: 44px;
   padding-left: 30px;
 }
 

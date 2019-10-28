@@ -16,6 +16,10 @@
   --prism-cyan: #2aa198;
   --prism-green: #859900;
 
+  & > *:first-child {
+    margin-top: 0;
+  }
+
   @media (--md-scr) {
     @mixin text-mobile;
   }
