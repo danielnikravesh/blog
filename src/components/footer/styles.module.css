@@ -1,11 +1,6 @@
 .wrapper {
   min-height: 300px;
   background-color: #40364d;
-  color: #fff;
-
-  @media (--md-scr) {
-    min-height: auto;
-  }
 }
 
 .container {
@@ -14,18 +9,12 @@
   padding: 64px 0;
 
   @media (--md-scr) {
-    padding: 64px 61px 44px 67px;
-    max-width: auto;
-  }
-
-  @media (--sm-scr) {
-    padding: 30px 25px;
+    padding: 44px 25px;
   }
 }
 
 .top {
-  height: 40px;
-  margin-bottom: 40.7px;
+  margin-bottom: 40px;
 }
 
 .columns {
@@ -37,10 +26,6 @@
   @media (--md-scr) {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  @media (--sm-scr) {
-    justify-content: center;
   }
 }
 
