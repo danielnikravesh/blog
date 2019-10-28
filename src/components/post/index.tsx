@@ -1,3 +1,4 @@
+import cn from "classnames";
 import Image from "gatsby-image";
 import React from "react";
 
@@ -8,6 +9,7 @@ import { pluralize } from "../../utils/i18n";
 import Markdown from "../markdown";
 import Meta from "../meta";
 import PseudoButton from "../pseudo-button";
+import Share from "../share";
 
 import styles from "./styles.module.css";
 
@@ -65,9 +67,10 @@ function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
             className={styles.picture}
             alt="Gatsby Docs are awesome"
           />
+          <Share className={cn(styles.share, styles.pictureShare)} />
         </div>
       )}
-
+      {!picture && <Share className={styles.share} />}
       <div className={styles.content}>
         <Markdown html={html} />
       </div>

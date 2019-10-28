@@ -1,0 +1,23 @@
+.wrapper {
+  @mixin text-secondary;
+
+  position: relative;
+  padding: 2px 12px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000;
+  }
+}
