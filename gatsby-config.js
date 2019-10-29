@@ -58,7 +58,12 @@ module.exports = {
     },
     "gatsby-plugin-typescript",
     "gatsby-plugin-postcss",
-    "gatsby-plugin-svgr",
+    {
+      resolve: "gatsby-plugin-svgr",
+      options: {
+        ref: true
+      }
+    },
     "gatsby-plugin-tslint",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

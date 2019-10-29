@@ -5,16 +5,3 @@
   height: 40px;
   margin: 10px;
 }
-
-.tooltip {
-  display: none;
-  position: absolute;
-  bottom: 100%;
-  width: 90px;
-  margin-bottom: 5px;
-  margin-left: -25px;
-
-  .link:hover & {
-    display: block;
-  }
-}

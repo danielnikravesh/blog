@@ -1,4 +1,3 @@
-import cn from "classnames";
 import React from "react";
 
 import Tooltip from "../tooltip";
@@ -15,24 +14,21 @@ interface IShareProps {
 
 function Share({ className }: IShareProps) {
   return (
-    <div className={cn(styles.wrapper, className)}>
+    <div className={className}>
       <a href="" className={styles.link}>
-        <div className={styles.tooltip}>
-          <Tooltip>Share on Facebook</Tooltip>
-        </div>
-        <Facebook />
+        <Tooltip label="Share on Facebook">
+          <Facebook />
+        </Tooltip>
       </a>
       <a href="" className={styles.link}>
-        <div className={styles.tooltip}>
-          <Tooltip>Share on Twitter</Tooltip>
-        </div>
-        <Twitter />
+        <Tooltip label="Share on Twitter">
+          <Twitter />
+        </Tooltip>
       </a>
       <a href="" className={styles.link}>
-        <div className={styles.tooltip}>
-          <Tooltip>Subscribe to maillist</Tooltip>
-        </div>
-        <Subscribe />
+        <Tooltip label="Subscribe to maillist">
+          <Subscribe />
+        </Tooltip>
       </a>
     </div>
   );
