@@ -42,7 +42,8 @@
     "prismjs": "^1.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-use": "^12.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

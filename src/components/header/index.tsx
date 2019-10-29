@@ -1,4 +1,6 @@
+import cn from "classnames";
 import React from "react";
+import { useWindowScroll } from "react-use";
 
 import { siteLinks } from "../../data";
 
@@ -8,11 +10,13 @@ import { ReactComponent as LogoSVG } from "./logo.svg";
 import styles from "./styles.module.css";
 
 function Header() {
+  const { y } = useWindowScroll();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.placeholder} />
       <div className={styles.header}>
-        <div className={styles.container}>
+        <div className={cn(styles.container, y > 25 && styles.scrolled)}>
           <a href={siteLinks.root}>
             <LogoSVG className={styles.logo} />
           </a>

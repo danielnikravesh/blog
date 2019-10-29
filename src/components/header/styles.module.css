@@ -1,5 +1,6 @@
 .wrapper {
-  --header-height: 78px;
+  --header-height: 98px;
+  --header-height-scrolled: calc(var(--header-height) - 20px);
 
   .placeholder {
     height: var(--header-height);
@@ -17,9 +18,8 @@
 
   .container {
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1005px;
-    min-height: var(--header-height);
+    max-width: 1000px;
+    height: var(--header-height);
     width: auto;
     z-index: 3;
     position: relative;
@@ -30,6 +30,10 @@
     align-items: center;
     transition: height 0.2s linear;
     will-change: height;
+
+    &.scrolled {
+      height: var(--header-height-scrolled);
+    }
 
     @media (--md-scr) {
       flex-direction: column;
