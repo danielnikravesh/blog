@@ -24,7 +24,7 @@ function pluralizeComments(count: number) {
 
 const COUNT = 22;
 
-function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
+function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
   const {
     title,
     date,
@@ -67,10 +67,16 @@ function Post({ html, timeToRead, frontmatter }: IBlogPostData) {
             className={styles.picture}
             alt="Gatsby Docs are awesome"
           />
-          <Share className={cn(styles.share, styles.pictureShare)} />
+          <Share
+            className={cn(styles.share, styles.pictureShare)}
+            text={description}
+            slug={fields.slug}
+          />
         </div>
       )}
-      {!picture && <Share className={styles.share} />}
+      {!picture && (
+        <Share className={styles.share} text={description} slug={fields.slug} />
+      )}
       <div className={styles.content}>
         <Markdown html={html} />
       </div>

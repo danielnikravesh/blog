@@ -46,26 +46,19 @@ export interface IBlogPostData {
 
 interface IBlogPostTemplateProps {
   data: {
-    site: {
-      siteMetadata: {
-        title: string;
-      };
-    };
     markdownRemark: IBlogPostData;
   };
   pageContext: {
     next: IBlogPostData;
     previous: IBlogPostData;
   };
-  location: Location;
 }
 
-function BlogPostTemplate({ data, location }: IBlogPostTemplateProps) {
+function BlogPostTemplate({ data }: IBlogPostTemplateProps) {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -79,16 +72,14 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(format: HTML)
       html
       timeToRead
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

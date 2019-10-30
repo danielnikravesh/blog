@@ -10,8 +10,6 @@ import Subscribe from "../subscribe";
 import styles from "./styles.module.css";
 
 interface ILayoutProps {
-  location: Location;
-  title: string;
   children: React.ReactNode;
 }
 

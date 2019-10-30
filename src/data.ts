@@ -1,5 +1,9 @@
 const root = "https://dvc.org";
 
+export const ids = {
+  subscribe: "subscribe"
+};
+
 export const siteLinks = {
   root,
   blog: "https://blog.dataversioncontrol.com",

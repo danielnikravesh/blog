@@ -103,6 +103,7 @@
 .share {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
 
   @media (--xl-scr) {
     &.pictureShare {
