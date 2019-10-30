@@ -59,11 +59,11 @@
     color: var(--color-gray);
 
     @media (--md-scr) {
-      margin-top: 30px;
+      margin-top: -30px;
     }
 
     @media (--lg-scr) {
-      margin-top: 40px;
+      margin-top: -40px;
     }
   }
 
