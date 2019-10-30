@@ -31,10 +31,6 @@
   top: 40px;
   left: -150px;
 
-  &::before {
-    content: "← ";
-  }
-
   @media (--md-scr) {
     display: none;
   }

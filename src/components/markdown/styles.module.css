@@ -67,6 +67,16 @@
     }
   }
 
+  :global(.gatsby-resp-image-link) {
+    @mixin active;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.7;
+    }
+  }
+
   h1 {
     @media (--md-scr) {
       @mixin h1-mobile;

@@ -34,6 +34,18 @@
   }
 }
 
+.pictureLink {
+  @mixin active;
+
+  display: block;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.7;
+  }
+}
+
 .picture {
   display: block;
   width: 300px;
@@ -69,10 +81,6 @@
       margin-right: 50px;
     }
   }
-
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
 .body {
@@ -99,6 +107,9 @@
 
 .title {
   @mixin h3-desktop;
+  @mixin active;
+  @mixin focus;
+  @mixin hover;
 
   display: block;
   overflow: hidden;

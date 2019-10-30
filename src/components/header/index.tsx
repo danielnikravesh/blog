@@ -17,7 +17,7 @@ function Header() {
       <div className={styles.placeholder} />
       <div className={styles.header}>
         <div className={cn(styles.container, y > 25 && styles.scrolled)}>
-          <a href={siteLinks.root}>
+          <a href={siteLinks.root} className={styles.logoLink}>
             <LogoSVG className={styles.logo} />
           </a>
           <Nav />

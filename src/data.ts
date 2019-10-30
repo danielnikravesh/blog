@@ -29,8 +29,7 @@ export const topMenuItems = [
   },
   {
     title: "Blog",
-    href: siteLinks.blog,
-    current: true
+    href: siteLinks.blog
   },
   {
     title: "Chat",

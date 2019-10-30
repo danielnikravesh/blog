@@ -27,7 +27,7 @@ function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
         !picture && styles.placeholder
       )}
     >
-      <Link to={fields.slug}>
+      <Link to={fields.slug} className={styles.pictureLink}>
         {picture ? (
           <Image
             fluid={picture.childImageSharp.fluid}

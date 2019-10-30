@@ -43,10 +43,19 @@
     }
   }
 
+  .logoLink {
+    @mixin active;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.5;
+    }
+  }
+
   .logo {
     display: block;
     padding-top: 2px;
-    z-index: 999;
 
     @media (--md-scr) {
       padding-top: 10px;

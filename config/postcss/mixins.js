@@ -1,7 +1,8 @@
 const focus = {
   "&:focus": {
-    opacity: 0.7,
-    outline: "none"
+    color: "var(--color-orange)",
+    outline: "none",
+    "text-decoration": "underline"
   }
 };
 
@@ -10,6 +11,12 @@ const active = {
     position: "relative",
     top: "1px",
     left: "1px"
+  }
+};
+
+const hover = {
+  "&:hover": {
+    "text-decoration": "underline"
   }
 };
 
@@ -68,12 +75,11 @@ module.exports = {
     link: {
       "text-decoration": "none",
       color: "var(--color-blue)",
-      "&:hover, &:active": {
-        opacity: 0.7
-      },
+      ...hover,
       ...focus,
       ...active
     },
+    hover,
     focus,
     active
   }

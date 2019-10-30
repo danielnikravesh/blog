@@ -43,9 +43,11 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     <div className={styles.wrapper}>
       <div className={styles.head}>
         <div className={styles.headContent}>
-          <PseudoButton href="/" type="secondary" className={styles.back}>
-            Blog
-          </PseudoButton>
+          <div className={styles.back}>
+            <PseudoButton href="/" type="secondary">
+              ← Blog
+            </PseudoButton>
+          </div>
           <h1 className={styles.title}>{title}</h1>
           <div className={styles.description}>
             {descriptionLong || description}
