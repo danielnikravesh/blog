@@ -55,11 +55,9 @@ interface IBlogIndexProps {
   location: Location;
 }
 
-function BlogIndex({ data, location }: IBlogIndexProps) {
-  const siteTitle = data.site.siteMetadata.title;
-
+function BlogIndex({ data }: IBlogIndexProps) {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout>
       <SEO title="All posts" />
       <Feed posts={data.posts.edges} />
     </Layout>
