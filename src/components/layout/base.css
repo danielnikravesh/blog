@@ -6,8 +6,7 @@
   --color-blue: #0366d6;
   --color-light-blue: #eef4f8;
   --font-brandon: "Brandon Grotesque", Tahoma, Arial, sans-serif;
-  --font-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
-    monospace;
+  --font-mono: Inconsolata, monospace;
 }
 
 html {

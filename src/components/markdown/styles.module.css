@@ -16,10 +16,6 @@
   --prism-cyan: #2aa198;
   --prism-green: #859900;
 
-  & > *:first-child {
-    margin-top: 0;
-  }
-
   @media (--md-scr) {
     @mixin text-mobile;
   }
@@ -28,39 +24,91 @@
     @mixin text-desktop;
   }
 
-  :global(.gatsby-resp-image-wrapper) {
-    margin-top: 40px;
+  & *:first-child {
+    margin-top: 0;
+  }
+
+  & *:last-child {
+    margin-bottom: 0;
+  }
+
+  :global(.gatsby-highlight),
+  :global(.gatsby-resp-iframe-wrapper),
+  :global(.gatsby-resp-image-wrapper),
+  :global(.gatsby-resp-image-wrapper) + em,
+  blockquote,
+  hr,
+  pre,
+  table {
+    @media (--md-scr) {
+      margin: 30px 0;
+    }
+
+    @media (--lg-scr) {
+      margin: 40px 0;
+    }
+  }
+
+  p,
+  ul,
+  ol,
+  li {
+    margin: 15px 0;
+  }
+
+  code,
+  kbd,
+  samp {
+    @media (--md-scr) {
+      font-size: 16px;
+    }
+
+    @media (--lg-scr) {
+      font-size: 20px;
+    }
   }
 
   :global(.gatsby-resp-image-wrapper) + em {
+    @mixin text-secondary;
+
     display: block;
-    margin-bottom: 25px;
-    font-size: 80%;
     text-align: center;
     color: var(--color-gray);
+
+    @media (--md-scr) {
+      margin-top: 30px;
+    }
+
+    @media (--lg-scr) {
+      margin-top: 40px;
+    }
   }
 
   h1 {
-    margin: 60px 0 25px;
-
     @media (--md-scr) {
       @mixin h1-mobile;
+
+      margin: 45px 0 15px;
     }
 
     @media (--lg-scr) {
       @mixin h1-desktop;
+
+      margin: 60px 0 25px;
     }
   }
 
   h2 {
-    margin: 60px 0 25px;
-
     @media (--md-scr) {
       @mixin h2-mobile;
+
+      margin: 45px 0 15px;
     }
 
     @media (--lg-scr) {
       @mixin h2-desktop;
+
+      margin: 60px 0 25px;
     }
   }
 
@@ -76,13 +124,8 @@
     }
   }
 
-  p {
-    margin: 15px 0 0;
-  }
-
   blockquote {
-    margin: 15px 0 0;
-    padding-left: 15px;
+    padding-left: 10px;
     border-left: 5px solid var(--color-light-blue);
     font-style: italic;
   }
@@ -93,22 +136,21 @@
     padding: 0 5px;
     border-radius: 4px;
     font-family: var(--font-mono);
-    font-size: 18px;
+    font-style: normal;
+    color: var(--color-black);
     background: var(--color-light-blue);
   }
 
   ol,
   ul {
-    margin: 0;
     padding: 0;
   }
 
   li {
-    margin: 15px 0 0;
-    padding-left: 40px;
+    padding-left: 30px;
   }
 
-  ul li {
+  ul > li {
     position: relative;
     list-style: none;
 
@@ -119,26 +161,79 @@
     }
   }
 
-  a {
-    @mixin link;
+  ol {
+    counter-reset: ol;
   }
 
-  pre,
-  pre[class*="language-"] {
+  ol > li {
+    counter-increment: ol;
+    position: relative;
+    list-style: none;
+
+    &::before {
+      content: counter(ol) ".";
+      position: absolute;
+      margin-left: -30px;
+      color: var(--color-gray);
+    }
+  }
+
+  hr {
+    border: solid var(--color-gray);
+    border-width: 1px 0 0;
+    height: 0;
+  }
+
+  abbr,
+  acronym {
+    border-bottom: 1px dotted var(--color-gray);
+    cursor: help;
+  }
+
+  abbr[title] {
+    text-decoration: none;
+  }
+
+  table {
+    @mixin text-secondary;
+
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  thead {
+    text-align: left;
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid var(--color-gray);
+    font-feature-settings: tnum;
+    padding: 5px 15px 4px;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  a {
+    @mixin link;
+
+    word-wrap: break-word;
+  }
+
+  pre {
     box-sizing: border-box;
     overflow: scroll;
+    max-width: 100%;
     padding: 15px;
     background: var(--prism-base3);
-
-    @media (--sm-scr) {
-      max-width: 100%;
-      margin: 15px 0 0;
-    }
-
-    @media (--lg-scr) {
-      max-width: 100%;
-      margin: 15px 0 0;
-    }
   }
 
   /* prism theme */
@@ -151,6 +246,7 @@
     code[class*="language-"] {
       float: left;
       min-width: 100%;
+      padding: 0;
     }
 
     :global {

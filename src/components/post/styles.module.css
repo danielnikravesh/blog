@@ -1,5 +1,9 @@
 .wrapper {
   margin: 0 auto;
+
+  @media (--md-scr) {
+    max-width: 700px;
+  }
 }
 
 .head {

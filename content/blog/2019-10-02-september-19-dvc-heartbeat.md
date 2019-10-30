@@ -207,12 +207,20 @@ a file with the same name (path) but a different content.
 > has very fast NFS storage across all the nodes. Not storing everything twice
 > seems desirable. Esp. for the multi-TB input data
 
+1. Numbered list.
+2. To test.
+3. Numbered list styles.
+
 Yes and it’s one of the very common use case, actually. All you need to do
 is to use dvc cache dir command to setup an external cache. There are few
 caveats though. Please, read [this link](https://discuss.dvc.org/t/share-nas-data-in-server/180/4?u=shcheklein)
 for an example of the workflow.
 
----
+| Tables        |      Are      |   Cool |
+| ------------- | :-----------: | -----: |
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      |   centered    |   \$12 |
+| zebra stripes |   are neat    |    \$1 |
 
 If you have any questions, concerns or ideas, let us know in the comments below
 or connect with DVC team [here](https://dvc.org/support). Our
