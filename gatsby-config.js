@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "DVC",
+    title: "DVC Blog",
     description:
       "Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.",
     siteUrl: "https://blog.dvc.org"
@@ -70,7 +70,64 @@ module.exports = {
         //trackingId: "ADD YOUR TRACKING ID HERE",
       }
     },
-    "gatsby-plugin-feed",
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description:
+                    edge.node.descriptionLong || edge.node.descriptionLong,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { fields: [frontmatter___date], order: DESC }
+                  filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+                ) {
+                  edges {
+                    node {
+                      html
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        date
+                        description
+                        descriptionLong
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "DVC Blog"
+          }
+        ]
+      }
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
