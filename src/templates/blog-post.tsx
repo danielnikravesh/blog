@@ -49,7 +49,6 @@ interface IBlogPostTemplateProps {
     site: {
       siteMetadata: {
         title: string;
-        author: string;
       };
     };
     markdownRemark: IBlogPostData;
@@ -83,7 +82,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

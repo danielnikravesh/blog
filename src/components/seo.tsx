@@ -19,7 +19,6 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
           siteMetadata {
             title
             description
-            author
           }
         }
       }
@@ -30,36 +29,36 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
 
   const defaultMeta: MetaProps[] = [
     {
-      name: `description`,
-      content: metaDescription
-    },
-    {
-      property: `og:title`,
+      property: "og:title",
       content: title
     },
     {
-      property: `og:description`,
+      property: "og:description",
       content: metaDescription
     },
     {
-      property: `og:type`,
-      content: `website`
+      property: "og:type",
+      content: "website"
     },
     {
-      name: `twitter:card`,
+      property: "og:image",
+      content: "/social-share.png"
+    },
+    {
+      name: "twitter:card",
       content: `summary`
     },
     {
-      name: `twitter:creator`,
-      content: site.siteMetadata.author
-    },
-    {
-      name: `twitter:title`,
+      name: "twitter:title",
       content: title
     },
     {
-      name: `twitter:description`,
+      name: "twitter:description",
       content: metaDescription
+    },
+    {
+      name: "twitter:image",
+      content: "/social-share.png"
     }
   ];
 
@@ -71,6 +70,30 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[...defaultMeta, ...meta]}
+      link={[
+        {
+          rel: "shortcut icon",
+          type: "image/x-icon",
+          href: "/favicon.ico"
+        },
+        {
+          rel: "shortcut icon",
+          type: "image/vnd.microsoft.icon",
+          href: "/favicon.ico"
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon-32x32.png",
+          sizes: "32x32"
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon-16x16.png",
+          sizes: "16x16"
+        }
+      ]}
     />
   );
 }
