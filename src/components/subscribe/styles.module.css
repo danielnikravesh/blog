@@ -9,6 +9,7 @@
 
 .container {
   margin: 0 auto;
+  width: 100%;
   max-width: 1000px;
 }
 
@@ -39,9 +40,6 @@
 }
 
 .title {
-  font-family: var(--font-brandon);
-  font-size: 30px;
-  font-weight: 500;
   color: #fff;
   margin: 0 auto;
   text-align: center;
@@ -52,12 +50,13 @@
 
   @media (--lg-scr) {
     @mixin h2-desktop;
+
+    line-height: 45px;
   }
 }
 
 .subscribeContainer {
-  margin: 0 auto;
-  margin-top: 15px;
+  margin: 15px auto 0;
   max-width: 510px;
   border-radius: 8px;
   background-color: #fff;
