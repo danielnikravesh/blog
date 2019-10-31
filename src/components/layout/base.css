@@ -12,6 +12,8 @@
 
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

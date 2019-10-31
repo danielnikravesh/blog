@@ -3,7 +3,13 @@
   --header-height-scrolled: calc(var(--header-height) - 20px);
 
   .placeholder {
-    height: var(--header-height);
+    @media (--md-scr) {
+      height: var(--header-height-scrolled);
+    }
+
+    @media (--lg-scr) {
+      height: var(--header-height);
+    }
   }
 
   .header {
@@ -36,10 +42,27 @@
     }
 
     @media (--md-scr) {
-      flex-direction: column;
       justify-content: center;
-      align-items: start;
-      height: auto;
+      height: var(--header-height-scrolled);
+    }
+  }
+
+  .root {
+    position: absolute;
+    left: 15px;
+  }
+
+  .rootLink {
+    @mixin text-secondary;
+    @mixin active;
+    @mixin focus;
+    @mixin hover;
+
+    text-decoration: none;
+    color: var(--color-gray);
+
+    @media (--lg-scr) {
+      display: none;
     }
   }
 
@@ -58,8 +81,7 @@
     padding-top: 2px;
 
     @media (--md-scr) {
-      padding-top: 10px;
-      padding-bottom: 0;
+      padding-top: 5px;
     }
   }
 }

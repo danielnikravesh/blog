@@ -57,7 +57,7 @@ interface IBlogIndexProps {
 
 function BlogIndex({ data }: IBlogIndexProps) {
   return (
-    <Layout>
+    <Layout index={true}>
       <SEO title="All posts" />
       <Feed posts={data.posts.edges} />
     </Layout>

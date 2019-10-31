@@ -6,7 +6,7 @@ export const ids = {
 
 export const siteLinks = {
   root,
-  blog: "https://blog.dataversioncontrol.com",
+  blog: "/",
   chat: `${root}/chat`,
   docs: `${root}/doc`,
   features: `${root}/features`,

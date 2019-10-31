@@ -4,6 +4,7 @@ import React from "react";
 
 import { IBlogPostData } from "../../templates/blog-post";
 
+import { siteLinks } from "../../data";
 import { pluralize } from "../../utils/i18n";
 
 import Markdown from "../markdown";
@@ -44,7 +45,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
       <div className={styles.head}>
         <div className={styles.headContent}>
           <div className={styles.back}>
-            <PseudoButton href="/" type="secondary">
+            <PseudoButton href={siteLinks.blog} type="secondary">
               ← Blog
             </PseudoButton>
           </div>
@@ -67,7 +68,6 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
           <Image
             fluid={picture.childImageSharp.fluid}
             className={styles.picture}
-            alt="Gatsby Docs are awesome"
           />
           <Share
             className={cn(styles.share, styles.pictureShare)}

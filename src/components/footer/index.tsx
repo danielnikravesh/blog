@@ -7,7 +7,11 @@ import IconSet from "../icon-set";
 import logoSrc from "./icons/logo_white.png";
 import styles from "./styles.module.css";
 
-function Footer() {
+interface IFooterProps {
+  onClick?: () => void;
+}
+
+function Footer({ onClick }: IFooterProps) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -22,7 +26,12 @@ function Footer() {
               <div className={styles.heading}>{section}</div>
               <div className={styles.links}>
                 {links.map(({ title, href, icon }) => (
-                  <a className={styles.link} href={href} key={href + title}>
+                  <a
+                    className={styles.link}
+                    href={href}
+                    key={href + title}
+                    onClick={onClick}
+                  >
                     {icon && <IconSet className={styles.icon} name={icon} />}
                     {title}
                   </a>

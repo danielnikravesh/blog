@@ -9,7 +9,11 @@ import Nav from "../nav";
 import { ReactComponent as LogoSVG } from "./logo.svg";
 import styles from "./styles.module.css";
 
-function Header() {
+interface IHeaderProps {
+  index?: boolean;
+}
+
+function Header({ index }: IHeaderProps) {
   const { y } = useWindowScroll();
 
   return (
@@ -17,6 +21,13 @@ function Header() {
       <div className={styles.placeholder} />
       <div className={styles.header}>
         <div className={cn(styles.container, y > 25 && styles.scrolled)}>
+          {!index && (
+            <div className={styles.root}>
+              <a href={siteLinks.blog} className={styles.rootLink}>
+                ← Blog
+              </a>
+            </div>
+          )}
           <a href={siteLinks.root} className={styles.logoLink}>
             <LogoSVG className={styles.logo} />
           </a>
