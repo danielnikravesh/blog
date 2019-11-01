@@ -1,6 +1,6 @@
 ---
 name: Svetlana Grinchenko
-avatar: ../../static/uploads/avatar.jpeg
+avatar: /uploads/avatar.jpeg
 ---
 
 Some text about Svetlana

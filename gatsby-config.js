@@ -1,5 +1,12 @@
 const path = require("path");
 
+const netlifyCMCPathConfig = {
+  resolve: "gatsby-plugin-netlify-cms-paths",
+  options: {
+    cmsConfig: "/static/admin/config.yml"
+  }
+};
+
 module.exports = {
   siteMetadata: {
     title: "DVC Blog",
@@ -49,7 +56,8 @@ module.exports = {
           "gatsby-remark-responsive-iframe",
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants"
+          "gatsby-remark-smartypants",
+          netlifyCMCPathConfig
         ]
       }
     },
@@ -141,6 +149,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-netlify-cms"
+    "gatsby-plugin-netlify-cms",
+    netlifyCMCPathConfig
   ]
 };
