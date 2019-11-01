@@ -6,6 +6,18 @@ publish_mode: editorial_workflow
 media_folder: static/uploads
 public_folder: /uploads
 collections:
+  - name: "authors"
+    label: "Authors"
+    folder: "content/authors"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - {
+          label: "Avatar",
+          name: "avatar",
+          widget: "image",
+          required: true
+        }
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
@@ -21,8 +33,36 @@ collections:
         }
       - {
           label: "Description",
+          hint: "Used in feed",
           name: "description",
           widget: "text",
+          pattern: ['.{1,200}', "Must be shorter than 200 characters, because of Twitter message limit"],
           required: true,
         }
+      - {
+          label: "Long description",
+          hint: "Used in post before image",
+          name: "descriptionLong",
+          widget: "text",
+        }
+      - {
+          label: "Picture",
+          name: "picture",
+          widget: "image",
+          required: true
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+        }
+      - {
+        label: "Post Author",
+        name: "author",
+        widget: "relation",
+        collection: "authors",
+        searchFields: ["name"],
+        valueField: "name",
+        displayFields: ["name"]
+      }
       - { label: "Body", name: "body", widget: "markdown" }
