@@ -65,6 +65,7 @@ function Share({ className, text, slug }: IShareProps) {
         href={facebookHref}
         onClick={onClickFacebook}
         target="_blank"
+        rel="noopener noreferrer"
         className={styles.link}
       >
         <Tooltip label="Share on Facebook">
@@ -75,6 +76,7 @@ function Share({ className, text, slug }: IShareProps) {
         href={twitterHref}
         onClick={onClickTwitter}
         target="_blank"
+        rel="noopener noreferrer"
         className={styles.link}
       >
         <Tooltip label="Share on Twitter">

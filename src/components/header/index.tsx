@@ -28,7 +28,7 @@ function Header({ index }: IHeaderProps) {
               </a>
             </div>
           )}
-          <a href={siteLinks.root} className={styles.logoLink}>
+          <a href={siteLinks.root} className={styles.logoLink} title="DVC">
             <LogoSVG className={styles.logo} />
           </a>
           <Nav />

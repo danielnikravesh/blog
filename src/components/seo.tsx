@@ -29,6 +29,10 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
 
   const defaultMeta: MetaProps[] = [
     {
+      property: "description",
+      content: metaDescription
+    },
+    {
       property: "og:title",
       content: title
     },
