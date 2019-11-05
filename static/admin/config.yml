@@ -11,6 +11,7 @@ collections:
     folder: "content/authors"
     create: true
     fields:
+      - { label: "Path", name: "path", widget: "string", required: true }
       - { label: "Name", name: "name", widget: "string", required: true }
       - {
           label: "Avatar",
@@ -62,7 +63,7 @@ collections:
         widget: "relation",
         collection: "authors",
         searchFields: ["name"],
-        valueField: "name",
+        valueField: "path",
         displayFields: ["name"]
       }
       - { label: "Body", name: "body", widget: "markdown" }
