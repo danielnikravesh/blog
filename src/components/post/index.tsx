@@ -1,10 +1,12 @@
 import cn from "classnames";
 import Image from "gatsby-image";
-import React, { useMemo, useRef } from "react";
+
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useWindowScroll, useWindowSize } from "react-use";
 
 import { IBlogPostData } from "../../templates/blog-post";
 
+import { getCommentsCount } from "../../api";
 import { siteLinks } from "../../data";
 import { pluralize } from "../../utils/i18n";
 
@@ -23,10 +25,6 @@ function pluralizeComments(count: number) {
   );
 }
 
-// FIXME
-
-const COUNT = 22;
-
 function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
   const {
     title,
@@ -35,6 +33,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     pictureComment,
     description,
     descriptionLong,
+    commentsUrl,
     tags,
     author: {
       childMarkdownRemark: {
@@ -57,6 +56,22 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     return bottom > height;
   }, [wrapperRef, width, height, y]);
 
+  const [counterLoaded, setCounterLoaded] = useState(false);
+  const [commentsCount, setCommentsCount] = useState(0);
+
+  useEffect(() => {
+    if (!commentsUrl || counterLoaded) {
+      return;
+    }
+
+    getCommentsCount(commentsUrl).then(response =>
+      response.json().then(json => {
+        setCommentsCount(json.count);
+        setCounterLoaded(true);
+      })
+    );
+  }, [counterLoaded, setCounterLoaded, setCommentsCount, commentsUrl]);
+
   return (
     <div className={styles.wrapper} ref={wrapperRef}>
       <Share
@@ -77,8 +92,8 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
             {descriptionLong || description}
           </div>
           <Meta
-            commentsText={pluralizeComments(COUNT)}
-            commentsLink={"/"}
+            commentsText={pluralizeComments(commentsCount)}
+            commentsLink={commentsUrl}
             name={name}
             avatar={avatar}
             date={date}
@@ -111,14 +126,16 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
           ))}
         </div>
       )}
-      <div className={styles.comments}>
-        <PseudoButton size="big" href="">
-          Discuss this post
-        </PseudoButton>
-        <a href="" className={styles.count}>
-          {pluralizeComments(COUNT)}
-        </a>
-      </div>
+      {commentsUrl && counterLoaded && (
+        <div className={styles.comments}>
+          <PseudoButton size="big" href={commentsUrl}>
+            Discuss this post
+          </PseudoButton>
+          <a href="" className={styles.count}>
+            {pluralizeComments(commentsCount)}
+          </a>
+        </div>
+      )}
     </div>
   );
 }
