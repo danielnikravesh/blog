@@ -9,21 +9,12 @@ interface IFeedMetaProps {
       fixed: FixedObject;
     };
   };
-  commentsLink?: string;
-  commentsText?: string;
   date: string;
   name: string;
   timeToRead: string;
 }
 
-function FeedMeta({
-  avatar,
-  commentsLink,
-  commentsText,
-  date,
-  name,
-  timeToRead
-}: IFeedMetaProps) {
+function FeedMeta({ avatar, date, name, timeToRead }: IFeedMetaProps) {
   return (
     <div className={styles.wrapper}>
       <Image fixed={avatar.childImageSharp.fixed} className={styles.avatar} />
@@ -32,13 +23,6 @@ function FeedMeta({
         <li className={styles.item}>
           {date} • {timeToRead} min.
         </li>
-        {commentsLink && (
-          <li className={styles.item}>
-            <a href={commentsLink} className={styles.link}>
-              {commentsText}
-            </a>
-          </li>
-        )}
       </ul>
     </div>
   );

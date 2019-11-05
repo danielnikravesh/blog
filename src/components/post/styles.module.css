@@ -150,28 +150,3 @@
   font-weight: 500;
   color: var(--color-gray);
 }
-
-.comments {
-  display: flex;
-  align-items: center;
-
-  @media (--md-scr) {
-    margin: 30px 15px 0;
-  }
-
-  @media (--lg-scr) {
-    max-width: 700px;
-    margin: 40px auto 0;
-  }
-}
-
-.count {
-  margin-left: 40px;
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--color-gray);
-
-  &:hover {
-    opacity: 0.7;
-  }
-}
