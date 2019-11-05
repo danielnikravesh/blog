@@ -1,7 +1,7 @@
 const nested = require("postcss-nested");
 const autoprefixer = require("autoprefixer");
 const customMedia = require("postcss-custom-media");
-const variables = require("cssvariables");
+const variables = require("postcss-css-variables");
 const mixins = require("postcss-mixins");
 
 const mediaConfig = require("./config/postcss/media");
