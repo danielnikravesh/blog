@@ -13,8 +13,8 @@ module.exports = function postcssConfig() {
       mixins(mixinsConfig),
       customMedia({ importFrom: mediaConfig }),
       nested,
-      autoprefixer,
-      variables()
+      autoprefixer
+      //variables()
     ]
   };
 };
