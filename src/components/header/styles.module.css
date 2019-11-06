@@ -47,6 +47,10 @@
   .root {
     position: absolute;
     left: 15px;
+
+    @media (--lg-scr) {
+      display: none;
+    }
   }
 
   .rootLink {
@@ -57,10 +61,6 @@
 
     text-decoration: none;
     color: var(--color-gray);
-
-    @media (--lg-scr) {
-      display: none;
-    }
   }
 
   .logoLink {
