@@ -8,6 +8,8 @@
   --color-orange: #e37046;
   --font-brandon: "Brandon Grotesque", Tahoma, Arial, sans-serif;
   --font-mono: Inconsolata, monospace;
+  --header-height: 98px;
+  --header-height-scrolled: calc(var(--header-height) - 20px);
 }
 
 html {

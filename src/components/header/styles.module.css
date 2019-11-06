@@ -1,7 +1,4 @@
 .wrapper {
-  --header-height: 98px;
-  --header-height-scrolled: calc(var(--header-height) - 20px);
-
   .placeholder {
     @media (--md-scr) {
       height: var(--header-height-scrolled);
