@@ -5,7 +5,7 @@
   background-color: #fff;
   display: flex;
 
-  @media (--md-scr) {
+  @media (--xs-scr) {
     flex-direction: column;
   }
 }
@@ -25,7 +25,7 @@
     background: var(--color-light-blue);
   }
 
-  @media (--md-scr) {
+  @media (--xs-scr) {
     border-radius: 4px 4px 0 0;
   }
 }
@@ -50,7 +50,7 @@
     background-color: #daf1f5;
   }
 
-  @media (--md-scr) {
+  @media (--xs-scr) {
     min-height: 60px;
     width: 100%;
     border-radius: 0 0 4px 4px;

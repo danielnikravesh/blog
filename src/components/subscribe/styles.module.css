@@ -1,10 +1,15 @@
 .wrapper {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   align-items: center;
-  height: 300px;
-  padding: 0 15px;
+  min-height: 300px;
+  padding: 20px 15px 30px;
   background-color: #13adc7;
+
+  @media (--xs-scr) {
+    min-height: auto;
+  }
 }
 
 .container {
@@ -24,7 +29,7 @@
     width: 110px;
   }
 
-  @media (--sm-scr) {
+  @media (--xs-scr) {
     display: none;
   }
 
@@ -40,19 +45,11 @@
 }
 
 .title {
+  @mixin h2-desktop;
+
   color: #fff;
   margin: 0 auto;
   text-align: center;
-
-  @media (--md-scr) {
-    @mixin h2-mobile;
-  }
-
-  @media (--lg-scr) {
-    @mixin h2-desktop;
-
-    line-height: 45px;
-  }
 }
 
 .subscribeContainer {
@@ -61,17 +58,10 @@
   border-radius: 8px;
   background-color: #fff;
 
-  @media (--sm-scr) {
+  @media (--xs-scr) {
     width: 100%;
     margin: 0 auto;
-    margin-top: 40px;
-    min-height: auto;
-  }
-
-  @media (--md-scr) {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
     min-height: auto;
   }
 }
