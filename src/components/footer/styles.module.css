@@ -7,7 +7,7 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 64px 0 44px;
+  padding: 60px 0 40px;
 
   @media (--md-scr) {
     padding: 27px 15px;
@@ -15,7 +15,7 @@
 }
 
 .top {
-  margin-bottom: 57px;
+  margin-bottom: 30px;
 
   @media (--sm-scr) {
     margin-bottom: 20px;
