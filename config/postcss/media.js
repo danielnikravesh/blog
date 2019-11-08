@@ -1,14 +1,18 @@
 const screens = {
-  desktop: 1200,
-  tablet: 1000,
-  mobile: 700
+  giant: 1200,
+  desktop: 1000,
+  tablet: 768,
+  phablet: 572,
+  phone: 376
 };
 
 module.exports = {
   customMedia: {
-    "--sm-scr": `(max-width: ${screens.mobile}px)`,
-    "--md-scr": `(max-width: ${screens.tablet - 1}px)`,
-    "--lg-scr": `(min-width: ${screens.tablet}px)`,
-    "--xl-scr": `(min-width: ${screens.desktop}px)`
+    "--xxs-scr": `(max-width: ${screens.phone}px)`,
+    "--xs-scr": `(max-width: ${screens.phablet}px)`,
+    "--sm-scr": `(max-width: ${screens.tablet}px)`,
+    "--md-scr": `(max-width: ${screens.desktop - 1}px)`,
+    "--lg-scr": `(min-width: ${screens.desktop}px)`,
+    "--xl-scr": `(min-width: ${screens.giant}px)`
   }
 };

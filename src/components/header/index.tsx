@@ -21,13 +21,6 @@ function Header({ index }: IHeaderProps) {
       <div className={styles.placeholder} />
       <div className={styles.header}>
         <div className={cn(styles.container, y > 25 && styles.scrolled)}>
-          {!index && (
-            <div className={styles.root}>
-              <a href={siteLinks.blog} className={styles.rootLink}>
-                ← Blog
-              </a>
-            </div>
-          )}
           <a href={siteLinks.root} className={styles.logoLink} title="DVC">
             <LogoSVG className={styles.logo} />
           </a>

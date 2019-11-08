@@ -1,84 +1,60 @@
-.wrapper {
-  .placeholder {
-    @media (--md-scr) {
-      height: var(--header-height-scrolled);
-    }
+.placeholder {
+  height: var(--header-height);
 
-    @media (--lg-scr) {
-      height: var(--header-height);
-    }
+  @media (--xs-scr) {
+    height: var(--header-height-scrolled);
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: var(--header-height);
+  width: auto;
+  z-index: 3;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  transition: height 0.2s linear;
+  will-change: height;
+
+  &.scrolled {
+    height: var(--header-height-scrolled);
   }
 
-  .header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+  @media (--md-scr) {
+    padding: 0 15px;
   }
 
-  .container {
-    margin: 0 auto;
-    max-width: 1000px;
-    height: var(--header-height);
-    width: auto;
-    z-index: 3;
-    position: relative;
-    color: #fff;
-    display: flex;
-    flex-shrink: 0;
-    justify-content: space-between;
-    align-items: center;
-    transition: height 0.2s linear;
-    will-change: height;
-
-    &.scrolled {
-      height: var(--header-height-scrolled);
-    }
-
-    @media (--md-scr) {
-      justify-content: center;
-      height: var(--header-height-scrolled);
-    }
+  @media (--xs-scr) {
+    height: var(--header-height-scrolled);
   }
+}
 
-  .root {
-    position: absolute;
-    left: 15px;
+.logoLink {
+  @mixin active;
 
-    @media (--lg-scr) {
-      display: none;
-    }
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.5;
   }
+}
 
-  .rootLink {
-    @mixin text-secondary;
-    @mixin active;
-    @mixin focus;
-    @mixin hover;
-
-    text-decoration: none;
-    color: var(--color-gray);
-  }
-
-  .logoLink {
-    @mixin active;
-
-    &:hover,
-    &:focus {
-      outline: none;
-      opacity: 0.5;
-    }
-  }
-
-  .logo {
-    display: block;
-    padding-top: 2px;
-
-    @media (--md-scr) {
-      padding-top: 5px;
-    }
-  }
+.logo {
+  display: block;
+  padding-top: 2px;
 }
