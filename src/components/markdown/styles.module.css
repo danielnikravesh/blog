@@ -172,7 +172,7 @@
   }
 
   hr {
-    border: solid var(--color-gray);
+    border: solid var(--color-light-blue);
     border-width: 1px 0 0;
     height: 0;
   }
@@ -200,7 +200,7 @@
 
   td,
   th {
-    border-bottom: 1px solid var(--color-gray);
+    border-bottom: 1px solid var(--color-light-blue);
     font-feature-settings: tnum;
     padding: 5px 15px 4px;
   }
