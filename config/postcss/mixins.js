@@ -1,8 +1,7 @@
 const focus = {
   "&:focus": {
     color: "var(--color-orange)",
-    outline: "none",
-    "text-decoration": "underline"
+    outline: "none"
   }
 };
 
@@ -16,7 +15,7 @@ const active = {
 
 const hover = {
   "&:hover": {
-    "text-decoration": "underline"
+    opacity: 0.7
   }
 };
 
