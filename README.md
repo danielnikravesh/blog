@@ -17,6 +17,10 @@ Run `yarn command`.
 - `yarn lint-ts` - lint `.ts` and `.tsx` for compilance with code style.
 - `yarn lint-css` - lint `.css` files for compilance with code style.
 
+## ENV variables
+
+- `GA_ID` – id of the Google Analytics counter.
+
 ## Contributing
 
 Before commit staged files wil be checked and formatted using linters
