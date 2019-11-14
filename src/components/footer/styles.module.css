@@ -27,7 +27,7 @@
 
   display: block;
   width: 36px;
-  height: 23px;
+  height: 22px;
 
   @media (--md-scr) {
     margin-top: 3px;
