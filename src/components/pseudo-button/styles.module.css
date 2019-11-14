@@ -5,17 +5,14 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  padding: 0 19px;
+  border: 2px solid;
+  padding: 0 18px;
   text-decoration: none;
   font-weight: 500;
   transition: 0.2s background-color ease-out;
 
-  &&:focus {
+  &:focus {
     outline: none;
-    border-color: var(--color-orange);
-    background: var(--color-orange);
-    color: #fff;
   }
 
   &.small {
@@ -40,15 +37,27 @@
     &:hover {
       background-color: #13a3bd;
     }
+
+    &:focus {
+      border-color: var(--color-orange);
+      background: var(--color-orange);
+      color: #fff;
+    }
   }
 
   &.secondary {
-    border-color: inherit;
+    border-color: var(--color-gray-opaque);
     color: var(--color-gray);
     background-color: transparent;
 
     &:hover {
+      border-color: var(--color-gray);
       color: var(--color-gray-hover);
+    }
+
+    &:focus {
+      border-color: var(--color-orange);
+      color: var(--color-orange);
     }
   }
 }
