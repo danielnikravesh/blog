@@ -168,6 +168,16 @@
       position: absolute;
       margin-left: -30px;
       color: var(--color-gray);
+
+      @media (--md-scr) {
+        top: 1px;
+        font-size: 16px;
+      }
+
+      @media (--lg-scr) {
+        top: 2px;
+        font-size: 20px;
+      }
     }
   }
 
