@@ -31,6 +31,11 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
 
   return (
     <div className={styles.wrapper}>
+      <Share
+        className={cn(styles.share)}
+        text={description}
+        slug={fields.slug}
+      />
       <div className={styles.head}>
         <div className={styles.headContent}>
           <div className={styles.back}>
@@ -57,15 +62,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
             fluid={picture.childImageSharp.fluid}
             className={styles.picture}
           />
-          <Share
-            className={cn(styles.share, styles.pictureShare)}
-            text={description}
-            slug={fields.slug}
-          />
         </div>
-      )}
-      {!picture && (
-        <Share className={styles.share} text={description} slug={fields.slug} />
       )}
       <div className={styles.content}>
         <Markdown html={html} />

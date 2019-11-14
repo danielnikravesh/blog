@@ -106,16 +106,19 @@
 }
 
 .share {
+  position: fixed;
+  z-index: 100;
   display: flex;
-  margin-top: 20px;
+  bottom: 5px;
+  right: 5px;
   justify-content: center;
 
   @media (--xl-scr) {
-    &.pictureShare {
-      flex-direction: column;
-      width: 60px;
-      margin: 110px -80px 0 20px;
-    }
+    flex-direction: column;
+    width: 60px;
+    bottom: 15px;
+    left: 50%;
+    margin-left: 525px;
   }
 }
 
