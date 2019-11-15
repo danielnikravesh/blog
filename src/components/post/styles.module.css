@@ -1,8 +1,14 @@
 .wrapper {
+  position: relative;
   margin: 0 auto;
 
+  @media (--sm-scr) {
+    margin-bottom: -40px;
+    padding-bottom: 80px;
+  }
+
   @media (--md-scr) {
-    max-width: 700px;
+    max-width: 768px;
   }
 }
 
@@ -106,19 +112,33 @@
 }
 
 .share {
-  position: fixed;
-  z-index: 100;
+  position: absolute;
+  z-index: 1;
   display: flex;
-  bottom: 5px;
-  right: 5px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: 205px;
   justify-content: center;
+
+  &.fixed {
+    position: fixed;
+    bottom: 5px;
+  }
+
+  @media (--sm-scr) {
+    left: auto;
+    right: 10px;
+    margin-left: auto;
+  }
 
   @media (--xl-scr) {
     flex-direction: column;
     width: 60px;
-    bottom: 15px;
-    left: 50%;
     margin-left: 525px;
+
+    &.fixed {
+      bottom: 15px;
+    }
   }
 }
 
@@ -136,6 +156,12 @@
 }
 
 .tags {
+  padding-right: 160px;
+
+  @media (--sm-scr) {
+    padding-right: 0;
+  }
+
   @media (--md-scr) {
     margin: 30px 15px -10px;
   }

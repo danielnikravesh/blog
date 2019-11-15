@@ -1,6 +1,7 @@
 import cn from "classnames";
 import Image from "gatsby-image";
-import React from "react";
+import React, { useMemo, useRef } from "react";
+import { useWindowScroll, useWindowSize } from "react-use";
 
 import { IBlogPostData } from "../../templates/blog-post";
 
@@ -29,10 +30,24 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     }
   } = frontmatter;
 
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const { width, height } = useWindowSize();
+  const { y } = useWindowScroll();
+
+  const isFixed = useMemo(() => {
+    if (!wrapperRef.current) {
+      return false;
+    }
+
+    const { bottom } = wrapperRef.current.getBoundingClientRect();
+
+    return bottom > height;
+  }, [wrapperRef, width, height, y]);
+
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} ref={wrapperRef}>
       <Share
-        className={cn(styles.share)}
+        className={cn(styles.share, isFixed && styles.fixed)}
         text={description}
         slug={fields.slug}
       />
