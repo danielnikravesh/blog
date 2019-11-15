@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
   margin: 0 auto;
+  padding-bottom: 60px;
 
   @media (--sm-scr) {
     margin-bottom: -40px;
@@ -9,6 +10,10 @@
 
   @media (--md-scr) {
     max-width: 768px;
+  }
+
+  @media (--xl-scr) {
+    padding-bottom: 0;
   }
 }
 
@@ -115,7 +120,7 @@
   position: absolute;
   z-index: 1;
   display: flex;
-  bottom: 10px;
+  bottom: -5px;
   left: 50%;
   margin-left: 205px;
   justify-content: center;
@@ -128,6 +133,7 @@
   @media (--sm-scr) {
     left: auto;
     right: 10px;
+    bottom: 5px;
     margin-left: auto;
   }
 
@@ -156,14 +162,16 @@
 }
 
 .tags {
-  padding-right: 160px;
-
-  @media (--sm-scr) {
-    padding-right: 0;
-  }
+  box-sizing: border-box;
+  margin-bottom: -10px;
+  padding-right: 60px;
 
   @media (--md-scr) {
     margin: 30px 15px -10px;
+  }
+
+  @media (--sm-scr) {
+    padding-right: 0;
   }
 
   @media (--lg-scr) {
