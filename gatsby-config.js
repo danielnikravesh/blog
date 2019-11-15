@@ -7,9 +7,11 @@ const netlifyCMCPathConfig = {
   }
 };
 
+const title = "Data Version Control";
+
 module.exports = {
   siteMetadata: {
-    title: "DVC Blog",
+    title,
     description:
       "Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.",
     siteUrl: "https://blog.dvc.org"
@@ -132,7 +134,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "DVC Blog"
+            title
           }
         ]
       }
