@@ -8,7 +8,7 @@ const netlifyCMCPathConfig = {
 };
 
 const GAConfig =
-  process.env.NODE_ENV === "production"
+  process.env.CONTEXT === "production"
     ? {
         resolve: "gatsby-plugin-google-analytics",
         options: {
