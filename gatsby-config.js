@@ -1,6 +1,6 @@
 const path = require("path");
 
-const netlifyCMCPathConfig = {
+const netlifyCMSPathConfig = {
   resolve: "gatsby-plugin-netlify-cms-paths",
   options: {
     cmsConfig: "/static/admin/config.yml"
@@ -70,7 +70,7 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          netlifyCMCPathConfig
+          netlifyCMSPathConfig
         ]
       }
     },
@@ -158,7 +158,7 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
-    netlifyCMCPathConfig,
+    netlifyCMSPathConfig,
     GAConfig
   ]
 };
