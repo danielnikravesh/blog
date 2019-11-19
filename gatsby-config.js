@@ -7,6 +7,17 @@ const netlifyCMCPathConfig = {
   }
 };
 
+const GAConfig =
+  process.env.NODE_ENV === "production"
+    ? {
+        resolve: "gatsby-plugin-google-analytics",
+        options: {
+          trackingId: process.env.GA_ID,
+          respectDNT: true
+        }
+      }
+    : {};
+
 const title = "Data Version Control";
 
 module.exports = {
@@ -74,13 +85,7 @@ module.exports = {
     "gatsby-plugin-tslint",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: process.env.GA_ID,
-        respectDNT: true
-      }
-    },
+
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -153,6 +158,7 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
-    netlifyCMCPathConfig
+    netlifyCMCPathConfig,
+    GAConfig
   ]
 };
