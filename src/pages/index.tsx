@@ -58,7 +58,7 @@ interface IBlogIndexProps {
 function BlogIndex({ data }: IBlogIndexProps) {
   return (
     <Layout index={true}>
-      <SEO title="Blog" />
+      <SEO title="Blog" defaultMetaTitle={true} />
       <Feed posts={data.posts.edges} />
     </Layout>
   );

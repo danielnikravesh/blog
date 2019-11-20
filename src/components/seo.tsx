@@ -5,13 +5,24 @@ import Helmet from "react-helmet";
 type MetaProps = JSX.IntrinsicElements["meta"];
 
 interface ISEOProps {
-  description?: string;
-  lang?: string;
-  meta: MetaProps[];
   title: string;
+  defaultMetaTitle?: boolean;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  lang: string;
+  meta: MetaProps[];
 }
 
-function SEO({ description, lang, meta, title }: ISEOProps) {
+function SEO({
+  title,
+  defaultMetaTitle,
+  description,
+  keywords,
+  image,
+  lang,
+  meta
+}: ISEOProps) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +30,7 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
           siteMetadata {
             title
             description
+            keywords
           }
         }
       }
@@ -27,14 +39,25 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
 
   const metaDescription = description || site.siteMetadata.description;
 
+  const metaKeywords = keywords || site.siteMetadata.keywords;
+
+  const metaTitle =
+    title && !defaultMetaTitle ? title : site.siteMetadata.title;
+
+  const metaImage = image || "/social-share.png";
+
   const defaultMeta: MetaProps[] = [
     {
       property: "description",
       content: metaDescription
     },
     {
+      property: "keywords",
+      content: metaKeywords
+    },
+    {
       property: "og:title",
-      content: title
+      content: metaTitle
     },
     {
       property: "og:description",
@@ -46,7 +69,7 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
     },
     {
       property: "og:image",
-      content: "/social-share.png"
+      content: metaImage
     },
     {
       name: "twitter:card",
@@ -54,7 +77,7 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
     },
     {
       name: "twitter:title",
-      content: title
+      content: metaTitle
     },
     {
       name: "twitter:description",
@@ -62,7 +85,7 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
     },
     {
       name: "twitter:image",
-      content: "/social-share.png"
+      content: metaImage
     }
   ];
 
@@ -104,8 +127,7 @@ function SEO({ description, lang, meta, title }: ISEOProps) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
-  description: ``
+  meta: []
 };
 
 export default SEO;

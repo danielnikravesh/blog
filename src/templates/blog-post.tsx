@@ -62,6 +62,10 @@ function BlogPostTemplate({ data }: IBlogPostTemplateProps) {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
+        image={
+          post.frontmatter.picture &&
+          post.frontmatter.picture.childImageSharp.fluid.src
+        }
       />
       <Post {...post} />
     </Layout>

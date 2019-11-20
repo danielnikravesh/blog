@@ -7,7 +7,10 @@ const netlifyCMSPathConfig = {
   }
 };
 
-const title = "Data Version Control";
+const title = "Data Version Control · DVC";
+const keywords = "data, machine learning models management, datasets, git";
+const description =
+  "Data Version Control Blog. We write about machine learning workflow. Data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.";
 
 const plugins = [
   {
@@ -121,7 +124,8 @@ const plugins = [
               }
             `,
           output: "/rss.xml",
-          title
+          title,
+          description
         }
       ]
     }
@@ -156,8 +160,8 @@ if (process.env.CONTEXT === "production") {
 module.exports = {
   siteMetadata: {
     title,
-    description:
-      "Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.",
+    description,
+    keywords,
     siteUrl: "https://blog.dvc.org"
   },
   plugins

@@ -7,7 +7,10 @@ import SEO from "../components/seo";
 function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="404: Not Found" />
+      <SEO
+        title="404 | This page could not be found"
+        description="404 | This page could not be found"
+      />
       <Page404 />
     </Layout>
   );
