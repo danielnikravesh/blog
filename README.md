@@ -42,6 +42,7 @@ descriptionLong: |
   multiline
   text
 picture: /uploads/image.jpeg
+pictureComment: Some Comment
 author: ../authors/author_name.md
 tags:
   - Open Source
@@ -58,6 +59,7 @@ tags:
 - `description` - **Required.** Short description to show in the feed.
 - `descriptionLong` - Optional long description to show before image on the post page. If not set, `description` will be used instead.
 - `picture` - Optional cover image.
+- `pictureComment` - Optional cover image comment.
 - `author` - **Required** Relative path to `.md` file with information about the author.
 - `tags` - Optional list of tags.
 

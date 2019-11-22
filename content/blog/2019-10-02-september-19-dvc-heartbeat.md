@@ -11,6 +11,7 @@ descriptionLong: |
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
 picture: /uploads/dvc5.jpeg
+pictureComment: Some comment
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Open Source

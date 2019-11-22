@@ -21,13 +21,8 @@ collections:
     preview_path: blog/{{slug}}
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string", required: true }
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          required: true,
-        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - {
           label: "Description",
           hint: "Used in feed",
@@ -38,16 +33,22 @@ collections:
               ".{1,200}",
               "Must be shorter than 200 characters, because of Twitter message limit",
             ],
-          required: true,
         }
       - {
           label: "Long description",
           hint: "Used in post before image",
           name: "descriptionLong",
           widget: "text",
+          required: false,
         }
-      - { label: "Picture", name: "picture", widget: "image", required: true }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Picture", name: "picture", widget: "image", required: false }
+      - {
+          label: "Picture Comment",
+          name: "pictureComment",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
       - {
           label: "Post Author",
           name: "author",

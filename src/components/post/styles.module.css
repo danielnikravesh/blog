@@ -116,6 +116,15 @@
   }
 }
 
+.pictureComment {
+  @mixin text-secondary;
+
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-gray);
+}
+
 .share {
   position: absolute;
   z-index: 1;

@@ -20,6 +20,7 @@ export interface IBlogPostFrontmatter {
       fluid: FluidObject;
     };
   };
+  pictureComment?: string;
   author: {
     childMarkdownRemark: {
       frontmatter: {
@@ -111,6 +112,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        pictureComment
       }
     }
   }

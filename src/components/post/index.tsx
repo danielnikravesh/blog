@@ -20,6 +20,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     title,
     date,
     picture,
+    pictureComment,
     description,
     descriptionLong,
     tags,
@@ -72,12 +73,17 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
         </div>
       </div>
       {picture && (
-        <div className={styles.pictureWrapper}>
-          <Image
-            fluid={picture.childImageSharp.fluid}
-            className={styles.picture}
-          />
-        </div>
+        <>
+          <div className={styles.pictureWrapper}>
+            <Image
+              fluid={picture.childImageSharp.fluid}
+              className={styles.picture}
+            />
+          </div>
+          {pictureComment && (
+            <div className={styles.pictureComment}>{pictureComment}</div>
+          )}
+        </>
       )}
       <div className={styles.content}>
         <Markdown html={html} />
