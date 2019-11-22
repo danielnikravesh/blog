@@ -19,7 +19,7 @@ collections:
     folder: "content/blog"
     create: true
     preview_path: blog/{{slug}}
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - {
