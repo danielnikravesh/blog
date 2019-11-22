@@ -143,7 +143,12 @@ const plugins = [
     }
   },
   "gatsby-plugin-react-helmet",
-  "gatsby-plugin-netlify-cms",
+  {
+    resolve: "gatsby-plugin-netlify-cms",
+    options: {
+      modulePath: `${__dirname}/config/netlify/index.js`
+    }
+  },
   netlifyCMSPathConfig
 ];
 
