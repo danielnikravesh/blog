@@ -1,4 +1,5 @@
 const path = require("path");
+const dvc = require("./config/prismjs/dvc");
 
 const netlifyCMSPathConfig = {
   resolve: "gatsby-plugin-netlify-cms-paths",
@@ -52,7 +53,17 @@ const plugins = [
           }
         },
         "gatsby-remark-responsive-iframe",
-        "gatsby-remark-prismjs",
+        {
+          resolve: "gatsby-remark-prismjs",
+          options: {
+            languageExtensions: [
+              {
+                language: "dvc",
+                definition: dvc
+              }
+            ]
+          }
+        },
         "gatsby-remark-copy-linked-files",
         "gatsby-remark-smartypants",
         netlifyCMSPathConfig
