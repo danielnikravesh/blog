@@ -14,3 +14,10 @@ export function pluralize(
 
   return entry[key].replace("{count}", count.toString());
 }
+
+export function pluralizeComments(count: number) {
+  return pluralize(
+    { zero: "No comments", one: "{count} comment", other: "{count} comments" },
+    count
+  );
+}

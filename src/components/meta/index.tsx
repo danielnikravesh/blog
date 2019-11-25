@@ -1,6 +1,8 @@
 import Image, { FixedObject } from "gatsby-image";
 import React from "react";
 
+import { pluralizeComments } from "../../utils/i18n";
+
 import styles from "./styles.module.css";
 
 interface IFeedMetaProps {
@@ -9,8 +11,8 @@ interface IFeedMetaProps {
       fixed: FixedObject;
     };
   };
-  commentsLink?: string;
-  commentsText?: string;
+  commentsUrl?: string;
+  commentsCount?: number;
   date: string;
   name: string;
   timeToRead: string;
@@ -18,8 +20,8 @@ interface IFeedMetaProps {
 
 function FeedMeta({
   avatar,
-  commentsLink,
-  commentsText,
+  commentsUrl,
+  commentsCount,
   date,
   name,
   timeToRead
@@ -32,10 +34,15 @@ function FeedMeta({
         <li className={styles.item}>
           {date} • {timeToRead} min.
         </li>
-        {commentsLink && (
+        {commentsUrl && typeof commentsCount === "number" && (
           <li className={styles.item}>
-            <a href={commentsLink} className={styles.link}>
-              {commentsText}
+            <a
+              href={commentsUrl}
+              className={styles.link}
+              target="_blank"
+              rel="noopener nofollow"
+            >
+              {pluralizeComments(commentsCount)}
             </a>
           </li>
         )}

@@ -8,7 +8,7 @@ import { IBlogPostData } from "../../templates/blog-post";
 
 import { getCommentsCount } from "../../api";
 import { siteLinks } from "../../data";
-import { pluralize } from "../../utils/i18n";
+import { pluralizeComments } from "../../utils/i18n";
 
 import Markdown from "../markdown";
 import Meta from "../meta";
@@ -17,13 +17,6 @@ import Share from "../share";
 
 import { ReactComponent as ArrowSVG } from "./arrow.svg";
 import styles from "./styles.module.css";
-
-function pluralizeComments(count: number) {
-  return pluralize(
-    { zero: "No comments", one: "{count} comment", other: "{count} comments" },
-    count
-  );
-}
 
 function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
   const {
@@ -57,7 +50,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
   }, [wrapperRef, width, height, y]);
 
   const [counterLoaded, setCounterLoaded] = useState(false);
-  const [commentsCount, setCommentsCount] = useState(0);
+  const [commentsCount, setCommentsCount] = useState();
 
   useEffect(() => {
     if (!commentsUrl || counterLoaded) {
@@ -92,8 +85,8 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
             {descriptionLong || description}
           </div>
           <Meta
-            commentsText={pluralizeComments(commentsCount)}
-            commentsLink={commentsUrl}
+            commentsCount={commentsCount}
+            commentsUrl={commentsUrl}
             name={name}
             avatar={avatar}
             date={date}
@@ -128,10 +121,20 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
       )}
       {commentsUrl && counterLoaded && (
         <div className={styles.comments}>
-          <PseudoButton size="big" href={commentsUrl}>
+          <PseudoButton
+            size="big"
+            href={commentsUrl}
+            target="_blank"
+            rel="noopener nofollow"
+          >
             Discuss this post
           </PseudoButton>
-          <a href="" className={styles.count}>
+          <a
+            href={commentsUrl}
+            className={styles.count}
+            target="_blank"
+            rel="noopener nofollow"
+          >
             {pluralizeComments(commentsCount)}
           </a>
         </div>
