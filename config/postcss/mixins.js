@@ -44,7 +44,7 @@ module.exports = {
     "h3-desktop": {
       "font-weight": "500",
       "font-size": "24px",
-      "line-height": "30px"
+      "line-height": "34px"
     },
     "h3-mobile": {
       "font-weight": "500",
@@ -53,9 +53,13 @@ module.exports = {
     },
     "text-desktop": {
       "font-size": "24px",
-      "line-height": "34px"
+      "line-height": "36px"
     },
     "text-mobile": {
+      "font-size": "20px",
+      "line-height": "30px"
+    },
+    "text-diminished": {
       "font-size": "20px",
       "line-height": "30px"
     },

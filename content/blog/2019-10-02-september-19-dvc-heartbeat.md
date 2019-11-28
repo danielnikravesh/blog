@@ -46,13 +46,13 @@ Every month our team is excited to discover new great pieces of content
 addressing some of the burning ML issues. Here are some of the links that
 caught our eye in June:
 
-### [Principled Machine Learning: Practices and Tools for Efficient Collaboration](https://dev.to/robogeek/principled-machine-learning-4eho) by David Herron
+**[Principled Machine Learning: Practices and Tools for Efficient Collaboration](https://dev.to/robogeek/principled-machine-learning-4eho) by David Herron**
 
 > As we’ve seen in this article some tools and practices can be borrowed from
 > regular software engineering. However, the needs of machine learning
 > projects dictate tools that better fit the purpose.
 
-### First [ML-REPA](http://ml-repa.ru/) [Meetup: Reproducible ML experiments](http://ml-repa.ru/page6697700.html) hosted by [Raiffeisen DGTL](https://www.raiffeisen-digital.ru/) — check out the video and slide decks.
+**First [ML-REPA](http://ml-repa.ru/) [Meetup: Reproducible ML experiments](http://ml-repa.ru/page6697700.html) hosted by [Raiffeisen DGTL](https://www.raiffeisen-digital.ru/) — check out the video and slide decks.**
 
 [ML-REPA](http://ml-repa.ru/) is an a new fantastic resource for
 Russian-speaking folks interested in Reproducibility, Experiments and Pipelines
@@ -217,11 +217,11 @@ is to use dvc cache dir command to setup an external cache. There are few
 caveats though. Please, read [this link](https://discuss.dvc.org/t/share-nas-data-in-server/180/4?u=shcheklein)
 for an example of the workflow.
 
-| Tables        |      Are      |   Cool |
-| ------------- | :-----------: | -----: |
+| Tables        | Are           |   Cool |
+| ------------- | ------------- | -----: |
 | col 3 is      | right-aligned | \$1600 |
-| col 2 is      |   centered    |   \$12 |
-| zebra stripes |   are neat    |    \$1 |
+| col 2 is      | centered      |   \$12 |
+| zebra stripes | are neat      |    \$1 |
 
 If you have any questions, concerns or ideas, let us know in the comments below
 or connect with DVC team [here](https://dvc.org/support). Our
