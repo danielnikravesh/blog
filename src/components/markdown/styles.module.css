@@ -302,6 +302,14 @@
         background: #55436a;
       }
 
+      .token.line {
+        font-weight: bold;
+      }
+
+      .token.input {
+        user-select: none;
+      }
+
       .token.comment,
       .token.block-comment,
       .token.prolog,
