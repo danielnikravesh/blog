@@ -1,3 +1,97 @@
+// Command arrays are intentionally reverse sorted
+// to prevend sorter matches before longer ones
+
+const commands = [
+  "which",
+  "wget",
+  "virtualenv",
+  "vi",
+  "unzip",
+  "tree",
+  "tar",
+  "sudo",
+  "source",
+  "rm",
+  "python",
+  "pip",
+  "mkdir",
+  "md5",
+  "ls",
+  "file",
+  "export",
+  "exec",
+  "echo",
+  "du",
+  "curl",
+  "cp",
+  "cd",
+  "cat",
+  "autoload"
+];
+
+const git = [
+  "tag",
+  "status",
+  "push",
+  "pull",
+  "merge",
+  "init",
+  "fetch",
+  "commit",
+  "clone",
+  "checkout",
+  "add"
+];
+
+const dvc = [
+  "version",
+  "update",
+  "unprotect",
+  "unlock",
+  "tag",
+  "status",
+  "run",
+  "root",
+  "repro",
+  "remove",
+  "remote remove",
+  "remote modify",
+  "remote list",
+  "remote default",
+  "remote add",
+  "remote",
+  "push",
+  "pull",
+  "pkg",
+  "pipeline show",
+  "pipeline list",
+  "pipeline",
+  "move",
+  "metrics show",
+  "metrics remove",
+  "metrics modify",
+  "metrics add",
+  "metrics",
+  "lock",
+  "install",
+  "init",
+  "import-url",
+  "import",
+  "help",
+  "get-url",
+  "get",
+  "gc",
+  "fetch",
+  "diff",
+  "destroy",
+  "config",
+  "commit",
+  "checkout",
+  "cache dir",
+  "cache",
+  "add"
+];
+
 module.exports = {
   line: {
     pattern: /(?<=(^|\n))\$[\s\S]*?[^\\](:?\n|$)/,
@@ -7,9 +101,9 @@ module.exports = {
         pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
         greedy: true
       },
-      command: /\b(?:ls|cat|vi|mkdir|cd|wget|du|python|cp|export|echo|pip|curl|tar|exec|autoload|sudo|unzip|rm|tree|file|md5|source|virtualenv|which)\b/m,
-      git: /git \b(?:commit|status|pull|push|fetch|add|init|checkout|merge|clone|tag)\b/,
-      dvc: /dvc \b(?:help|init|add|import-url|checkout|run|pull|push|fetch|status|repro|remove|move|gc|config|remote|metrics|install|root|lock|unlock|pipeline|destroy|unprotect|commit|cache|pkg|tag|diff|version|get|get-url|import|update)\b/
+      command: new RegExp(`\\b(?:${commands.join("|")})\\b`),
+      git: new RegExp(`git \\b(?:${git.join("|")})\\b`),
+      dvc: new RegExp(`dvc \\b(?:${dvc.join("|")})\\b`)
     }
   }
 };
