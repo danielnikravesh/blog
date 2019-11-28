@@ -327,7 +327,7 @@
       }
 
       .token.function {
-        color: #458;
+        color: #ae41bb;
       }
 
       .token.number,
@@ -368,11 +368,11 @@
       }
 
       .token.parameter {
-        color: #00f;
+        color: #a0a0a0;
       }
 
       .token.function-variable {
-        color: #000;
+        color: #7ece42;
       }
 
       .token.important {
