@@ -1,5 +1,5 @@
 // Command arrays are intentionally reverse sorted
-// to prevend sorter matches before longer ones
+// to prevent sorter matches before longer ones
 
 const commands = [
   "which",
