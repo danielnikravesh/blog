@@ -356,12 +356,11 @@
         color: #0086b3;
       }
 
-      .token.dvc {
-        font-weight: bold;
+      .token.git {
         color: #0086b3;
       }
 
-      .token.git,
+      .token.dvc,
       .token.command,
       .token.selector,
       .token.atrule,
