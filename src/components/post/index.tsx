@@ -1,11 +1,14 @@
 import cn from "classnames";
 import Image from "gatsby-image";
-import React, { useMemo, useRef } from "react";
+
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useWindowScroll, useWindowSize } from "react-use";
 
 import { IBlogPostData } from "../../templates/blog-post";
 
+import { getCommentsCount } from "../../api";
 import { siteLinks } from "../../data";
+import { pluralizeComments } from "../../utils/i18n";
 
 import Markdown from "../markdown";
 import Meta from "../meta";
@@ -23,6 +26,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     pictureComment,
     description,
     descriptionLong,
+    commentsUrl,
     tags,
     author: {
       childMarkdownRemark: {
@@ -45,6 +49,22 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     return bottom > height;
   }, [wrapperRef, width, height, y]);
 
+  const [counterLoaded, setCounterLoaded] = useState(false);
+  const [commentsCount, setCommentsCount] = useState();
+
+  useEffect(() => {
+    if (!commentsUrl || counterLoaded) {
+      return;
+    }
+
+    getCommentsCount(commentsUrl).then(response =>
+      response.json().then(json => {
+        setCommentsCount(json.count);
+        setCounterLoaded(true);
+      })
+    );
+  }, [counterLoaded, setCounterLoaded, setCommentsCount, commentsUrl]);
+
   return (
     <div className={styles.wrapper} ref={wrapperRef}>
       <Share
@@ -65,6 +85,8 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
             {descriptionLong || description}
           </div>
           <Meta
+            commentsCount={commentsCount}
+            commentsUrl={commentsUrl}
             name={name}
             avatar={avatar}
             date={date}
@@ -95,6 +117,26 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
               {tag}
             </div>
           ))}
+        </div>
+      )}
+      {commentsUrl && counterLoaded && (
+        <div className={styles.comments}>
+          <PseudoButton
+            size="big"
+            href={commentsUrl}
+            target="_blank"
+            rel="noopener nofollow"
+          >
+            Discuss this post
+          </PseudoButton>
+          <a
+            href={commentsUrl}
+            className={styles.count}
+            target="_blank"
+            rel="noopener nofollow"
+          >
+            {pluralizeComments(commentsCount)}
+          </a>
         </div>
       )}
     </div>

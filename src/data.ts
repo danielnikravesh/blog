@@ -1,4 +1,4 @@
-const root = "https://dvc.org";
+export const root = "https://dvc.org";
 
 export const ids = {
   subscribe: "subscribe"

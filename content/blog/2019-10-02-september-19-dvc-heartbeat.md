@@ -13,6 +13,7 @@ descriptionLong: |
 picture: /uploads/dvc5.jpeg
 pictureComment: Some comment
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
   - Open Source
   - Machine Learning

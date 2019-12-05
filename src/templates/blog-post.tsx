@@ -14,6 +14,7 @@ export interface IBlogPostFrontmatter {
   date: string;
   description: string;
   descriptionLong?: string;
+  commentsUrl?: string;
   tags?: string[];
   picture?: {
     childImageSharp: {
@@ -91,6 +92,7 @@ export const pageQuery = graphql`
         description
         descriptionLong
         tags
+        commentsUrl
         author {
           childMarkdownRemark {
             frontmatter {
