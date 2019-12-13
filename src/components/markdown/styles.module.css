@@ -33,6 +33,11 @@
 
   p {
     margin: 25px 0;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   b,
