@@ -1,18 +1,16 @@
 ---
 title: "Data Version Control beta release: iterative machine learning"
 date: 2017-05-04
-description: |
-  Description
-descriptionLong: |
-  Long description
+description: description
+descriptionLong: descriptionLong
 author: ../authors/dmitry_petrov.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
-  - Open Source
-  - Machine Learning
   - Data Science
-  - Version Control
-  - AI
+  - Machine Learning
+  - Data Version Control
+  - Git
+  - Developer Tools
 ---
 
 # Data Version Control beta release: iterative machine learning

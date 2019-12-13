@@ -1,20 +1,14 @@
 ---
 title: How A Data Scientist Can Improve His Productivity
 date: 2017-05-15
-description: |
-  description
-descriptionLong: |
-  descriptionLong
+description: description
+descriptionLong: descriptionLong
 picture: /uploads/post_images/20017-05-15.jpeg
 pictureComment: Some comment
 author: ../authors/dmitry_petrov.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
-  - Open Source
-  - Machine Learning
   - Data Science
-  - Version Control
-  - AI
 ---
 
 # How A Data Scientist Can Improve His Productivity
