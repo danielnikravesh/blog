@@ -30,10 +30,23 @@ We read a ton of articles and posts every day and here are a few that caught our
 
 - **["Data science is different now"](https://veekaybee.github.io/2019/02/13/data-science-is-different/) by [Vicki Boykis](https://veekaybee.github.io/)**
 
-  [\*\*Data science is different now\*\*
-  \*Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…\*veekaybee.github.io](https://veekaybee.github.io/2019/02/13/data-science-is-different/)
+<a href="https://veekaybee.github.io/2019/02/13/data-science-is-different/" class="external-link-preview">
+      <section class="content-holder">
+        <div class="description-holder">
+          <h4 class="title">Data science is different now</h4>
+          <div class="description">Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…</div>
+          <div class="link">veekaybee.github.io</div>
+        </div>
+        <div class="image-holder">
+          <img src="/uploads/post_images/data-science-is-different-now.png" />
+        </div>
+      </section>
+    </a>
 
-  > ‘What is becoming clear is that, in the late stage of the hype cycle, data science is asymptotically moving closer to engineering, and the [skills that data scientists need](https://www.youtube.com/watch?v=frQeK8xo9Ls) moving forward are less visualization and statistics-based, and [more in line with traditional computer science curricula](https://tech.trivago.com/2018/12/03/teardown-rebuild-migrating-from-hive-to-pyspark/).’
+[\*\*Data science is different now\*\*
+\*Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…\*veekaybee.github.io](https://veekaybee.github.io/2019/02/13/data-science-is-different/)
+
+> ‘What is becoming clear is that, in the late stage of the hype cycle, data science is asymptotically moving closer to engineering, and the [skills that data scientists need](https://www.youtube.com/watch?v=frQeK8xo9Ls) moving forward are less visualization and statistics-based, and [more in line with traditional computer science curricula](https://tech.trivago.com/2018/12/03/teardown-rebuild-migrating-from-hive-to-pyspark/).’
 
 - **[“Data Versioning”](https://emilygorcenski.com/post/data-versioning/) by [Emily F. Gorcenski](https://emilygorcenski.com/)**
 
