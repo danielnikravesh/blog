@@ -37,68 +37,67 @@ checking.
 - **["Data science is different now"](https://veekaybee.github.io/2019/02/13/data-science-is-different/)
   by [Vicki Boykis](https://veekaybee.github.io/)**
 
-  <a href="https://veekaybee.github.io/2019/02/13/data-science-is-different/" class="external-link-preview">
-    <section class="content-holder">
-      <div class="description-holder">
-        <h4 class="title">Data science is different now</h4>
-        <div class="description">Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…</div>
-        <div class="link">veekaybee.github.io</div>
-      </div>
-      <div class="image-holder">
-        <img src="/uploads/post_images/data-science-is-different-now.png" />
-      </div>
-    </section>
-  </a>
+<a href="https://veekaybee.github.io/2019/02/13/data-science-is-different/" class="external-link-preview">
+  <section class="content-holder">
+    <div class="description-holder">
+      <h4 class="title">Data science is different now</h4>
+      <div class="description">Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…</div>
+      <div class="link">veekaybee.github.io</div>
+    </div>
+    <div class="image-holder">
+      <img src="/uploads/post_images/data-science-is-different-now.png" />
+    </div>
+  </section>
+</a>
 
-  > ‘What is becoming clear is that, in the late stage of the hype cycle, data
-  > science is asymptotically moving closer to engineering, and the
-  > [skills that data scientists need](https://www.youtube.com/watch?v=frQeK8xo9Ls)
-  > moving forward are less visualization and statistics-based, and
-  > [more in line with traditional computer science curricula](https://tech.trivago.com/2018/12/03/teardown-rebuild-migrating-from-hive-to-pyspark/).’
+> ‘What is becoming clear is that, in the late stage of the hype cycle, data
+> science is asymptotically moving closer to engineering, and the
+> [skills that data scientists need](https://www.youtube.com/watch?v=frQeK8xo9Ls)
+> moving forward are less visualization and statistics-based, and
+> [more in line with traditional computer science curricula](https://tech.trivago.com/2018/12/03/teardown-rebuild-migrating-from-hive-to-pyspark/).’
 
 - **[“Data Versioning”](https://emilygorcenski.com/post/data-versioning/) by
   [Emily F. Gorcenski](https://emilygorcenski.com/)**
 
-  <a href="https://emilygorcenski.com/post/data-versioning/" class="external-link-preview">
-    <section class="content-holder">
-      <div class="description-holder">
-        <h4 class="title">Data Versioning</h4>
-        <div class="description">Productionizing machine learning/AI/data science is a challenge. Not only are the outputs of machine-learning…</div>
-        <div class="link">emilygorcenski.com</div>
-      </div>
-      <div class="image-holder">
-        <img src="/uploads/post_images/data-versioning.jpeg" />
-      </div>
-    </section>
-  </a>
+<a href="https://emilygorcenski.com/post/data-versioning/" class="external-link-preview">
+  <section class="content-holder">
+    <div class="description-holder">
+      <h4 class="title">Data Versioning</h4>
+      <div class="description">Productionizing machine learning/AI/data science is a challenge. Not only are the outputs of machine-learning…</div>
+      <div class="link">emilygorcenski.com</div>
+    </div>
+    <div class="image-holder">
+      <img src="/uploads/post_images/data-versioning.jpeg" />
+    </div>
+  </section>
+</a>
 
-  > ‘I want to explore how the degrees of freedom in versioning machine learning
-  > systems poses a unique challenge. I’ll identify four key axes on which
-  > machine learning systems have a notion of version, along with some brief
-  > recommendations for how to simplify this a bit.’
+> ‘I want to explore how the degrees of freedom in versioning machine learning
+> systems poses a unique challenge. I’ll identify four key axes on which machine
+> learning systems have a notion of version, along with some brief
+> recommendations for how to simplify this a bit.’
 
 - **[“Reproducibility in Machine Learning”](https://blog.mi.hdm-stuttgart.de/index.php/2019/02/26/reproducibility-in-ml/)
   by [Pascal Fecht](https://blog.mi.hdm-stuttgart.de/index.php/author/pf023/)**
 
-  <a href="https://emilygorcenski.com/post/data-versioning/" class="external-link-preview">
-    <section class="content-holder">
-      <div class="description-holder">
-        <h4 class="title">Reproducibility in Machine Learning | Computer Science Blog</h4>
-        <div class="description">The rise of Machine Learning has led to changes across all areas of computer science. From a very abstract point of…</div>
-        <div class="link">blog.mi.hdm-stuttgart.de</div>
-      </div>
-      <div class="image-holder">
-        <img src="/uploads/post_images/reproducibility-in-machine-learning.jpeg" />
-      </div>
-    </section>
-  </a>
+<a href="https://emilygorcenski.com/post/data-versioning/" class="external-link-preview">
+  <section class="content-holder">
+    <div class="description-holder">
+      <h4 class="title">Reproducibility in Machine Learning | Computer Science Blog</h4>
+      <div class="description">The rise of Machine Learning has led to changes across all areas of computer science. From a very abstract point of…</div>
+      <div class="link">blog.mi.hdm-stuttgart.de</div>
+    </div>
+    <div class="image-holder">
+      <img src="/uploads/post_images/reproducibility-in-machine-learning.jpeg" />
+    </div>
+  </section>
+</a>
 
-  > ‘…the objective of this post is not to philosophize about the dangers and
-  > dark sides of AI. In fact, this post aims to work out common challenges in
-  > reproducibility for machine learning and shows programming differences to
-  > other areas of Computer Science. Secondly, we will see practices and
-  > workflows to create a higher grade of reproducibility in machine learning
-  > algorithms.’
+> ‘…the objective of this post is not to philosophize about the dangers and dark
+> sides of AI. In fact, this post aims to work out common challenges in
+> reproducibility for machine learning and shows programming differences to
+> other areas of Computer Science. Secondly, we will see practices and workflows
+> to create a higher grade of reproducibility in machine learning algorithms.’
 
 ## DVC Discord gems
 
