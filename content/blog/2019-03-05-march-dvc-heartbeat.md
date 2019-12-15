@@ -107,7 +107,7 @@ they are scattered all over the channels and hard to track down.
 We will be sifting through the issues and discussions and share the most
 interesting takeaways.
 
-- **[Edit and define DVC files manually, in a Makefile style](https://discordapp.com/channels/485586884165107732/485586884165107734/541622187296161816)**
+###[Edit and define DVC files manually, in a Makefile style](https://discordapp.com/channels/485586884165107732/485586884165107734/541622187296161816)
 
 There is no separate guide for that, but it is very straight forward. See
 [DVC file format](https://dvc.org/doc/user-guide/dvc-file-format) description
@@ -117,14 +117,14 @@ then run dvc repro that will run a command(if any) and compute all needed
 checksums …
 [read more](https://discordapp.com/channels/485586884165107732/485586884165107734/541622187296161816)
 
-- **[Best practices to define the code dependencies](https://discordapp.com/channels/485586884165107732/485586884165107734/547424240677158915)**
+###[Best practices to define the code dependencies](https://discordapp.com/channels/485586884165107732/485586884165107734/547424240677158915)
 
 …There’s a ton of code in that project, and it’s very non-trivial to define the
 code dependencies for my training stage — there are a lot of imports going on,
 the training code is distributed across many modules …
 [read more](https://discordapp.com/channels/485586884165107732/485586884165107734/547424240677158915)
 
-- **[Azure data lake support](https://discordapp.com/channels/485586884165107732/485586884165107734/548495589428428801)**
+###[Azure data lake support](https://discordapp.com/channels/485586884165107732/485586884165107734/548495589428428801)
 
 DVC officially only supports regular Azure blob storage. Gen1 Data Lake should
 be accessible by the same interface, so configuring a regular azure remote for
@@ -134,29 +134,29 @@ blob API. If you know more details about the difference between Gen1 and Gen2,
 feel free to join [our community](https://dvc.org/chat) and share this
 knowledge.
 
-- **[What licence DVC is released under](https://discordapp.com/channels/485586884165107732/485596304961962003/542390986299539459)**
+###[What licence DVC is released under](https://discordapp.com/channels/485586884165107732/485596304961962003/542390986299539459)
 
 Apache 2.0. One of the [most common](https://opensource.org/licenses) and
 permissible OSS licences.
 
-- **Setting up S3 compatible remote
-  ([Localstack](https://discordapp.com/channels/485586884165107732/485596304961962003/543445798868746278),
-  [wasabi](https://discordapp.com/channels/485586884165107732/485596304961962003/541466951474479115))**
+###Setting up S3 compatible remote
+([Localstack](https://discordapp.com/channels/485586884165107732/485596304961962003/543445798868746278),
+[wasabi](https://discordapp.com/channels/485586884165107732/485596304961962003/541466951474479115))
 
-  $ dvc remote add upstream s3://my-bucket
-    $ dvc remote modify upstream
-  region REGION_NAME \$ dvc remote modify upstream endpointurl <url>
+$ dvc remote add upstream s3://my-bucket
+    $ dvc remote modify upstream region
+REGION_NAME \$ dvc remote modify upstream endpointurl <url>
 
 Find and click the `S3 API compatible storage` on
 [this page](https://dvc.org/doc/commands-reference/remote-add)
 
-- **[Why DVC creates and updates `.gitignore` file](https://discordapp.com/channels/485586884165107732/485596304961962003/543914550173368332)**
+###[Why DVC creates and updates `.gitignore` file](https://discordapp.com/channels/485586884165107732/485596304961962003/543914550173368332)
 
 … it adds your datafiles there, that are tracked by dvc, so that you don’t
 accidentally add them to git as well you can open it with file editor of your
 liking and see your data files listed there.
 
-- **[Managing data and pipelines with DVC on HDFS](https://discordapp.com/channels/485586884165107732/485596304961962003/545562334983356426)**
+###[Managing data and pipelines with DVC on HDFS](https://discordapp.com/channels/485586884165107732/485596304961962003/545562334983356426)
 
 … with dvc, you could connect your data sources from HDFS with your pipeline in
 your local project, by simply specifying it as an external dependency. For
