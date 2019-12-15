@@ -119,7 +119,7 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-###[What are the system requirements to install DVC (type of operating system, dependencies of another application (as GIT), memory, cpu, etc).](https://discordapp.com/channels/485586884165107732/485596304961962003/552098155861114891)
+### [What are the system requirements to install DVC (type of operating system, dependencies of another application (as GIT), memory, cpu, etc).](https://discordapp.com/channels/485586884165107732/485596304961962003/552098155861114891)
 
 - It supports Windows, Mac, Linux. Python 2 and 3.
 
@@ -135,11 +135,12 @@ interesting takeaways.
   ability to actually save history of datasets, models, etc (even though it does
   not put them into Git directly).
 
-###[Do I have to buy a server license to run DVC, do you have this?](https://discordapp.com/channels/485586884165107732/485596304961962003/560212552638791706)
+### [Do I have to buy a server license to run DVC, do you have this?](https://discordapp.com/channels/485586884165107732/485596304961962003/560212552638791706)
 
 No server licenses for DVC. It is 100% free and open source.
 
-###[What is the storage limit when using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/560154903331340289)
+### [What is the storage limit when using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/560154903331340289)
+
 I am trying to version control datasets and models with >10 GB (Potentially even
 bigger). Can DVC handle this?
 
@@ -149,7 +150,8 @@ need to have some space available on S3, your SSH server or other storage you
 are using to keep these data files, models and their version, which you would
 like to store.
 
-###[How does DVC know the sequence of stages to run](https://discordapp.com/channels/485586884165107732/485596304961962003/553731815228178433)?
+### [How does DVC know the sequence of stages to run](https://discordapp.com/channels/485586884165107732/485596304961962003/553731815228178433)?
+
 How does it connect them? Does it see that there is a dependency which is
 outputted from the first run?
 
@@ -167,7 +169,8 @@ You can inspect the content of each stage file
 [here](https://dvc.org/doc/user-guide/dvc-file-format) (they are human
 readable).
 
-###[Is it possible to use the same data of a remote in two different repositories?](https://discordapp.com/channels/485586884165107732/485596304961962003/560022999848321026)
+### [Is it possible to use the same data of a remote in two different repositories?](https://discordapp.com/channels/485586884165107732/485596304961962003/560022999848321026)
+
 (e.g. in one repo `run dvc pull -r my_remote` to pull some data and running the
 same command in a different git repo should also pull the same)
 
@@ -179,7 +182,7 @@ coordinates of the remote storage you would like to share in every project.
 Alternatively (check out the question below), you could use `— global` to
 specify a single default remote (and/or cache dir) per machine.
 
-###[Could I set a global remote server, instead of config in each project?](https://discordapp.com/channels/485586884165107732/485586884165107734/559653121228275727)
+### [Could I set a global remote server, instead of config in each project?](https://discordapp.com/channels/485586884165107732/485586884165107734/559653121228275727)
 
 Use `— global` when you specify the remote settings. Then remote will be visible
 for all projects on the same machine. `— global` — saves remote configuration to
@@ -187,7 +190,7 @@ the global config (e.g. ~/.config/dvc/config) instead of a per project one —
 `.dvc/config`. See more details
 [here](https://dvc.org/doc/commands-reference/remote-add).
 
-###[How do I version a large dataset in S3 or any other storage?](https://discordapp.com/channels/485586884165107732/485596304961962003/554679392823934977)
+### [How do I version a large dataset in S3 or any other storage?](https://discordapp.com/channels/485586884165107732/485596304961962003/554679392823934977)
 
 We would recommend to skim through our
 [get started](https://dvc.org/doc/get-started) tutorial, to summarize the data
@@ -210,14 +213,14 @@ of syncing your .git, you are syncing your .dvc directory)
 
 on a remote repository (let’s say an S3 bucket).
 
-###[How do I move/rename DVC files?](https://discordapp.com/channels/485586884165107732/485596304961962003/558216007684980736)
+### [How do I move/rename DVC files?](https://discordapp.com/channels/485586884165107732/485596304961962003/558216007684980736)
 
 If you need to move your dvc file somewhere, it is pretty easy, even if done
 manually:
 
 <iframe src="https://medium.com/media/8c72433012d97ef63564fe6a63690523" frameborder=0></iframe>
 
-###[I performed ‘dvc push’ of a file to a remote. On the remote there is created a directory called ‘8f’ with a file inside called ‘2ec34faf91ff15ef64abf3fbffa7ee’. The original csv file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
+### [I performed ‘dvc push’ of a file to a remote. On the remote there is created a directory called ‘8f’ with a file inside called ‘2ec34faf91ff15ef64abf3fbffa7ee’. The original csv file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
 
 This is an expected behaviour. DVC saves files under the name created from their
 checksum in order to prevent duplication. If you delete “pushed” file in your
@@ -239,7 +242,7 @@ filesystem) is created to replace it on your working space:
 
 <iframe src="https://medium.com/media/25cf483104145701a63ff089ae6f1dd3" frameborder=0></iframe>
 
-###[Is it possible to integrate dvc with our in-house tools developed in Python?](https://discordapp.com/channels/485586884165107732/485586884165107734/553570391000481802)
+### [Is it possible to integrate dvc with our in-house tools developed in Python?](https://discordapp.com/channels/485586884165107732/485586884165107734/553570391000481802)
 
 Absolutely! There are three ways you could interact with DVC:
 
@@ -255,7 +258,8 @@ Absolutely! There are three ways you could interact with DVC:
    We’ll add docs and all the official stuff for it in the not-so-distant
    future.
 
-###[Can I still track the linkage between data and model without using `dvc run`](https://discordapp.com/channels/485586884165107732/485586884165107734/555750217522216990)
+### [Can I still track the linkage between data and model without using `dvc run`](https://discordapp.com/channels/485586884165107732/485586884165107734/555750217522216990)
+
 and a graph of tasks? Basically what would like extremely minimal DVC invasion
 into my GIT repo for an existing machine learning application?
 

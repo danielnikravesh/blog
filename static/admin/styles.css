@@ -1,4 +1,4 @@
-@import "/admin/fonts/fonts.css";
+@import '/admin/fonts/fonts.css';
 
 :root {
   --color-black: #24292e;
@@ -11,7 +11,7 @@
   --color-light-blue: #eef4f8;
   --color-orange: #e37046;
   --color-orange-opaque: rgba(22, 112, 70, 0.5);
-  --font-brandon: "Brandon Grotesque", Tahoma, Arial, sans-serif;
+  --font-brandon: 'Brandon Grotesque', Tahoma, Arial, sans-serif;
   --font-mono: Inconsolata, monospace;
   --header-height: 98px;
   --header-height-scrolled: calc(var(--header-height) - 20px);
@@ -108,7 +108,7 @@ ul > li {
   list-style: none;
 
   &::before {
-    content: "•";
+    content: '•';
     position: absolute;
     margin-left: -30px;
   }
@@ -124,7 +124,7 @@ ol > li {
   list-style: none;
 
   &::before {
-    content: counter(ol) ".";
+    content: counter(ol) '.';
     position: absolute;
     margin-left: -30px;
     color: var(--color-gray);
@@ -211,12 +211,12 @@ pre {
 
 /* based on coy theme */
 
-pre[class*="language-"] {
+pre[class*='language-'] {
   background: var(--color-light-blue);
 }
 
 /* this code fixes hilghlight with scroll */
-pre[class*="language-"] code[class*="language-"] {
+pre[class*='language-'] code[class*='language-'] {
   float: left;
   min-width: 100%;
   padding: 0;
