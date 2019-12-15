@@ -441,10 +441,12 @@
 
   :global(.description) {
     font-size: 18px;
+    line-height: 1.5;
   }
 
   :global(.link) {
     font-size: 16px;
+    color: var(--color-gray);
   }
 
   :global(.external-link-preview .image-holder) {
