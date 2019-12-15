@@ -388,7 +388,7 @@ is the way to go:
 [How can I push data from client to google cloud bucket using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/592958360903483403)
 Just want to know how can i set the credentials.**
 
-**A: **You can do it by setting environment variable pointing to yours
+**A:** You can do it by setting environment variable pointing to yours
 credentials path, like:
 
     export GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials
