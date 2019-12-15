@@ -79,7 +79,7 @@ comprehensive read on why you should do so right away.
       <div class="link">github.com</div>
     </div>
     <div class="image-holder">
-      <img src="/uploads/post_images/data-science-is-different-now.png" />
+      <img src="/uploads/post_images/the-state-of-machine-learning-operations.jpeg" />
     </div>
   </section>
 </a>
@@ -101,7 +101,7 @@ of ML operations.
       <div class="link">hackernoon.com</div>
     </div>
     <div class="image-holder">
-      <img src="/uploads/post_images/data-science-is-different-now.png" />
+      <img src="/uploads/post_images/interview-with-kaggle-grandmaster.jpeg" />
     </div>
   </section>
 </a>

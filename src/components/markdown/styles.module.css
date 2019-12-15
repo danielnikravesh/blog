@@ -428,17 +428,17 @@
 
   :global(.description-holder) {
     flex-grow: 1;
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
 
   :global(.title) {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 0.5rem;
     line-height: 1.25;
   }
 
   :global(.description) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   :global(.link) {
@@ -447,7 +447,7 @@
 
   :global(.external-link-preview .image-holder) {
     width: 160px;
-    height: 160px;
+    height: 170px;
     flex-shrink: 0;
 
     @media (--xs-scr) {
