@@ -158,7 +158,14 @@ outputted from the first run?
 DVC figures out the pipeline by looking at the dependencies and outputs of the
 stages. For example, having the following:
 
-<iframe src="https://medium.com/media/02b968ad1f6da1f01655f538a5c7f551" frameborder=0></iframe>
+111
+
+<iframe src="https://gist.github.com/SvetaGr/a2a28fbc9db0a675422785bc5f925e14" frameborder=0></iframe>
+<script src="https://gist.github.com/nisrulz/11c0d63428b108f10c83.js"></script>
+
+`gist:SvetaGr/ce54fdb1e5621b5966e146026995b974#syntax.text`
+
+111
 
 you will end up with two stages: `download.dvc` and `duplicate.dvc`. The
 download one will have `joke.txt` as an output . The duplicate one defined
