@@ -42,6 +42,7 @@ const plugins = [
       name: 'images'
     }
   },
+  'gatsby-plugin-twitter',
   {
     resolve: 'gatsby-transformer-remark',
     options: {
