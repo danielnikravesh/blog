@@ -82,12 +82,14 @@ Some other highlights of the end of summer:
 
 ![](/uploads/post_images/open-source-summit-by-linux-foundation.jpeg)
 
+<hr />
+
 Here are some of the great pieces of content around DVC and ML ops that we
 discovered in July and August:
 
 ### [Great insightful discussion](https://twitter.com/NathanBenaich/status/1151815916512010242) on Twitter about versioning ML projects started by [Nathan Benaich](https://medium.com/@NathanBenaich).
 
-<iframe src="https://medium.com/media/ef02775936fb5db2b263bd0ebb821fcd" frameborder=0></iframe>
+<blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">🙏Question to ML friends: How do you go about version control for your ML projects (data, models, and intermediate steps in your data pipelines)? Have you built your own tools? Are using something open source? Or a SaaS? Or does this come bundled with your ML infra products? Thx!</p>&mdash; Nathan Benaich (@NathanBenaich) <a href="https://twitter.com/NathanBenaich/status/1151815916512010242?ref_src=twsrc%5Etfw">18 июля 2019 г.</a></blockquote>
 
 ### [Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers](https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804) by [Ward Van Laer](https://medium.com/@ward.vanlaer?source=post_page-----5b9c80cdf804----------------------).
 
