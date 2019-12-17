@@ -1,8 +1,9 @@
 ---
 title: 'Data Version Control beta release: iterative machine learning'
 date: 2017-05-04
-description: description
-descriptionLong: descriptionLong
+description:
+  It is hardly possible in real life to develop a good machine learning model in
+  a single pass.
 author: ../authors/dmitry_petrov.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
@@ -12,8 +13,6 @@ tags:
   - Git
   - Developer Tools
 ---
-
-# Data Version Control beta release: iterative machine learning
 
 UPDATE: This blog post uses outdated DVC release 0.8. New tutorial —
 [Data Version Control Tutorial](https://blog.dataversioncontrol.com/data-version-control-tutorial-9146715eda46).
