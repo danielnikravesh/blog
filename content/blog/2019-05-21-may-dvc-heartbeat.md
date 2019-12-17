@@ -234,10 +234,12 @@ these
 You can use metrics show command XPath option and provide multiple attribute
 names to it:
 
-    $ dvc metrics add model.metrics --type json --xpath AUC_RATIO[train,valid]
+```dvc
+$ dvc metrics add model.metrics --type json --xpath AUC_RATIO[train,valid]
     metrics.json:
                  0.89227482588
                  0.856160272625
+```
 
 ### [What is the quickest way to add a new dependency to a DVC-file?](https://discordapp.com/channels/485586884165107732/485596304961962003/566314479499870211)
 
@@ -257,8 +259,10 @@ package’s version. One way to do that would be to create a separate stage that
 would be dynamically printing version of that specific package into a file, that
 your stage would depend on:
 
-    dvc run -o mypkgver 'pip show mypkg > mypkgver’
-    dvc run -d mypkgver -d ... -o .. mycmd
+```dvc
+$ dvc run -o mypkgver 'pip show mypkg > mypkgver’
+$ dvc run -d mypkgver -d ... -o .. mycmd
+```
 
 ### [Is there anyway to forcibly recompute the hashes of dependencies in a pipeline DVC-file?](https://discordapp.com/channels/485586884165107732/485596304961962003/564807276146458624)
 

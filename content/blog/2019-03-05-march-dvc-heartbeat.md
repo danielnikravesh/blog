@@ -144,9 +144,11 @@ permissible OSS licences.
 ([Localstack](https://discordapp.com/channels/485586884165107732/485596304961962003/543445798868746278),
 [wasabi](https://discordapp.com/channels/485586884165107732/485596304961962003/541466951474479115))
 
+```dvc
 $ dvc remote add upstream s3://my-bucket
-    $ dvc remote modify upstream region
+$ dvc remote modify upstream region
 REGION_NAME \$ dvc remote modify upstream endpointurl <url>
+```
 
 Find and click the `S3 API compatible storage` on
 [this page](https://dvc.org/doc/commands-reference/remote-add)
@@ -165,9 +167,10 @@ example let’s say your script `process.cmd` works on an input file on HDFS and
 then downloads a result to your local workspace, then with DVC it could look
 something like:
 
-    $ dvc run -d hdfs://example.com/home/shared/input -d process.cmd -o output process.cmd
+```dvc
+$ dvc run -d hdfs://example.com/home/shared/input -d process.cmd -o output process.cmd
+```
 
-…
 [read more](https://discordapp.com/channels/485586884165107732/485596304961962003/545562334983356426).
 
 If you have any questions, concerns or ideas, let us know

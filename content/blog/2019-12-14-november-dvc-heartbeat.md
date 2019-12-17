@@ -224,7 +224,9 @@ cannot set it in the config file (that is committed to Git).
 Yes, you should use --local or--global config options to set user per project or
 per use machine without sharing (committing) them to Git:
 
-\$ dvc remote modify myremote — local (or — global) user myuser
+```dvc
+$ dvc remote modify myremote — local (or — global) user myuser
+```
 
 **Q:
 [I still get the SSL ERROR when I try to perform a dvc push with or without use_ssl = false](https://discordapp.com/channels/485586884165107732/485596304961962003/628227197592797191)?**
@@ -255,7 +257,9 @@ arguments).**
 
 You can specify “default” remote:
 
-\$ dvc remote add -d remote /path/to/my/main/remote
+```dvc
+$ dvc remote add -d remote /path/to/my/main/remote
+```
 
 then, dvc push (and other commands like dvc pull) will know to push to the
 default
