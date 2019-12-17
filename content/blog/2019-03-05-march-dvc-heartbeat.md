@@ -99,6 +99,8 @@ checking.
 > other areas of Computer Science. Secondly, we will see practices and workflows
 > to create a higher grade of reproducibility in machine learning algorithms.’
 
+<hr />
+
 ## DVC Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes

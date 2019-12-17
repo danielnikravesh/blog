@@ -111,6 +111,8 @@ of ML operations.
 > iterations per unit of time. This skill in the world of competitive learning
 > is the question of survival
 
+<hr />
+
 ## Discord gems:
 
 There are lots of hidden gems in our Discord community discussions. Sometimes

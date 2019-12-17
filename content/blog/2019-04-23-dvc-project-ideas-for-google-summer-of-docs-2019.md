@@ -206,6 +206,8 @@ for all parties involved. If you have any suggestions or questions we would love
 to hear from you => DVC.org/support and our DMs on
 [Twitter](https://twitter.com/DVCorg) are always open!
 
+<hr />
+
 Special thanks to the [NumFOCUS](https://numfocus.org/) for the ideas list
 inspiration.
 

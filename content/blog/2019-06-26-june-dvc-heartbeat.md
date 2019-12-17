@@ -61,6 +61,8 @@ on Machine learning model and dataset versioning practices.
 
 We absolutely loved being at Pycon and can’t wait for our next conference!
 
+<hr />
+
 Our team is so happy every time we discover an article featuring DVC or
 addressing one of the burning ML issues we are trying to solve. Here are some of
 the links that caught our eye past month:
@@ -141,6 +143,8 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 > [a data infrastructure survey](https://www.oreilly.com/data/free/evolving-data-infrastructure.csp)
 > that drew more than 3,200 respondents.
 
+<hr />
+
 ## Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes
@@ -177,7 +181,7 @@ won’t be a full directory (if you added just a few files to a 10M files
 directory) duplication, though, since we treat every file inside as a separate
 entity.
 
-### [Is there a way to pass parameters from e.g. dvc repro to stages?](https://discordapp.com/channels/485586884165107732/563406153334128681/576160840701575169)
+### [Is there a way to pass parameters from e.g. `dvc repro` to stages?](https://discordapp.com/channels/485586884165107732/563406153334128681/576160840701575169)
 
 The simplest option is to create a config file — json or whatnot — that your
 scripts would read and your stages depend on.
@@ -191,7 +195,7 @@ how it could be done.
 
 ### [Docker and DVC.](https://discordapp.com/channels/485586884165107732/563406153334128681/583949033685516299) To being able to push/pull data we need to run a git clone to get DVC-files and remote definitions — but we worry that would make the container quite heavy (since it contains our entire project history).
 
-You can do git clone — depth 1, which will not download any history except the
+You can do `git clone — depth 1`, which will not download any history except the
 latest commits.
 
 ### [After DVC pushing the same file, it creates multiple copies of the same file. Is that how it’s supposed to work?](https://discordapp.com/channels/485586884165107732/485596304961962003/574133734136086559)
@@ -206,15 +210,17 @@ have cache file with that checksum on your remote, it won’t upload it again.
 
 Something like this should work:
 
-    $ which dvc
-    /usr/local/bin/dvc -> /usr/local/lib/dvc/dvc
+```dvc
+$ which dvc
+/usr/local/bin/dvc -> /usr/local/lib/dvc/dvc
 
-    $ ls -la /usr/local/bin/dvc
-    /usr/local/bin/dvc -> /usr/local/lib/dvc/dvc
+$ ls -la /usr/local/bin/dvc
+/usr/local/bin/dvc -> /usr/local/lib/dvc/dvc
 
-    sudo rm -f /usr/local/bin/dvc
-    sudo rm -rf /usr/local/lib/dvc
-    sudo pkgutil --forget com.iterative.dvc
+sudo rm -f /usr/local/bin/dvc
+sudo rm -rf /usr/local/lib/dvc
+sudo pkgutil --forget com.iterative.dvc
+```
 
 ### [How do I pull from a public S3 bucket (that contains DVC remote)?](https://discordapp.com/channels/485586884165107732/485596304961962003/575236576309674024)
 
@@ -234,6 +240,8 @@ problem is to allocate DVC cache on NFS, but run the project (git clone, DVC
 metafiles, etc) on the local file system. Read
 [this answer](https://discuss.dvc.org/t/share-nas-data-in-server/180/4?u=shcheklein)
 to see how it can be setup.
+
+<hr />
 
 If you have any questions, concerns or ideas, let us know in the comments below
 or connect with DVC team [here](https://dvc.org/support). Our

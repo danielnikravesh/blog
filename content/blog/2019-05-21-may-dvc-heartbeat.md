@@ -135,6 +135,8 @@ our favorite links from the past month:
 > the data under version control is a big improvement. But is the lack of
 > version control of the data files the entire problem? No.
 
+<hr />
+
 ## Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes
@@ -279,6 +281,8 @@ Yes! This DVC features is called
 [external dependencies](https://dvc.org/doc/user-guide/external-dependencies).
 You can use one of them or both to track, process, and version your data on a
 cloud storage without downloading it locally.
+
+<hr />
 
 If you have any questions, concerns or ideas, let us know
 [here](https://dvc.org/support) and our stellar team will get back to you in no
