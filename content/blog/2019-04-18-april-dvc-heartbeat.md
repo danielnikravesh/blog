@@ -193,7 +193,7 @@ specify a single default remote (and/or cache dir) per machine.
 
 Use `— global` when you specify the remote settings. Then remote will be visible
 for all projects on the same machine. `— global` — saves remote configuration to
-the global config (e.g. ~/.config/dvc/config) instead of a per project one —
+the global config (e.g. `~/.config/dvc/config`) instead of a per project one —
 `.dvc/config`. See more details
 [here](https://dvc.org/doc/commands-reference/remote-add).
 
@@ -204,8 +204,8 @@ We would recommend to skim through our
 versioning process of DVC:
 
 - You create stage (aka DVC) files by adding, importing files (dvc add / dvc
-  import) , or run a command to generate files (dvc run — out file.csv “wget
-  https://example.com/file.csv").
+  import) , or run a command to generate files
+  (`dvc run — out file.csv “wget https://example.com/file.csv"`).
 
 - This stage files are tracked by git
 
@@ -227,7 +227,7 @@ manually:
 
 <iframe src="https://medium.com/media/8c72433012d97ef63564fe6a63690523" frameborder=0></iframe>
 
-### [I performed ‘dvc push’ of a file to a remote. On the remote there is created a directory called ‘8f’ with a file inside called ‘2ec34faf91ff15ef64abf3fbffa7ee’. The original csv file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
+### [I performed `dvc push` of a file to a remote. On the remote there is created a directory called `8f` with a file inside called `2ec34faf91ff15ef64abf3fbffa7ee`. The original csv file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
 
 This is an expected behaviour. DVC saves files under the name created from their
 checksum in order to prevent duplication. If you delete “pushed” file in your
@@ -265,10 +265,7 @@ Absolutely! There are three ways you could interact with DVC:
    We’ll add docs and all the official stuff for it in the not-so-distant
    future.
 
-### [Can I still track the linkage between data and model without using `dvc run`](https://discordapp.com/channels/485586884165107732/485586884165107734/555750217522216990)
-
-and a graph of tasks? Basically what would like extremely minimal DVC invasion
-into my GIT repo for an existing machine learning application?
+### [Can I still track the linkage between data and model without using `dvc run`](https://discordapp.com/channels/485586884165107732/485586884165107734/555750217522216990) and a graph of tasks? Basically what would like extremely minimal DVC invasion into my GIT repo for an existing machine learning application?
 
 There are two options:
 
