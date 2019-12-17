@@ -87,11 +87,15 @@ Some other highlights of the end of summer:
 Here are some of the great pieces of content around DVC and ML ops that we
 discovered in July and August:
 
-### [Great insightful discussion](https://twitter.com/NathanBenaich/status/1151815916512010242) on Twitter about versioning ML projects started by [Nathan Benaich](https://medium.com/@NathanBenaich).
+- **[Great insightful discussion](https://twitter.com/NathanBenaich/status/1151815916512010242)
+  on Twitter about versioning ML projects started by
+  [Nathan Benaich](https://medium.com/@NathanBenaich).**
 
 <blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">🙏Question to ML friends: How do you go about version control for your ML projects (data, models, and intermediate steps in your data pipelines)? Have you built your own tools? Are using something open source? Or a SaaS? Or does this come bundled with your ML infra products? Thx!</p>&mdash; Nathan Benaich (@NathanBenaich) <a href="https://twitter.com/NathanBenaich/status/1151815916512010242?ref_src=twsrc%5Etfw">18 июля 2019 г.</a></blockquote>
 
-### [Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers](https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804) by [Ward Van Laer](https://medium.com/@ward.vanlaer?source=post_page-----5b9c80cdf804----------------------).
+- **[Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers](https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804)
+  by
+  [Ward Van Laer](https://medium.com/@ward.vanlaer?source=post_page-----5b9c80cdf804----------------------).**
 
 > It is possible to manage your work flow using open-source and free tools.
 
@@ -108,7 +112,9 @@ discovered in July and August:
   </section>
 </a>
 
-### [Using DVC to create an efficient version control system for data projects](https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe) by [Basile Guerrapin](https://medium.com/@basile_16101?source=post_page-----96efd94355fe----------------------).
+- **[Using DVC to create an efficient version control system for data projects](https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe)
+  by
+  [Basile Guerrapin](https://medium.com/@basile_16101?source=post_page-----96efd94355fe----------------------).**
 
 > DVC brought versioning for inputs, intermediate files and algorithm models to
 > the VAT auto-detection project and this drastically increased our
@@ -127,7 +133,8 @@ discovered in July and August:
   </section>
 </a>
 
-### [Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues](https://techsparx.com/software-development/ai/dvc/versioning-example.html) by [David Herron](undefined).
+- **[Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues](https://techsparx.com/software-development/ai/dvc/versioning-example.html)
+  by [David Herron](https://twitter.com/7genblogger).**
 
 > In this tutorial we will go over a simple image classifier. We will learn how
 > DVC works in a machine learning project, how it optimizes reproducing results
@@ -146,7 +153,9 @@ discovered in July and August:
   </section>
 </a>
 
-### [How to use data version control (dvc) in a machine learning project](https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185) by [Matthias Bitzer](https://towardsdatascience.com/@matthiasbitzer94?source=post_page-----a78245c0185----------------------).
+- **[How to use data version control (dvc) in a machine learning project](https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185)
+  by
+  [Matthias Bitzer](https://towardsdatascience.com/@matthiasbitzer94?source=post_page-----a78245c0185----------------------).**
 
 > To illustrate the use of dvc in a machine learning context, we assume that our
 > data is divided into train, test and validation folders by default, with the
@@ -166,7 +175,9 @@ discovered in July and August:
   </section>
 </a>
 
-### [Version Control ML Model](https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c) by [Tianchen Wu](https://towardsdatascience.com/@TianchenW?source=post_page-----4adb2db5f87c----------------------)
+- **[Version Control ML Model](https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c)
+  by
+  [Tianchen Wu](https://towardsdatascience.com/@TianchenW?source=post_page-----4adb2db5f87c----------------------)**
 
 > This post presents a solution to version control machine learning models with
 > git and dvc ([Data Version Control](https://dvc.org/doc/tutorial)).
@@ -184,7 +195,8 @@ discovered in July and August:
   </section>
 </a>
 
-### [Reflinks vs symlinks vs hard links, and how they can help machine learning projects](https://dev.to/robogeek/reflinks-vs-symlinks-vs-hard-links-and-how-they-can-help-machine-learning-projects-1cj4) by [David Herron](https://medium.com/@7genblogger)
+- **[Reflinks vs symlinks vs hard links, and how they can help machine learning projects](https://dev.to/robogeek/reflinks-vs-symlinks-vs-hard-links-and-how-they-can-help-machine-learning-projects-1cj4)
+  by [David Herron](https://medium.com/@7genblogger)**
 
 > In this blog post we’ll go over the details of using links, some cool new
 > stuff in modern file systems (reflinks), and an example of how DVC (Data
@@ -203,7 +215,9 @@ discovered in July and August:
   </section>
 </a>
 
-### [DVC dependency management — a guide](https://blog.codecentric.de/en/2019/08/dvc-dependency-management/) by [Bert Besser](https://blog.codecentric.de/en/author/bert-besser/) and [Veronika Schwan](https://blog.codecentric.de/en/author/veronika-schindler/).
+- **[DVC dependency management — a guide](https://blog.codecentric.de/en/2019/08/dvc-dependency-management/)
+  by [Bert Besser](https://blog.codecentric.de/en/author/bert-besser/) and
+  [Veronika Schwan](https://blog.codecentric.de/en/author/veronika-schindler/).**
 
 > This post is a follow-up to
 > [A walkthrough of DVC](https://blog.codecentric.de/en/2019/03/walkthrough-dvc/)
@@ -224,7 +238,9 @@ discovered in July and August:
   </section>
 </a>
 
-### [Effective ML Teams — Lessons Learne](https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283) by [Czeslaw Szubert](https://medium.com/@czeslaw.szubert?source=post_page-----6a6e761bc283----------------------)
+- **[Effective ML Teams — Lessons Learne](https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283)
+  by
+  [Czeslaw Szubert](https://medium.com/@czeslaw.szubert?source=post_page-----6a6e761bc283----------------------)**
 
 > In this post I’ll present lessons learned on how to setup successful ML teams
 > and what you need to devise an effective enterprise ML strategy.
@@ -242,7 +258,8 @@ discovered in July and August:
   </section>
 </a>
 
-### [Lessons learned from training a German Speech Recognition model](https://www.esentri.com/lessons-learned-from-training-a-german-speech-recognition-model/) by [David Schönleber](https://www.linkedin.com/in/dschoenleber/).
+- **[Lessons learned from training a German Speech Recognition model](https://www.esentri.com/lessons-learned-from-training-a-german-speech-recognition-model/)
+  by [David Schönleber](https://www.linkedin.com/in/dschoenleber/).**
 
 > Setting up a documentation-by-design workflow and using appropriate tools
 > where needed, e.g. _mlflow_ and _dvc,_ can be a real deal-breaker.
@@ -270,9 +287,7 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-**Q: I’m getting an error message while trying to use AWS S3 storage:
-`ERROR: failed to push data to the cloud — Unable to locate credentials.`
-[Any ideas what’s happening?](https://discordapp.com/channels/485586884165107732/563406153334128681/587792932061577218)**
+### Q: I’m getting an error message while trying to use AWS S3 storage: `ERROR: failed to push data to the cloud — Unable to locate credentials.` [Any ideas what’s happening?](https://discordapp.com/channels/485586884165107732/563406153334128681/587792932061577218)
 
 Most likely you haven’t configured your S3 credentials/AWS account yet. Please,
 read the full documentation on the AWS website. The short version of what should
@@ -294,9 +309,7 @@ Follow
 [this link](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 to setup your environment.
 
-**Q: I added data with `dvc add` or `dvc run` and see that it takes twice what
-it was before (with `du` command).
-[Does it mean that DVC copies data that is added under its control? How do I prevent this from happening?](https://discordapp.com/channels/485586884165107732/563406153334128681/595402051203235861)**
+### Q: I added data with `dvc add` or `dvc run` and see that it takes twice what it was before (with `du` command). [Does it mean that DVC copies data that is added under its control? How do I prevent this from happening?](https://discordapp.com/channels/485586884165107732/563406153334128681/595402051203235861)
 
 To give a short summary — by default, DVC copies the files from your working
 directory to the cache (this is for safety reasons, it is better to duplicate
@@ -306,24 +319,19 @@ DVC to use hardlinks/symlinks to save some space and time, but it will require
 enabling the protected mode (making data files in workspace read-only). Read
 more details [here](https://dvc.org/doc/user-guide/large-dataset-optimization).
 
-**Q:
-[How concurrent-friendly is the cache? And different remotes? Is it safe to have several containers/nodes fill the same cache at the same time?](https://discordapp.com/channels/485586884165107732/563406153334128681/599345778703597568)**
+### Q: [How concurrent-friendly is the cache? And different remotes? Is it safe to have several containers/nodes fill the same cache at the same time?](https://discordapp.com/channels/485586884165107732/563406153334128681/599345778703597568)
 
 It is safe and a very common use case for DVC to have a shared cache. Please,
 check [this thread](https://discuss.dvc.org/t/share-nas-data-in-server/180/12),
 for example.
 
-**Q:[What is the proper way to exit the ASCII visualization?](https://discordapp.com/channels/485586884165107732/563406153334128681/603890677176336394)
-(when you run `dvc pipeline show` command).**
+### Q:[What is the proper way to exit the ASCII visualization?](https://discordapp.com/channels/485586884165107732/563406153334128681/603890677176336394) (when you run `dvc pipeline show` command).
 
 See this
 [document](https://dvc.org/doc/commands-reference/pipeline/show#options). To
 navigate, use arrows or W, A, S, D keys. To exit, press Q.
 
-**Q:
-[Is there an issue if I set my `cache.s3` external cache to my default remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/606197026488844338)
-I don’t quite understand what an external cache is for other than I have to have
-it for external outputs.**
+### Q: [Is there an issue if I set my `cache.s3` external cache to my default remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/606197026488844338) I don’t quite understand what an external cache is for other than I have to have it for external outputs.
 
 Short answer is that we would suggest keeping them separately to avoid possible
 checksum overlaps. Cheksum on S3 might theoretically overlap with our checksums
@@ -331,8 +339,7 @@ checksum overlaps. Cheksum on S3 might theoretically overlap with our checksums
 chances of losing data are pretty slim, but we would not risk it. Right now, we
 are working on making sure there are no possible overlapping.
 
-**Q:
-[What’s the right procedure to move a step .dvc file around the project?](https://discordapp.com/channels/485586884165107732/563406153334128681/606425815139221504)**
+### Q: [What’s the right procedure to move a step .dvc file around the project?](https://discordapp.com/channels/485586884165107732/563406153334128681/606425815139221504)
 
 Assuming the file was created with `dvc run`. There are few possible ways.
 Obvious one is to delete the file and create a new one with
@@ -342,16 +349,14 @@ rename/move and then edit manually. See
 how DVC-files are organized. No matter what method you use, you can run
 `dvc commit file.dvc` to save changes without running the command again.
 
-**Q:
-[`dvc status` doesn’t seem to report things that need to be dvc pushed, is that by design?](https://discordapp.com/channels/485586884165107732/563406153334128681/606917839688957952)**
+### Q: [`dvc status` doesn’t seem to report things that need to be dvc pushed, is that by design?](https://discordapp.com/channels/485586884165107732/563406153334128681/606917839688957952)
 
 You should try with dvc status `--cloud` or `dvc status --remote <your-remote>`
 to compare your local cache with a remote one, by default it only compares the
 “working directory” with your local cache (to check whether something should be
 reproduced and saved or not).
 
-**Q:
-[What kind of files can you put into `dvc metrics`?](https://discordapp.com/channels/485586884165107732/563406153334128681/608701494035873792)**
+### Q: [What kind of files can you put into `dvc metrics`?](https://discordapp.com/channels/485586884165107732/563406153334128681/608701494035873792)
 
 The file could be in any format, `dvc metric` show will try to interpret the
 format and output it in the best possible way. Also, if you are using `csv` or
@@ -363,14 +368,12 @@ The idea is to use `dvc metrics show` to display all your metrics across
 experiments so you can make decisions of which combination (of features,
 parameters, algorithms, architecture, etc.) works the best.
 
-**Q:
-[Does DVC take into account the timestamp of a file or is the MD5 only depends on the files actual/bits content?](https://discordapp.com/channels/485586884165107732/563406153334128681/613639458000207902)**
+### Q: [Does DVC take into account the timestamp of a file or is the MD5 only depends on the files actual/bits content?](https://discordapp.com/channels/485586884165107732/563406153334128681/613639458000207902)
 
 DVC takes into account only content (bits) of a file to calculate hashes that
 are saved into DVC-files.
 
-**Q:
-[Similar to `dvc gc` is there a command to garbage collect from the remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/616421757808541721)**
+### Q: [Similar to `dvc gc` is there a command to garbage collect from the remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/616421757808541721)
 
 `dvc gc --remote NAME` is doing this, but you should be extra careful, because
 it will remove everything that is not currently “in use” (by the working
@@ -378,8 +381,7 @@ directory). Also, please check this
 [issue](https://github.com/iterative/dvc/issues/2325) — semantics of this
 command might have changed by the time you read this.
 
-**Q:
-[How do I use and configure remote storage on IBM Cloud Object Storage?](https://discordapp.com/channels/485586884165107732/485596304961962003/591237578209099786)**
+### Q: [How do I use and configure remote storage on IBM Cloud Object Storage?](https://discordapp.com/channels/485586884165107732/485596304961962003/591237578209099786)
 
 Since it’s S3 compatible, specifying `endpointurl` (exact URL depends on the
 [region](https://cloud.ibm.com/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints))
@@ -391,9 +393,9 @@ dvc remote modify mybucket endpointurl
 [https://s3.eu.cloud-object-storage.appdomain.cloud](https://s3.eu.cloud-object-storage.appdomain.cloud)
 ```
 
-**Q:
-[How can I push data from client to google cloud bucket using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/592958360903483403)
-Just want to know how can i set the credentials.**
+### Q: [How can I push data from client to google cloud bucket using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/592958360903483403)
+
+Just want to know how can i set the credentials.
 
 **A:** You can do it by setting environment variable pointing to yours
 credentials path, like:

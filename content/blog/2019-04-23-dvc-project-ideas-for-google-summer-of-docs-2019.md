@@ -30,7 +30,7 @@ hands-on experience in writing technical docs, but will also immerse into DVC
 community — a warm and welcoming gathering of ML and DS enthusiasts and an
 invaluable source of inspiration and expertise in ML engineering.
 
-### **About DVC**
+### About DVC
 
 DVC is a brainchild of a data scientist and an engineer, that was created to
 fill in the gaps in the ML processes tooling and evolved into a successful open
@@ -59,7 +59,7 @@ Podcast.**init**. Listen to it
 the transcript
 [HERE.](https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee)
 
-### **The state of DVC documentation**
+### The state of DVC documentation
 
 DVC is a pretty young project, developed and maintained solely by engineers. As
 many OS projects we started from the bottom and for a long time our
@@ -79,7 +79,7 @@ however it is not in very good shape. We strive for making our documentation
 clear and comprehensive for users of various backgrounds and proficiency levels
 and this is where we do need some fresh perspective.
 
-### **How DVC documentation is built**
+### How DVC documentation is built
 
 We have an open Github Apache-2 licensed repository for the
 [DVC website](https://github.com/iterative/dvc.org), the documentation engine
@@ -97,7 +97,7 @@ create a pull request and merge it into the master branch of the
 describes the directory structure and locations for the different documentation
 parts.
 
-### **DVC’s approach to documentation work**
+### DVC’s approach to documentation work
 
 Documentation tasks and issues are maintained on our doc’s GitHub
 [issue tracker](https://github.com/iterative/dvc.org/issues). Changes to the
@@ -114,7 +114,7 @@ engineers may create a ticket and ask for help. There is one maintainer who is
 responsible for doing final reviews and merging the changes. In this sense, our
 documentation is very similar to any other open source project.
 
-## **Project ideas for GSoD’19**
+## Project ideas for GSoD’19
 
 We identified a number of ideas to work on and there are two major topics these
 ideas fall into. Both topics are pretty broad and we don’t expect we can

@@ -24,7 +24,7 @@ Our favourite month of the year
 [Hacktoberfest](https://hacktoberfest.digitalocean.com/) is already in full
 swing and we at DVC.org are so excited to be a part of it!
 
-**What is Hacktoberfest?**
+### What is Hacktoberfest?
 
 [Hacktoberfest](https://hacktoberfest.digitalocean.com/) is a monthly-long
 program that celebrates open source and encourages you to contribute to open
@@ -37,7 +37,7 @@ DVC.org team. We really enjoyed it in 2018 and this year we are upping the game
 with our own cool stickers, special edition T-shirts and a
 [collection of carefully picked tickets](https://github.com/iterative/dvc/labels/hacktoberfest).
 
-**How to participate?**
+### How to participate?
 
 If you haven’t started your Hacktoberfest challenge yet, it is just the right
 time, you have 3 weeks left to submit PRs and get your swag! Here are some
@@ -67,7 +67,7 @@ And the special addition from DVC.org team:
 
 - Close three issues for DVC and get a special DVC T-shirt.
 
-**Why contribute to DVC?**
+### Why contribute to DVC?
 
 [DVC](http://dvc.org) (Data Version Control) is a relatively young open source
 project. It was started in late 2017 by a data scientist and an engineer to fill
@@ -117,6 +117,8 @@ For all of us who have a heart for open source — let’s discuss, contribute,
 learn, take the technologies forward and build something great together!
 
 Happy hacking!
+
+<hr />
 
 We are happy to hear from you [here](https://dvc.org/support). Our
 [DMs on Twitter](https://twitter.com/DVCorg) are always open, too!

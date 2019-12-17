@@ -71,7 +71,8 @@ participants on our [Discord](http://dvc.org/chat) channel_
 Here are some of the great pieces of content around DVC and ML ops that we
 discovered in October and November:
 
-### [Deploy Machine Learning Models with Django](https://www.deploymachinelearning.com/) by Piotr Płoński.
+- **[Deploy Machine Learning Models with Django](https://www.deploymachinelearning.com/)
+  by Piotr Płoński.**
 
 > …building your ML system has a great advantage — it is tailored to your needs.
 > It has all features that are needed in your ML system and can be as complex as
@@ -91,7 +92,9 @@ discovered in October and November:
   </section>
 </a>
 
-### [How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker](https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0) by [James Le](https://towardsdatascience.com/@james_aka_yale?source=post_page-----5529ea4e59e0----------------------).
+- **[How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker](https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0)
+  by
+  [James Le](https://towardsdatascience.com/@james_aka_yale?source=post_page-----5529ea4e59e0----------------------).**
 
 > In this article, I want to show 3 powerful tools to simplify and scale up
 > machine learning development within an organization by making it easy to
@@ -110,7 +113,9 @@ discovered in October and November:
   </section>
 </a>
 
-### [Creating a solid Data Science development environment](https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34) by [Gabriel dos Santos Goncalves](https://towardsdatascience.com/@gabrielsgoncalves?source=post_page-----60df14ce3a34----------------------)
+- **[Creating a solid Data Science development environment](https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34)
+  by
+  [Gabriel dos Santos Goncalves](https://towardsdatascience.com/@gabrielsgoncalves?source=post_page-----60df14ce3a34----------------------)**
 
 > We do believe that Data Science is a field that can become even more mature by
 > using best practices in project development and that Conda, Git, DVC, and
@@ -129,7 +134,9 @@ discovered in October and November:
   </section>
 </a>
 
-### [Creating reproducible data science workflows with DVC](https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b) by [Gleb Ivashkevich](https://medium.com/@glib.ivashkevych?source=post_page-----3bf058e9797b----------------------).
+- **[Creating reproducible data science workflows with DVC](https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b)
+  by
+  [Gleb Ivashkevich](https://medium.com/@glib.ivashkevych?source=post_page-----3bf058e9797b----------------------).**
 
 > DVC is a powerful tool and we covered only the fundamentals of it.
 
@@ -154,21 +161,17 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-**Q: When you do a dvc import you get the state of the data in the original repo
-at that moment in time from that repo, right?
-[The overall state of that repo (e.g. Git commit id/hash) is not preserved upon import, right?](https://discordapp.com/channels/485586884165107732/563406153334128681/618744949277458462)**
+### Q: When you do a `dvc import` you get the state of the data in the original repo at that moment in time from that repo, right? [The overall state of that repo (e.g. Git commit id/hash) is not preserved upon import, right?](https://discordapp.com/channels/485586884165107732/563406153334128681/618744949277458462)
 
 **A:** On the contrary, DVC relies on Git commit id/hash to determine the state
 of the data as well as code. Git commit id (hash) is saved in DVC file upon
 import, data itself is copied/downloaded into DVC repo cache but would not be
 pushed to the remote — DVC does not create duplicates. There is a command to
-advance/update it when it’s needed — dvc update. Git commit hash saved to
+advance/update it when it’s needed — `dvc update`. Git commit hash saved to
 provide reproducibility. Even if the source repo HEAD has changed your import
-stays the same until you run dvc update or redo dvc import.
+stays the same until you run `dvc update` or redo `dvc import`.
 
-**Q: I’m trying to understand if DVC is an appropriate solution for storing data
-under GDPR requirements.
-[That means that permanent deletion of files with sensitive data needs to be fully supported.](https://discordapp.com/channels/485586884165107732/485596304961962003/621057268145848340)**
+### Q: I’m trying to understand if DVC is an appropriate solution for storing data under GDPR requirements. [That means that permanent deletion of files with sensitive data needs to be fully supported.](https://discordapp.com/channels/485586884165107732/485596304961962003/621057268145848340)
 
 Yes, in this sense DVC is not very different from using bare S3, SSH or any
 other storage where you can go and just delete data. DVC can give a bit of
@@ -176,24 +179,20 @@ overhead to locate a specific file to delete, but otherwise it’s all the same
 you will be able to delete any file you want. Read more details in
 [this discussion](https://discordapp.com/channels/485586884165107732/485596304961962003/621062105524862987).
 
-**Q:
-[Is there anyway to get the remote url for specific DVC-files?](https://discordapp.com/channels/485586884165107732/485596304961962003/621591769766821888)
-Say, I have a DVC-file foo.png.dvc — is there a command that will show the
-remote url, something like dvc get-remote-url foo.png.dvc which will return e.g.
-the Azure url to download.**
+### Q: [Is there anyway to get the remote url for specific DVC-files?](https://discordapp.com/channels/485586884165107732/485596304961962003/621591769766821888) Say, I have a DVC-file `foo.png.dvc` — is there a command that will show the remote url, something like `dvc get-remote-url foo.png.dvc` which will return e.g. the Azure url to download.
 
 There is no special command for that, but if you are using Python, you could use
 our API specifically designed for that:
 
-    from dvc.api import get_url
+```dvc
+from dvc.api import get_url
 
-    url = get_url(path, repo="https://github.com/user/proj",  rev="mybranch")
+url = get_url(path, repo="https://github.com/user/proj",  rev="mybranch")
+```
 
 so, you could as well use this from CLI as a wrapper command.
 
-**Q:
-[Can DVC be integrated with MS Active Directory (AD) authentication for controlling access?](https://discordapp.com/channels/485586884165107732/563406153334128681/619244714071425035)
-The GDPR requirements would force me to use such a system to manage access.**
+### Q: [Can DVC be integrated with MS Active Directory (AD) authentication for controlling access?](https://discordapp.com/channels/485586884165107732/563406153334128681/619244714071425035) The GDPR requirements would force me to use such a system to manage access.
 
 Short answer: no (as of the date of publishing this Heartbeat issue) Good news —
 it should be very easy to add, so we would welcome a contribution :) Azure has a
@@ -201,59 +200,54 @@ connection argument for AD — quick googling shows this
 [library](https://github.com/AzureAD/azure-activedirectory-library-for-python),
 which is what probably needed.
 
-**Q:
-[How do I uninstall DVC from Mac installed as a package?](https://discordapp.com/channels/485586884165107732/485596304961962003/625124341201502209)**
+### Q: [How do I uninstall DVC from Mac installed as a package?](https://discordapp.com/channels/485586884165107732/485596304961962003/625124341201502209)
 
-When installing using plain.pkg it is a bit tricky to uninstall, so we usually
+When installing using `plain.pkg` it is a bit tricky to uninstall, so we usually
 recommend using things like brew cask instead if you really need the binary
 package. Try to run these commands:
 
-    $ sudo rm -rf /usr/local/bin/dvc
+```dvc
+$ sudo rm -rf /usr/local/bin/dvc
 
-    $ sudo rm -rf /usr/local/lib/dvc
+$ sudo rm -rf /usr/local/lib/dvc
 
-    $ sudo pkgutil --forget com.iterative.dvc
+$ sudo pkgutil --forget com.iterative.dvc
+```
 
 to uninstall the package.
 
-**Q: We are using SSH remote to store data, but the problem is that everyone
-within the project has different username on the remote machine and thus we
-cannot set it in the config file (that is committed to Git).
-[Is there a way to add just host and path, without the username?](https://discordapp.com/channels/485586884165107732/563406153334128681/619420070111608848)**
+### Q: We are using SSH remote to store data, but the problem is that everyone within the project has different username on the remote machine and thus we cannot set it in the config file (that is committed to Git). [Is there a way to add just host and path, without the username?](https://discordapp.com/channels/485586884165107732/563406153334128681/619420070111608848)
 
-Yes, you should use --local or--global config options to set user per project or
-per use machine without sharing (committing) them to Git:
+Yes, you should use `--local` or `--global` config options to set user per
+project or per use machine without sharing (committing) them to Git:
 
 ```dvc
 $ dvc remote modify myremote — local (or — global) user myuser
 ```
 
-**Q:
-[I still get the SSL ERROR when I try to perform a dvc push with or without use_ssl = false](https://discordapp.com/channels/485586884165107732/485596304961962003/628227197592797191)?**
+### Q: [I still get the SSL ERROR when I try to perform a dvc push with or without use_ssl = false](https://discordapp.com/channels/485586884165107732/485596304961962003/628227197592797191)?
 
 A simple environment variable like this:
 
-\$ export AWS_CA_BUNDLE=/path/to/cert/cert.crt dvc push
+```dvc
+$ export AWS_CA_BUNDLE=/path/to/cert/cert.crt dvc push
+```
 
 should do the trick for now, we plan to fix the ca_bundle option soon.
 
-**Q: I have just finished a lengthy dvc repro and I’m happy with the result.
-However, I realized that I didn’t specify a dependency which I needed (and
-obviously is used in the computation). Can I somehow fix it?
-[Add the dependency to the stage file (including the right MD5) without rerunning/reproducing the stage (this is not needed as this additional dependency hasn’t changed).](https://discordapp.com/channels/485586884165107732/563406153334128681/620572187841265675)**
+### Q: I have just finished a lengthy `dvc repro` and I’m happy with the result. However, I realized that I didn’t specify a dependency which I needed (and obviously is used in the computation). Can I somehow fix it? [Add the dependency to the stage file (including the right MD5) without rerunning/reproducing the stage (this is not needed as this additional dependency hasn’t changed).](https://discordapp.com/channels/485586884165107732/563406153334128681/620572187841265675)
 
 You need to edit the DVC-file. In the deps section add:
 
+```dvc
 -path: not/included/file/path
+```
 
-and run dvc commit file.dvc to save changes w/o running the pipeline again. See
-an example
+and run `dvc commit file.dvc` to save changes w/o running the pipeline again.
+See an example
 [here](https://discordapp.com/channels/485586884165107732/563406153334128681/620641530075414570).
 
-**Q: For some reason
-[we need to always specify the remote name when doing a dvc push](https://discordapp.com/channels/485586884165107732/485596304961962003/629704961868955648)
-e.g., dvc push -r upstream as opposed to dvc push (mind no additional
-arguments).**
+### Q: For some reason [we need to always specify the remote name when doing a `dvc push`](https://discordapp.com/channels/485586884165107732/485596304961962003/629704961868955648) e.g., `dvc push -r upstream` as opposed to `dvc push` (mind no additional arguments).
 
 You can specify “default” remote:
 
@@ -261,20 +255,17 @@ You can specify “default” remote:
 $ dvc remote add -d remote /path/to/my/main/remote
 ```
 
-then, dvc push (and other commands like dvc pull) will know to push to the
+then, `dvc push` (and other commands like `dvc pull`) will know to push to the
 default
 
-**Q:
-[If I want stage B to run after stage A, but the stage A has no output, can I specify A’s DVC-file as B’s dependency?](https://discordapp.com/channels/485586884165107732/563406153334128681/620715145374466048)**
+### Q: [If I want stage B to run after stage A, but the stage A has no output, can I specify A’s DVC-file as B’s dependency?](https://discordapp.com/channels/485586884165107732/563406153334128681/620715145374466048)
 
 No, at least at the time of publishing this. You could use a phony output
 though. E.g. make the stage A output some dummy file and make B depend on it.
 Please, consider creating or upvoting a relevant issue on our Github if you’d
 this to be implemented.
 
-**Q: I’m just getting started with DVC, but I’d like to use it for multiple
-developers to access the data and share models and code.
-[I do own the server, but I’m not sure how to use DVC with SSH remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/598867829785362452)**
+### Q: I’m just getting started with DVC, but I’d like to use it for multiple developers to access the data and share models and code. [I do own the server, but I’m not sure how to use DVC with SSH remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/598867829785362452)
 
 Please, refer to
 [this answer](https://discuss.dvc.org/t/how-do-i-use-dvc-with-ssh-remote/279/2)
@@ -282,6 +273,8 @@ on the DVC forum and check the documentation for the
 [dvc remote add](https://dvc.org/doc/command-reference/remote/add) and
 [dvc remote modify](https://dvc.org/doc/command-reference/remote/modify)
 commands to see more options and details.
+
+<hr />
 
 If you have any questions, concerns or ideas, let us know in the comments below
 or connect with DVC team [here](https://dvc.org/support). Our

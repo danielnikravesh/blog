@@ -96,10 +96,10 @@ our favorite links from the past month:
 > simplifies concerns around reproducing and rebuilding models at different
 > stages of the projects lifecycle.
 
-- Here is an
-  **[article](https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee)**
-  by **[Favio Vázquez](https://medium.com/@faviovazquez)** with a transcript of
-  this podcast episode.
+- **Here is an
+  [article](https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee)
+  by [Favio Vázquez](https://medium.com/@faviovazquez) with a transcript of this
+  podcast episode.**
 
 <a href="https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee" class="external-link-preview">
   <section class="content-holder">
