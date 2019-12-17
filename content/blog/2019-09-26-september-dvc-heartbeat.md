@@ -260,6 +260,8 @@ discovered in July and August:
   </section>
 </a>
 
+<hr />
+
 ## Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes
@@ -343,8 +345,8 @@ how DVC-files are organized. No matter what method you use, you can run
 **Q:
 [`dvc status` doesn’t seem to report things that need to be dvc pushed, is that by design?](https://discordapp.com/channels/485586884165107732/563406153334128681/606917839688957952)**
 
-You should try with dvc status --cloudor dvc status --remote <your-remote> to
-compare your local cache with a remote one, by default it only compares the
+You should try with dvc status `--cloud` or `dvc status --remote <your-remote>`
+to compare your local cache with a remote one, by default it only compares the
 “working directory” with your local cache (to check whether something should be
 reproduced and saved or not).
 
@@ -383,9 +385,11 @@ Since it’s S3 compatible, specifying `endpointurl` (exact URL depends on the
 [region](https://cloud.ibm.com/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints))
 is the way to go:
 
-    dvc remote add -d mybucket s3://path/to/dir
-    dvc remote modify mybucket endpointurl
-    [https://s3.eu.cloud-object-storage.appdomain.cloud](https://s3.eu.cloud-object-storage.appdomain.cloud)
+```dvc
+dvc remote add -d mybucket s3://path/to/dir
+dvc remote modify mybucket endpointurl
+[https://s3.eu.cloud-object-storage.appdomain.cloud](https://s3.eu.cloud-object-storage.appdomain.cloud)
+```
 
 **Q:
 [How can I push data from client to google cloud bucket using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/592958360903483403)
@@ -394,13 +398,17 @@ Just want to know how can i set the credentials.**
 **A:** You can do it by setting environment variable pointing to yours
 credentials path, like:
 
-    export GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials
+```dvc
+export GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials
+```
 
 It is also possible to set this variable via `dvc config`:
 
 `dvc remote modify myremote credentialpath /path/to/my/creds`
 
 where `myremote` is your remote name.
+
+<hr />
 
 If you have any questions, concerns or ideas, let us know in the comments below
 or connect with DVC team [here](https://dvc.org/support). Our
