@@ -154,10 +154,10 @@ bots also love Ramen now)!
 
 files to GitHub, I now keep my code and data separate
 
-Every time you run dvc add to start tracking some data artifact, its path is
-automatically added to the .gitignore file, as a result it is hard to commit it
-to git by mistake — you would need to explicitly modify the .gitignore first.
-The feature to track some external data is called
+Every time you run `dvc add` to start tracking some data artifact, its path is
+automatically added to the `.gitignore` file, as a result it is hard to commit
+it to git by mistake — you would need to explicitly modify the `.gitignore`
+first. The feature to track some external data is called
 [external outputs](https://dvc.org/doc/user-guide/external-outputs) (if all you
 need is to track some data artifacts). Usually it is used when you have some
 data on S3 or SSH and don’t want to pull it into your working space, but it’s
@@ -166,13 +166,13 @@ repository.
 
 ### [How do I wrap a step that downloads a file/directory into a DVC stage?](https://discordapp.com/channels/485586884165107732/485596304961962003/571342592508428289) I want to ensure that it runs only if file has no been downloaded yet
 
-Use dvc import to track and download the remote data first time and next time
+Use `dvc import` to track and download the remote data first time and next time
 when you do dvc repro if data has changed remotely. If you don’t want to track
-remote changes (lock the data after it was downloaded), use dvc run with a dummy
-dependency (any text file will do you do not touch) that runs an actual
+remote changes (lock the data after it was downloaded), use `dvc run` with a
+dummy dependency (any text file will do you do not touch) that runs an actual
 wget/curl to get the data.
 
-### [How do I show a pipeline that does not have a default Dvcfile?](https://discordapp.com/channels/485586884165107732/485596304961962003/570943786151313408) (e.g. I assigned all files names manually with -f in the dvc run command and I just don’t have Dvcfile anymore)
+### [How do I show a pipeline that does not have a default Dvcfile?](https://discordapp.com/channels/485586884165107732/485596304961962003/570943786151313408) (e.g. I assigned all files names manually with `-f` in the `dvc run` command and I just don’t have Dvcfile anymore)
 
 Almost any command in DVC that deals with pipelines (set of DVC-files) accepts a
 single stage as a target, for example dvc pipeline show — ascii model.dvc.
@@ -190,38 +190,38 @@ for the Azure ML Service.
 
 An excellent question! The short answer is:
 
-dvc cache dir --local — to move your data to a big partition;
+`dvc cache dir --local` — to move your data to a big partition;
 
-dvc config cache.type reflink, hardlink, symlink, copy — to enable symlinks to
+`dvc config cache.type reflink, hardlink, symlink, copy` — to enable symlinks to
 avoid actual copying;
 
-dvc config cache.protected true — it’s highly recommended to make links in your
-working space read-only to avoid corrupting the cache;
+`dvc config cache.protected true` — it’s highly recommended to make links in
+your working space read-only to avoid corrupting the cache;
 
 To add your data first time to the DVC cache, do a clone of the repository on a
-big partition and run dvc add to add your data. Then you can do git pull, dvc
-pull on a small partition and DVC will create all the necessary links.
+big partition and run `dvc add` to add your data. Then you can do `git pull`,
+`dvc pull` on a small partition and DVC will create all the necessary links.
 
-### [Why I’m getting `Paths for outs overlap` error when I run dvc add or dvc run?](https://discordapp.com/channels/485586884165107732/485596304961962003/571335064374345749)
+### [Why I’m getting `Paths for outs overlap` error when I run `dvc add` or `dvc run`?](https://discordapp.com/channels/485586884165107732/485596304961962003/571335064374345749)
 
 Usually it means that a parent directory of one of the arguments for dvc add /
 dvc run is already tracked. For example, you’ve added the whole datasets
 directory already. And now you are trying to add a subdirectory, which is
-already tracked as a part of the datasets one. No need to do that. You could dvc
-add datasets or dvc repro datasets.dvc to save changes.
+already tracked as a part of the datasets one. No need to do that. You could
+`dvc add datasets` or `dvc repro datasets.dvc` to save changes.
 
 ### [I’m getting `ascii codec can’t encode character` error on DVC commands when I deal with unicode file names](https://discordapp.com/channels/485586884165107732/485596304961962003/567310354766495747)
 
 [Check the locale settings you have](https://perlgeek.de/en/article/set-up-a-clean-utf8-environment)
 (locale command in Linux). Python expects a locale that can handle unicode
-printing. Usually it’s solved with these commands: export LC_ALL=en_US.UTF-8 and
-export LANG=en_US.UTF-8. You can place those exports into .bashrc or other file
-that defines your environment.
+printing. Usually it’s solved with these commands: `export LC_ALL=en_US.UTF-8`
+and `export LANG=en_US.UTF-8`. You can place those exports into `.bashrc` or
+other file that defines your environment.
 
 ### [Does DVC use the same logins aws-cli has when using an S3 bucket as its repo/remote storage](https://discordapp.com/channels/485586884165107732/485596304961962003/563149775340568576)?
 
 In short — yes, but it can be also configured. DVC is going to use either your
-default profile (from ~/.aws/\*) or your env vars by default. If you need more
+default profile (from `~/.aws/*`) or your env vars by default. If you need more
 flexibility (e.g. you need to use different credentials for different projects,
 etc) check out
 [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
@@ -229,7 +229,7 @@ to configure custom aws profiles and then you could use them with DVC using
 these
 [remote options](https://dvc.org/doc/commands-reference/remote-add#options).
 
-### [How can I output multiple metrics from a single file?](https://discordapp.com/channels/485586884165107732/485596304961962003/566000729505136661) Let’s say I have the following in a file: {“AUC_RATIO”: {“train”: 0.8922748258797667, “valid”: 0.8561602726251776, “xval”: 0.8843431199314923}}. How can I show both train and valid without xval?
+### [How can I output multiple metrics from a single file?](https://discordapp.com/channels/485586884165107732/485596304961962003/566000729505136661) Let’s say I have the following in a file: `{“AUC_RATIO”: {“train”: 0.8922748258797667, “valid”: 0.8561602726251776, “xval”: 0.8843431199314923}}`. How can I show both train and valid without xval?
 
 You can use metrics show command XPath option and provide multiple attribute
 names to it:
@@ -249,8 +249,8 @@ There are a few options to add a new dependency:
   without md5. DVC will understand that that stage is changed and will re-run
   and re-calculate md5 checksums during the next dvc repro;
 
-- use dvc run --no-exec is another option. It will rewrite the existing file for
-  you with new parameters.
+- use `dvc run --no-exec` is another option. It will rewrite the existing file
+  for you with new parameters.
 
 ### [Is there a way to add a dependency to a python package, so it runs a stage again if it imported the updated library?](https://discordapp.com/channels/485586884165107732/485596304961962003/566315265646788628)
 
@@ -269,10 +269,10 @@ $ dvc run -d mypkgver -d ... -o .. mycmd
 E.g. I made some whitespace/comment changes in my code and I want to tell dvc
 “it’s ok, you don’t have to recompute everything”.
 
-Yes, you could dvc commit -f. It will save all current checksum without
+Yes, you could `dvc commit -f`. It will save all current checksum without
 re-running your commands.
 
-### I[ have projects that use data that’s stored in S3. I never have data locally to use dvc push, but I would like to have this data version controlled.](https://discordapp.com/channels/485586884165107732/485596304961962003/563352000281182218) Is there a way to use the features of DVC in this use case?\*\*
+### I[ have projects that use data that’s stored in S3. I never have data locally to use `dvc push`, but I would like to have this data version controlled.](https://discordapp.com/channels/485586884165107732/485596304961962003/563352000281182218) Is there a way to use the features of DVC in this use case?
 
 Yes! This DVC features is called
 [external outputs](https://dvc.org/doc/user-guide/external-outputs) and
