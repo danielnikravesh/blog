@@ -1,17 +1,17 @@
-const path = require('path')
-const dvc = require('./config/prismjs/dvc')
+const path = require('path');
+const dvc = require('./config/prismjs/dvc');
 
 const netlifyCMSPathConfig = {
   resolve: 'gatsby-plugin-netlify-cms-paths',
   options: {
     cmsConfig: '/static/admin/config.yml'
   }
-}
+};
 
-const title = 'Data Version Control · DVC'
-const keywords = 'data, machine learning models management, datasets, git'
+const title = 'Data Version Control · DVC';
+const keywords = 'data, machine learning models management, datasets, git';
 const description =
-  'Data Version Control Blog. We write about machine learning workflow. Data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.'
+  'Data Version Control Blog. We write about machine learning workflow. Data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
 const plugins = [
   {
@@ -112,8 +112,8 @@ const plugins = [
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 custom_elements: [{ 'content:encoded': edge.node.html }]
-              })
-            })
+              });
+            });
           },
           query: `
               {
@@ -165,7 +165,7 @@ const plugins = [
     }
   },
   netlifyCMSPathConfig
-]
+];
 
 if (process.env.CONTEXT === 'production') {
   plugins.push({
@@ -174,7 +174,7 @@ if (process.env.CONTEXT === 'production') {
       trackingId: process.env.GA_ID,
       respectDNT: true
     }
-  })
+  });
 }
 
 module.exports = {
@@ -185,4 +185,4 @@ module.exports = {
     siteUrl: 'https://blog.dvc.org'
   },
   plugins
-}
+};
