@@ -180,7 +180,7 @@ $ cat data/evaluation.txt
 `dvc repro` always re executes steps which are affected with the latest
 developer changes. It knows what needs to be reproduced.
 
-DVC can also work in an “_multiuser_ _environment”_ . Pipelines (dependency
+DVC can also work in an _"multiuser environment”_ . Pipelines (dependency
 graphs) are visible to others colleagues if we are working in a team and using
 git as our version control tool. Data files can be shared if we set up a cloud
 and with _dvc sync_ we specify which data can be shared and used for other
