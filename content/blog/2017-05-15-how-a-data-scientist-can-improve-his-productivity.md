@@ -5,9 +5,7 @@ description:
   Data science and machine learning are iterative processes. It is never
   possible to successfully complete a data science project in a single pass.
 picture: /uploads/post_images/2017-05-15.jpeg
-pictureComment: Some comment
 author: ../authors/dmitry_petrov.md
-commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
   - Data Science
 ---
