@@ -67,7 +67,7 @@ please let us know [here](http://dvc.org/support) or on Twitter!
   </section>
 </a>
 
-<br />
+<hr />
 
 Every month our team is excited to discover new great pieces of content
 addressing some of the burning ML issues. Here are some of the links that caught
@@ -120,6 +120,8 @@ highly recommended by our team.
 
 <iframe src="https://medium.com/media/b898b23fca101162303e8b9b13618fe2" frameborder=0></iframe>
 
+<hr />
+
 ## Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes
@@ -132,51 +134,53 @@ interesting takeaways.
 
 You can definitely add more than one remote (see
 [dvc remote add](https://dvc.org/doc/commands-reference/remote-add)) and then
-[dvc push](https://dvc.org/doc/commands-reference/push) has a -R option to pick
-which one to send the cached data files (deps, outs, etc) to. We would not
+[dvc push](https://dvc.org/doc/commands-reference/push) has a `-R` option to
+pick which one to send the cached data files (deps, outs, etc) to. We would not
 recommend doing this though. It complicates the commands you have to run — you
 will need to remember to specify a remote name for every command that deals with
-data — push, pull, gc, fetch, status, etc. Please, leave a comment in the
-relevant issue [here](https://github.com/iterative/dvc/issues/2095) if this case
-is important for you.
+data — `push`, `pull`, `gc`, `fetch`, `status`, etc. Please, leave a comment in
+the relevant issue [here](https://github.com/iterative/dvc/issues/2095) if this
+case is important for you.
 
-### [Is that possible with DVC to have multiple (few) metric files and compare them all at once?](https://discordapp.com/channels/485586884165107732/485596304961962003/578532350221352987) For example, we’d like to consider as metrics the loss of a neural network training process (loss as a -M output of a training stage), and also apart knowing the accuracy of the NN on a test set (another -M output of eval stage).
+### [Is that possible with DVC to have multiple (few) metric files and compare them all at once?](https://discordapp.com/channels/485586884165107732/485596304961962003/578532350221352987) For example, we’d like to consider as metrics the loss of a neural network training process (loss as a `-M` output of a training stage), and also apart knowing the accuracy of the NN on a test set (another `-M` output of eval stage).
 
-Yes, it is totally fine to use -M in different stages. dvc metrics show will
+Yes, it is totally fine to use `-M` in different stages. `dvc metrics show` will
 just show both metrics.
 
-### [I have a scenario where an artifacts (data) folder is created by the dvc run command via the -o flag. I have manually added another file into or modified the artifacts folder but when I do dvc push nothing happens, is there anyway around this?](https://discordapp.com/channels/485586884165107732/485596304961962003/577362750443880449)
+### [I have a scenario where an artifacts (data) folder is created by the dvc run command via the `-o` flag. I have manually added another file into or modified the artifacts folder but when I do `dvc push` nothing happens, is there anyway around this?](https://discordapp.com/channels/485586884165107732/485596304961962003/577362750443880449)
 
 Let’s first do a quick recap on how DVC handles data files (you can definitely
 find more information on the [DVC documentation site](http://dvc.org/docs)).
 
-- When you do dvc add, dvc run or dvc import DVC puts artifacts (in case of dvc
-  run artifacts == outputs produced by the command) into .dvc/cache directory
-  (default cache location). You don’t see this happening because
+- When you do `dvc add`, `dvc run` or `dvc import` DVC puts artifacts (in case
+  of `dvc run` artifacts == outputs produced by the command) into `.dvc/cache`
+  directory (default cache location). You don’t see this happening because
   [DVC keeps links](https://dvc.org/doc/user-guide/large-dataset-optimization)
   (or in certain cases creates a copy) to these files/directories.
 
-- dvc push does not move files from the workspace (that what you see) to the
+- `dvc push` does not move files from the workspace (that what you see) to the
   remote storage, it always moves files/directories that are already in cache
   (default is .dvc/cache).
 
 - So, now you’ve added a file manually, or made some other modifications. But
-  these files are not in cache yet. The analogy would be git commit. You change
-  the file, you do git commit, only after that you can push something to Git
-  server (Github/Gitlab, etc). The difference is that DVC is doing commit (moves
-  files to cache) automatically in certain cases — dvc add, dvc run, etc.
+  these files are not in cache yet. The analogy would be `git commit`. You
+  change the file, you do `git commit`, only after that you can push something
+  to Git server (Github/Gitlab, etc). The difference is that DVC is doing commit
+  (moves files to cache) automatically in certain cases — `dvc add`, `dvc run`,
+  etc.
 
-There is an explicit command — dvc commit-that you should run if you want to
-enforce the change to the output produced by dvc run. This command will update
+There is an explicit command — `dvc commit` - that you should run if you want to
+enforce the change to the output produced by `dvc run`. This command will update
 the corresponding DVC- files (.dvc extension) and will move data to cache. After
-that you should be able to run dvc push to save your data on the external
+that you should be able to run `dvc push` to save your data on the external
 storage.
 
 Note, when you do an explicit commit like this you are potentially “breaking”
 the reproducibility. In a sense that there is no guarantee now that your
-directory can be produced by dvc run/dvc repro — since you changed it manually.
+directory can be produced by `dvc run`/`dvc repro` — since you changed it
+manually.
 
-### [I’d like to transform my dataset in-place to avoid copying it, but I can’t use dvc run to do this because it doesn’t allow the same directory as an output and a dependency.](https://discordapp.com/channels/485586884165107732/485596304961962003/578898899469729796)
+### [I’d like to transform my dataset in-place to avoid copying it, but I can’t use `dvc run` to do this because it doesn’t allow the same directory as an output and a dependency.](https://discordapp.com/channels/485586884165107732/485596304961962003/578898899469729796)
 
 You could do this in one step (one stage). So that getting your data and
 modifying it, is one stage. So you don’t depend on the data folder. You just
@@ -187,14 +191,14 @@ could depend on your download + modifying script.
 Most likely it means that there is a DVC-file that have the same output twice.
 Or there two DVC-files that share the same output file.
 
-### [I’m getting “No such file or directory” error when I do dvc run or dvc repro](https://discordapp.com/channels/485586884165107732/485596304961962003/580176327701823498). The command runs find if I don’t use DVC.
+### [I’m getting “No such file or directory” error when I do `dvc run` or `dvc repro`](https://discordapp.com/channels/485586884165107732/485596304961962003/580176327701823498). The command runs find if I don’t use DVC.
 
 That happens because dvc run is trying to ensure that your command is the one
 creating your output and removes existing outputs before executing the command.
-So that when you run dvc repro later, it will be able to fully reproduce the
+So that when you run `dvc repro` later, it will be able to fully reproduce the
 output. So you need to make the script create the directory or file.
 
-### [I’m implementing a CI/CD and I would like to simplify my CI/CD or even my training code (keeping them cloud agnostic) by using dvc pull inside my Docker container when initializing a training job. ](https://discordapp.com/channels/485586884165107732/485596304961962003/581256265234251776) Can DVC be used in this way?
+### [I’m implementing a CI/CD and I would like to simplify my CI/CD or even my training code (keeping them cloud agnostic) by using `dvc pull` inside my Docker container when initializing a training job. ](https://discordapp.com/channels/485586884165107732/485596304961962003/581256265234251776) Can DVC be used in this way?
 
 Yes, it’s definitely a valid case for DVC. There are different ways of
 organizing the storage that training machines are using to access data. From the
@@ -212,11 +216,11 @@ S3 bucket and AWS provides an HTTP end-point to read data from it.
 
 This is not an issue, it is an implementation detail. There’s no current way to
 upload the files with the original filename (In this case, the S3 bucket will
-have the file data.csv but with another name 20/893143…). The reason behind this
-decision is because we want to store a file only once no matter how many dataset
-versions it’s used in. Also, it’s a reliable way to uniquely identify the file.
-You don’t have to be afraid that someone decided to create a file with the same
-name (path) but a different content.
+have the file `data.csv` but with another name 20/893143…). The reason behind
+this decision is because we want to store a file only once no matter how many
+dataset versions it’s used in. Also, it’s a reliable way to uniquely identify
+the file. You don’t have to be afraid that someone decided to create a file with
+the same name (path) but a different content.
 
 ### [Is it possible to only have a shared ‘local’ cache and no remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/587730054893666326) I’m trying to figure out how to use this in a 40 node cluster which already has very fast NFS storage across all the nodes. Not storing everything twice seems desirable. Esp. for the multi-TB input data
 
@@ -225,6 +229,8 @@ use dvc cache dir command to setup an external cache. There are few caveats
 though. Please, read
 [this link](https://discuss.dvc.org/t/share-nas-data-in-server/180/4?u=shcheklein)
 for an example of the workflow.
+
+<hr />
 
 If you have any questions, concerns or ideas, let us know in the comments below
 or connect with DVC team [here](https://dvc.org/support). Our
