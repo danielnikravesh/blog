@@ -39,7 +39,7 @@ talks and we will run a booth. So looking forward to it! Stop by for a chat and
 some cool swag. And if you are in San Diego on those days and want to catch up —
 please let us know [here](http://dvc.org/support) or on Twitter!
 
-<a href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai?source=post_page-----b178bf8454e7----------------------" class="external-link-preview">
+<a href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai" class="external-link-preview">
   <section class="content-holder">
     <div class="description-holder">
       <h4 class="title">Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man...</h4>
@@ -54,7 +54,7 @@ please let us know [here](http://dvc.org/support) or on Twitter!
 
 <br />
 
-<a href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg?source=post_page-----b178bf8454e7----------------------" class="external-link-preview">
+<a href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg" class="external-link-preview">
   <section class="content-holder">
     <div class="description-holder">
       <h4 class="title">Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a...</h4>
@@ -98,7 +98,7 @@ our eye in June:
   hosted by [Raiffeisen DGTL](https://www.raiffeisen-digital.ru/?utm_referrer=)
   — check out the video and slide decks.**
 
-<a href="http://ml-repa.ru/?source=post_page-----b178bf8454e7----------------------" class="external-link-preview">
+<a href="http://ml-repa.ru/" class="external-link-preview">
   <section class="content-holder">
     <div class="description-holder">
       <h4 class="title">Machine Learning REPA</h4>

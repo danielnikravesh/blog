@@ -93,8 +93,7 @@ discovered in October and November:
 </a>
 
 - **[How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker](https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0)
-  by
-  [James Le](https://towardsdatascience.com/@james_aka_yale?source=post_page-----5529ea4e59e0----------------------).**
+  by [James Le](https://towardsdatascience.com/@james_aka_yale).**
 
 > In this article, I want to show 3 powerful tools to simplify and scale up
 > machine learning development within an organization by making it easy to
@@ -115,7 +114,7 @@ discovered in October and November:
 
 - **[Creating a solid Data Science development environment](https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34)
   by
-  [Gabriel dos Santos Goncalves](https://towardsdatascience.com/@gabrielsgoncalves?source=post_page-----60df14ce3a34----------------------)**
+  [Gabriel dos Santos Goncalves](https://towardsdatascience.com/@gabrielsgoncalves)**
 
 > We do believe that Data Science is a field that can become even more mature by
 > using best practices in project development and that Conda, Git, DVC, and
@@ -135,8 +134,7 @@ discovered in October and November:
 </a>
 
 - **[Creating reproducible data science workflows with DVC](https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b)
-  by
-  [Gleb Ivashkevich](https://medium.com/@glib.ivashkevych?source=post_page-----3bf058e9797b----------------------).**
+  by [Gleb Ivashkevich](https://medium.com/@glib.ivashkevych).**
 
 > DVC is a powerful tool and we covered only the fundamentals of it.
 

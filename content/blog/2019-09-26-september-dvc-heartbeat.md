@@ -94,8 +94,7 @@ discovered in July and August:
 <blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">🙏Question to ML friends: How do you go about version control for your ML projects (data, models, and intermediate steps in your data pipelines)? Have you built your own tools? Are using something open source? Or a SaaS? Or does this come bundled with your ML infra products? Thx!</p>&mdash; Nathan Benaich (@NathanBenaich) <a href="https://twitter.com/NathanBenaich/status/1151815916512010242?ref_src=twsrc%5Etfw">18 июля 2019 г.</a></blockquote>
 
 - **[Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers](https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804)
-  by
-  [Ward Van Laer](https://medium.com/@ward.vanlaer?source=post_page-----5b9c80cdf804----------------------).**
+  by [Ward Van Laer](https://medium.com/@ward.vanlaer).**
 
 > It is possible to manage your work flow using open-source and free tools.
 
@@ -113,8 +112,7 @@ discovered in July and August:
 </a>
 
 - **[Using DVC to create an efficient version control system for data projects](https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe)
-  by
-  [Basile Guerrapin](https://medium.com/@basile_16101?source=post_page-----96efd94355fe----------------------).**
+  by [Basile Guerrapin](https://medium.com/@basile_16101).**
 
 > DVC brought versioning for inputs, intermediate files and algorithm models to
 > the VAT auto-detection project and this drastically increased our
@@ -154,8 +152,7 @@ discovered in July and August:
 </a>
 
 - **[How to use data version control (dvc) in a machine learning project](https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185)
-  by
-  [Matthias Bitzer](https://towardsdatascience.com/@matthiasbitzer94?source=post_page-----a78245c0185----------------------).**
+  by [Matthias Bitzer](https://towardsdatascience.com/@matthiasbitzer94).**
 
 > To illustrate the use of dvc in a machine learning context, we assume that our
 > data is divided into train, test and validation folders by default, with the
@@ -176,8 +173,7 @@ discovered in July and August:
 </a>
 
 - **[Version Control ML Model](https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c)
-  by
-  [Tianchen Wu](https://towardsdatascience.com/@TianchenW?source=post_page-----4adb2db5f87c----------------------)**
+  by [Tianchen Wu](https://towardsdatascience.com/@TianchenW)**
 
 > This post presents a solution to version control machine learning models with
 > git and dvc ([Data Version Control](https://dvc.org/doc/tutorial)).
@@ -239,8 +235,7 @@ discovered in July and August:
 </a>
 
 - **[Effective ML Teams — Lessons Learne](https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283)
-  by
-  [Czeslaw Szubert](https://medium.com/@czeslaw.szubert?source=post_page-----6a6e761bc283----------------------)**
+  by [Czeslaw Szubert](https://medium.com/@czeslaw.szubert)**
 
 > In this post I’ll present lessons learned on how to setup successful ML teams
 > and what you need to devise an effective enterprise ML strategy.
