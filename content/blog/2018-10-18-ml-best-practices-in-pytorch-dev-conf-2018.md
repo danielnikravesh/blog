@@ -75,11 +75,14 @@ about best engineering practices in ML. He drew a contrast between traditional
 software development (software 1.0) with software utilizing Machine Learning
 techniques (software 2.0), saying that
 
-> # “software 2.0 code also has new feature demands, contains bugs, and requires iterations.”
+> “software 2.0 code also has new feature demands, contains bugs, and requires
+> iterations.”
 
 Meaning that ML development has a lifecycle similar to traditional software:
 
-> # “When you are working with these [neural] networks **in production** you are doing much more than that [training and measuring models]. You maintaining the codebase and that codebase is alive is just like 1.0 code.”
+> “When you are working with these [neural] networks **in production** you are
+> doing much more than that [training and measuring models]. You maintaining the
+> codebase and that codebase is alive is just like 1.0 code.”
 
 Machine Learning models need to grow and develop feature-by-feature, bugs need
 to be found and fixed, and repeatable processes are a must, as in earlier non-ML
