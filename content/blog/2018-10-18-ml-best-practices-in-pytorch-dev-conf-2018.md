@@ -3,8 +3,6 @@ title: ML best practices in PyTorch dev conf 2018
 date: 2018-10-18
 description: |
   In the Machine Learning (ML) field tools and techniques for best practices are just starting to be developed.
-descriptionLong: |
-  In the Machine Learning (ML) field tools and techniques for best practices are just starting to be developed. At the PyTorch developer conference (PTDC-18), several speakers including Jerome Pesenti, VP of AI from Facebook and Andrej Karpathy, Director of Tesla AI spoke about best practices for machine learning development. The issues discussed included applying traditional software development techniques like unit testing, CI/CD systems, automated deployment, version control, and more to the ML field.
 picture: /uploads/post_images/2018-10-18.jpeg
 pictureComment: 'The image source: blog.hubspot.com'
 author: ../authors/dmitry_petrov.md
@@ -15,6 +13,12 @@ tags:
   - Data Science
   - Git
 ---
+
+At the PyTorch developer conference (PTDC-18), several speakers including Jerome
+Pesenti, VP of AI from Facebook and Andrej Karpathy, Director of Tesla AI spoke
+about best practices for machine learning development. The issues discussed
+included applying traditional software development techniques like unit testing,
+CI/CD systems, automated deployment, version control, and more to the ML field.
 
 In this blog post, we will go over the best practices ideas from PTDC-18 and the
 future of ML tool developments.
