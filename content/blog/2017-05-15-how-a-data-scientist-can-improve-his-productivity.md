@@ -74,7 +74,9 @@ for the next one:
 ```dvc
 # Split training and testing dataset. Two output files.
 # 0.33 is the test dataset splitting ratio. 20170426 is a seed for randomization.
-$ dvc run python code/split_train_test.py data/Posts.tsv 0.33 20170426 data/Posts-train.tsv data/Posts-test.tsv
+$ dvc run python code/split_train_test.py \
+                 data/Posts.tsv 0.33 20170426 \
+                 data/Posts-train.tsv data/Posts-test.tsv
 ```
 
 DVC derives the dependencies automatically by looking to the list of the
