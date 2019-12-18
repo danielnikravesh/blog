@@ -118,7 +118,7 @@ exports.onPostBuild = async function({ graphql }) {
   );
 
   const dir = path.join(__dirname, "/public/api");
-  const filepath = path.join(dir, "posts.js");
+  const filepath = path.join(dir, "posts.json");
 
   // Write json file to the public dir,
   // it will be used community page later
