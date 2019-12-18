@@ -1,6 +1,4 @@
 .wrapper {
-  line-height: 1.3;
-
   @media (--md-scr) {
     @mixin text-mobile;
   }

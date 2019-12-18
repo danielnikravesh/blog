@@ -53,7 +53,7 @@ module.exports = {
     },
     "text-desktop": {
       "font-size": "24px",
-      "line-height": "36px"
+      "line-height": "30px"
     },
     "text-mobile": {
       "font-size": "20px",
