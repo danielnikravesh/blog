@@ -4,4 +4,6 @@ name: Dmitry Petrov
 avatar: /uploads/avatars/dmitry_petrov.png
 ---
 
-Some text about Dmitry
+Creator of [http://dvc.org](http://dvc.org) — Git for ML. Ex-Data Scientist
+[http://twitter.com/Microsoft](@Microsoft). PhD in CS. Making jokes with a
+serious face.

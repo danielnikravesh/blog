@@ -4,4 +4,6 @@ name: George Vyshnya
 avatar: /uploads/avatars/george_vyshnya.jpeg
 ---
 
-Some text about George
+Seasoned Data Scientist / Software Developer with blended experience in software
+development, IT, DevOps, PM and C-level roles. CTO at
+[http://sbc-group.pl](http://sbc-group.pl)

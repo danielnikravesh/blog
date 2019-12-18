@@ -4,4 +4,4 @@ name: Svetlana Grinchenko
 avatar: /uploads/avatars/svetlana_grinchenko.jpeg
 ---
 
-Some text about Svetlana
+Head of developer relations at [http://dvc.org](http://dvc.org)
