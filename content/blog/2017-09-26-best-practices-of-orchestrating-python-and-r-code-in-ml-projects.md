@@ -73,10 +73,10 @@ Let’s download necessary R and Python codes from above (clone the
 [Github](https://github.com/Zoldin/R_AND_DVC) repository):
 
 ```dvc
-mkdir R_DVC_GITHUB_CODE
-cd R_DVC_GITHUB_CODE
+$ mkdir R_DVC_GITHUB_CODE
+$ cd R_DVC_GITHUB_CODE
 
-git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AND_DVC)
+$ git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AND_DVC)
 ```
 
 Our dependency graph of this data science project look like this:
@@ -100,20 +100,20 @@ Let’s install Feather library in both environments.
 For Python 3 on linux enviroment you can use cmd and pip3:
 
 ```dvc
-sudo pip3 install feather-format
+$ sudo pip3 install feather-format
 ```
 
 For R it is necessary to install feather package:
 
 ```dvc
-install.packages(feather)
+$ install.packages(feather)
 ```
 
 After successful installation we can use Feather for data exchange.
 
 Below is an R syntax for data frame export with Feather (featurization.R):
 
-```dvc
+```python
 library(feather)
 
 write_feather(dtm_train_tfidf,args[3])
@@ -123,7 +123,7 @@ print("Two data frame were created with Feather - one for train and one for test
 
 Python syntax for reading feather input binary files (train_model_python.py):
 
-```dvc
+```python
 **import **feather **as **ft
 
 input = sys.argv[1]
@@ -167,7 +167,7 @@ It is possible to improve our result with random forest algorithm.
 We can increase number of trees in the random forest classifier — from 100 to
 500:
 
-```dvc
+```python
 clf = RandomForestClassifier(n_estimators=**500**, n_jobs=2, random_state=seed)
 clf.fit(x, labels)
 ```

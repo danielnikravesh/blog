@@ -90,10 +90,10 @@ Firstly, codes from above we will download into the new folder (clone the
 repository):
 
 ```dvc
-mkdir R_DVC_GITHUB_CODE
-cd R_DVC_GITHUB_CODE
+$ mkdir R_DVC_GITHUB_CODE
+$ cd R_DVC_GITHUB_CODE
 
-git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AND_DVC)
+$ git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AND_DVC)
 ```
 
 ## DVC installation and initialization
