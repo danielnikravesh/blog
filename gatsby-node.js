@@ -123,5 +123,5 @@ exports.onPostBuild = async function({ graphql }) {
   // Write json file to the public dir,
   // it will be used community page later
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-  fs.writeFileSync(filepath, JSON.stringify(posts));
+  fs.writeFileSync(filepath, JSON.stringify({ posts }));
 };
