@@ -36,7 +36,11 @@ Regarding the future of ML, Jerome envisioned a “streamlined development, more
 accessible tools, breakthrough hardware, and more”. Talking about the gap huge
 gap between software engineering and ML engineering, Presenti said:
 
-> # Machine learning engineering is where we were in Software Engineering 20 years ago. A lot of things still need to be invented. We need to figure out what testing means, what CD (continuous delivery) means, we need to develop tools and environments that people can develop **robust ML that does not have too many biases** and does not overfit.
+> Machine learning engineering is where we were in Software Engineering 20 years
+> ago. A lot of things still need to be invented. We need to figure out what
+> testing means, what CD (continuous delivery) means, we need to develop tools
+> and environments that people can develop **robust ML that does not have too
+> many biases** and does not overfit.
 
 In that gap lives many opportunities to develop new tools and services. We in
 the ML ecosystem are called upon to implement the future of machine learning
