@@ -25,7 +25,7 @@ between your code and data files and all code running arguments. This becomes
 even more important and complicated in a team environment where data scientists’
 collaboration takes a serious amount of the team’s effort.
 
-![](https://cdn-images-1.medium.com/max/3800/1*WjXHRFcFT--7jPRWJ9Q5Ww.jpeg)
+![](uploads/post_images/iterative-machine-learning-process.jpeg)
 
 Today, we are pleased to announce the beta version release of new open source
 tool — [data version control](https://dataversioncontrol.com/) or DVC. DVC is
@@ -75,7 +75,7 @@ to reproduce the research results in different computers. Moreover, you can
 share your data files through cloud storage services like AWS S3 or GCP Storage
 since DVC does not push data files to Git repositories.
 
-![](https://cdn-images-1.medium.com/max/2048/1*jXSDrldq1-pcaB7ms8q5hw.jpeg)
+![](uploads/post_images/git-server-or-github.jpeg)
 
 The code below shows how to share your code and DAG through the Git and data
 files through S3:
@@ -91,7 +91,7 @@ After that, only the last steps of the ML process will be reproduced.
 
 The steps that were reproduced (red):
 
-![](https://cdn-images-1.medium.com/max/3766/1*dQnhQh-rGNwQABwftPoYOw.png)
+![](uploads/post_images/reproduced-steps.png)
 
 ## Conclusion
 
