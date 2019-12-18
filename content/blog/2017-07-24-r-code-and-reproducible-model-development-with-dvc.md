@@ -5,6 +5,10 @@ description:
   In this document we will briefly explore possibilities of a new open source
   tool that could help with achieving code simplicity, readability and faster
   model development.
+picture: /uploads/post_images/2017-07-24.png
+pictureComment:
+  Kudos to StickerMule.com for our amazing stickers (and great customer
+  service)!
 author: ../authors/marija_ilic.md
 tags:
   - Data Science
@@ -22,8 +26,6 @@ that DVC is a language agnostic
 (https://en.wikipedia.org/wiki/Language-agnostic) tool and can be used with any
 programming language. In this blog post, we will see how to use DVC in R
 projects.
-
-![DAG on R example](/uploads/post_images/dvc-in-r.png) _DAG on R example_
 
 ## R coding — keep it simple and readable
 
