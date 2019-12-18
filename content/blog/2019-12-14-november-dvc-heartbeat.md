@@ -182,7 +182,7 @@ you will be able to delete any file you want. Read more details in
 There is no special command for that, but if you are using Python, you could use
 our API specifically designed for that:
 
-```dvc
+```python
 from dvc.api import get_url
 
 url = get_url(path, repo="https://github.com/user/proj",  rev="mybranch")
