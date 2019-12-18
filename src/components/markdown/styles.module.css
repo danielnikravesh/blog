@@ -134,7 +134,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 5px;
       bottom: -3px;
@@ -172,7 +172,7 @@
     list-style: none;
 
     &::before {
-      content: '•';
+      content: "•";
       color: var(--color-black);
       position: absolute;
       margin-left: -30px;
@@ -189,7 +189,7 @@
     list-style: none;
 
     &::before {
-      content: counter(ol) '.';
+      content: counter(ol) ".";
       position: absolute;
       margin-left: -30px;
       color: var(--color-black);
@@ -291,11 +291,11 @@
 
   /* based on coy theme */
 
-  pre[class*='language-'] {
+  pre[class*="language-"] {
     background: #40354d;
 
     /* this code fixes hilghlight with scroll */
-    code[class*='language-'] {
+    code[class*="language-"] {
       float: left;
       min-width: 100%;
       padding: 0;
