@@ -470,4 +470,10 @@
   :global(.twitter-tweet) {
     margin: 0 auto;
   }
+
+  :global {
+    .gist td {
+      border-bottom: none;
+    }
+  }
 }

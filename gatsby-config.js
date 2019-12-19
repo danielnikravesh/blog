@@ -48,6 +48,13 @@ const plugins = [
     options: {
       plugins: [
         {
+          resolve: "gatsby-remark-embed-gist",
+          options: {
+            username: ['Zoldin', 'dmpetrov'],
+            includeDefaultCss: true
+          }
+        },
+        {
           resolve: "gatsby-remark-relative-images"
         },
         {
