@@ -103,7 +103,7 @@ the steps. Below is an example of a canonical machine learning pipeline (more
 details in
 [the DVC tutorial](https://blog.dataversioncontrol.com/data-version-control-beta-release-iterative-machine-learning-a7faf7c8be67)):
 
-<iframe src="https://medium.com/media/49aab320b33193740243e0b49018f2f7" frameborder=0></iframe>
+`gist:dmpetrov/7704a5156bdc32c7379580a61e2fe3b6#dvc_pipeline.sh`
 
 ## Why are regular pipeline tools not enough?
 

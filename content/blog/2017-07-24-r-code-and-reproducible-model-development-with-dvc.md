@@ -66,27 +66,27 @@ brief explanation of the codes is presented below:
 **parsingxml.R** — it takes xml that we downloaded from the web and creates
 appropriate csv file.
 
-<iframe src="https://medium.com/media/f755f1120edb1902152df1c1cb2d54bb" frameborder=0></iframe>
+`gist:Zoldin/47536af63182a0e8daf37a7b989e2e8d#parsingxml.R`
 
 **train_test_spliting.R** — stratified sampling by target variable (here we are
 creating test and train data set)
 
-<iframe src="https://medium.com/media/42556acd0f41d4d111e155e44455e872" frameborder=0></iframe>
+`gist:Zoldin/7591c47ce5988cbe087e0038c9a850b9#train_test_splitting.R`
 
 **featurization.R** — text mining and tf-idf matrix creation. In this part we
 are creating predictive variables.
 
-<iframe src="https://medium.com/media/4264da9f339e1ffec48496c5e710e536" frameborder=0></iframe>
+`gist:Zoldin/9e79c047fd8ad7aa6596b0682aca83c6#featurization.R`
 
 **train_model.R** — with created variables we are building logistic regression
 (LASSO).
 
-<iframe src="https://medium.com/media/0b37f2b0e0c4904d683ce859b93c6bce" frameborder=0></iframe>
+`gist:Zoldin/1617b39f2acbde3cd486616ac442e7cf#train_model.R`
 
 **evaluate.R** — with trained model we are predicting target on test data set.
 AUC is final output which is used as evaluation metric.
 
-<iframe src="https://medium.com/media/fd348da182047184cb2662ae840319cf" frameborder=0></iframe>
+`gist:Zoldin/bfc2d4ee449098a9ff64b99c3326e61d#evaluate.r`
 
 Firstly, codes from above we will download into the new folder (clone the
 repository):
