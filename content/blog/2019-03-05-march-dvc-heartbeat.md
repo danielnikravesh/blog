@@ -38,13 +38,13 @@ checking.
   by [Vicki Boykis](https://veekaybee.github.io/)**
 
 <a href="https://veekaybee.github.io/2019/02/13/data-science-is-different/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Data science is different now</h4>
-      <div class="description">Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…</div>
-      <div class="link">veekaybee.github.io</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Data science is different now</h4>
+      <div class="elp-description">Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…</div>
+      <div class="elp-link">veekaybee.github.io</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/data-science-is-different-now.png" />
     </div>
   </section>
@@ -60,13 +60,13 @@ checking.
   [Emily F. Gorcenski](https://emilygorcenski.com/)**
 
 <a href="https://emilygorcenski.com/post/data-versioning/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Data Versioning</h4>
-      <div class="description">Productionizing machine learning/AI/data science is a challenge. Not only are the outputs of machine-learning…</div>
-      <div class="link">emilygorcenski.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Data Versioning</h4>
+      <div class="elp-description">Productionizing machine learning/AI/data science is a challenge. Not only are the outputs of machine-learning…</div>
+      <div class="elp-link">emilygorcenski.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/data-versioning.jpeg" />
     </div>
   </section>
@@ -81,13 +81,13 @@ checking.
   by [Pascal Fecht](https://blog.mi.hdm-stuttgart.de/index.php/author/pf023/)**
 
 <a href="https://emilygorcenski.com/post/data-versioning/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Reproducibility in Machine Learning | Computer Science Blog</h4>
-      <div class="description">The rise of Machine Learning has led to changes across all areas of computer science. From a very abstract point of…</div>
-      <div class="link">blog.mi.hdm-stuttgart.de</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Reproducibility in Machine Learning | Computer Science Blog</h4>
+      <div class="elp-description">The rise of Machine Learning has led to changes across all areas of computer science. From a very abstract point of…</div>
+      <div class="elp-link">blog.mi.hdm-stuttgart.de</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/reproducibility-in-machine-learning.jpeg" />
     </div>
   </section>

@@ -40,13 +40,13 @@ some cool swag. And if you are in San Diego on those days and want to catch up �
 please let us know [here](http://dvc.org/support) or on Twitter!
 
 <a href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man...</h4>
-      <div class="description">Speakers Software Engineer, Iterative AI Ruslan is a Software Engineer at Iterative AI. Previously he worked on live…</div>
-      <div class="link">ossna19.sched.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man...</h4>
+      <div class="elp-description">Speakers Software Engineer, Iterative AI Ruslan is a Software Engineer at Iterative AI. Previously he worked on live…</div>
+      <div class="elp-link">ossna19.sched.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/open-source-north-america-summit.png" />
     </div>
   </section>
@@ -55,13 +55,13 @@ please let us know [here](http://dvc.org/support) or on Twitter!
 <br />
 
 <a href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a...</h4>
-      <div class="description">Speakers Head of Developer Relations, DVC.org Svetlana is driving developer relations and community at DVC.org…</div>
-      <div class="link">ossna19.sched.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a...</h4>
+      <div class="elp-description">Speakers Head of Developer Relations, DVC.org Svetlana is driving developer relations and community at DVC.org…</div>
+      <div class="elp-link">ossna19.sched.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/open-source-north-america-summit.png" />
     </div>
   </section>
@@ -77,13 +77,13 @@ our eye in June:
   by [David Herron](undefined)**
 
 <a href="https://dev.to/robogeek/principled-machine-learning-4eho" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Principled Machine Learning: Practices and Tools for Efficient Collaboration</h4>
-      <div class="description">Machine learning projects are often harder than they should be. The code to train an ML model is just software, and we…</div>
-      <div class="link">dev.to</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Principled Machine Learning: Practices and Tools for Efficient Collaboration</h4>
+      <div class="elp-description">Machine learning projects are often harder than they should be. The code to train an ML model is just software, and we…</div>
+      <div class="elp-link">dev.to</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/principled-machine-learning.jpeg" />
     </div>
   </section>
@@ -99,13 +99,13 @@ our eye in June:
   — check out the video and slide decks.**
 
 <a href="http://ml-repa.ru/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Machine Learning REPA</h4>
-      <div class="description">Анонсы мероприятий, проектов, обзоров инструментов и кейсов про ML проекты, управление экспериментами, автоматизацию и…</div>
-      <div class="link">ml-repa.ru</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Machine Learning REPA</h4>
+      <div class="elp-description">Анонсы мероприятий, проектов, обзоров инструментов и кейсов про ML проекты, управление экспериментами, автоматизацию и…</div>
+      <div class="elp-link">ml-repa.ru</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/machine-learning-repa.png" />
     </div>
   </section>

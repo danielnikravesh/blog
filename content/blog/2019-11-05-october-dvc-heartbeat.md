@@ -61,6 +61,8 @@ it this year. Here are some of the highlights:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/martinfowler?ref_src=twsrc%5Etfw">@martinfowler</a>&#39;s books and his website were always the source of programming wisdom 💎 His Refactoring book is the first book I recommend to developers.<br><br>Now they write about ML lifecycle and automation. I’m especially excited because they use <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> that we’ve created. <a href="https://t.co/HwswZqjOsb">https://t.co/HwswZqjOsb</a></p>&mdash; Dmitry Petrov (@FullStackML) <a href="https://twitter.com/FullStackML/status/1169403554290814976?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote>
 
+<hr />
+
 We at DVC.org are so happy every time we discover an article featuring DVC or
 addressing one of the burning ML issues we are trying to solve. Here are some of
 the links that caught our eye past month:
@@ -78,13 +80,13 @@ the links that caught our eye past month:
 > releasing changes to Machine Learning applications in a safe and reliable way.
 
 <a href="https://martinfowler.com/articles/cd4ml.html" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Continuous Delivery for Machine Learning</h4>
-      <div class="description">bio I am a consultant at ThoughtWorks Germany, where I am leading our data and machine learning activities. I enjoy…</div>
-      <div class="link">martinfowler.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Continuous Delivery for Machine Learning</h4>
+      <div class="elp-description">bio I am a consultant at ThoughtWorks Germany, where I am leading our data and machine learning activities. I enjoy…</div>
+      <div class="elp-link">martinfowler.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/continuous-delivery-for-machine-learning.png" />
     </div>
   </section>
@@ -99,13 +101,13 @@ the links that caught our eye past month:
 > not die trying? At _Signaturit_, we have the solution ;)
 
 <a href="https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">The Path to Identity Validation (2/3)</h4>
-      <div class="description">How to start your own machine learning project?</div>
-      <div class="link">medium.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">The Path to Identity Validation (2/3)</h4>
+      <div class="elp-description">How to start your own machine learning project?</div>
+      <div class="elp-link">medium.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/the-path-to-identity-validation.jpeg" />
     </div>
   </section>
@@ -136,13 +138,13 @@ the links that caught our eye past month:
 > strategy, and what his team is working on today.
 
 <a href="https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Managing Deep Learning Experiments with Lukas Biewald — Talk #295</h4>
-      <div class="description">Today we are joined by Lukas Biewald, CEO and Co-Founder of Weights & Biases. Lukas, previously CEO and Founder of…</div>
-      <div class="link">twimlai.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Managing Deep Learning Experiments with Lukas Biewald — Talk #295</h4>
+      <div class="elp-description">Today we are joined by Lukas Biewald, CEO and Co-Founder of Weights & Biases. Lukas, previously CEO and Founder of…</div>
+      <div class="elp-link">twimlai.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/managing-deep-learning-experiments.jpeg" />
     </div>
   </section>

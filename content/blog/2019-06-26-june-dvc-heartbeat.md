@@ -75,13 +75,13 @@ be the best article we have ever read on this subject. Every word strongly
 resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 
 <a href="https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">The Rise of DataOps (from the ashes of Data Governance)</h4>
-      <div class="description">Legacy Data Governance is broken in the ML era. Let’s rebuild it as an engineering discipline to drive…</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">The Rise of DataOps (from the ashes of Data Governance)</h4>
+      <div class="elp-description">Legacy Data Governance is broken in the ML era. Let’s rebuild it as an engineering discipline to drive…</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/the-rise-of-data-ops.png" />
     </div>
   </section>
@@ -96,13 +96,13 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
   by [Christopher Samiullah](https://christophergs.github.io/)**
 
 <a href="https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">First Impressions of Data Science Version Control (DVC)</h4>
-      <div class="description">A Powerful New Machine Learning Tool</div>
-      <div class="link">medium.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">First Impressions of Data Science Version Control (DVC)</h4>
+      <div class="elp-description">A Powerful New Machine Learning Tool</div>
+      <div class="elp-link">medium.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/first-impressions-of-data-science-version-control.png" />
     </div>
   </section>
@@ -126,13 +126,13 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
   by [Ben Lorica](https://www.oreilly.com/people/4e7ad-ben-lorica)**
 
 <a href="https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Becoming a machine learning company means investing in foundational technologies</h4>
-      <div class="description">Get expert knowledge on the tools and technologies you need to put your data strategies to work. Join us at the…</div>
-      <div class="link">oreilly.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Becoming a machine learning company means investing in foundational technologies</h4>
+      <div class="elp-description">Get expert knowledge on the tools and technologies you need to put your data strategies to work. Join us at the…</div>
+      <div class="elp-link">oreilly.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/becoming-a-machine-learning-company.jpeg" />
     </div>
   </section>

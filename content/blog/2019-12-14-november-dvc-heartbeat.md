@@ -11,8 +11,7 @@ descriptionLong: |
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
 picture: /uploads/post_images/2019-12-14.jpeg
-pictureComment:
-  How cool is this handmade swag from our community? We were in tears!
+pictureComment: How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Machine Learning
@@ -68,6 +67,8 @@ participants on our [Discord](http://dvc.org/chat) channel_
   [meetup](https://www.meetup.com/codecentric-Berlin/events/265555810/) with our
   favourite AI folks from [Codecentric](https://www.codecentric.de/)!
 
+<hr />
+
 Here are some of the great pieces of content around DVC and ML ops that we
 discovered in October and November:
 
@@ -80,13 +81,13 @@ discovered in October and November:
 > to learn how to build ML web services.
 
 <a href="https://www.deploymachinelearning.com/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Deploy Machine Learning Models with Django</h4>
-      <div class="description">Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…</div>
-      <div class="link">deploymachinelearning.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Deploy Machine Learning Models with Django</h4>
+      <div class="elp-description">Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…</div>
+      <div class="elp-link">deploymachinelearning.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/deploy-machine-learning-models.png" />
     </div>
   </section>
@@ -100,13 +101,13 @@ discovered in October and November:
 > track, reproduce, manage, and deploy models.
 
 <a href="https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker</h4>
-      <div class="description">Managing a machine learning workflow is hard!</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker</h4>
+      <div class="elp-description">Managing a machine learning workflow is hard!</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/how-to-manage-your-machine-learning-workflow.jpeg" />
     </div>
   </section>
@@ -121,13 +122,13 @@ discovered in October and November:
 > JupyterLab are key components of this new approach
 
 <a href="https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Creating a solid Data Science development environment</h4>
-      <div class="description">How to organize and replicate your development environment using Conda, Git, DVC, and JupyterLab.</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Creating a solid Data Science development environment</h4>
+      <div class="elp-description">How to organize and replicate your development environment using Conda, Git, DVC, and JupyterLab.</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/creating-solid-data-science-dev-env.png" />
     </div>
   </section>
@@ -139,13 +140,13 @@ discovered in October and November:
 > DVC is a powerful tool and we covered only the fundamentals of it.
 
 <a href="https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Creating reproducible data science workflows with DVC</h4>
-      <div class="description">“Getting started” tutorial into DVC to make a structure and order in your daily ML routine</div>
-      <div class="link">medium.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Creating reproducible data science workflows with DVC</h4>
+      <div class="elp-description">“Getting started” tutorial into DVC to make a structure and order in your daily ML routine</div>
+      <div class="elp-link">medium.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/creating-reproducible-data-science-workflows.jpeg" />
     </div>
   </section>

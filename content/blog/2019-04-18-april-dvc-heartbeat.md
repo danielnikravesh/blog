@@ -41,7 +41,7 @@ Speaking of the owls — DVC has done some rebranding recently and we love our n
 logo. Special thanks to [99designs.com](https://99designs.com/) for building a
 great platform for finding trusted designers.
 
-![](https://cdn-images-1.medium.com/max/3300/1*BdIz7sGCeiYIiRmd6a2nSw.png)
+![](uploads/post_images/trusted-designers.png)
 
 DVC is moving fast (almost as fast as my two-year-old). We do our best to keep
 up and totally love all the buzz in our community channels lately!
@@ -52,14 +52,14 @@ Here is a number of interesting reads that caught our eye:
   by [Bert Besser](https://www.linkedin.com/in/bert-besser-284564182/)**
 
 <a href="https://blog.codecentric.de/en/2019/03/walkthrough-dvc/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">A walkthrough of DVC — codecentric AG Blog</h4>
-      <div class="description">This post is on how to systematially organize Machine Learning (ML) model development. A model’s performance improves…</div>
-      <div class="link">blog.codecentric.de</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">A walkthrough of DVC — codecentric AG Blog</h4>
+      <div class="elp-description">This post is on how to systematially organize Machine Learning (ML) model development. A model’s performance improves…</div>
+      <div class="elp-link">blog.codecentric.de</div>
     </div>
-    <div class="image-holder">
-      <img src="/uploads/post_images/data-science-is-different-now.png" />
+    <div class="elp-image-holder">
+      <img src="/uploads/post_images/walkthrough-of-dvc.png" />
     </div>
   </section>
 </a>
@@ -72,13 +72,13 @@ comprehensive read on why you should do so right away.
   by [Alejandro Saucedo](https://www.linkedin.com/in/axsaucedo/)**
 
 <a href="https://github.com/EthicalML/state-of-mlops-2019" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">The state of machine learning operations</h4>
-      <div class="description">Contribute to EthicalML/state-of-mlops-2019 development by creating an account on GitHub.</div>
-      <div class="link">github.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">The state of machine learning operations</h4>
+      <div class="elp-description">Contribute to EthicalML/state-of-mlops-2019 development by creating an account on GitHub.</div>
+      <div class="elp-link">github.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/the-state-of-machine-learning-operations.jpeg" />
     </div>
   </section>
@@ -94,13 +94,13 @@ of ML operations.
   by [Sanyam Bhutani](https://twitter.com/bhutanisanyam1)**
 
 <a href="https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov</h4>
-      <div class="description">Part 24 of The series where I interview my heroes.</div>
-      <div class="link">hackernoon.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov</h4>
+      <div class="elp-description">Part 24 of The series where I interview my heroes.</div>
+      <div class="elp-link">hackernoon.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/interview-with-kaggle-grandmaster.jpeg" />
     </div>
   </section>

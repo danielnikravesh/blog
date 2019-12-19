@@ -75,13 +75,13 @@ our favorite links from the past month:
   by **[Tobias Macey](https://www.linkedin.com/in/tmacey/)**
 
 <a href="https://www.pythonpodcast.com/data-version-control-episode-206/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Version Control For Machine Learning Projects</h4>
-      <div class="description">An interview with the creator of DVC about how it improves collaboration and reduces duplicate effort on data science…</div>
-      <div class="link">pythonpodcast.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Version Control For Machine Learning Projects</h4>
+      <div class="elp-description">An interview with the creator of DVC about how it improves collaboration and reduces duplicate effort on data science…</div>
+      <div class="elp-link">pythonpodcast.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/version-control-for-your-machine-learning-projects.png" />
     </div>
   </section>
@@ -102,13 +102,13 @@ our favorite links from the past month:
   podcast episode.**
 
 <a href="https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Data version control with DVC. What do the authors have to say?</h4>
-      <div class="description">Data versioning is one of the most ignored features in data science projects, but that has to change. Here I’ll discuss…</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Data version control with DVC. What do the authors have to say?</h4>
+      <div class="elp-description">Data versioning is one of the most ignored features in data science projects, but that has to change. Here I’ll discuss…</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/data-version-control-with-dvc.png" />
     </div>
   </section>
@@ -117,13 +117,13 @@ our favorite links from the past month:
 - **[Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis](https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8)**
 
 <a href="https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis</h4>
-      <div class="description">Some claim the machine learning field is in a crisis due to software tooling that’s insufficient to ensure repeatable…</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis</h4>
+      <div class="elp-description">Some claim the machine learning field is in a crisis due to software tooling that’s insufficient to ensure repeatable…</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/why-git-and-git-lfs-is-not-enough.jpeg" />
     </div>
   </section>

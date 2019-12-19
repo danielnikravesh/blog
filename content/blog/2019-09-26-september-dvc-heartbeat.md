@@ -32,13 +32,13 @@ open-source tools to version control ML models and experiments.
 and save your spot now:
 
 <a href="https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Open-source tools to version control Machine Learning models and experiments</h4>
-      <div class="description">AI and ML are becoming an essential part of the engineering and data science everyday workflow. ML teams need new tools…</div>
-      <div class="link">meetup.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Open-source tools to version control Machine Learning models and experiments</h4>
+      <div class="elp-description">AI and ML are becoming an essential part of the engineering and data science everyday workflow. ML teams need new tools…</div>
+      <div class="elp-link">meetup.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/open-source-tools-to-version-control.png" />
     </div>
   </section>
@@ -99,13 +99,13 @@ discovered in July and August:
 > It is possible to manage your work flow using open-source and free tools.
 
 <a href="https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers</h4>
-      <div class="description">Googling for machine learning frameworks to version data, track python models etc.. I was surprised to see that these…</div>
-      <div class="link">medium.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers</h4>
+      <div class="elp-description">Googling for machine learning frameworks to version data, track python models etc.. I was surprised to see that these…</div>
+      <div class="elp-link">medium.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/our-machine-learning-workflow.jpeg" />
     </div>
   </section>
@@ -119,13 +119,13 @@ discovered in July and August:
 > **productivity**.
 
 <a href="https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Using DVC to create an efficient version control system for data projects</h4>
-      <div class="description">At first we were looking for a tool to help us dealing with production data files such as trained machine learning…</div>
-      <div class="link">medium.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Using DVC to create an efficient version control system for data projects</h4>
+      <div class="elp-description">At first we were looking for a tool to help us dealing with production data files such as trained machine learning…</div>
+      <div class="elp-link">medium.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/using-dvc-to-create-an-efficient-vcs.png" />
     </div>
   </section>
@@ -139,13 +139,13 @@ discovered in July and August:
 > when the project is changed, and how to share the project with colleagues.
 
 <a href="https://techsparx.com/software-development/ai/dvc/versioning-example.html" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues</h4>
-      <div class="description">Software Development Artificial Intelligence Data Version Control (DVC) Managing versioned machine learning datasets in…</div>
-      <div class="link">techsparx.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues</h4>
+      <div class="elp-description">Software Development Artificial Intelligence Data Version Control (DVC) Managing versioned machine learning datasets in…</div>
+      <div class="elp-link">techsparx.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/managing-versioned-machine-learning-datasets.jpeg" />
     </div>
   </section>
@@ -160,13 +160,13 @@ discovered in July and August:
 > by manually adding new data.
 
 <a href="https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">How to use data version control (dvc) in a machine learning project</h4>
-      <div class="description">When working in a productive machine learning project you probably deal with a tone of data and several models. To keep…</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">How to use data version control (dvc) in a machine learning project</h4>
+      <div class="elp-description">When working in a productive machine learning project you probably deal with a tone of data and several models. To keep…</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/how-to-use-data-version-control.jpeg" />
     </div>
   </section>
@@ -179,13 +179,13 @@ discovered in July and August:
 > git and dvc ([Data Version Control](https://dvc.org/doc/tutorial)).
 
 <a href="https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Version Control ML Model</h4>
-      <div class="description">Machine Learning operations (let’s call it MLOps under the current buzzword pattern xxOps) are quite different from…</div>
-      <div class="link">towardsdatascience.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Version Control ML Model</h4>
+      <div class="elp-description">Machine Learning operations (let’s call it MLOps under the current buzzword pattern xxOps) are quite different from…</div>
+      <div class="elp-link">towardsdatascience.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/version-control-ml-model.png" />
     </div>
   </section>
@@ -199,13 +199,13 @@ discovered in July and August:
 > Version Control, [https://dvc.org/](https://dvc.org/)) leverages this.
 
 <a href="https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Reflinks vs symlinks vs hard links, and how they can help machine learning projects</h4>
-      <div class="description">Hard links and symbolic links have been available since time immemorial, and we use them all the time without even…</div>
-      <div class="link">dev.to</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Reflinks vs symlinks vs hard links, and how they can help machine learning projects</h4>
+      <div class="elp-description">Hard links and symbolic links have been available since time immemorial, and we use them all the time without even…</div>
+      <div class="elp-link">dev.to</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/reflinks-vs-symlinks-vs-hard-links.jpeg" />
     </div>
   </section>
@@ -222,14 +222,14 @@ discovered in July and August:
 > trained model or a dataset) from one DVC project into another.
 
 <a href="https://blog.codecentric.de/en/2019/08/dvc-dependency-management/" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">DVC dependency management - a guide - codecentric AG Blog</h4>
-      <div class="description">This post is a follow-up to A walkthrough of DVC that deals with managing dependencies between DVC projects. In…</div>
-      <div class="link">blog.codecentric.de</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">DVC dependency management - a guide - codecentric AG Blog</h4>
+      <div class="elp-description">This post is a follow-up to A walkthrough of DVC that deals with managing dependencies between DVC projects. In…</div>
+      <div class="elp-link">blog.codecentric.de</div>
     </div>
-    <div class="image-holder">
-      <img src="/uploads/post_images/walkthrough-of-dvc.png" />
+    <div class="elp-image-holder">
+      <img src="/uploads/post_images/dvc-org.png" />
     </div>
   </section>
 </a>
@@ -241,13 +241,13 @@ discovered in July and August:
 > and what you need to devise an effective enterprise ML strategy.
 
 <a href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Effective ML Teams — Lessons Learned</h4>
-      <div class="description">Machine Learning and Artificial Intelligence has entered our everyday lives — from Virtual Assistants built into each…</div>
-      <div class="link">medium.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Effective ML Teams — Lessons Learned</h4>
+      <div class="elp-description">Machine Learning and Artificial Intelligence has entered our everyday lives — from Virtual Assistants built into each…</div>
+      <div class="elp-link">medium.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/effective-ml-teams.jpeg" />
     </div>
   </section>
@@ -260,13 +260,13 @@ discovered in July and August:
 > where needed, e.g. _mlflow_ and _dvc,_ can be a real deal-breaker.
 
 <a href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283" class="external-link-preview">
-  <section class="content-holder">
-    <div class="description-holder">
-      <h4 class="title">Lessons Learned from Training a German Speech Recognition Model - esentri AG</h4>
-      <div class="description">This post is the first of a two-part series. In this first part, I address learnings from a recent project in which I…</div>
-      <div class="link">esentri.com</div>
+  <section class="elp-content-holder">
+    <div class="elp-description-holder">
+      <h4 class="elp-title">Lessons Learned from Training a German Speech Recognition Model - esentri AG</h4>
+      <div class="elp-description">This post is the first of a two-part series. In this first part, I address learnings from a recent project in which I…</div>
+      <div class="elp-link">esentri.com</div>
     </div>
-    <div class="image-holder">
+    <div class="elp-image-holder">
       <img src="/uploads/post_images/lessons-learned-from-training.jpeg" />
     </div>
   </section>
