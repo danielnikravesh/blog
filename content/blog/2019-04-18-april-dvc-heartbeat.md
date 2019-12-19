@@ -160,14 +160,7 @@ outputted from the first run?
 DVC figures out the pipeline by looking at the dependencies and outputs of the
 stages. For example, having the following:
 
-111
-
-<iframe src="https://gist.github.com/SvetaGr/a2a28fbc9db0a675422785bc5f925e14" frameborder=0></iframe>
-<script src="https://gist.github.com/nisrulz/11c0d63428b108f10c83.js"></script>
-
-`gist:SvetaGr/ce54fdb1e5621b5966e146026995b974#syntax.text`
-
-111
+`gist:SvetaGr/a2a28fbc9db0a675422785bc5f925e14#heartbeat-dvc-run-2019-04.sh`
 
 you will end up with two stages: `download.dvc` and `duplicate.dvc`. The
 download one will have `joke.txt` as an output . The duplicate one defined
@@ -227,7 +220,7 @@ on a remote repository (let’s say an S3 bucket).
 If you need to move your dvc file somewhere, it is pretty easy, even if done
 manually:
 
-<iframe src="https://medium.com/media/8c72433012d97ef63564fe6a63690523" frameborder=0></iframe>
+`gist:SvetaGr/b25a5b45773bf94d36e60d48462502f4#heartbeat-dvc-rename.sh`
 
 ### [I performed `dvc push` of a file to a remote. On the remote there is created a directory called `8f` with a file inside called `2ec34faf91ff15ef64abf3fbffa7ee`. The original csv file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
 
@@ -239,17 +232,17 @@ and renaming it to “original” name.
 Below are some details about how DVC’s cache works, just to illustrate the
 logic. When you add a data source:
 
-<iframe src="https://medium.com/media/686c49836ecd671187d2eb82eb8d7f37" frameborder=0></iframe>
+`gist:SvetaGr/b69fa8ce36bcce00ecd69e7f2d7ccd2e#heartbeat-remote-file-naming.sh`
 
 It computes the (md5) checksum of the file and generates a DVC file with related
 information:
 
-<iframe src="https://medium.com/media/85b4ef986786c3d7b2184d2fac44aba0" frameborder=0></iframe>
+`gist:SvetaGr/110ae76df929654ec573ea9e4b1e1980#heartbeat-dvc-file-2019-04.yaml`
 
 The original file is moved to the cache and a link or copy (depending on your
 filesystem) is created to replace it on your working space:
 
-<iframe src="https://medium.com/media/25cf483104145701a63ff089ae6f1dd3" frameborder=0></iframe>
+`gist:SvetaGr/133cb93e5a21c6f21a86f8709ed39ea9#heartbeat-cache-structure-2019-04.sh`
 
 ### [Is it possible to integrate dvc with our in-house tools developed in Python?](https://discordapp.com/channels/485586884165107732/485586884165107734/553570391000481802)
 
