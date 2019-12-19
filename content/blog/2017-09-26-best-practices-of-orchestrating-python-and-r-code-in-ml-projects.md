@@ -63,11 +63,11 @@ R codes can be seen
 
 Code for `train_model_Python.py` is presented below:
 
-<iframe src="https://medium.com/media/bf8664d794494698dddc372b34a07e47" frameborder=0></iframe>
+`gist:Zoldin/b312897cc492608feef1eaeae7f6eabc#train_model_Python.py`
 
 Also here we are adding code for `evaluation_python_model.py`:
 
-<iframe src="https://medium.com/media/b02230eaaf93f98c0ec872c3dd86c92d" frameborder=0></iframe>
+`gist:Zoldin/9eef13632d0a9039fe9b0dba376516a4#evaluation_python_model.py`
 
 Let’s download necessary R and Python codes from above (clone the
 [Github](https://github.com/Zoldin/R_AND_DVC) repository):
