@@ -118,7 +118,7 @@ highly recommended by our team.
 
 ### [How do you manage your machine learning experiments?](https://www.reddit.com/r/MachineLearning/comments/bx0apm/d_how_do_you_manage_your_machine_learning/) discussion on Reddit is full of insights.
 
-<iframe src="https://medium.com/media/b898b23fca101162303e8b9b13618fe2" frameborder=0></iframe>
+<blockquote class="reddit-card" data-card-created="1576789144"><a href="https://www.reddit.com/r/MachineLearning/comments/bx0apm/d_how_do_you_manage_your_machine_learning/">[D] How do you manage your machine learning experiments?</a> from <a href="http://www.reddit.com/r/MachineLearning">r/MachineLearning</a></blockquote>
 
 <hr />
 
