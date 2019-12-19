@@ -44,7 +44,7 @@ specified in the requirements to
 [https://inclass.kaggle.com/c/pred-411-2016-04-u3-wine/](https://inclass.kaggle.com/c/pred-411-2016-04-u3-wine/)
 (so called Kaggle submission file).
 
-## **Important Pre-Requisites**
+## Important Pre-Requisites
 
 In order to try the materials of this repo in your environment, the following
 applications should be installed on your machine
@@ -134,7 +134,7 @@ there will be triggered respectively.
 This file is not intended to run from a command line (unlike the rest of the R
 scripts in the project).
 
-<iframe src="https://medium.com/media/a26f6bc323f98321461bbf67f4f8d568" frameborder=0></iframe>
+`gist:gvyshnya/918e94b06ebf222f6bb56ed26a5f44ee#config.R`
 
 ### Why Do We Need DVC?
 
@@ -186,13 +186,13 @@ Learning pipeline, we orchestrate it together using DVC.
 Below is a batch file illustrating how DVC manages steps of the machine learning
 process for this project
 
-<iframe src="https://medium.com/media/84ea1055c33b06ef245f6b410b3a3ffe" frameborder=0></iframe>
+`gist:gvyshnya/7f1b8262e3eb7a8b3c16dbfd8cf98644#dvc.bat`
 
 If you then further edit ensemble configuration setup in code/config.R, you can
 simply leverage the power of DVC as for automatic dependencies resolving and
 tracking to rebuild the new ensemble prediction as follows
 
-<iframe src="https://medium.com/media/700c63a713456710c6a627cb611c96c5" frameborder=0></iframe>
+`gist:gvyshnya/9d80e51ba3d7aa5bd37d100ed82376ee`
 
 ## Summary
 

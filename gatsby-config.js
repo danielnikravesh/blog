@@ -50,7 +50,6 @@ const plugins = [
         {
           resolve: "gatsby-remark-embed-gist",
           options: {
-            username: ['Zoldin', 'dmpetrov'],
             includeDefaultCss: true
           }
         },
