@@ -152,6 +152,8 @@ discovered in October and November:
   </section>
 </a>
 
+<hr />
+
 ## Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes
