@@ -1,4 +1,4 @@
-const React = require("react")
+var React = require("react")
 
 exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
   const headComponents = getHeadComponents()
