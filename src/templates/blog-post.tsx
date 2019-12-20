@@ -3,8 +3,6 @@ import { FixedObject, FluidObject } from "gatsby-image";
 import { graphql } from "gatsby";
 import React from "react";
 
-import { IBlogPostData } from "../templates/blog-post";
-
 import Layout from "../components/layout";
 import Post from "../components/post";
 import SEO from "../components/seo";
@@ -109,7 +107,7 @@ export const pageQuery = graphql`
         }
         picture {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1000, maxHeight: 750, cropFocus: CENTER) {
               ...GatsbyImageSharpFluid
             }
           }

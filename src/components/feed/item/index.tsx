@@ -1,7 +1,8 @@
 import cn from "classnames";
 import { Link } from "gatsby";
 import Image from "gatsby-image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useRafState, useWindowSize } from "react-use";
 
 import { IFeedPostData } from "../../../pages/index";
 
@@ -18,6 +19,17 @@ interface IFeedItemPorps extends IFeedPostData {
 function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
   const { title, description, date, picture, author } = frontmatter;
   const { avatar, name } = author.childMarkdownRemark.frontmatter;
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const { width } = useWindowSize();
+  const [isOverflown, setIsOverflown] = useRafState(true);
+
+  useEffect(() => {
+    if (bodyRef.current) {
+      const { scrollHeight, clientHeight } = bodyRef.current;
+
+      setIsOverflown(scrollHeight <= clientHeight);
+    }
+  }, [width]);
 
   return (
     <div
@@ -37,7 +49,10 @@ function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
           <Placeholder className={styles.picture} />
         )}
       </Link>
-      <div className={styles.body}>
+      <div
+        className={cn(styles.body, !isOverflown && styles.overflown)}
+        ref={bodyRef}
+      >
         <Link to={fields.slug} className={styles.title}>
           {title}
         </Link>
