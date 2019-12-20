@@ -47,6 +47,15 @@ const plugins = [
     options: {
       plugins: [
         {
+          resolve: "gatsby-remark-embed-gist",
+          options: {
+            includeDefaultCss: true
+          }
+        },
+        {
+          resolve: "gatsby-remark-relative-images"
+        },
+        {
           resolve: "gatsby-remark-images",
           options: {
             maxWidth: 700

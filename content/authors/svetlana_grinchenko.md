@@ -1,7 +1,7 @@
 ---
 path: ../authors/svetlana_grinchenko.md
 name: Svetlana Grinchenko
-avatar: /uploads/avatar.jpeg
+avatar: /uploads/avatars/svetlana_grinchenko.jpeg
 ---
 
-Some text about Svetlana
+Head of developer relations at [http://dvc.org](http://dvc.org)
