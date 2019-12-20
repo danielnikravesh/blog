@@ -32,7 +32,7 @@ function FeedMeta({
       <ul className={styles.list}>
         <li className={styles.item}>{name}</li>
         <li className={styles.item}>
-          {date} • {timeToRead} min.
+          {date} • {timeToRead} min. read
         </li>
         {commentsUrl && typeof commentsCount === "number" && (
           <li className={styles.item}>
