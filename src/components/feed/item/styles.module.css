@@ -84,7 +84,23 @@
 }
 
 .body {
+  position: relative;
+  overflow: hidden;
   padding: 10px 30px;
+
+  &.overflown::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    background: linear-gradient(
+      0deg,
+      rgba(238, 244, 248, 1) 0%,
+      rgba(238, 244, 248, 0) 100%
+    );
+  }
 
   @media (--md-scr) {
     .big & {
@@ -99,7 +115,10 @@
   }
 
   @media (--lg-scr) {
+    max-height: 166px;
+
     .big & {
+      max-height: 314px;
       padding: 30px;
     }
   }
@@ -112,22 +131,16 @@
   @mixin hover;
 
   display: block;
-  overflow: hidden;
-  max-height: 60px;
   text-decoration: none;
   color: var(--color-black);
 
   @media (--sm-scr) {
     @mixin h3-mobile;
-
-    max-height: auto;
   }
 
   @media (--lg-scr) {
     .big & {
       @mixin h2-desktop;
-
-      max-height: 80px;
     }
   }
 
@@ -139,18 +152,11 @@
 .description {
   @mixin text-secondary;
 
-  overflow: hidden;
-  max-height: 96px;
   margin-top: 10px;
   color: var(--color-gray);
 
-  @media (--sm-scr) {
-    max-height: auto;
-  }
-
   @media (--lg-scr) {
     .big & {
-      max-height: 240px;
       margin-top: 40px;
     }
   }
