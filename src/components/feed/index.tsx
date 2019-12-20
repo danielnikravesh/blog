@@ -18,7 +18,7 @@ function Feed({ posts }: IFeedProps) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.meta}>
-        <div className={styles.header}>Data Version Controll in Real Life</div>
+        <div className={styles.header}>Data Version Control in Real Life</div>
         <div className={styles.lead}>
           Every month we are sharing here our news, findings, interesting reads,
           community takeaways, and everything along the way.
