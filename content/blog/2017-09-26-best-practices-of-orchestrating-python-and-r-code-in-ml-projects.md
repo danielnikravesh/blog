@@ -4,7 +4,7 @@ date: 2017-09-26
 description:
   Today, data scientists are generally divided among two languages — some prefer
   R, some prefer Python.
-picture: /uploads/post_images/2017-09-26.jpg
+picture: /uploads/images/2017-09-26/post-image.jpg
 pictureComment: 'Image was taken from intersog.com'
 author: ../authors/marija_ilic.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
@@ -45,7 +45,7 @@ development process in this combined environment.
 
 Let’s recall briefly the R codes from previous tutorial:
 
-![R Jobs](/uploads/post_images/r-jobs.png)_R Jobs_
+![R Jobs](/uploads/images/2017-09-26/r-jobs.png)_R Jobs_
 
 Input data are Stackoverflow posts — an XML file. Predictive variables are
 created from text posts — relative importance
@@ -81,7 +81,7 @@ $ git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AN
 
 Our dependency graph of this data science project look like this:
 
-![R (marked red) and Python (marked pink) jobs in one project](/uploads/post_images/our-dependency-graph.png)_R
+![R (marked red) and Python (marked pink) jobs in one project](/uploads/images/2017-09-26/our-dependency-graph.png)_R
 (marked red) and Python (marked pink) jobs in one project_
 
 Now lets see how it is possible to speed up and simplify process flow with
@@ -200,7 +200,7 @@ $ dvc run Rscript code/train_test_spliting.R data/Posts.csv 0.15 20170426 data/t
 
 Re-executed jobs are marked with red color:
 
-![](/uploads/post_images/re-executed-jobs.png)
+![](/uploads/images/2017-09-26/re-executed-jobs.png)
 
 ```dvc
 $ dvc run Rscript code/train_test_spliting.R data/Posts.csv 0.15 20170426 data/train_post.csv data/test_post.csv
