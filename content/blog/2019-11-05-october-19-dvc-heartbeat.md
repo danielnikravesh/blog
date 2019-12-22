@@ -27,7 +27,7 @@ it this year. Here are some of the highlights:
 
 - Co-hosting our
   [first ever meetup](https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/)!
-  Our [Dmitry Petrov](undefined) partnering with
+  Our [Dmitry Petrov](https://twitter.com/FullStackML) partnering with
   [Dan Fischetti](https://www.linkedin.com/in/daniel-fischetti-4a6592bb/) from
   [Standard Cognition](https://twitter.com/standardAI) to discuss Open-source
   tools to version control Machine Learning models and experiments. The

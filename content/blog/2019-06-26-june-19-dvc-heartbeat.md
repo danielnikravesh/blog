@@ -54,7 +54,7 @@ sharing more about it in a separate blogpost soon.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jkfh2PM5Sz8" frameborder="0" allowfullscreen></iframe></center>
 
-Here is [Dmitry Petrov](undefined)’s Pycon
+Here is [Dmitry Petrov](https://twitter.com/FullStackML)’s Pycon
 [talk](https://www.youtube.com/watch?v=jkfh2PM5Sz8) and
 [slides](https://docs.google.com/presentation/d/1CYt0w8WoZAXiQEtVDVDsTnQumzdZx91v32MwEK20R-E/edit)
 on Machine learning model and dataset versioning practices.

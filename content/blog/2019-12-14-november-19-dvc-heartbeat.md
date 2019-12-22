@@ -60,7 +60,7 @@ participants on our [Discord](http://dvc.org/chat) channel_
   DVC-related topic — we are here to help, just
   [let us know](https://dvc.org/support)!**
 
-- Our own [Dmitry Petrov](undefined) went to Europe to speak at the
+- Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to speak at the
   [Open Source Summit Europe](https://osseu19.sched.com/speaker/dmitry35) in
   Lyon, [Highload++](https://www.highload.ru/moscow/2019/abstracts/6032) in
   Moscow and made a stop in in Berlin to co-host a

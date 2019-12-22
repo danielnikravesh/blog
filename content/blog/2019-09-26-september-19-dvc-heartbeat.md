@@ -26,7 +26,7 @@ We are super excited to co-host our very first
 **[meetup in San Francisco on October 10](https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/)**!
 We will gather at the brand new Dropbox HQ office at 6:30 pm to discuss
 open-source tools to version control ML models and experiments.
-[Dmitry Petrov](undefined) is teaming up with
+[Dmitry Petrov](https://twitter.com/FullStackML) is teaming up with
 [Daniel Fischetti](https://www.linkedin.com/in/daniel-fischetti-4a6592bb/) from
 [Standard Cognition](https://standard.ai/) to discuss best ML practices. Join us
 and save your spot now:
