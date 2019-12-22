@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-12-14.jpeg
+picture: /uploads/images/2019-12-14/post-image.jpeg
 pictureComment: How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 tags:
@@ -44,7 +44,7 @@ involved our community is and can’t wait to share more with you:
   you [Kyrian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
   were happy to jump in and help with some mentoring.
 
-![Devsprints participants on our [Discord](http://dvc.org/chat) channel](/uploads/post_images/devsprints.png)_Devsprints
+![Devsprints participants on our [Discord](http://dvc.org/chat) channel](/uploads/images/2019-12-14/devsprints.png)_Devsprints
 participants on our [Discord](http://dvc.org/chat) channel_
 
 - DVC became part of the default
@@ -88,7 +88,7 @@ discovered in October and November:
       <div class="elp-link">deploymachinelearning.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/deploy-machine-learning-models.png" />
+      <img src="/uploads/images/2019-12-14/deploy-machine-learning-models.png" />
     </div>
   </section>
 </a>
@@ -108,7 +108,7 @@ discovered in October and November:
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/how-to-manage-your-machine-learning-workflow.jpeg" />
+      <img src="/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg" />
     </div>
   </section>
 </a>
@@ -129,7 +129,7 @@ discovered in October and November:
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/creating-solid-data-science-dev-env.png" />
+      <img src="/uploads/images/2019-12-14/creating-solid-data-science-dev-env.png" />
     </div>
   </section>
 </a>
@@ -147,7 +147,7 @@ discovered in October and November:
       <div class="elp-link">medium.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/creating-reproducible-data-science-workflows.jpeg" />
+      <img src="/uploads/images/2019-12-14/creating-reproducible-data-science-workflows.jpeg" />
     </div>
   </section>
 </a>
