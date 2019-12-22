@@ -2,7 +2,7 @@
 title: Data Version Control in Analytics DevOps Paradigm
 date: 2017-07-27
 description: Data Science and DevOps Convergence
-picture: /uploads/post_images/2017-07-27.jpeg
+picture: /uploads/images/2017-07-27/post-image.jpeg
 author: ../authors/george_vyshnya.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
