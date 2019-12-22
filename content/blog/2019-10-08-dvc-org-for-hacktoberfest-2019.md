@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-10-08.png
+picture: /uploads/images/2019-10-08/post-image.png
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Open Source

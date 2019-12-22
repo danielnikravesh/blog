@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-09-26.jpeg
+picture: /uploads/images/2019-09-26/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Open Source
@@ -26,7 +26,7 @@ We are super excited to co-host our very first
 **[meetup in San Francisco on October 10](https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/)**!
 We will gather at the brand new Dropbox HQ office at 6:30 pm to discuss
 open-source tools to version control ML models and experiments.
-[Dmitry Petrov](undefined) is teaming up with
+[Dmitry Petrov](https://twitter.com/FullStackML) is teaming up with
 [Daniel Fischetti](https://www.linkedin.com/in/daniel-fischetti-4a6592bb/) from
 [Standard Cognition](https://standard.ai/) to discuss best ML practices. Join us
 and save your spot now:
@@ -39,7 +39,7 @@ and save your spot now:
       <div class="elp-link">meetup.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/open-source-tools-to-version-control.png" />
+      <img src="/uploads/images/2019-09-26/open-source-tools-to-version-control.png" />
     </div>
   </section>
 </a>
@@ -80,7 +80,7 @@ Some other highlights of the end of summer:
   by Linux foundation in San Diego — speaking on stage, running a booth and
   chatting with all the amazing open-source crowd out there.
 
-![](/uploads/post_images/open-source-summit-by-linux-foundation.jpeg)
+![](/uploads/images/2019-09-26/open-source-summit-by-linux-foundation.jpeg)
 
 <hr />
 
@@ -106,7 +106,7 @@ discovered in July and August:
       <div class="elp-link">medium.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/our-machine-learning-workflow.jpeg" />
+      <img src="/uploads/images/2019-09-26/our-machine-learning-workflow.jpeg" />
     </div>
   </section>
 </a>
@@ -126,7 +126,7 @@ discovered in July and August:
       <div class="elp-link">medium.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/using-dvc-to-create-an-efficient-vcs.png" />
+      <img src="/uploads/images/2019-09-26/using-dvc-to-create-an-efficient-vcs.png" />
     </div>
   </section>
 </a>
@@ -146,7 +146,7 @@ discovered in July and August:
       <div class="elp-link">techsparx.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/managing-versioned-machine-learning-datasets.jpeg" />
+      <img src="/uploads/images/2019-09-26/managing-versioned-machine-learning-datasets.jpeg" />
     </div>
   </section>
 </a>
@@ -167,7 +167,7 @@ discovered in July and August:
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/how-to-use-data-version-control.jpeg" />
+      <img src="/uploads/images/2019-09-26/how-to-use-data-version-control.jpeg" />
     </div>
   </section>
 </a>
@@ -186,7 +186,7 @@ discovered in July and August:
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/version-control-ml-model.png" />
+      <img src="/uploads/images/2019-09-26/version-control-ml-model.png" />
     </div>
   </section>
 </a>
@@ -206,7 +206,7 @@ discovered in July and August:
       <div class="elp-link">dev.to</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/reflinks-vs-symlinks-vs-hard-links.jpeg" />
+      <img src="/uploads/images/2019-09-26/reflinks-vs-symlinks-vs-hard-links.jpeg" />
     </div>
   </section>
 </a>
@@ -229,7 +229,7 @@ discovered in July and August:
       <div class="elp-link">blog.codecentric.de</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/dvc-org.png" />
+      <img src="/uploads/images/2019-09-26/dvc-org.png" />
     </div>
   </section>
 </a>
@@ -248,7 +248,7 @@ discovered in July and August:
       <div class="elp-link">medium.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/effective-ml-teams.jpeg" />
+      <img src="/uploads/images/2019-09-26/effective-ml-teams.jpeg" />
     </div>
   </section>
 </a>
@@ -267,7 +267,7 @@ discovered in July and August:
       <div class="elp-link">esentri.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/lessons-learned-from-training.jpeg" />
+      <img src="/uploads/images/2019-09-26/lessons-learned-from-training.jpeg" />
     </div>
   </section>
 </a>

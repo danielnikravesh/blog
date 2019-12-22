@@ -4,7 +4,7 @@ date: 2017-08-23
 description:
   In many real-world Machine Learning projects, there is a need to ensemble
   complex models as well as maintain pipelines.
-picture: /uploads/post_images/2017-08-23.png
+picture: /uploads/images/2017-08-23/post-image.png
 author: ../authors/george_vyshnya.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
@@ -34,7 +34,7 @@ An ensemble prediction methodology will be used in the project. The weighted
 ensemble of three models will be implemented, trained, and predicted from
 (namely, these are Linear Regression, GBM, and XGBOOST).
 
-![](/uploads/post_images/ensemble-prediction-methodology.png)
+![](/uploads/images/2017-08-23/ensemble-prediction-methodology.png)
 
 If properly designed and used, ensemble prediction can perform much better then
 predictions of individual machine learning models composing the ensemble.
@@ -85,7 +85,7 @@ design of ML pipeline for this project.
 
 The ML pipeline for this project is presented in the diagram below
 
-![](/uploads/post_images/ml-pipeline.png)
+![](/uploads/images/2017-08-23/ml-pipeline.png)
 
 As you can see, the essential implementation of the solution is as follows
 

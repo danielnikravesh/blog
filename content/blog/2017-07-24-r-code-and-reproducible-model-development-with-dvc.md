@@ -5,7 +5,7 @@ description:
   In this document we will briefly explore possibilities of a new open source
   tool that could help with achieving code simplicity, readability and faster
   model development.
-picture: /uploads/post_images/2017-07-24.png
+picture: /uploads/images/2017-07-24/post-image.png
 pictureComment:
   Kudos to StickerMule.com for our amazing stickers (and great customer
   service)!
@@ -31,7 +31,7 @@ projects.
 
 Each development is always a combination of following steps presented below:
 
-![Model development process](/uploads/post_images/development-steps.png) _Model
+![Model development process](/uploads/images/2017-07-24/development-steps.png) _Model
 development process_
 
 Because of the specificity of the process — iterative development, it is very
@@ -148,7 +148,7 @@ $ cat data/evaluation.txt
 
 Dependency graph is shown on picture below:
 
-![Dependency graph](/uploads/post_images/dependency-graph.png)_Dependency graph_
+![Dependency graph](/uploads/images/2017-07-24/dependency-graph.png)_Dependency graph_
 
 DVC memorizes this dependencies and helps us in each moment to reproduce
 results.
@@ -159,7 +159,7 @@ will change/modify train_model.R job and if we want to repeat model development
 with this algorithm we don’t need to repeat all steps from above, only steps
 marked red on a picture below:
 
-![](/uploads/post_images/marked-steps.png)
+![](/uploads/images/2017-07-24/marked-steps.png)
 
 DVC knows based on DAG graph that changed train\*model.R file will only change
 following files: `Glmnet.RData` and `Evaluation.txt`. If we want to see our new

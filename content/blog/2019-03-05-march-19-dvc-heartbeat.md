@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-03-05.jpeg
+picture: /uploads/images/2019-03-05/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Data Science
@@ -45,7 +45,7 @@ checking.
       <div class="elp-link">veekaybee.github.io</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/data-science-is-different-now.png" />
+      <img src="/uploads/images/2019-03-05/data-science-is-different-now.png" />
     </div>
   </section>
 </a>
@@ -67,7 +67,7 @@ checking.
       <div class="elp-link">emilygorcenski.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/data-versioning.jpeg" />
+      <img src="/uploads/images/2019-03-05/data-versioning.jpeg" />
     </div>
   </section>
 </a>
@@ -88,7 +88,7 @@ checking.
       <div class="elp-link">blog.mi.hdm-stuttgart.de</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/reproducibility-in-machine-learning.jpeg" />
+      <img src="/uploads/images/2019-03-05/reproducibility-in-machine-learning.jpeg" />
     </div>
   </section>
 </a>

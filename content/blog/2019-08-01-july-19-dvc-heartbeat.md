@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-08-01.png
+picture: /uploads/images/2019-08-01/post-image.png
 pictureComment:
   Special edition DVC shirt. We made this one for Ruslan — DVC maintainer and
   the best tech lead.
@@ -47,7 +47,7 @@ please let us know [here](http://dvc.org/support) or on Twitter!
       <div class="elp-link">ossna19.sched.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/open-source-north-america-summit.png" />
+      <img src="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
     </div>
   </section>
 </a>
@@ -62,7 +62,7 @@ please let us know [here](http://dvc.org/support) or on Twitter!
       <div class="elp-link">ossna19.sched.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/open-source-north-america-summit.png" />
+      <img src="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
     </div>
   </section>
 </a>
@@ -84,7 +84,7 @@ our eye in June:
       <div class="elp-link">dev.to</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/principled-machine-learning.jpeg" />
+      <img src="/uploads/images/2019-08-01/principled-machine-learning.jpeg" />
     </div>
   </section>
 </a>
@@ -106,7 +106,7 @@ our eye in June:
       <div class="elp-link">ml-repa.ru</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/machine-learning-repa.png" />
+      <img src="/uploads/images/2019-08-01/machine-learning-repa.png" />
     </div>
   </section>
 </a>

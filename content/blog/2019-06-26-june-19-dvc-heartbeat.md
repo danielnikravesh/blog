@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-06-26.png
+picture: /uploads/images/2019-06-26/post-image.png
 pictureComment: Thanks to the amazing Signaturit Tech team for this photo!
 author: ../authors/svetlana_grinchenko.md
 tags:
@@ -41,7 +41,7 @@ Aside from admiring great DVC-related content from our users we have one more
 reason to particularly enjoy the past month — DVC team went to Cleveland to
 attend [Pycon 2019](https://us.pycon.org/2019/about/) and it was a blast!
 
-![](/uploads/post_images/сleveland-to-attend-pycon-2019.jpeg) _Amazing
+![](/uploads/images/2019-06-26/cleveland-to-attend-pycon-2019.jpeg) _Amazing
 [Jennifer](https://github.com/sureL) and her artwork for our
 [SupportOpenSource](https://twitter.com/hashtag/SupportOpenSource) contest_
 
@@ -54,7 +54,7 @@ sharing more about it in a separate blogpost soon.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jkfh2PM5Sz8" frameborder="0" allowfullscreen></iframe></center>
 
-Here is [Dmitry Petrov](undefined)’s Pycon
+Here is [Dmitry Petrov](https://twitter.com/FullStackML)’s Pycon
 [talk](https://www.youtube.com/watch?v=jkfh2PM5Sz8) and
 [slides](https://docs.google.com/presentation/d/1CYt0w8WoZAXiQEtVDVDsTnQumzdZx91v32MwEK20R-E/edit)
 on Machine learning model and dataset versioning practices.
@@ -82,7 +82,7 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/the-rise-of-data-ops.png" />
+      <img src="/uploads/images/2019-06-26/the-rise-of-data-ops.png" />
     </div>
   </section>
 </a>
@@ -103,7 +103,7 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
       <div class="elp-link">medium.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/first-impressions-of-data-science-version-control.png" />
+      <img src="/uploads/images/2019-06-26/first-impressions-of-data-science-version-control.png" />
     </div>
   </section>
 </a>
@@ -120,7 +120,7 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
   by [Stéphanie Bracaloni](https://github.com/sbracaloni) and
   [Sarah Diot-Girard](https://github.com/SdgJlbl).**
 
-![](/uploads/post_images/versioning-and-reproducibility-with-mlv-tools.png)
+![](/uploads/images/2019-06-26/versioning-and-reproducibility-with-mlv-tools.png)
 
 - **[Becoming a machine learning company means investing in foundational technologies](https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies)
   by [Ben Lorica](https://www.oreilly.com/people/4e7ad-ben-lorica)**
@@ -133,7 +133,7 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
       <div class="elp-link">oreilly.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/becoming-a-machine-learning-company.jpeg" />
+      <img src="/uploads/images/2019-06-26/becoming-a-machine-learning-company.jpeg" />
     </div>
   </section>
 </a>

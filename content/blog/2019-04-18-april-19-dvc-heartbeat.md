@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-04-18.jpeg
+picture: /uploads/images/2019-04-18/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Git
@@ -41,7 +41,7 @@ Speaking of the owls — DVC has done some rebranding recently and we love our n
 logo. Special thanks to [99designs.com](https://99designs.com/) for building a
 great platform for finding trusted designers.
 
-![](uploads/post_images/trusted-designers.png)
+![](/uploads/images/2019-04-18/trusted-designers.png)
 
 DVC is moving fast (almost as fast as my two-year-old). We do our best to keep
 up and totally love all the buzz in our community channels lately!
@@ -59,7 +59,7 @@ Here is a number of interesting reads that caught our eye:
       <div class="elp-link">blog.codecentric.de</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/walkthrough-of-dvc.png" />
+      <img src="/uploads/images/2019-04-18/walkthrough-of-dvc.png" />
     </div>
   </section>
 </a>
@@ -79,7 +79,7 @@ comprehensive read on why you should do so right away.
       <div class="elp-link">github.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/the-state-of-machine-learning-operations.jpeg" />
+      <img src="/uploads/images/2019-04-18/the-state-of-machine-learning-operations.jpeg" />
     </div>
   </section>
 </a>
@@ -101,7 +101,7 @@ of ML operations.
       <div class="elp-link">hackernoon.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/interview-with-kaggle-grandmaster.jpeg" />
+      <img src="/uploads/images/2019-04-18/interview-with-kaggle-grandmaster.jpeg" />
     </div>
   </section>
 </a>
