@@ -4,7 +4,7 @@ date: 2017-08-23
 description:
   In many real-world Machine Learning projects, there is a need to ensemble
   complex models as well as maintain pipelines.
-picture: /uploads/post_images/2017-08-23.png
+picture: /uploads/images/2017-08-23/post-image.png
 author: ../authors/george_vyshnya.md
 commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
 tags:
