@@ -3,7 +3,7 @@ title: ML best practices in PyTorch dev conf 2018
 date: 2018-10-18
 description: |
   In the Machine Learning (ML) field tools and techniques for best practices are just starting to be developed.
-picture: /uploads/post_images/2018-10-18.jpeg
+picture: /uploads/images/2018-10-18/post-image.jpeg
 pictureComment: 'The image source: blog.hubspot.com'
 author: ../authors/dmitry_petrov.md
 tags:
