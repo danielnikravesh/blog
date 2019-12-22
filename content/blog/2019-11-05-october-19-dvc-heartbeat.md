@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-11-05.png
+picture: /uploads/images/2019-11-05/post-image.png
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Machine Learning
@@ -87,7 +87,7 @@ the links that caught our eye past month:
       <div class="elp-link">martinfowler.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/continuous-delivery-for-machine-learning.png" />
+      <img src="/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png" />
     </div>
   </section>
 </a>
@@ -108,7 +108,7 @@ the links that caught our eye past month:
       <div class="elp-link">medium.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/the-path-to-identity-validation.jpeg" />
+      <img src="/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg" />
     </div>
   </section>
 </a>
@@ -145,7 +145,7 @@ the links that caught our eye past month:
       <div class="elp-link">twimlai.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/managing-deep-learning-experiments.jpeg" />
+      <img src="/uploads/images/2019-11-05/managing-deep-learning-experiments.jpeg" />
     </div>
   </section>
 </a>
