@@ -4,7 +4,7 @@ date: 2017-05-15
 description:
   Data science and machine learning are iterative processes. It is never
   possible to successfully complete a data science project in a single pass.
-picture: /uploads/post_images/2017-05-15.jpeg
+picture: /uploads/images/2017-05-15/post-image.jpeg
 author: ../authors/dmitry_petrov.md
 tags:
   - Data Science
@@ -142,7 +142,7 @@ using a simple command:
 $ dvc sync data/
 ```
 
-![](uploads/post_images/git-server-or-github.jpeg)
+![](uploads/images/2017-05-15/git-server-or-github.jpeg)
 
 Currently, AWS S3 and GCP storage are supported by DVC.
 
