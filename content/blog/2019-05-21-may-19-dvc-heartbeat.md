@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
-picture: /uploads/post_images/2019-05-21.jpeg
+picture: /uploads/images/2019-05-21/post-image.jpeg
 pictureComment:
   Kudos to StickerMule.com for our amazing stickers (and great customer
   service)!
@@ -51,7 +51,7 @@ It’s a shame that our techlead was unable to join us it due to another visa
 denial. We do hope he will finally make it to the USA for the next big
 conference.
 
-![](/uploads/post_images/the-world-is-changing.png)
+![](/uploads/images/2019-05-21/the-world-is-changing.png)
 
 While we were busy finalizing all the Pycon 2019 prep, our own
 [Dmitry Petrov](undefined) flew to New York to speak at the
@@ -62,7 +62,7 @@ Unfortunately the video is available for the registered users only (with a free
 trial option) but you can have a look at Dmitry’s slides
 [here](https://www.slideshare.net/DmitryPetrov15/dvc-oreilly-artificial-intelligence-conference-2019-new-york).
 
-![](/uploads/post_images/iterative-ai-twitter.png)
+![](/uploads/images/2019-05-21/iterative-ai-twitter.png)
 
 We renamed our Twitter! Our old handle was a bit misleading and we moved from
 @Iterativeai to @DVCorg (yet keep the old one for future projects).
@@ -82,7 +82,7 @@ our favorite links from the past month:
       <div class="elp-link">pythonpodcast.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/version-control-for-your-machine-learning-projects.png" />
+      <img src="/uploads/images/2019-05-21/version-control-for-your-machine-learning-projects.png" />
     </div>
   </section>
 </a>
@@ -109,7 +109,7 @@ our favorite links from the past month:
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/data-version-control-with-dvc.png" />
+      <img src="/uploads/images/2019-05-21/data-version-control-with-dvc.png" />
     </div>
   </section>
 </a>
@@ -124,7 +124,7 @@ our favorite links from the past month:
       <div class="elp-link">towardsdatascience.com</div>
     </div>
     <div class="elp-image-holder">
-      <img src="/uploads/post_images/why-git-and-git-lfs-is-not-enough.jpeg" />
+      <img src="/uploads/images/2019-05-21/why-git-and-git-lfs-is-not-enough.jpeg" />
     </div>
   </section>
 </a>
@@ -150,7 +150,7 @@ interesting takeaways.
 We feared that too until we met them in person. They appeared to be real (unless
 bots also love Ramen now)!
 
-![](/uploads/post_images/bots-also-love-ramen-now.png)
+![](/uploads/images/2019-05-21/bots-also-love-ramen-now.png)
 
 ### [Is this the best way to track data with DVC when code and data are separate?](https://discordapp.com/channels/485586884165107732/485596304961962003/572974117351849997) Having being burned by this a couple of times, i.e accidentally pushing large
 
