@@ -41,7 +41,7 @@ involved our community is and can’t wait to share more with you:
 
 - DVC was participating in the
   [Devsprints](https://twitter.com/FossMec/status/1192866498324254720) (Thank
-  you [Kyrian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
+  you [Kurian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
   were happy to jump in and help with some mentoring.
 
 ![Devsprints participants on our [Discord](http://dvc.org/chat) channel](/uploads/images/2019-12-14/devsprints.png)_Devsprints
@@ -59,6 +59,8 @@ participants on our [Discord](http://dvc.org/chat) channel_
   something we are passionate about and if you ever wanted to give a talk on a
   DVC-related topic — we are here to help, just
   [let us know](https://dvc.org/support)!**
+  
+  frame width="560" height="315" src="https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
 
 - Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to speak at the
   [Open Source Summit Europe](https://osseu19.sched.com/speaker/dmitry35) in
