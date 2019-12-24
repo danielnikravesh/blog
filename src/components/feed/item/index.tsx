@@ -31,6 +31,12 @@ function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
     }
   }, [width]);
 
+  const image = picture
+    ? big
+      ? picture.childImageSharp.big
+      : picture.childImageSharp.small
+    : undefined;
+
   return (
     <div
       className={cn(
@@ -41,10 +47,7 @@ function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
     >
       <Link to={fields.slug} className={styles.pictureLink}>
         {picture ? (
-          <Image
-            fluid={picture.childImageSharp.fluid}
-            className={styles.picture}
-          />
+          <Image fluid={image} className={styles.picture} />
         ) : (
           <Placeholder className={styles.picture} />
         )}

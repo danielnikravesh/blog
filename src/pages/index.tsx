@@ -19,7 +19,8 @@ export interface IFeedPostData {
     descriptionLong: string;
     picture?: {
       childImageSharp: {
-        fluid: FluidObject;
+        big: FluidObject;
+        small: FluidObject;
       };
     };
     author: {
@@ -91,8 +92,11 @@ export const pageQuery = graphql`
             descriptionLong
             picture {
               childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
+                big: fluid(maxWidth: 650, maxHeight: 450) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+                small: fluid(maxWidth: 300, maxHeight: 250) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
@@ -103,7 +107,7 @@ export const pageQuery = graphql`
                   avatar {
                     childImageSharp {
                       fixed(width: 30, height: 30) {
-                        ...GatsbyImageSharpFixed
+                        ...GatsbyImageSharpFixed_withWebp
                       }
                     }
                   }
