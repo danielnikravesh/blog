@@ -58,7 +58,8 @@ const plugins = [
         {
           resolve: "gatsby-remark-images",
           options: {
-            maxWidth: 700
+            maxWidth: 700,
+            withWebp: true
           }
         },
         "gatsby-remark-responsive-iframe",
