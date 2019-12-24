@@ -98,7 +98,7 @@ export const pageQuery = graphql`
               avatar {
                 childImageSharp {
                   fixed(width: 30, height: 30) {
-                    ...GatsbyImageSharpFixed
+                    ...GatsbyImageSharpFixed_withWebp
                   }
                 }
               }
@@ -108,7 +108,7 @@ export const pageQuery = graphql`
         picture {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 750, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
