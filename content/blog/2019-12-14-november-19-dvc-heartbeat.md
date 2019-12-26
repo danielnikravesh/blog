@@ -11,7 +11,8 @@ descriptionLong: |
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
 picture: /uploads/images/2019-12-14/post-image.jpeg
-pictureComment: How cool is this handmade swag from our community? We were in tears!
+pictureComment:
+  How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Machine Learning
@@ -61,9 +62,9 @@ participants on our [Discord](http://dvc.org/chat) channel_
   something we are passionate about and if you ever wanted to give a talk on a
   DVC-related topic — we are here to help, just
   [let us know](https://dvc.org/support)!**
-  
 
-- Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to speak at the
+* Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to
+  speak at the
   [Open Source Summit Europe](https://osseu19.sched.com/speaker/dmitry35) in
   Lyon, [Highload++](https://www.highload.ru/moscow/2019/abstracts/6032) in
   Moscow and made a stop in in Berlin to co-host a
