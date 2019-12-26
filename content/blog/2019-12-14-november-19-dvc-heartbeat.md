@@ -11,7 +11,8 @@ descriptionLong: |
   journey. The others are a collection of exciting stories and ideas centered
   around ML best practices and workflow.
 picture: /uploads/images/2019-12-14/post-image.jpeg
-pictureComment: How cool is this handmade swag from our community? We were in tears!
+pictureComment:
+  How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Machine Learning
@@ -41,7 +42,7 @@ involved our community is and can’t wait to share more with you:
 
 - DVC was participating in the
   [Devsprints](https://twitter.com/FossMec/status/1192866498324254720) (Thank
-  you [Kyrian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
+  you [Kurian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
   were happy to jump in and help with some mentoring.
 
 ![Devsprints participants on our [Discord](http://dvc.org/chat) channel](/uploads/images/2019-12-14/devsprints.png)_Devsprints
@@ -50,6 +51,8 @@ participants on our [Discord](http://dvc.org/chat) channel_
 - DVC became part of the default
   [Homebrew formulae](https://formulae.brew.sh/formula/dvc)! So now you can
   install it as easy as `𝚋𝚛𝚎𝚠 𝚒𝚗𝚜𝚝𝚊𝚕𝚕 𝚍𝚟𝚌`!
+
+<center><iframe width="560" height="315" src=""https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
 
 - We helped 2 aspiring speakers deliver their very first conference talks.
   [Kurian Benoy](https://twitter.com/kurianbenoy2/status/1183427495342694401?s=20)
@@ -60,7 +63,8 @@ participants on our [Discord](http://dvc.org/chat) channel_
   DVC-related topic — we are here to help, just
   [let us know](https://dvc.org/support)!**
 
-- Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to speak at the
+* Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to
+  speak at the
   [Open Source Summit Europe](https://osseu19.sched.com/speaker/dmitry35) in
   Lyon, [Highload++](https://www.highload.ru/moscow/2019/abstracts/6032) in
   Moscow and made a stop in in Berlin to co-host a
