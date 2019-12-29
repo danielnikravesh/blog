@@ -57,10 +57,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === "MarkdownRemark") {
-    const value = createFilePath({ node, getNode }).replace(
-      /^\/[0-9\-]*/,
-      "/blog/"
-    );
+    const value = createFilePath({ node, getNode }).replace(/^\/[0-9\-]*/, "/");
     createNodeField({
       name: "slug",
       node,
