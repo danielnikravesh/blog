@@ -15,7 +15,6 @@ import Meta from "../meta";
 import PseudoButton from "../pseudo-button";
 import Share from "../share";
 
-import { ReactComponent as ArrowSVG } from "./arrow.svg";
 import styles from "./styles.module.css";
 
 function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
@@ -74,12 +73,6 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
       />
       <div className={styles.head}>
         <div className={styles.headContent}>
-          <div className={styles.back}>
-            <PseudoButton href={siteLinks.blog} type="secondary">
-              <ArrowSVG className={styles.arrow} />
-              Blog
-            </PseudoButton>
-          </div>
           <h1 className={styles.title}>{title}</h1>
           <div className={styles.description}>
             {descriptionLong || description}

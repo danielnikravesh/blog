@@ -37,21 +37,6 @@
   }
 }
 
-.back {
-  display: inline-flex;
-  position: absolute;
-  top: 40px;
-  left: -150px;
-
-  @media (--md-scr) {
-    display: none;
-  }
-}
-
-.arrow {
-  margin: 0 10px 0 -8px;
-}
-
 .title {
   margin: 0;
   padding: 30px 0 0;
