@@ -50,8 +50,6 @@ participants on our [Discord](http://dvc.org/chat) channel_
   [Homebrew formulae](https://formulae.brew.sh/formula/dvc)! So now you can
   install it as easy as `𝚋𝚛𝚎𝚠 𝚒𝚗𝚜𝚝𝚊𝚕𝚕 𝚍𝚟𝚌`!
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
-
 - We helped 2 aspiring speakers deliver their very first conference talks.
   [Kurian Benoy](https://twitter.com/kurianbenoy2/status/1183427495342694401?s=20)
   was speaking at [PyconIndia](https://in.pycon.org/2019/) and
@@ -61,7 +59,9 @@ participants on our [Discord](http://dvc.org/chat) channel_
   DVC-related topic — we are here to help, just
   [let us know](https://dvc.org/support)!**
 
-* Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
+
+- Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to
   speak at the
   [Open Source Summit Europe](https://osseu19.sched.com/speaker/dmitry35) in
   Lyon, [Highload++](https://www.highload.ru/moscow/2019/abstracts/6032) in
