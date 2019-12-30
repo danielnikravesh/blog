@@ -18,6 +18,7 @@ picture: /uploads/images/2019-12-14/post-image.jpeg
 pictureComment:
   How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/november-19-dvc-heartbeat/284
 tags:
   - Machine Learning
   - Artificial Intelligence
