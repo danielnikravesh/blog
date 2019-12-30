@@ -172,10 +172,10 @@ interesting takeaways.
 
 ### Q: When you do a `dvc import` you get the state of the data in the original repo at that moment in time from that repo, right? [The overall state of that repo (e.g. Git `commit id` (hash)) is not preserved upon import, right?](https://discordapp.com/channels/485586884165107732/563406153334128681/618744949277458462)
 
-**A:** On the contrary, DVC relies on Git `commit id` (hash) to determine the
-state of the data as well as code. Git `commit id` (hash) is saved in DVC file
-upon import, data itself is copied/downloaded into DVC repo cache but would not
-be pushed to the remote — DVC does not create duplicates. There is a command to
+On the contrary, DVC relies on Git `commit id` (hash) to determine the state of
+the data as well as code. Git `commit id` (hash) is saved in DVC file upon
+import, data itself is copied/downloaded into DVC repo cache but would not be
+pushed to the remote — DVC does not create duplicates. There is a command to
 advance/update it when it’s needed — `dvc update`. Git commit hash saved to
 provide reproducibility. Even if the source repo `HEAD` has changed your import
 stays the same until you run `dvc update` or redo `dvc import`.
@@ -250,9 +250,12 @@ $ export AWS_CA_BUNDLE=/path/to/cert/cert.crt dvc push
 
 should do the trick for now, we plan to fix the ca_bundle option soon.
 
-### Q: I have just finished a lengthy `dvc repro` and I’m happy with the result. However, I realized that I didn’t specify a dependency which I needed (and obviously is used in the computation). Can I somehow fix it? [Add the dependency to the stage file (including the right MD5) without rerunning/reproducing the stage (this is not needed as this additional dependency hasn’t changed).](https://discordapp.com/channels/485586884165107732/563406153334128681/620572187841265675)
+### Q: I have just finished a lengthy `dvc repro` and I’m happy with the result. However, I realized that I didn’t specify a dependency which I needed (and obviously is used in the computation). [Can I somehow fix it?](https://discordapp.com/channels/485586884165107732/563406153334128681/620572187841265675)
 
-You need to edit the DVC-file. In the deps section add:
+Add the dependency to the stage file without rerunning/reproducing the stage.
+This is not needed as this additional dependency hasn’t changed.
+
+You would need to edit the DVC-file. In the deps section add:
 
 ```yaml
 -path: not/included/file/path
@@ -264,7 +267,7 @@ See an example
 
 ### Q: For some reason [we need to always specify the remote name when doing a `dvc push`](https://discordapp.com/channels/485586884165107732/485596304961962003/629704961868955648) e.g., `dvc push -r upstream` as opposed to `dvc push` (mind no additional arguments).
 
-You can specify “default” remote:
+You can mark a “default” remote:
 
 ```dvc
 $ dvc remote add -d remote /path/to/my/main/remote
