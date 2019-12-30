@@ -164,14 +164,14 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-### Q: When you do a `dvc import` you get the state of the data in the original repo at that moment in time from that repo, right? [The overall state of that repo (e.g. Git commit id/hash) is not preserved upon import, right?](https://discordapp.com/channels/485586884165107732/563406153334128681/618744949277458462)
+### Q: When you do a `dvc import` you get the state of the data in the original repo at that moment in time from that repo, right? [The overall state of that repo (e.g. Git `commit id` (hash)) is not preserved upon import, right?](https://discordapp.com/channels/485586884165107732/563406153334128681/618744949277458462)
 
-**A:** On the contrary, DVC relies on Git commit id/hash to determine the state
-of the data as well as code. Git commit id (hash) is saved in DVC file upon
+**A:** On the contrary, DVC relies on Git `commit id` (hash) to determine the state
+of the data as well as code. Git `commit id` (hash) is saved in DVC file upon
 import, data itself is copied/downloaded into DVC repo cache but would not be
 pushed to the remote — DVC does not create duplicates. There is a command to
 advance/update it when it’s needed — `dvc update`. Git commit hash saved to
-provide reproducibility. Even if the source repo HEAD has changed your import
+provide reproducibility. Even if the source repo `HEAD` has changed your import
 stays the same until you run `dvc update` or redo `dvc import`.
 
 ### Q: I’m trying to understand if DVC is an appropriate solution for storing data under GDPR requirements. [That means that permanent deletion of files with sensitive data needs to be fully supported.](https://discordapp.com/channels/485586884165107732/485596304961962003/621057268145848340)
@@ -213,9 +213,7 @@ package. Try to run these commands:
 
 ```dvc
 $ sudo rm -rf /usr/local/bin/dvc
-
 $ sudo rm -rf /usr/local/lib/dvc
-
 $ sudo pkgutil --forget com.iterative.dvc
 ```
 
@@ -227,7 +225,13 @@ Yes, you should use `--local` or `--global` config options to set user per
 project or per use machine without sharing (committing) them to Git:
 
 ```dvc
-$ dvc remote modify myremote — local (or — global) user myuser
+$ dvc remote modify myremote —local user myuser
+```
+
+or
+
+```dvc
+$ dvc remote modify myremote —global user myuser
 ```
 
 ### Q: [I still get the `SSL ERROR` when I try to perform a dvc push with or without `use_ssl = false`](https://discordapp.com/channels/485586884165107732/485596304961962003/628227197592797191)?
@@ -244,7 +248,7 @@ should do the trick for now, we plan to fix the ca_bundle option soon.
 
 You need to edit the DVC-file. In the deps section add:
 
-```dvc
+```yaml
 -path: not/included/file/path
 ```
 
