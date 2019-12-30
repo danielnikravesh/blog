@@ -7,7 +7,7 @@ description: |
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way. Co-hosting our first ever
-  meetup, getting ready for the Hacktoberfest, Martin Fowlers's blog about ML
+  meetup, getting ready for the Hacktoberfest, Martin Fowler's blog about ML
   lifecycle and automation ...
 picture: /uploads/images/2019-12-14/post-image.jpeg
 pictureComment:
