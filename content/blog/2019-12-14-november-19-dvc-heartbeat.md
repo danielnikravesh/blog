@@ -166,10 +166,10 @@ interesting takeaways.
 
 ### Q: When you do a `dvc import` you get the state of the data in the original repo at that moment in time from that repo, right? [The overall state of that repo (e.g. Git `commit id` (hash)) is not preserved upon import, right?](https://discordapp.com/channels/485586884165107732/563406153334128681/618744949277458462)
 
-**A:** On the contrary, DVC relies on Git `commit id` (hash) to determine the state
-of the data as well as code. Git `commit id` (hash) is saved in DVC file upon
-import, data itself is copied/downloaded into DVC repo cache but would not be
-pushed to the remote — DVC does not create duplicates. There is a command to
+**A:** On the contrary, DVC relies on Git `commit id` (hash) to determine the
+state of the data as well as code. Git `commit id` (hash) is saved in DVC file
+upon import, data itself is copied/downloaded into DVC repo cache but would not
+be pushed to the remote — DVC does not create duplicates. There is a command to
 advance/update it when it’s needed — `dvc update`. Git commit hash saved to
 provide reproducibility. Even if the source repo `HEAD` has changed your import
 stays the same until you run `dvc update` or redo `dvc import`.
