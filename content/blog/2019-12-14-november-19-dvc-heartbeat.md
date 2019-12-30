@@ -6,13 +6,11 @@ description: |
   community takeaways, and everything along the way.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  community takeaways, and everything along the way. Co-hosting our first ever
+  meetup, getting ready for the Hacktoberfest, Martin Fowlers's blog about ML
+  lifecycle and automation ...
 picture: /uploads/images/2019-12-14/post-image.jpeg
-pictureComment:
-  How cool is this handmade swag from our community? We were in tears!
+pictureComment: How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Machine Learning
@@ -52,7 +50,7 @@ participants on our [Discord](http://dvc.org/chat) channel_
   [Homebrew formulae](https://formulae.brew.sh/formula/dvc)! So now you can
   install it as easy as `𝚋𝚛𝚎𝚠 𝚒𝚗𝚜𝚝𝚊𝚕𝚕 𝚍𝚟𝚌`!
 
-<center><iframe width="560" height="315" src=""https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
 
 - We helped 2 aspiring speakers deliver their very first conference talks.
   [Kurian Benoy](https://twitter.com/kurianbenoy2/status/1183427495342694401?s=20)
@@ -107,7 +105,7 @@ discovered in October and November:
 <a href="https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0" class="external-link-preview">
   <section class="elp-content-holder">
     <div class="elp-description-holder">
-      <h4 class="elp-title">How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker</h4>
+      <h4 class="elp-title">How to Manage Your Machine Learning Workflow withDVC, Weights & Biases, and Docker</h4>
       <div class="elp-description">Managing a machine learning workflow is hard!</div>
       <div class="elp-link">towardsdatascience.com</div>
     </div>
@@ -192,7 +190,9 @@ our API specifically designed for that:
 ```python
 from dvc.api import get_url
 
-url = get_url(path, repo="https://github.com/user/proj",  rev="mybranch")
+url = get_url(path,
+              repo="https://github.com/user/proj",
+              rev="mybranch")
 ```
 
 so, you could as well use this from CLI as a wrapper command.
@@ -230,7 +230,7 @@ project or per use machine without sharing (committing) them to Git:
 $ dvc remote modify myremote — local (or — global) user myuser
 ```
 
-### Q: [I still get the SSL ERROR when I try to perform a dvc push with or without use_ssl = false](https://discordapp.com/channels/485586884165107732/485596304961962003/628227197592797191)?
+### Q: [I still get the `SSL ERROR` when I try to perform a dvc push with or without `use_ssl = false`](https://discordapp.com/channels/485586884165107732/485596304961962003/628227197592797191)?
 
 A simple environment variable like this:
 
@@ -275,8 +275,8 @@ this to be implemented.
 Please, refer to
 [this answer](https://discuss.dvc.org/t/how-do-i-use-dvc-with-ssh-remote/279/2)
 on the DVC forum and check the documentation for the
-[dvc remote add](https://dvc.org/doc/command-reference/remote/add) and
-[dvc remote modify](https://dvc.org/doc/command-reference/remote/modify)
+[`dvc remote add`](https://dvc.org/doc/command-reference/remote/add) and
+[`dvc remote modify`](https://dvc.org/doc/command-reference/remote/modify)
 commands to see more options and details.
 
 <hr />
