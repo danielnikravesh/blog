@@ -11,7 +11,7 @@ const netlifyCMSPathConfig = {
 const title = "Data Version Control · DVC";
 const keywords = "data, machine learning models management, datasets, git";
 const description =
-  "Data Version Control Blog. We write about machine learning workflow. Data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.";
+  "Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.";
 
 const plugins = [
   {

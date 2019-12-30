@@ -20,8 +20,9 @@ function Feed({ posts }: IFeedProps) {
       <div className={styles.meta}>
         <div className={styles.header}>Data Version Control in Real Life</div>
         <div className={styles.lead}>
-          Every month we are sharing here our news, findings, interesting reads,
-          community takeaways, and everything along the way.
+          We write about machine learning workflow. From data versioning and
+          processing to model productionization. We share our news, findings,
+          interesting reads, community takeaways.
         </div>
       </div>
       <div className={styles.posts}>
