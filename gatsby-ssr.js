@@ -1,7 +1,7 @@
-var React = require("react")
+var React = require('react');
 
 exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
-  const headComponents = getHeadComponents()
+  const headComponents = getHeadComponents();
   replaceHeadComponents([
     ...headComponents,
     <script
@@ -14,5 +14,5 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
       src="https://platform.twitter.com/widgets.js"
       charSet="utf-8"
     />
-  ])
-}
+  ]);
+};

@@ -8,11 +8,11 @@ const screens = {
 
 module.exports = {
   customMedia: {
-    "--xxs-scr": `(max-width: ${screens.phone}px)`,
-    "--xs-scr": `(max-width: ${screens.phablet}px)`,
-    "--sm-scr": `(max-width: ${screens.tablet}px)`,
-    "--md-scr": `(max-width: ${screens.desktop - 1}px)`,
-    "--lg-scr": `(min-width: ${screens.desktop}px)`,
-    "--xl-scr": `(min-width: ${screens.giant}px)`
+    '--xxs-scr': `(max-width: ${screens.phone}px)`,
+    '--xs-scr': `(max-width: ${screens.phablet}px)`,
+    '--sm-scr': `(max-width: ${screens.tablet}px)`,
+    '--md-scr': `(max-width: ${screens.desktop - 1}px)`,
+    '--lg-scr': `(min-width: ${screens.desktop}px)`,
+    '--xl-scr': `(min-width: ${screens.giant}px)`
   }
 };

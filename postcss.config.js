@@ -1,11 +1,11 @@
-const nested = require("postcss-nested");
-const autoprefixer = require("autoprefixer");
-const customMedia = require("postcss-custom-media");
-const customProperties = require("postcss-custom-properties");
-const mixins = require("postcss-mixins");
+const nested = require('postcss-nested');
+const autoprefixer = require('autoprefixer');
+const customMedia = require('postcss-custom-media');
+const customProperties = require('postcss-custom-properties');
+const mixins = require('postcss-mixins');
 
-const mediaConfig = require("./config/postcss/media");
-const mixinsConfig = require("./config/postcss/mixins");
+const mediaConfig = require('./config/postcss/media');
+const mixinsConfig = require('./config/postcss/mixins');
 
 module.exports = function postcssConfig() {
   return {
@@ -13,7 +13,7 @@ module.exports = function postcssConfig() {
       mixins(mixinsConfig),
       customMedia({ importFrom: mediaConfig }),
       customProperties({
-        importFrom: ["src/components/layout/base.css"]
+        importFrom: ['src/components/layout/base.css']
       }),
       nested,
       autoprefixer

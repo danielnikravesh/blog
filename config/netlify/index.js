@@ -1,8 +1,8 @@
-import CMS from "netlify-cms-app";
+import CMS from 'netlify-cms-app';
 
 function Wrapper({ widgetFor }) {
-  return widgetFor("body");
+  return widgetFor('body');
 }
 
-CMS.registerPreviewStyle("/admin/styles.css");
-CMS.registerPreviewTemplate("blog", Wrapper);
+CMS.registerPreviewStyle('/admin/styles.css');
+CMS.registerPreviewTemplate('blog', Wrapper);

@@ -10,7 +10,8 @@ descriptionLong: |
   meetup, getting ready for the Hacktoberfest, Martin Fowlers's blog about ML
   lifecycle and automation ...
 picture: /uploads/images/2019-12-14/post-image.jpeg
-pictureComment: How cool is this handmade swag from our community? We were in tears!
+pictureComment:
+  How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 tags:
   - Machine Learning

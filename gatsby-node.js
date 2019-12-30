@@ -1,12 +1,12 @@
-const fs = require("fs");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
-const { siteMetadata } = require("./gatsby-config");
+const fs = require('fs');
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+const { siteMetadata } = require('./gatsby-config');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve("./src/templates/blog-post.tsx");
+  const blogPost = path.resolve('./src/templates/blog-post.tsx');
   const result = await graphql(
     `
       {
@@ -56,10 +56,10 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === "MarkdownRemark") {
-    const value = createFilePath({ node, getNode }).replace(/^\/[0-9\-]*/, "/");
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({ node, getNode }).replace(/^\/[0-9\-]*/, '/');
     createNodeField({
-      name: "slug",
+      name: 'slug',
       node,
       value
     });
@@ -114,8 +114,8 @@ exports.onPostBuild = async function({ graphql }) {
     }
   );
 
-  const dir = path.join(__dirname, "/public/api");
-  const filepath = path.join(dir, "posts.json");
+  const dir = path.join(__dirname, '/public/api');
+  const filepath = path.join(dir, 'posts.json');
 
   // Write json file to the public dir,
   // it will be used community page later

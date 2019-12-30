@@ -31,8 +31,8 @@ projects.
 
 Each development is always a combination of following steps presented below:
 
-![Model development process](/uploads/images/2017-07-24/development-steps.png) _Model
-development process_
+![Model development process](/uploads/images/2017-07-24/development-steps.png)
+_Model development process_
 
 Because of the specificity of the process — iterative development, it is very
 important to improve some coding and organizational skills. For example, instead
@@ -148,7 +148,8 @@ $ cat data/evaluation.txt
 
 Dependency graph is shown on picture below:
 
-![Dependency graph](/uploads/images/2017-07-24/dependency-graph.png)_Dependency graph_
+![Dependency graph](/uploads/images/2017-07-24/dependency-graph.png)_Dependency
+graph_
 
 DVC memorizes this dependencies and helps us in each moment to reproduce
 results.

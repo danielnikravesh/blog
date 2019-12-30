@@ -54,7 +54,8 @@ conference.
 ![](/uploads/images/2019-05-21/the-world-is-changing.png)
 
 While we were busy finalizing all the Pycon 2019 prep, our own
-[Dmitry Petrov](https://twitter.com/FullStackML) flew to New York to speak at the
+[Dmitry Petrov](https://twitter.com/FullStackML) flew to New York to speak at
+the
 [O’Reilly AI Conference](https://conferences.oreilly.com/artificial-intelligence/ai-ny)
 about the
 [Open Source tools for Machine Learning Models and Datasets versioning](https://www.oreilly.com/library/view/artificial-intelligence-conference/9781492050544/video324691.html).
