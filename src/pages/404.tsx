@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Page404 from "../components/404";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Page404 from '../components/404';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 function NotFoundPage() {
   return (

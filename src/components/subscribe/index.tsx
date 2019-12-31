@@ -1,14 +1,14 @@
-import cn from "classnames";
-import React from "react";
+import cn from 'classnames';
+import React from 'react';
 
-import { ids } from "../../data";
+import { ids } from '../../data';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
-import { default as Glyph1Src } from "./glyph-1.svg";
-import { default as Glyph2Src } from "./glyph-2.svg";
+import { default as Glyph1Src } from './glyph-1.svg';
+import { default as Glyph2Src } from './glyph-2.svg';
 
-import SubscribeForm from "./form";
+import SubscribeForm from './form';
 
 export default function Subscribe() {
   return (

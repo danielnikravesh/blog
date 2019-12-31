@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit",
     "lint-ts": "tslint --project .",
     "lint-css": "stylelint \"src/**/*.css\"",
-    "format-all": "prettier --write './**/*.{js,jsx,md}'" 
+    "format-all": "prettier --write './**/*.{js,jsx,md,tsx,ts,json}'"
   },
   "husky": {
     "hooks": {

@@ -1,9 +1,9 @@
-import Image, { FixedObject } from "gatsby-image";
-import React from "react";
+import Image, { FixedObject } from 'gatsby-image';
+import React from 'react';
 
-import { pluralizeComments } from "../../utils/i18n";
+import { pluralizeComments } from '../../utils/i18n';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 interface IFeedMetaProps {
   avatar: {
@@ -34,7 +34,7 @@ function FeedMeta({
         <li className={styles.item}>
           {date} • {timeToRead} min. read
         </li>
-        {commentsUrl && typeof commentsCount === "number" && (
+        {commentsUrl && typeof commentsCount === 'number' && (
           <li className={styles.item}>
             <a
               href={commentsUrl}

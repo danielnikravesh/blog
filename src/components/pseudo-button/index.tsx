@@ -1,7 +1,7 @@
-import cn from "classnames";
-import React from "react";
+import cn from 'classnames';
+import React from 'react';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 interface IPseudoButtonProps
   extends React.DetailedHTMLProps<
@@ -10,8 +10,8 @@ interface IPseudoButtonProps
   > {
   children: React.ReactNode;
   className?: string;
-  type: "primary" | "secondary";
-  size: "small" | "big";
+  type: 'primary' | 'secondary';
+  size: 'small' | 'big';
 }
 
 function PseudoButton({
@@ -32,8 +32,8 @@ function PseudoButton({
 }
 
 PseudoButton.defaultProps = {
-  type: "primary",
-  size: "small"
+  type: 'primary',
+  size: 'small'
 };
 
 export default PseudoButton;

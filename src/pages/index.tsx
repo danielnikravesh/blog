@@ -1,10 +1,10 @@
-import { graphql } from "gatsby";
-import { FixedObject, FluidObject } from "gatsby-image";
-import React from "react";
+import { graphql } from 'gatsby';
+import { FixedObject, FluidObject } from 'gatsby-image';
+import React from 'react';
 
-import Layout from "../components/layout";
-import Feed from "../components/feed"; // tslint:disable-line: ordered-imports
-import SEO from "../components/seo";
+import Layout from '../components/layout';
+import Feed from '../components/feed'; // tslint:disable-line: ordered-imports
+import SEO from '../components/seo';
 
 export interface IFeedPostData {
   id: string;

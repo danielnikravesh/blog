@@ -1,11 +1,11 @@
-import cn from "classnames";
-import React from "react";
+import cn from 'classnames';
+import React from 'react';
 
-import { siteLinks, topMenuItems } from "../../data";
+import { siteLinks, topMenuItems } from '../../data';
 
-import PseudoButton from "../pseudo-button";
+import PseudoButton from '../pseudo-button';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 function Nav() {
   return (

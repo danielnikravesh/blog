@@ -1,8 +1,8 @@
-import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
-import Helmet from "react-helmet";
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import Helmet from 'react-helmet';
 
-type MetaProps = JSX.IntrinsicElements["meta"];
+type MetaProps = JSX.IntrinsicElements['meta'];
 
 interface ISEOProps {
   title: string;
@@ -44,47 +44,47 @@ function SEO({
   const metaTitle =
     title && !defaultMetaTitle ? title : site.siteMetadata.title;
 
-  const metaImage = image || "/social-share.png";
+  const metaImage = image || '/social-share.png';
 
   const defaultMeta: MetaProps[] = [
     {
-      property: "description",
+      property: 'description',
       content: metaDescription
     },
     {
-      property: "keywords",
+      property: 'keywords',
       content: metaKeywords
     },
     {
-      property: "og:title",
+      property: 'og:title',
       content: metaTitle
     },
     {
-      property: "og:description",
+      property: 'og:description',
       content: metaDescription
     },
     {
-      property: "og:type",
-      content: "website"
+      property: 'og:type',
+      content: 'website'
     },
     {
-      property: "og:image",
+      property: 'og:image',
       content: metaImage
     },
     {
-      name: "twitter:card",
+      name: 'twitter:card',
       content: `summary`
     },
     {
-      name: "twitter:title",
+      name: 'twitter:title',
       content: metaTitle
     },
     {
-      name: "twitter:description",
+      name: 'twitter:description',
       content: metaDescription
     },
     {
-      name: "twitter:image",
+      name: 'twitter:image',
       content: metaImage
     }
   ];
@@ -99,26 +99,26 @@ function SEO({
       meta={[...defaultMeta, ...meta]}
       link={[
         {
-          rel: "shortcut icon",
-          type: "image/x-icon",
-          href: "/favicon.ico"
+          rel: 'shortcut icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico'
         },
         {
-          rel: "shortcut icon",
-          type: "image/vnd.microsoft.icon",
-          href: "/favicon.ico"
+          rel: 'shortcut icon',
+          type: 'image/vnd.microsoft.icon',
+          href: '/favicon.ico'
         },
         {
-          rel: "icon",
-          type: "image/png",
-          href: "/favicon-32x32.png",
-          sizes: "32x32"
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon-32x32.png',
+          sizes: '32x32'
         },
         {
-          rel: "icon",
-          type: "image/png",
-          href: "/favicon-16x16.png",
-          sizes: "16x16"
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon-16x16.png',
+          sizes: '16x16'
         }
       ]}
     />

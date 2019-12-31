@@ -1,10 +1,10 @@
-import cn from "classnames";
-import React, { useCallback, useState } from "react";
+import cn from 'classnames';
+import React, { useCallback, useState } from 'react';
 
-import Footer from "../footer";
-import Hamburger from "../hamburger";
+import Footer from '../footer';
+import Hamburger from '../hamburger';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 function HamburgerMenu() {
   const [menu, setMenu] = useState(false);

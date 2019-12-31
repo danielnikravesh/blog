@@ -1,21 +1,21 @@
-import cn from "classnames";
-import Image from "gatsby-image";
+import cn from 'classnames';
+import Image from 'gatsby-image';
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import { useWindowScroll, useWindowSize } from "react-use";
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useWindowScroll, useWindowSize } from 'react-use';
 
-import { IBlogPostData } from "../../templates/blog-post";
+import { IBlogPostData } from '../../templates/blog-post';
 
-import { getCommentsCount } from "../../api";
-import { siteLinks } from "../../data";
-import { pluralizeComments } from "../../utils/i18n";
+import { getCommentsCount } from '../../api';
+import { siteLinks } from '../../data';
+import { pluralizeComments } from '../../utils/i18n';
 
-import Markdown from "../markdown";
-import Meta from "../meta";
-import PseudoButton from "../pseudo-button";
-import Share from "../share";
+import Markdown from '../markdown';
+import Meta from '../meta';
+import PseudoButton from '../pseudo-button';
+import Share from '../share';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
   const {

@@ -1,23 +1,23 @@
-import { graphql, useStaticQuery } from "gatsby";
-import React, { useCallback } from "react";
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { useCallback } from 'react';
 
-import { ids } from "../../data";
+import { ids } from '../../data';
 
-import Tooltip from "../tooltip";
+import Tooltip from '../tooltip';
 
-import { ReactComponent as Facebook } from "./icons/facebook.svg";
-import { ReactComponent as Subscribe } from "./icons/subscribe.svg";
-import { ReactComponent as Twitter } from "./icons/twitter.svg";
+import { ReactComponent as Facebook } from './icons/facebook.svg';
+import { ReactComponent as Subscribe } from './icons/subscribe.svg';
+import { ReactComponent as Twitter } from './icons/twitter.svg';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 function openWindow(e: React.MouseEvent, href: string) {
   e.preventDefault();
 
   window.open(
     href,
-    "",
-    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+    '',
+    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600'
   );
 }
 

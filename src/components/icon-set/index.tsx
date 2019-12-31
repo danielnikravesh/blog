@@ -1,8 +1,8 @@
-import cn from "classnames";
-import React from "react";
+import cn from 'classnames';
+import React from 'react';
 
-import * as icons from "./icons";
-import styles from "./styles.module.css";
+import * as icons from './icons';
+import styles from './styles.module.css';
 
 interface IIconSetProps {
   className?: string;

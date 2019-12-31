@@ -1,11 +1,11 @@
-declare module "*.png" {
+declare module '*.png' {
   type IPNG = string;
 
   const png: IPNG;
   export = png;
 }
 
-declare module "*.css" {
+declare module '*.css' {
   interface IClassNames {
     [className: string]: string;
   }
@@ -13,7 +13,7 @@ declare module "*.css" {
   export = classNames;
 }
 
-declare module "*.svg" {
+declare module '*.svg' {
   interface IReactSVGR {
     default: string;
     ReactComponent: React.StatelessComponent<React.SVGAttributes<SVGElement>>;

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { IFeedPostData } from "../../pages/index";
+import { IFeedPostData } from '../../pages/index';
 
-import FeedItem from "./item";
+import FeedItem from './item';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 interface IFeedProps {
   posts: [

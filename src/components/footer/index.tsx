@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import { footerMenuItems, siteLinks } from "../../data";
+import { footerMenuItems, siteLinks } from '../../data';
 
-import IconSet from "../icon-set";
+import IconSet from '../icon-set';
 
-import { ReactComponent as LogoSVG } from "./logo.svg";
-import styles from "./styles.module.css";
+import { ReactComponent as LogoSVG } from './logo.svg';
+import styles from './styles.module.css';
 
 interface IFooterProps {
   onClick?: () => void;

@@ -1,11 +1,11 @@
 /* Used https://reacttraining.com/reach-ui/tooltip as the base */
 
-import Portal from "@reach/portal";
-import { TooltipPopup, TooltipProps, useTooltip } from "@reach/tooltip";
+import Portal from '@reach/portal';
+import { TooltipPopup, TooltipProps, useTooltip } from '@reach/tooltip';
 
-import React from "react";
+import React from 'react';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 const centered = (triggerRect: DOMRect, tooltipRect: DOMRect) => {
   const triggerCenter = triggerRect.left + triggerRect.width / 2;

@@ -1,117 +1,117 @@
-export const root = "https://dvc.org";
+export const root = 'https://dvc.org';
 
 export const ids = {
-  subscribe: "subscribe"
+  subscribe: 'subscribe'
 };
 
 export const siteLinks = {
   root,
-  blog: "/",
+  blog: '/',
   chat: `${root}/chat`,
   docs: `${root}/doc`,
   features: `${root}/features`,
   getStarted: `${root}/doc/get-started`,
-  github: "https://github.com/iterative/dvc",
-  iterative: "https://iterative.ai/",
+  github: 'https://github.com/iterative/dvc',
+  iterative: 'https://iterative.ai/',
   overview: `${root}/?`,
   support: `${root}/support`,
-  twitter: "https://twitter.com/DVCorg"
+  twitter: 'https://twitter.com/DVCorg'
 };
 
 export const topMenuItems = [
   {
-    title: "Features",
+    title: 'Features',
     href: siteLinks.features
   },
   {
-    title: "Doc",
+    title: 'Doc',
     href: siteLinks.docs
   },
   {
-    title: "Blog",
+    title: 'Blog',
     href: siteLinks.blog
   },
   {
-    title: "Chat",
+    title: 'Chat',
     href: siteLinks.chat
   },
   {
-    title: "GitHub",
+    title: 'GitHub',
     href: siteLinks.github
   },
   {
-    title: "Support",
+    title: 'Support',
     href: siteLinks.support
   }
 ];
 
 export const footerMenuItems = [
   {
-    section: "Product",
+    section: 'Product',
     links: [
       {
-        title: "Overview",
+        title: 'Overview',
         href: siteLinks.overview
       },
       {
-        title: "Features",
+        title: 'Features',
         href: siteLinks.features
       }
     ]
   },
   {
-    section: "Help",
+    section: 'Help',
     links: [
       {
-        title: "Support",
+        title: 'Support',
         href: siteLinks.support
       },
       {
-        title: "Get started",
+        title: 'Get started',
         href: siteLinks.getStarted
       },
       {
-        title: "Chat",
+        title: 'Chat',
         href: siteLinks.chat,
-        icon: "chat"
+        icon: 'chat'
       },
       {
-        title: "Documentation",
+        title: 'Documentation',
         href: siteLinks.docs
       }
     ]
   },
   {
-    section: "Company",
+    section: 'Company',
     links: [
       {
-        title: "Blog",
+        title: 'Blog',
         href: siteLinks.blog
       },
       {
-        title: "Iterative.ai",
+        title: 'Iterative.ai',
         href: siteLinks.iterative,
-        icon: "iterative"
+        icon: 'iterative'
       }
     ]
   },
   {
-    section: "Social",
+    section: 'Social',
     links: [
       {
-        title: "Twitter",
+        title: 'Twitter',
         href: siteLinks.twitter,
-        icon: "twitter"
+        icon: 'twitter'
       },
       {
-        title: "GitHub",
+        title: 'GitHub',
         href: siteLinks.github,
-        icon: "github"
+        icon: 'github'
       },
       {
-        title: "Discord",
+        title: 'Discord',
         href: siteLinks.chat,
-        icon: "discord"
+        icon: 'discord'
       }
     ]
   }

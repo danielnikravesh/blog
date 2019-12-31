@@ -1,16 +1,16 @@
-import cn from "classnames";
-import { Link } from "gatsby";
-import Image from "gatsby-image";
-import React, { useEffect, useRef } from "react";
-import { useRafState, useWindowSize } from "react-use";
+import cn from 'classnames';
+import { Link } from 'gatsby';
+import Image from 'gatsby-image';
+import React, { useEffect, useRef } from 'react';
+import { useRafState, useWindowSize } from 'react-use';
 
-import { IFeedPostData } from "../../../pages/index";
+import { IFeedPostData } from '../../../pages/index';
 
-import Meta from "../../meta";
+import Meta from '../../meta';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
-import { ReactComponent as Placeholder } from "./placeholder.svg";
+import { ReactComponent as Placeholder } from './placeholder.svg';
 
 interface IFeedItemPorps extends IFeedPostData {
   big?: boolean;
