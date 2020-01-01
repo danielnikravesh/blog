@@ -41,4 +41,7 @@
 
 .getStartedButton {
   margin-left: 40px;
+  font-weight: 500;
+  align-items: center;
+  border: none;
 }

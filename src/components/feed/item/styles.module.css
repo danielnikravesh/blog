@@ -28,7 +28,7 @@
 
   @media (--lg-scr) {
     &.big {
-      width: 1000px;
+      width: 1005px;
       height: 450px;
     }
   }

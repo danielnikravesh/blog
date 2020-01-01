@@ -18,7 +18,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1005px;
   height: var(--header-height);
   width: auto;
   z-index: 3;

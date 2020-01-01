@@ -1,6 +1,6 @@
 const screens = {
   giant: 1200,
-  desktop: 1000,
+  desktop: 1005,
   tablet: 768,
   phablet: 572,
   phone: 376

@@ -1,6 +1,6 @@
 .wrapper {
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 1005px;
   margin: 0 auto;
 
   @media (--md-scr) {
