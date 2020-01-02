@@ -207,9 +207,15 @@
   }
 
   hr {
-    border: solid var(--color-light-gray);
-    border-width: 1px 0 0;
-    height: 0;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+
+    &::before {
+      content: '...';
+      letter-spacing: 0.6em;
+      font-size: 28px;
+    }
   }
 
   abbr,
