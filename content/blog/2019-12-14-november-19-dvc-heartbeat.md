@@ -2,29 +2,25 @@
 title: November ’19 DVC❤️Heartbeat
 date: 2019-12-14
 description: |
-  Co-hosting our first ever meetup, getting ready for the Hacktoberfest, Martin
-  Fowler's blog about ML lifecycle and automation, fresh Discrord gems and other
+  Co-hosting our first ever meetup, sharing our Hacktoberfest experience, 4K ⭐,
+  fresh Discord gems and other
   news.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way. Some of those are related
-  to our brainchild DVC and its journey. The others are a collection of exciting
-  stories and ideas centered around ML best practices and workflow.
-
-  Co-hosting our first ever meetup, getting ready for the Hacktoberfest, Martin
-  Fowler's blog about ML lifecycle and automation, fresh Discrord gems and other
-  news.
+  community takeaways, and everything along the way.
+  Some of those are related to our brainchild DVC and its journey. The others
+  are a collection of exciting stories and ideas centered around ML best
+  practices and workflow.
 picture: /uploads/images/2019-12-14/post-image.jpeg
 pictureComment:
   How cool is this handmade swag from our community? We were in tears!
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/november-19-dvc-heartbeat/284
 tags:
-  - Machine Learning
-  - Artificial Intelligence
-  - Open Source
-  - AI
-  - Version Control
+  - Meetup
+  - Heartbeat
+  - Hacktoberfest
+  - DVC
 ---
 
 The past few months have been so busy and full of great events! We love how
@@ -50,8 +46,8 @@ involved our community is and can’t wait to share more with you:
   you [Kurian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
   were happy to jump in and help with some mentoring.
 
-![Devsprints participants on our [Discord](http://dvc.org/chat) channel](/uploads/images/2019-12-14/devsprints.png)_Devsprints
-participants on our [Discord](http://dvc.org/chat) channel_
+![](/uploads/images/2019-12-14/devsprints.png)_Devsprints participants on our
+[Discord](http://dvc.org/chat) channel_
 
 - DVC became part of the default
   [Homebrew formulae](https://formulae.brew.sh/formula/dvc)! So now you can

@@ -1,21 +1,27 @@
 ---
 title: Best practices of orchestrating Python and R code in ML projects
 date: 2017-09-26
-description:
+description: |
+  What is the best way to integrate R and Python languages in one data science
+  project? What are the best practices?
+descriptionLong: |
   Today, data scientists are generally divided among two languages — some prefer
-  R, some prefer Python.
+  R, some prefer Python. I will try to find an answer to a question: “What is
+  the best way to integrate both languages in one data science project? What are
+  the best practices?”
 picture: /uploads/images/2017-09-26/post-image.jpg
 pictureComment: 'Image was taken from intersog.com'
 author: ../authors/marija_ilic.md
-commentsUrl: https://discuss.dvc.org/t/how-and-where-install-dvc/126
+commentsUrl: https://discuss.dvc.org/t/best-practices-of-orchestrating-python-and-r-code-in-ml-projects/295
 tags:
-  - Machine Learning
   - R
   - Python
-  - Data Science
+  - DVC
+  - Tutorial
+  - Best Practices
 ---
 
-Beside git and shell scripting additional tools are developed to facilitate the
+Beside Git and shell scripting additional tools are developed to facilitate the
 development of predictive model in a multi-language environments. For fast data
 exchange between R and Python let’s use binary data file format
 [Feather](https://blog.rstudio.com/2016/03/29/feather/). Another language
@@ -47,7 +53,7 @@ Let’s recall briefly the R codes from previous tutorial:
 
 ![R Jobs](/uploads/images/2017-09-26/r-jobs.png)_R Jobs_
 
-Input data are Stackoverflow posts — an XML file. Predictive variables are
+Input data are StackOverflow posts — an XML file. Predictive variables are
 created from text posts — relative importance
 [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) of words among all
 available posts is calculated. With tf-idf matrices target is predicted and
@@ -76,7 +82,7 @@ Let’s download necessary R and Python codes from above (clone the
 $ mkdir R_DVC_GITHUB_CODE
 $ cd R_DVC_GITHUB_CODE
 
-$ git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AND_DVC)
+$ git clone https://github.com/Zoldin/R_AND_DVC
 ```
 
 Our dependency graph of this data science project look like this:
@@ -91,13 +97,13 @@ Feather API and data version control reproducibility.
 
 Feather API is designed to improve meta data and data interchange between R and
 Python. It provides fast import/export of data frames among both environments
-and keeps meta data informations which is an improvement over data exchange via
+and keeps meta data information which is an improvement over data exchange via
 csv/txt file format. In our example Python job will read an input binary file
 that was produced in R with Feather api.
 
 Let’s install Feather library in both environments.
 
-For Python 3 on linux enviroment you can use cmd and pip3:
+For Python 3 on linux environment you can use cmd and pip3:
 
 ```dvc
 $ sudo pip3 install feather-format
@@ -105,15 +111,15 @@ $ sudo pip3 install feather-format
 
 For R it is necessary to install feather package:
 
-```dvc
-$ install.packages(feather)
+```R
+install.packages(feather)
 ```
 
 After successful installation we can use Feather for data exchange.
 
 Below is an R syntax for data frame export with Feather (featurization.R):
 
-```python
+```R
 library(feather)
 
 write_feather(dtm_train_tfidf,args[3])
@@ -124,7 +130,7 @@ print("Two data frame were created with Feather - one for train and one for test
 Python syntax for reading feather input binary files (train_model_python.py):
 
 ```python
-**import **feather **as **ft
+import feather as ft
 
 input = sys.argv[1]
 df = ft.read_dataframe(input)
@@ -145,13 +151,30 @@ model development. In that phase DVC creates dependencies that will be used in
 the reproducibility phase:
 
 ```dvc
-$ dvc import [https://s3-us-west-2.amazonaws.com/dvc-share/so/25K/Posts.xml.tgz](https://s3-us-west-2.amazonaws.com/dvc-share/so/25K/Posts.xml.tgz) data/
+$ dvc import https://s3-us-west-2.amazonaws.com/dvc-share/so/25K/Posts.xml.tgz \
+            data/
+
 $ dvc run tar zxf data/Posts.xml.tgz -C data/
-$ dvc run Rscript code/parsingxml.R data/Posts.xml data/Posts.csv
-$ dvc run Rscript code/train_test_spliting.R data/Posts.csv 0.33 20170426 data/train_post.csv data/test_post.csv
-$ dvc run Rscript code/featurization.R data/train_post.csv data/test_post.csv data/matrix_train.feather data/matrix_test.feather
-$ dvc run python3 code/train_model_python.py data/matrix_train.feather 20170426 data/model.p
-$ dvc run python3 code/evaluate_python_mdl.py data/model.p data/matrix_test.feather data/evaluation_python.txt
+
+$ dvc run Rscript code/parsingxml.R \
+                  data/Posts.xml data/Posts.csv
+
+$ dvc run Rscript code/train_test_spliting.R \
+                  data/Posts.csv 0.33 20170426 \
+                  data/train_post.csv data/test_post.csv
+
+$ dvc run Rscript code/featurization.R \
+                  data/train_post.csv \
+                  data/test_post.csv data/matrix_train.feather \
+                  data/matrix_test.feather
+
+$ dvc run python3 code/train_model_python.py \
+                  data/matrix_train.feather \
+                  20170426 data/model.p
+
+$ dvc run python3 code/evaluate_python_mdl.py \
+                  data/model.p data/matrix_test.feather \
+                  data/evaluation_python.txt
 ```
 
 After this commands jobs are executed and included in DAG graph. Result (AUC
@@ -168,7 +191,9 @@ We can increase number of trees in the random forest classifier — from 100 to
 500:
 
 ```python
-clf = RandomForestClassifier(n_estimators=**500**, n_jobs=2, random_state=seed)
+clf = RandomForestClassifier(n_estimators=500,
+                             n_jobs=2,
+                             random_state=seed)
 clf.fit(x, labels)
 ```
 
@@ -179,7 +204,7 @@ don’t need to worry which jobs to run and in which order.
 ```dvc
 $ git add .
 $ git commit
-[master a65f346] Random forest clasiffier — more trees added
+[master a65f346] Random forest classifier — more trees added
     1 file changed, 1 insertion(+), 1 deletion(-)
 
 $ dvc repro data/evaluation_python.txt
@@ -190,12 +215,15 @@ Data item “data/evaluation_python.txt” was reproduced.
 ```
 
 Beside code versioning, DVC also cares about data versioning. For example, if we
-change data sets `train_post.csv` and `test_post.csv` (use different spliting
+change data sets `train_post.csv` and `test_post.csv` (use different splitting
 ratio) DVC will know that data sets are changed and `dvc repro` will re-execute
 all necessary jobs for evaluation_python.txt.
 
 ```dvc
-$ dvc run Rscript code/train_test_spliting.R data/Posts.csv 0.15 20170426 data/train_post.csv data/test_post.csv
+$ dvc run Rscript code/train_test_spliting.R \
+                  data/Posts.csv 0.15 20170426 \
+                  data/train_post.csv \
+                  data/test_post.csv
 ```
 
 Re-executed jobs are marked with red color:
@@ -203,7 +231,10 @@ Re-executed jobs are marked with red color:
 ![](/uploads/images/2017-09-26/re-executed-jobs.png)
 
 ```dvc
-$ dvc run Rscript code/train_test_spliting.R data/Posts.csv 0.15 20170426 data/train_post.csv data/test_post.csv
+$ dvc run Rscript code/train_test_spliting.R \
+                  data/Posts.csv 0.15 20170426 \
+                  data/train_post.csv \
+                  data/test_post.csv
 
 $ dvc repro data/evaluation_python.txt
 

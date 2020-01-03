@@ -2,33 +2,37 @@
 title: ML best practices in PyTorch dev conf 2018
 date: 2018-10-18
 description: |
-  In the Machine Learning (ML) field tools and techniques for best practices are just starting to be developed.
+  In the Machine Learning (ML) field tools and techniques for best practices are
+  just starting to be developed.
+descriptionLong: |
+  In the Machine Learning (ML) field tools and techniques for best practices are
+  just starting to be developed. At the PyTorch developer conference (PTDC-18),
+  several speakers including Jerome Pesenti, VP of AI from Facebook and Andrej
+  Karpathy, Director of Tesla AI spoke about best practices for machine learning
+  development.
 picture: /uploads/images/2018-10-18/post-image.jpeg
 pictureComment: 'The image source: blog.hubspot.com'
 author: ../authors/dmitry_petrov.md
+commentsUrl: https://discuss.dvc.org/t/ml-best-practices-in-pytorch-dev-conf-2018/294
 tags:
   - Machine Learning
   - Best Practices
-  - Pytorch
-  - Data Science
-  - Git
+  - PyTorch
+  - DVC
+  - PTDC-18
 ---
 
-At the PyTorch developer conference (PTDC-18), several speakers including Jerome
-Pesenti, VP of AI from Facebook and Andrej Karpathy, Director of Tesla AI spoke
-about best practices for machine learning development. The issues discussed
-included applying traditional software development techniques like unit testing,
-CI/CD systems, automated deployment, version control, and more to the ML field.
-
-In this blog post, we will go over the best practices ideas from PTDC-18 and the
-future of ML tool developments.
+The issues discussed included applying traditional software development
+techniques like unit testing, CI/CD systems, automated deployment, version
+control, and more to the ML field. In this blog post, we will go over the best
+practices ideas from PTDC-18 and the future of ML tool developments.
 
 ## 1. Engineering practices from PyTorch developers
 
-In the
-PTDC-18[ keynote speech](https://www.facebook.com/pytorch/videos/482401942168584/),
-Jerome Pesenti described the motivation and goals of PyTorch project and what
-the future of machine learning looks like.
+In the PTDC-18
+[keynote speech](https://www.facebook.com/pytorch/videos/482401942168584/),
+**Jerome Pesenti** described the motivation and goals of PyTorch project and
+what the future of machine learning looks like.
 
 ### 1.1. ML tooling future
 
@@ -55,23 +59,23 @@ transition from AI research to production”. It helps to move AI technology fro
 research into production as quickly as possible. In order to do that a few
 challenges were solved:
 
-1. Write code once — not have to rewrite or re-optimize code to go from research
-   to prod.
+1. **Write code once** — not have to rewrite or re-optimize code to go from
+   research to prod.
 
-1. Performance — training model on large datasets.
+1. **Performance** — training model on large datasets.
 
-1. Other languages — not only Python which is great for prototyping but also C++
-   and other languages.
+1. **Other languages** — not only Python which is great for prototyping but also
+   C++ and other languages.
 
-1. Scaling — deploy PyTorch at scale more easily.
+1. **Scaling** — deploy PyTorch at scale more easily.
 
 ## 2. Engineering practices for software 2.0
 
 ### 2.1. Melting of software 2.0 and software 1.0
 
-Andrej Karpathy from Tesla AI had
-a[ dedicated talk](https://www.facebook.com/pytorch/videos/169366590639145/)
-about best engineering practices in ML. He drew a contrast between traditional
+**Andrej Karpathy** from Tesla AI had a
+[dedicated talk](https://www.facebook.com/pytorch/videos/169366590639145/) about
+best engineering practices in ML. He drew a contrast between traditional
 software development (software 1.0) with software utilizing Machine Learning
 techniques (software 2.0), saying that
 
@@ -130,7 +134,7 @@ tools** and storage systems rather than libraries.
 
 The need for a machine learning artifact manipulation tool with **data
 file-centric philosophy** was the major motivation behind open source project
-that we created — data version control (DVC) or[ dvc.org](http://dvc.org).
+that we created — Data Version Control (DVC) or [DVC.org](http://dvc.org).
 
 DVC connects Git with data files and machine learning pipelines which helps keep
 version control on machine learning models and datasets using familiar Git

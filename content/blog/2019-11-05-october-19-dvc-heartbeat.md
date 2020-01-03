@@ -7,17 +7,17 @@ description: |
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  Some of those are related to our brainchild DVC and its journey. The others
+  are a collection of exciting stories and ideas centered around ML best
+  practices and workflow.
 picture: /uploads/images/2019-11-05/post-image.png
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/october-19-dvc-heartbeat/285
 tags:
-  - Machine Learning
-  - Data Science
-  - Version Control
-  - AI
-  - Tutorial
+  - Meetup
+  - Heartbeat
+  - Hacktoberfest
+  - DVC
 ---
 
 ## News and links
@@ -60,13 +60,13 @@ it this year. Here are some of the highlights:
 - Seeing [Dmitry Petrov](https://twitter.com/FullStackML) being really happy one
   day:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/martinfowler?ref_src=twsrc%5Etfw">@martinfowler</a>&#39;s books and his website were always the source of programming wisdom 💎 His Refactoring book is the first book I recommend to developers.<br><br>Now they write about ML lifecycle and automation. I’m especially excited because they use <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> that we’ve created. <a href="https://t.co/HwswZqjOsb">https://t.co/HwswZqjOsb</a></p>&mdash; Dmitry Petrov (@FullStackML) <a href="https://twitter.com/FullStackML/status/1169403554290814976?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">.<a href="https://twitter.com/martinfowler?ref_src=twsrc%5Etfw">@martinfowler</a>&#39;s books and his website were always the source of programming wisdom 💎 His Refactoring book is the first book I recommend to developers.<br><br>Now they write about ML lifecycle and automation. I’m especially excited because they use <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> that we’ve created. <a href="https://t.co/HwswZqjOsb">https://t.co/HwswZqjOsb</a></p>&mdash; Dmitry Petrov (@FullStackML) <a href="https://twitter.com/FullStackML/status/1169403554290814976?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote>
 
 <hr />
 
-We at DVC.org are so happy every time we discover an article featuring DVC or
-addressing one of the burning ML issues we are trying to solve. Here are some of
-the links that caught our eye past month:
+We at [DVC.org](https://dvc.org) are so happy every time we discover an article
+featuring DVC or addressing one of the burning ML issues we are trying to solve.
+Here are some of the links that caught our eye past month:
 
 - **Continuous Delivery for Machine Learning by
   [Danilo Sato](https://twitter.com/dtsato),
@@ -94,12 +94,12 @@ the links that caught our eye past month:
 </a>
 
 - **[The Path to Identity Validation](https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9)
-  by [Víctor Segura](undefined).**
+  by [Víctor Segura](https://medium.com/@victor.segura).**
 
 > So, the first question is clear: how to choose the optimal hardware for neural
 > networks? Secondly, assuming that we have the appropriate infrastructure, how
 > to build the machine learning ecosystem to train our models efficiently and
-> not die trying? At _Signaturit_, we have the solution ;)
+> not die trying? At **Signaturit**, we have the solution ;)
 
 <a href="https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9" class="external-link-preview">
   <section class="elp-content-holder">
@@ -180,7 +180,7 @@ metrics show can be used while file is still versioned by Git.
 
 There are two options — use `AZURE_STORAGE_CONNECTION_STRING` environment
 variable or use `--local` flag that will put it into the `.dvc/config.local`
-that is added to the gitignore, so you don’t track it with it and so won’t
+that is added to the `.gitignore`, so you don’t track it with it and so won’t
 expose secrets.
 
 ### Q: [I would like to know if it is possible to manage files under DVC whilst keeping them in their original locations (e.g. on a network drive in a given folder structure)](https://discordapp.com/channels/485586884165107732/485596304961962003/601068667131920385)? [If I want to add a large file to be tracked by DVC, and it is in a bucket on S3 or GCS, can I do that without downloading it locally?](https://discordapp.com/channels/485586884165107732/485596304961962003/615278138896941101)
@@ -204,7 +204,7 @@ Yes, it will! Here is some clarification. So when you set those settings like
 that, `dvc add` data will move data to your cache and then will create a
 hardlink from your cache to your workspace.
 
-Unless your cache directory and your workspace are on different filesystems,
+Unless your cache directory and your workspace are on different file systems,
 move should be instant. Please, find more information
 [here](https://dvc.org/doc/user-guide/large-dataset-optimization).
 
@@ -234,7 +234,13 @@ example:
 2. You have `featurize.py` in your project dir, and want to use data to produce
    some features and than `train.py` to train a model.
 
-3. `dvc run -d /research_data/myproject/videos -o /research_data/myproject/features python featurize.py`
+3. Run the command:
+
+```dvc
+$ dvc run -d /research_data/myproject/videos \
+          -o /research_data/myproject/features \
+          python featurize.py
+```
 
 to tell DVC, that you use `/research_data/myproject/videos` to featurize, and
 produce output to your features dir. Note that your code should be aware of

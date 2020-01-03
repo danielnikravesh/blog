@@ -14,6 +14,7 @@ const description =
   'Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
 const plugins = [
+  'gatsby-plugin-twitter',
   {
     resolve: 'gatsby-source-filesystem',
     options: {

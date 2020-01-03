@@ -40,6 +40,7 @@
     "classnames": "^2.2.6",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
+    "gatsby-plugin-twitter": "^2.1.17",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-relative-images": "^0.2.3",
     "prismjs": "^1.17.1",

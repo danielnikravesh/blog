@@ -2,25 +2,26 @@
 title: July ’19 DVC❤️Heartbeat
 date: 2019-08-01
 description: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
+  As we continue to grow DVC together with our fantastic contributors, we enjoy
+  more and more insights, discussions, and articles either created or brought to
+  us by our community.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  Some of those are related to our brainchild DVC and its journey. The others
+  are a collection of exciting stories and ideas centered around ML best
+  practices and workflow.
 picture: /uploads/images/2019-08-01/post-image.png
 pictureComment:
   Special edition DVC shirt. We made this one for Ruslan — DVC maintainer and
   the best tech lead.
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/july-19-dvc-heartbeat/288
 tags:
-  - Machine Learning
-  - Open Source
-  - Artificial Intelligence
-  - Version Control
-  - Data
+  - Heartbeat
+  - Open Source Summit
+  - Discord Gems
+  - DVC
 ---
 
 ## News and links
@@ -28,7 +29,7 @@ tags:
 As we continue to grow DVC together with our fantastic contributors, we enjoy
 more and more insights, discussions, and articles either created or brought to
 us by our community. We feel it is the right time to start sharing more of your
-news, your stories and your discoveries. New Heartbeat is coming soon!
+news, your stories and your discoveries. New Heartbeat is here!
 
 Speaking of our own news — next month DVC team is going to the
 [Open Source North America Summit](https://events.linuxfoundation.org/events/open-source-summit-north-america-2019/).
@@ -74,7 +75,7 @@ addressing some of the burning ML issues. Here are some of the links that caught
 our eye in June:
 
 - **[Principled Machine Learning: Practices and Tools for Efficient Collaboration](https://dev.to/robogeek/principled-machine-learning-4eho)
-  by [David Herron](undefined)**
+  by [David Herron](https://medium.com/@7genblogger)**
 
 <a href="https://dev.to/robogeek/principled-machine-learning-4eho" class="external-link-preview">
   <section class="elp-content-holder">
@@ -130,7 +131,7 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-### I have within one git repository different folders with very different content (basically different projects, or content I want to have different permissions to), and I thought about using different buckets in AWS as remotes. [I’m not sure if it’s possible with DVC to store some files in some remote, and some other files in some other remote, is it?](https://discordapp.com/channels/485586884165107732/485596304961962003/575718048330416158)
+### Q: I have within one git repository different folders with very different content (basically different projects, or content I want to have different permissions to), and I thought about using different buckets in AWS as remotes. [I’m not sure if it’s possible with DVC to store some files in some remote, and some other files in some other remote, is it?](https://discordapp.com/channels/485586884165107732/485596304961962003/575718048330416158)
 
 You can definitely add more than one remote (see
 [dvc remote add](https://dvc.org/doc/commands-reference/remote-add)) and then
@@ -142,12 +143,12 @@ data — `push`, `pull`, `gc`, `fetch`, `status`, etc. Please, leave a comment i
 the relevant issue [here](https://github.com/iterative/dvc/issues/2095) if this
 case is important for you.
 
-### [Is that possible with DVC to have multiple (few) metric files and compare them all at once?](https://discordapp.com/channels/485586884165107732/485596304961962003/578532350221352987) For example, we’d like to consider as metrics the loss of a neural network training process (loss as a `-M` output of a training stage), and also apart knowing the accuracy of the NN on a test set (another `-M` output of eval stage).
+### Q: [Is that possible with DVC to have multiple (few) metric files and compare them all at once?](https://discordapp.com/channels/485586884165107732/485596304961962003/578532350221352987) For example, we’d like to consider as metrics the loss of a neural network training process (loss as a `-M` output of a training stage), and also apart knowing the accuracy of the NN on a test set (another `-M` output of eval stage).
 
 Yes, it is totally fine to use `-M` in different stages. `dvc metrics show` will
 just show both metrics.
 
-### [I have a scenario where an artifacts (data) folder is created by the dvc run command via the `-o` flag. I have manually added another file into or modified the artifacts folder but when I do `dvc push` nothing happens, is there anyway around this?](https://discordapp.com/channels/485586884165107732/485596304961962003/577362750443880449)
+### Q: [I have a scenario where an artifacts (data) folder is created by the dvc run command via the `-o` flag. I have manually added another file into or modified the artifacts folder but when I do `dvc push` nothing happens, is there anyway around this?](https://discordapp.com/channels/485586884165107732/485596304961962003/577362750443880449)
 
 Let’s first do a quick recap on how DVC handles data files (you can definitely
 find more information on the [DVC documentation site](http://dvc.org/docs)).
@@ -180,49 +181,49 @@ the reproducibility. In a sense that there is no guarantee now that your
 directory can be produced by `dvc run`/`dvc repro` — since you changed it
 manually.
 
-### [I’d like to transform my dataset in-place to avoid copying it, but I can’t use `dvc run` to do this because it doesn’t allow the same directory as an output and a dependency.](https://discordapp.com/channels/485586884165107732/485596304961962003/578898899469729796)
+### Q: [I’d like to transform my dataset in-place to avoid copying it, but I can’t use `dvc run` to do this because it doesn’t allow the same directory as an output and a dependency.](https://discordapp.com/channels/485586884165107732/485596304961962003/578898899469729796)
 
 You could do this in one step (one stage). So that getting your data and
 modifying it, is one stage. So you don’t depend on the data folder. You just
 could depend on your download + modifying script.
 
-### [Can anyone tell me what this error message is about?](https://discordapp.com/channels/485586884165107732/485596304961962003/579283950778712076) “To avoid unpredictable behaviour, rerun command with non overlapping outs paths.”
+### Q: [Can anyone tell me what this error message is about?](https://discordapp.com/channels/485586884165107732/485596304961962003/579283950778712076) “To avoid unpredictable behavior, rerun command with non overlapping outs paths.”
 
 Most likely it means that there is a DVC-file that have the same output twice.
 Or there two DVC-files that share the same output file.
 
-### [I’m getting “No such file or directory” error when I do `dvc run` or `dvc repro`](https://discordapp.com/channels/485586884165107732/485596304961962003/580176327701823498). The command runs find if I don’t use DVC.
+### Q: [I’m getting “No such file or directory” error when I do `dvc run` or `dvc repro`](https://discordapp.com/channels/485586884165107732/485596304961962003/580176327701823498). The command runs find if I don’t use DVC.
 
 That happens because dvc run is trying to ensure that your command is the one
 creating your output and removes existing outputs before executing the command.
 So that when you run `dvc repro` later, it will be able to fully reproduce the
 output. So you need to make the script create the directory or file.
 
-### [I’m implementing a CI/CD and I would like to simplify my CI/CD or even my training code (keeping them cloud agnostic) by using `dvc pull` inside my Docker container when initializing a training job. ](https://discordapp.com/channels/485586884165107732/485596304961962003/581256265234251776) Can DVC be used in this way?
+### Q: [I’m implementing a CI/CD and I would like to simplify my CI/CD or even my training code (keeping them cloud agnostic) by using `dvc pull` inside my Docker container when initializing a training job. ](https://discordapp.com/channels/485586884165107732/485596304961962003/581256265234251776) Can DVC be used in this way?
 
 Yes, it’s definitely a valid case for DVC. There are different ways of
 organizing the storage that training machines are using to access data. From the
 very simple — using local storage volume and pulling data from the remote
-storage everytime — to using NAS or EFS to store a shared DVC cache.
+storage every time — to using NAS or EFS to store a shared DVC cache.
 
-### [I was able to follow the getting started examples, however now I am trying to push my data to Github, I keep getting the following error: “ERROR: failed to push data to the cloud — upload is not supported by https remote”.](https://discordapp.com/channels/485586884165107732/563406153334128681/598866528984891403)
+### Q: [I was able to follow the getting started examples, however now I am trying to push my data to Github, I keep getting the following error: “ERROR: failed to push data to the cloud — upload is not supported by https remote”.](https://discordapp.com/channels/485586884165107732/563406153334128681/598866528984891403)
 
 HTTP remotes do not support upload yet. Example Get Started repository is using
 HTTP to keep it read-only and abstract the actual storage provider we are using
 internally. If you actually check the remote URL, you should see that it is an
 S3 bucket and AWS provides an HTTP end-point to read data from it.
 
-### I’m looking to configure AWS S3 as a storage for DVC. I’ve set up the remotes and initialized dvc in the git repository. I tried testing it by pushing a dataset in the form of an excel file. The command completed without any issues but this is what I’m seeing in S3. [DVC seems to have created a subdirectory in the intended directory called “35” where it placed this file with a strange name.](https://discordapp.com/channels/485586884165107732/485596304961962003/585967551708921856)
+### Q: I’m looking to configure AWS S3 as a storage for DVC. I’ve set up the remotes and initialized dvc in the git repository. I tried testing it by pushing a dataset in the form of an excel file. The command completed without any issues but this is what I’m seeing in S3. [DVC seems to have created a subdirectory in the intended directory called “35” where it placed this file with a strange name.](https://discordapp.com/channels/485586884165107732/485596304961962003/585967551708921856)
 
 This is not an issue, it is an implementation detail. There’s no current way to
 upload the files with the original filename (In this case, the S3 bucket will
-have the file `data.csv` but with another name 20/893143…). The reason behind
+have the file `data.csv` but with another name `20/893143…`). The reason behind
 this decision is because we want to store a file only once no matter how many
 dataset versions it’s used in. Also, it’s a reliable way to uniquely identify
 the file. You don’t have to be afraid that someone decided to create a file with
 the same name (path) but a different content.
 
-### [Is it possible to only have a shared ‘local’ cache and no remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/587730054893666326) I’m trying to figure out how to use this in a 40 node cluster which already has very fast NFS storage across all the nodes. Not storing everything twice seems desirable. Esp. for the multi-TB input data
+### Q: [Is it possible to only have a shared ‘local’ cache and no remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/587730054893666326) I’m trying to figure out how to use this in a 40 node cluster which already has very fast NFS storage across all the nodes. Not storing everything twice seems desirable. Esp. for the multi-TB input data
 
 Yes and it’s one of the very common use case, actually. All you need to do is to
 use dvc cache dir command to setup an external cache. There are few caveats

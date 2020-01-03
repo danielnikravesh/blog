@@ -1,31 +1,32 @@
 ---
 title: R code and reproducible model development with DVC
 date: 2017-07-24
-description:
+description: |
   In this document we will briefly explore possibilities of a new open source
   tool that could help with achieving code simplicity, readability and faster
   model development.
+descriptionLong: |
+  There are a lot of example on how to use Data Version Control (DVC) with a
+  Python project. In this document I would like to see how it can be used with a
+  project in R.
 picture: /uploads/images/2017-07-24/post-image.png
-pictureComment:
-  Kudos to StickerMule.com for our amazing stickers (and great customer
-  service)!
+pictureComment: DAG on R example
 author: ../authors/marija_ilic.md
+commentsUrl: https://discuss.dvc.org/t/r-code-and-reproducible-model-development-with-dvc/298
 tags:
-  - Data Science
-  - Rstats
-  - Data Version Control
-  - Machine Learning
-  - Git
+  - RStats
+  - R
+  - DVC
 ---
 
-It is called DVC (https://dataversioncontrol.com/) or data version control tool
-— its idea is to track files/data dependencies during model development in order
-to facilitate reproducibility and track data files versioning. DVC tutorial
-provides good examples of using DVC with Python language. However, I realized
-that DVC is a language agnostic
-(https://en.wikipedia.org/wiki/Language-agnostic) tool and can be used with any
-programming language. In this blog post, we will see how to use DVC in R
-projects.
+[DVC](https://dvc.org) or Data Version Control tool — its idea is to track
+files/data dependencies during model development in order to facilitate
+reproducibility and track data files versioning. Most of the
+[DVC tutorials](https://dvc.org/doc/tutorials) provide good examples of using
+DVC with Python language. However, I realized that DVC is a
+[language agnostic](https://en.wikipedia.org/wiki/Language-agnostic) tool and
+can be used with any programming language. In this blog post, we will see how to
+use DVC in R projects.
 
 ## R coding — keep it simple and readable
 
@@ -51,17 +52,18 @@ repeat all necessary steps/codes instead of us worrying about the order.
 
 ## R example — data and code clarification
 
-We’ll take an Python example from DVC tutorial (written by Dmitry Petrov) and
-rewrite that code in R. With an example we’ll show how can DVC help during
+We’ll take an Python example from
+[DVC tutorial](https://dvc.org/doc/tutorials/deep) (written by Dmitry Petrov)
+and rewrite that code in R. With an example we’ll show how can DVC help during
 development and what are its possibilities.
 
 Firstly, let’s initialize git and dvc on mentioned example and run our codes for
 the first time. After that we will simulate some changes in the codes and see
 how DVC works on reproducibility.
 
-R codes can be downloaded from Github —
-[https://github.com/Zoldin/R_AND_DVC.](https://github.com/Zoldin/R_AND_DVC) A
-brief explanation of the codes is presented below:
+R codes can be downloaded from the
+[Github repository](https://github.com/Zoldin/R_AND_DVC). A brief explanation of
+the codes is presented below:
 
 **parsingxml.R** — it takes xml that we downloaded from the web and creates
 appropriate csv file.
@@ -95,7 +97,7 @@ repository):
 $ mkdir R_DVC_GITHUB_CODE
 $ cd R_DVC_GITHUB_CODE
 
-$ git clone [https://github.com/Zoldin/R_AND_DVC](https://github.com/Zoldin/R_AND_DVC)
+$ git clone https://github.com/Zoldin/R_AND_DVC
 ```
 
 ## DVC installation and initialization
@@ -119,26 +121,41 @@ splitting ratio etc). It is important to use `dvc run` — with this command R
 script are entering pipeline (DAG graph).
 
 ```dvc
-$ dvc import [https://s3-us-west-2.amazonaws.com/dvc-share/so/25K/Posts.xml.tgz](https://s3-us-west-2.amazonaws.com/dvc-share/so/25K/Posts.xml.tgz) data/
+$ dvc import https://s3-us-west-2.amazonaws.com/dvc-share/so/25K/Posts.xml.tgz \
+             data/
 
 # Extract XML from the archive.
 $ dvc run tar zxf data/Posts.xml.tgz -C data/
 
 # Prepare data.
-$ dvc run Rscript code/parsingxml.R data/Posts.xml data/Posts.csv
+$ dvc run Rscript code/parsingxml.R \
+                  data/Posts.xml \
+                  data/Posts.csv
 
 # Split training and testing dataset. Two output files.
 # 0.33 is the test dataset splitting ratio. 20170426 is a seed for randomization.
-$ dvc run Rscript code/train_test_spliting.R data/Posts.csv 0.33 20170426 data/train_post.csv data/test_post.csv
+$ dvc run Rscript code/train_test_spliting.R \
+                  data/Posts.csv 0.33 20170426 \
+                  data/train_post.csv \
+                  data/test_post.csv
 
 # Extract features from text data. Two TSV inputs and two pickle matrixes outputs.
-$ dvc run Rscript code/featurization.R data/train_post.csv data/test_post.csv data/matrix_train.txt data/matrix_test.txt
+$ dvc run Rscript code/featurization.R \
+                  data/train_post.csv \
+                  data/test_post.csv \
+                  data/matrix_train.txt \
+                  data/matrix_test.txt
 
 # Train ML model out of the training dataset. 20170426 is another seed value.
-$ dvc run Rscript code/train_model.R data/matrix_train.txt 20170426 data/glmnet.Rdata
+$ dvc run Rscript code/train_model.R \
+                  data/matrix_train.txt 20170426 \
+                  data/glmnet.Rdata
 
 # Evaluate the model by the testing dataset.
-$ dvc run Rscript code/evaluate.R data/glmnet.Rdata data/matrix_test.txt data/evaluation.txt
+$ dvc run Rscript code/evaluate.R \
+                  data/glmnet.Rdata \
+                  data/matrix_test.txt \
+                  data/evaluation.txt
 
 # The result.
 $ cat data/evaluation.txt
@@ -155,14 +172,14 @@ DVC memorizes this dependencies and helps us in each moment to reproduce
 results.
 
 For example, lets say that we are changing our training model — using ridge
-penalty instead of lasso penalty (changing alpha parameter to 0). In that case
-will change/modify train_model.R job and if we want to repeat model development
-with this algorithm we don’t need to repeat all steps from above, only steps
-marked red on a picture below:
+penalty instead of lasso penalty (changing alpha parameter to `0`). In that case
+will change/modify `train_model.R` job and if we want to repeat model
+development with this algorithm we don’t need to repeat all steps from above,
+only steps marked red on a picture below:
 
 ![](/uploads/images/2017-07-24/marked-steps.png)
 
-DVC knows based on DAG graph that changed train\*model.R file will only change
+DVC knows based on DAG graph that changed `train_model.R` file will only change
 following files: `Glmnet.RData` and `Evaluation.txt`. If we want to see our new
 results we need to execute only `train_model.R` and `evaluate.R job`. It is cool
 that we don’t have to think all the time what we need to repeat (which steps).
@@ -183,7 +200,7 @@ $ cat data/evaluation.txt
 `dvc repro` always re executes steps which are affected with the latest
 developer changes. It knows what needs to be reproduced.
 
-DVC can also work in an _"multiuser environment”_ . Pipelines (dependency
+DVC can also work in an _"multi-user environment”_ . Pipelines (dependency
 graphs) are visible to others colleagues if we are working in a team and using
 git as our version control tool. Data files can be shared if we set up a cloud
 and with _dvc sync_ we specify which data can be shared and used for other
@@ -195,10 +212,7 @@ with those data and their code changes.
 DVC tool improves and accelerates iterative development and helps to keep track
 of ML processes and file dependencies in the simple form. On the R example we
 saw how DVC memorizes dependency graph and based on that graph re executes only
-jobs that are related to the latest changes. It can also work in multiuser
+jobs that are related to the latest changes. It can also work in multi-user
 environment where dependency graphs, codes and data can be shared among multiple
 users. Because it is language agnostic, DVC allows us to work with multiple
 programming languages within a single data science project.
-
-The original blog post can be found
-[here](https://blog.dataversioncontrol.com/r-code-and-reproducible-model-development-with-dvc-1507a0e3687b).

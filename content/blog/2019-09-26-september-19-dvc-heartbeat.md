@@ -2,22 +2,24 @@
 title: September ’19 DVC❤️Heartbeat
 date: 2019-09-26
 description: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
+  Announcing our first meetup in San Francisco, kicking off Google Season of
+  Docs program, sharing Open Source Summit experience, and more news, links, and
+  gems.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  Some of those are related to our brainchild DVC and its journey. The others
+  are a collection of exciting stories and ideas centered around ML best
+  practices and workflow.
 picture: /uploads/images/2019-09-26/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/september-19-dvc-heartbeat/287
 tags:
-  - Open Source
-  - Machine Learning
-  - Data Science
-  - Version Control
-  - AI
+  - Discord Gems
+  - Heartbeat
+  - Meetup
+  - DVC
+  - Open Source Summit
 ---
 
 ## News and links
@@ -91,7 +93,7 @@ discovered in July and August:
   on Twitter about versioning ML projects started by
   [Nathan Benaich](https://medium.com/@NathanBenaich).**
 
-<blockquote class="twitter-tweet" data-lang="ru"><p lang="en" dir="ltr">🙏Question to ML friends: How do you go about version control for your ML projects (data, models, and intermediate steps in your data pipelines)? Have you built your own tools? Are using something open source? Or a SaaS? Or does this come bundled with your ML infra products? Thx!</p>&mdash; Nathan Benaich (@NathanBenaich) <a href="https://twitter.com/NathanBenaich/status/1151815916512010242?ref_src=twsrc%5Etfw">18 июля 2019 г.</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en" data-dnt="true"><p lang="en" dir="ltr">🙏Question to ML friends: How do you go about version control for your ML projects (data, models, and intermediate steps in your data pipelines)? Have you built your own tools? Are using something open source? Or a SaaS? Or does this come bundled with your ML infra products? Thx!</p>&mdash; Nathan Benaich (@NathanBenaich) <a href="https://twitter.com/NathanBenaich/status/1151815916512010242?ref_src=twsrc%5Etfw">July 18, 2019</a></blockquote>
 
 - **[Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers](https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804)
   by [Ward Van Laer](https://medium.com/@ward.vanlaer).**
@@ -257,7 +259,7 @@ discovered in July and August:
   by [David Schönleber](https://www.linkedin.com/in/dschoenleber/).**
 
 > Setting up a documentation-by-design workflow and using appropriate tools
-> where needed, e.g. _mlflow_ and _dvc,_ can be a real deal-breaker.
+> where needed, e.g. _MLFlow_ and _dvc,_ can be a real deal-breaker.
 
 <a href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283" class="external-link-preview">
   <section class="elp-content-holder">
@@ -296,9 +298,9 @@ be done is the following:
 
 - Click on the Security Credentials link from the drop-down menu.
 
-- Find the Access Credentials section, and copy the latest Access Key ID.
+- Find the Access Credentials section, and copy the latest `Access Key ID`.
 
-- Click on the Show link in the same row, and copy the Secret Access Key.
+- Click on the Show link in the same row, and copy the `Secret Access Key`.
 
 Follow
 [this link](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
@@ -308,9 +310,9 @@ to setup your environment.
 
 To give a short summary — by default, DVC copies the files from your working
 directory to the cache (this is for safety reasons, it is better to duplicate
-the data.). If you have reflinks (copy-on-write) enabled on your file system,
-DVC will use that method — which is as safe as copying. You can also configure
-DVC to use hardlinks/symlinks to save some space and time, but it will require
+the data). If you have reflinks (copy-on-write) enabled on your file system, DVC
+will use that method — which is as safe as copying. You can also configure DVC
+to use hardlinks/symlinks to save some space and time, but it will require
 enabling the protected mode (making data files in workspace read-only). Read
 more details [here](https://dvc.org/doc/user-guide/large-dataset-optimization).
 
@@ -329,7 +331,7 @@ navigate, use arrows or W, A, S, D keys. To exit, press Q.
 ### Q: [Is there an issue if I set my `cache.s3` external cache to my default remote?](https://discordapp.com/channels/485586884165107732/563406153334128681/606197026488844338) I don’t quite understand what an external cache is for other than I have to have it for external outputs.
 
 Short answer is that we would suggest keeping them separately to avoid possible
-checksum overlaps. Cheksum on S3 might theoretically overlap with our checksums
+checksum overlaps. Checksum on S3 might theoretically overlap with our checksums
 (with the content of the file being different), so it could be dangerous. The
 chances of losing data are pretty slim, but we would not risk it. Right now, we
 are working on making sure there are no possible overlapping.
@@ -355,9 +357,9 @@ reproduced and saved or not).
 
 The file could be in any format, `dvc metric` show will try to interpret the
 format and output it in the best possible way. Also, if you are using `csv` or
-`json`, you can use the `--xpath` flag to query specific measurements.\*\* **In
+`json`, you can use the `--xpath` flag to query specific measurements. **In
 general, you can make any file a metric file and put any content into it, DVC is
-not opinionated about it.** \*\*Usually though these are files that measures the
+not opinionated about it.** Usually though these are files that measures the
 performance/accuracy of your model and captures configuration of experiments.
 The idea is to use `dvc metrics show` to display all your metrics across
 experiments so you can make decisions of which combination (of features,
@@ -383,25 +385,26 @@ Since it’s S3 compatible, specifying `endpointurl` (exact URL depends on the
 is the way to go:
 
 ```dvc
-dvc remote add -d mybucket s3://path/to/dir
-dvc remote modify mybucket endpointurl
-[https://s3.eu.cloud-object-storage.appdomain.cloud](https://s3.eu.cloud-object-storage.appdomain.cloud)
+$ dvc remote add -d mybucket s3://path/to/dir
+$ dvc remote modify mybucket \
+                    endpointurl \
+                    https://s3.eu.cloud-object-storage.appdomain.cloud
 ```
 
-### Q: [How can I push data from client to google cloud bucket using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/592958360903483403)
+### Q: [How can I push data from client to google cloud bucket using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/592958360903483403). Just want to know how can i set the credentials.
 
-Just want to know how can i set the credentials.
-
-**A:** You can do it by setting environment variable pointing to yours
-credentials path, like:
+You can do it by setting environment variable pointing to yours credentials
+path, like:
 
 ```dvc
-export GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials
+$ export GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials
 ```
 
 It is also possible to set this variable via `dvc config`:
 
-`dvc remote modify myremote credentialpath /path/to/my/creds`
+```dvc
+$ dvc remote modify myremote credentialpath /path/to/my/creds
+```
 
 where `myremote` is your remote name.
 

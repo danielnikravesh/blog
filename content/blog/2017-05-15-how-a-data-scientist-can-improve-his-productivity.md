@@ -1,33 +1,44 @@
 ---
 title: How A Data Scientist Can Improve His Productivity
 date: 2017-05-15
-description:
+description: |
   Data science and machine learning are iterative processes. It is never
   possible to successfully complete a data science project in a single pass.
+descriptionLong: |
+  The iteration time is a critical parameter in data science process. The
+  quicker you iterate, the more you can check ideas and build a better model.
+  The productivity of data scientists can be improved by speeding up iteration
+  processes and the DVC tool takes care of this.
 picture: /uploads/images/2017-05-15/post-image.jpeg
 author: ../authors/dmitry_petrov.md
+commentsUrl: https://discuss.dvc.org/t/how-a-data-scientist-can-improve-their-productivity/301
 tags:
-  - Data Science
+  - DVC
+  - Productivity
+  - Python
+  - Tutorial
 ---
 
-A data scientist constantly tries new ideas and changes steps of his pipeline:
+Data science and machine learning are iterative processes. It is never possible
+to successfully complete a data science project in a single pass. A data
+scientist constantly tries new ideas and changes steps of his pipeline:
 
-1. extract new features and accidentally find noise in the data
+1. extract new features and accidentally find noise in the data;
 
-1. clean up the noise, find one more promising feature
+2. clean up the noise, find one more promising feature;
 
-1. extract the new feature
+3. extract the new feature;
 
-1. rebuild and validate the model, realize that the learning algorithm
-   parameters are not perfect for the new feature set
+4. rebuild and validate the model, realize that the learning algorithm
+   parameters are not perfect for the new feature set;
 
-1. change machine learning algorithm parameters and retrain the model
+5. change machine learning algorithm parameters and retrain the model;
 
-1. find the ineffective feature subset and remove it from the feature set
+6. find the ineffective feature subset and remove it from the feature set;
 
-1. try a few more new features
+7. try a few more new features;
 
-1. try another ML algorithm. And then a data format change is required.
+8. try another ML algorithm. And then a data format change is required.
 
 This is only a small episode in a data scientist’s daily life and it is what
 makes our job different from a regular engineering job.
@@ -73,7 +84,8 @@ for the next one:
 
 ```dvc
 # Split training and testing dataset. Two output files.
-# 0.33 is the test dataset splitting ratio. 20170426 is a seed for randomization.
+# 0.33 is the test dataset splitting ratio.
+# 20170426 is a seed for randomization.
 $ dvc run python code/split_train_test.py \
                  data/Posts.tsv 0.33 20170426 \
                  data/Posts-train.tsv data/Posts-test.tsv
@@ -100,15 +112,14 @@ This is a powerful way of quickly iterating through your pipeline.
 
 The pipeline might have a lot of steps and forms of acyclic dependencies between
 the steps. Below is an example of a canonical machine learning pipeline (more
-details in
-[the DVC tutorial](https://blog.dataversioncontrol.com/data-version-control-beta-release-iterative-machine-learning-a7faf7c8be67)):
+details in [the DVC tutorials](https://dvc.org/doc/tutorials):
 
 `gist:dmpetrov/7704a5156bdc32c7379580a61e2fe3b6#dvc_pipeline.sh`
 
 ## Why are regular pipeline tools not enough?
 
 > “Workflows are expected to be mostly static or slowly changing.” (See
-> [https://airflow.incubator.apache.org/).](https://airflow.incubator.apache.org/).)
+> [Airflow](https://airflow.incubator.apache.org/).)
 
 Regular pipeline tools like [Airflow](http://airflow.incubator.apache.org) and
 [Luigi](https://github.com/spotify/luigi) are good for representing static and
@@ -155,4 +166,4 @@ We are very interested in your opinion and feedback. Please post your comments
 here or contact us on Twitter — [FullStackML](https://twitter.com/FullStackML).
 
 If you found this tool useful, **please “star” the
-[DVC Github repository](https://github.com/dataversioncontrol/dvc)**.
+[DVC Github repository](https://github.com/iterative/dvc)**.

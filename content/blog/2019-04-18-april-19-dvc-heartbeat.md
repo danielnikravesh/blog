@@ -2,29 +2,30 @@
 title: April ’19 DVC❤️Heartbeat
 date: 2019-04-18
 description: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
+  DVC creator Dmitry Petrov is giving a talk on PyCon 2019 🎤, new DVC logo
+  design, new Discord discussions, interesting reads that caught our eye, and
+  everything along the way.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  Some of those are related to our brainchild DVC and its journey. The others
+  are a collection of exciting stories and ideas centered around ML best
+  practices and workflow.
 picture: /uploads/images/2019-04-18/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/april-19-dvc-heartbeat/292
 tags:
-  - Git
-  - Data Science
-  - Machine Learning
-  - Open Source
-  - Version Control System
+  - Heartbeat
+  - Discord Gems
+  - DVC
+  - PyCon
 ---
 
 ## News and links
 
 We have some exciting news to share this month!
 
-DVC is going to [Pycon 2019](https://us.pycon.org/2019/)! It is the first
+DVC is going to [PyCon 2019](https://us.pycon.org/2019/)! It is the first
 conference that we attend as a team. When we say ‘team’ — we mean it. Our
 engineers are flying from all over the globe to get together offline and catch
 up with fellow Pythonistas.
@@ -65,7 +66,7 @@ Here is a number of interesting reads that caught our eye:
 </a>
 
 A great article about using DVC with a quite advanced scenario and docker. If
-you haven’t had a chance to try[ DVC.org](http://dvc.org/) yet — this is a great
+you haven’t had a chance to try [DVC.org](http://dvc.org/) yet — this is a great
 comprehensive read on why you should do so right away.
 
 - **[The state of machine learning operations](https://github.com/EthicalML/state-of-mlops-2019)
@@ -113,7 +114,7 @@ of ML operations.
 
 <hr />
 
-## Discord gems:
+## Discord gems
 
 There are lots of hidden gems in our Discord community discussions. Sometimes
 they are scattered all over the channels and hard to track down.
@@ -121,7 +122,7 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-### [What are the system requirements to install DVC (type of operating system, dependencies of another application (as GIT), memory, cpu, etc).](https://discordapp.com/channels/485586884165107732/485596304961962003/552098155861114891)
+### Q: [What are the system requirements to install DVC (type of operating system, dependencies of another application (as GIT), memory, cpu, etc).](https://discordapp.com/channels/485586884165107732/485596304961962003/552098155861114891)
 
 - It supports Windows, Mac, Linux. Python 2 and 3.
 
@@ -137,11 +138,11 @@ interesting takeaways.
   ability to actually save history of datasets, models, etc (even though it does
   not put them into Git directly).
 
-### [Do I have to buy a server license to run DVC, do you have this?](https://discordapp.com/channels/485586884165107732/485596304961962003/560212552638791706)
+### Q: [Do I have to buy a server license to run DVC, do you have this?](https://discordapp.com/channels/485586884165107732/485596304961962003/560212552638791706)
 
 No server licenses for DVC. It is 100% free and open source.
 
-### [What is the storage limit when using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/560154903331340289)
+### Q: [What is the storage limit when using DVC?](https://discordapp.com/channels/485586884165107732/485596304961962003/560154903331340289)
 
 I am trying to version control datasets and models with >10 GB (Potentially even
 bigger). Can DVC handle this?
@@ -152,7 +153,7 @@ need to have some space available on S3, your SSH server or other storage you
 are using to keep these data files, models and their version, which you would
 like to store.
 
-### [How does DVC know the sequence of stages to run](https://discordapp.com/channels/485586884165107732/485596304961962003/553731815228178433)?
+### Q: [How does DVC know the sequence of stages to run](https://discordapp.com/channels/485586884165107732/485596304961962003/553731815228178433)?
 
 How does it connect them? Does it see that there is a dependency which is
 outputted from the first run?
@@ -171,7 +172,7 @@ You can inspect the content of each stage file
 [here](https://dvc.org/doc/user-guide/dvc-file-format) (they are human
 readable).
 
-### [Is it possible to use the same data of a remote in two different repositories?](https://discordapp.com/channels/485586884165107732/485596304961962003/560022999848321026)
+### Q: [Is it possible to use the same data of a remote in two different repositories?](https://discordapp.com/channels/485586884165107732/485596304961962003/560022999848321026)
 
 (e.g. in one repo `run dvc pull -r my_remote` to pull some data and running the
 same command in a different git repo should also pull the same)
@@ -181,56 +182,58 @@ cache. DVC file serves as a link to the actual data. If you add the same DVC
 file (e.g. `data.dvc`) to the new repo and do `dvc pull -r remotename data.dvc`-
 it will fetch data. You have to use `dvc remote add` first to specify the
 coordinates of the remote storage you would like to share in every project.
-Alternatively (check out the question below), you could use `— global` to
+Alternatively (check out the question below), you could use `--global` to
 specify a single default remote (and/or cache dir) per machine.
 
-### [Could I set a global remote server, instead of config in each project?](https://discordapp.com/channels/485586884165107732/485586884165107734/559653121228275727)
+### Q: [Could I set a global remote server, instead of config in each project?](https://discordapp.com/channels/485586884165107732/485586884165107734/559653121228275727)
 
-Use `— global` when you specify the remote settings. Then remote will be visible
-for all projects on the same machine. `— global` — saves remote configuration to
+Use `--global` when you specify the remote settings. Then remote will be visible
+for all projects on the same machine. `--global` — saves remote configuration to
 the global config (e.g. `~/.config/dvc/config`) instead of a per project one —
 `.dvc/config`. See more details
 [here](https://dvc.org/doc/commands-reference/remote-add).
 
-### [How do I version a large dataset in S3 or any other storage?](https://discordapp.com/channels/485586884165107732/485596304961962003/554679392823934977)
+### Q: [How do I version a large dataset in S3 or any other storage?](https://discordapp.com/channels/485586884165107732/485596304961962003/554679392823934977)
 
 We would recommend to skim through our
 [get started](https://dvc.org/doc/get-started) tutorial, to summarize the data
 versioning process of DVC:
 
-- You create stage (aka DVC) files by adding, importing files (dvc add / dvc
-  import) , or run a command to generate files
-  (`dvc run — out file.csv “wget https://example.com/file.csv"`).
+- You create stage (aka DVC) files by adding, importing files (`dvc add` /
+  `dvc import`) , or run a command to generate files:
 
-- This stage files are tracked by git
+```dvc
+$ dvc run --out file.csv “wget https://example.com/file.csv"
+```
 
-- You use git to retrieve previous stage files (e.g. git checkout v1.0)
+- This stage files are tracked by `git`
 
-- Then use dvc checkout to retrieve all the files related by those stage files
+- You use git to retrieve previous stage files (e.g. `git checkout v1.0`)
 
-All your files (with each different version) are stored in a .dvc/cache
+- Then use `dvc checkout` to retrieve all the files related by those stage files
+
+All your files (with each different version) are stored in a `.dvc/cache`
 directory, that you sync with a remote file storage (for example, S3) using the
-dvc push or dvc pull commands (analogous to a git push / git pull, but instead
-of syncing your .git, you are syncing your .dvc directory)
+`dvc push` or `dvc pull` commands (analogous to a `git push` / `git pull`, but
+instead of syncing your `.git`, you are syncing your `.dvc` directory) on a
+remote repository (let’s say an S3 bucket).
 
-on a remote repository (let’s say an S3 bucket).
-
-### [How do I move/rename DVC files?](https://discordapp.com/channels/485586884165107732/485596304961962003/558216007684980736)
+### Q: [How do I move/rename a DVC-file?](https://discordapp.com/channels/485586884165107732/485596304961962003/558216007684980736)
 
 If you need to move your dvc file somewhere, it is pretty easy, even if done
 manually:
 
 `gist:SvetaGr/b25a5b45773bf94d36e60d48462502f4#heartbeat-dvc-rename.sh`
 
-### [I performed `dvc push` of a file to a remote. On the remote there is created a directory called `8f` with a file inside called `2ec34faf91ff15ef64abf3fbffa7ee`. The original csv file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
+### Q: [I performed `dvc push` of a file to a remote. On the remote there is created a directory called `8f` with a file inside called `2ec34faf91ff15ef64abf3fbffa7ee`. The original CSV file doesn’t appear on the remote. Is that expected behaviour?](https://discordapp.com/channels/485586884165107732/485596304961962003/555431645402890255)
 
-This is an expected behaviour. DVC saves files under the name created from their
+This is an expected behavior. DVC saves files under the name created from their
 checksum in order to prevent duplication. If you delete “pushed” file in your
-project directory and perform `dvc pull`, dvc will take care of pulling the file
+project directory and perform `dvc pull`, DVC will take care of pulling the file
 and renaming it to “original” name.
 
-Below are some details about how DVC’s cache works, just to illustrate the
-logic. When you add a data source:
+Below are some details about how DVC cache works, just to illustrate the logic.
+When you add a data source:
 
 `gist:SvetaGr/b69fa8ce36bcce00ecd69e7f2d7ccd2e#heartbeat-remote-file-naming.sh`
 
@@ -244,14 +247,14 @@ filesystem) is created to replace it on your working space:
 
 `gist:SvetaGr/133cb93e5a21c6f21a86f8709ed39ea9#heartbeat-cache-structure-2019-04.sh`
 
-### [Is it possible to integrate dvc with our in-house tools developed in Python?](https://discordapp.com/channels/485586884165107732/485586884165107734/553570391000481802)
+### Q: [Is it possible to integrate dvc with our in-house tools developed in Python?](https://discordapp.com/channels/485586884165107732/485586884165107734/553570391000481802)
 
 Absolutely! There are three ways you could interact with DVC:
 
 1. Use [subprocess](https://docs.python.org/3/library/subprocess.html) to launch
-   DVC;
+   DVC
 
-2. Use from `dvc.main import main` and use it with regular CLI logic like
+2. Use `from dvc.main import main` and use it with regular CLI logic like
    `ret = main(‘add’, ‘foo’)`
 
 3. Use our internal API (see `dvc/repo` and `dvc/command` in our source to get a
@@ -260,7 +263,7 @@ Absolutely! There are three ways you could interact with DVC:
    We’ll add docs and all the official stuff for it in the not-so-distant
    future.
 
-### [Can I still track the linkage between data and model without using `dvc run`](https://discordapp.com/channels/485586884165107732/485586884165107734/555750217522216990) and a graph of tasks? Basically what would like extremely minimal DVC invasion into my GIT repo for an existing machine learning application?
+### Q: [Can I still track the linkage between data and model without using `dvc run`](https://discordapp.com/channels/485586884165107732/485586884165107734/555750217522216990) and a graph of tasks? Basically what would like extremely minimal DVC invasion into my GIT repo for an existing machine learning application?
 
 There are two options:
 
@@ -270,7 +273,7 @@ There are two options:
    first part (up to the Pipelines/Add transformations section) of the DVC
    [get started](https://dvc.org/doc/get-started).
 
-2. You could use `— no-exec` in `dvc run` and then just `dvc commit` and
+2. You could use `--no-exec` in `dvc run` and then just `dvc commit` and
    `git commit` the results. That way you’ll get your DVC files with all the
    linkages, without having to actually run your commands through DVC.
 

@@ -2,23 +2,23 @@
 title: June ’19 DVC❤️Heartbeat
 date: 2019-06-26
 description: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
+  First DVC user survey, sharing our PyCon experience, new portion of Discord
+  discussions, and articles either created or brought to us by our community.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  Some of those are related to our brainchild DVC and its journey. The others
+  are a collection of exciting stories and ideas centered around ML best
+  practices and workflow.
 picture: /uploads/images/2019-06-26/post-image.png
 pictureComment: Thanks to the amazing Signaturit Tech team for this photo!
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/june-19-dvc-heartbeat/289
 tags:
-  - Open Source
-  - Machine Learning
-  - Artificial Intelligence
-  - Versioning
-  - Pycon
+  - PyCon
+  - Heartbeat
+  - Discord Gems
+  - DVC
 ---
 
 ## News and links
@@ -39,7 +39,7 @@ and would love to hear from you!**
 
 Aside from admiring great DVC-related content from our users we have one more
 reason to particularly enjoy the past month — DVC team went to Cleveland to
-attend [Pycon 2019](https://us.pycon.org/2019/about/) and it was a blast!
+attend [PyCon 2019](https://us.pycon.org/2019/about/) and it was a blast!
 
 ![](/uploads/images/2019-06-26/cleveland-to-attend-pycon-2019.jpeg) _Amazing
 [Jennifer](https://github.com/sureL) and her artwork for our
@@ -54,12 +54,12 @@ sharing more about it in a separate blogpost soon.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jkfh2PM5Sz8" frameborder="0" allowfullscreen></iframe></center>
 
-Here is [Dmitry Petrov](https://twitter.com/FullStackML)’s Pycon
+Here is [Dmitry Petrov](https://twitter.com/FullStackML)’s PyCon
 [talk](https://www.youtube.com/watch?v=jkfh2PM5Sz8) and
 [slides](https://docs.google.com/presentation/d/1CYt0w8WoZAXiQEtVDVDsTnQumzdZx91v32MwEK20R-E/edit)
 on Machine learning model and dataset versioning practices.
 
-We absolutely loved being at Pycon and can’t wait for our next conference!
+We absolutely loved being at PyCon and can’t wait for our next conference!
 
 <hr />
 
@@ -88,9 +88,9 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 </a>
 
 > Legacy Data Governance is broken in the ML era. Let’s rebuild it as an
-> engineering discipline… …At the end of the transformation, data governance
-> will look a lot more like DevOps, with data stewards, scientists, and
-> engineers working closely together to codify the governance policies.
+> engineering discipline. At the end of the transformation, data governance will
+> look a lot more like DevOps, with data stewards, scientists, and engineers
+> working closely together to codify the governance policies.
 
 - **[First Impressions of Data Science Version Control (DVC)](https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda)
   by [Christopher Samiullah](https://christophergs.github.io/)**
@@ -153,12 +153,12 @@ they are scattered all over the channels and hard to track down.
 We are sifting through the issues and discussions and share with you the most
 interesting takeaways.
 
-### [Does DVC support Azure Data Lake Gen1?](https://discordapp.com/channels/485586884165107732/563406153334128681/575655655629651968)
+### Q: [Does DVC support Azure Data Lake Gen1?](https://discordapp.com/channels/485586884165107732/563406153334128681/575655655629651968)
 
 Azure data lake is HDFS compatible. And DVC supports HDFS remotes. Give it a try
 and let us know if you hit any problems [here](https://dvc.org/chat).
 
-### [An excellent discussion on versioning tabular (SQL) data.](https://discordapp.com/channels/485586884165107732/563406153334128681/575681811401801748) Do you know of any tools that deal better with SQL-specific versioning?
+### Q: [An excellent discussion on versioning tabular (SQL) data.](https://discordapp.com/channels/485586884165107732/563406153334128681/575681811401801748) Do you know of any tools that deal better with SQL-specific versioning?
 
 It’s a wide topic. The actual solution might depend on a specific scenario and
 what exactly needs to be versioned. DVC does not provide any special
@@ -174,31 +174,31 @@ Read the
 [discussion](https://discordapp.com/channels/485586884165107732/563406153334128681/575681811401801748)
 to learn more.
 
-### [How does DVC do the versioning between binary files?](https://discordapp.com/channels/485586884165107732/563406153334128681/575686711821205504) Is there a binary diff, similar to git? Or is every version stored distinctly in full?
+### Q: [How does DVC do the versioning between binary files?](https://discordapp.com/channels/485586884165107732/563406153334128681/575686711821205504) Is there a binary diff, similar to git? Or is every version stored distinctly in full?
 
 DVC is just saving every file as is, we don’t use binary diffs right now. There
 won’t be a full directory (if you added just a few files to a 10M files
 directory) duplication, though, since we treat every file inside as a separate
 entity.
 
-### [Is there a way to pass parameters from e.g. `dvc repro` to stages?](https://discordapp.com/channels/485586884165107732/563406153334128681/576160840701575169)
+### Q: [Is there a way to pass parameters from e.g. `dvc repro` to stages?](https://discordapp.com/channels/485586884165107732/563406153334128681/576160840701575169)
 
 The simplest option is to create a config file — json or whatnot — that your
 scripts would read and your stages depend on.
 
-### [What is the best way to get cached output files from different branches simultaneously?](https://discordapp.com/channels/485586884165107732/563406153334128681/577852740034625576) For example, cached tensorboard files from different branches to compare experiments.
+### Q: [What is the best way to get cached output files from different branches simultaneously?](https://discordapp.com/channels/485586884165107732/563406153334128681/577852740034625576) For example, cached tensorboard files from different branches to compare experiments.
 
 There is a way to do that through our (still not officially released) API pretty
 easily. Here is an
 [example script](https://cdn.discordapp.com/attachments/563406153334128681/577894682722304030/dvc_get_output_files.py)
 how it could be done.
 
-### [Docker and DVC.](https://discordapp.com/channels/485586884165107732/563406153334128681/583949033685516299) To being able to push/pull data we need to run a git clone to get DVC-files and remote definitions — but we worry that would make the container quite heavy (since it contains our entire project history).
+### Q: [Docker and DVC.](https://discordapp.com/channels/485586884165107732/563406153334128681/583949033685516299) To being able to push/pull data we need to run a git clone to get DVC-files and remote definitions — but we worry that would make the container quite heavy (since it contains our entire project history).
 
 You can do `git clone — depth 1`, which will not download any history except the
 latest commits.
 
-### [After DVC pushing the same file, it creates multiple copies of the same file. Is that how it’s supposed to work?](https://discordapp.com/channels/485586884165107732/485596304961962003/574133734136086559)
+### Q: [After DVC pushing the same file, it creates multiple copies of the same file. Is that how it’s supposed to work?](https://discordapp.com/channels/485586884165107732/485596304961962003/574133734136086559)
 
 If you are pushing the same file, there are no copies pushed or saved in the
 cache. DVC is using checksums to identify files, so if you add the same file
@@ -206,7 +206,7 @@ once again, it will detect that cache for it is already in the local cache and
 wont copy it again to cache. Same with dvc push, if it sees that you already
 have cache file with that checksum on your remote, it won’t upload it again.
 
-### [How do I uninstall DVC on Mac (installed via pkg installer)?](https://discordapp.com/channels/485586884165107732/485596304961962003/574941227624169492)
+### Q: [How do I uninstall DVC on Mac (installed via `pkg` installer)?](https://discordapp.com/channels/485586884165107732/485596304961962003/574941227624169492)
 
 Something like this should work:
 
@@ -217,12 +217,12 @@ $ which dvc
 $ ls -la /usr/local/bin/dvc
 /usr/local/bin/dvc -> /usr/local/lib/dvc/dvc
 
-sudo rm -f /usr/local/bin/dvc
-sudo rm -rf /usr/local/lib/dvc
-sudo pkgutil --forget com.iterative.dvc
+$ sudo rm -f /usr/local/bin/dvc
+$ sudo rm -rf /usr/local/lib/dvc
+$ sudo pkgutil --forget com.iterative.dvc
 ```
 
-### [How do I pull from a public S3 bucket (that contains DVC remote)?](https://discordapp.com/channels/485586884165107732/485596304961962003/575236576309674024)
+### Q: [How do I pull from a public S3 bucket (that contains DVC remote)?](https://discordapp.com/channels/485586884165107732/485596304961962003/575236576309674024)
 
 Just add public URL of the bucket as an HTTP endpoint. See
 [here](https://github.com/iterative/example-get-started/blob/master/.dvc/config)
@@ -230,7 +230,7 @@ for an example.
 [https://remote.dvc.org/get-started](https://remote.dvc.org/get-started) is made
 to redirect to the S3 bucket anyone can read from.
 
-### [I’m getting the same error over and over about locking:](https://discordapp.com/channels/485586884165107732/485596304961962003/575535709490905101) ERROR: failed to lock before running a command — cannot perform the cmd since DVC is busy and locked. Please retry the command later.
+### Q: [I’m getting the same error over and over about locking:](https://discordapp.com/channels/485586884165107732/485596304961962003/575535709490905101) `ERROR: failed to lock before running a command — cannot perform the cmd since DVC is busy and locked. Please retry the command later.`
 
 Most likely it happens due to an attempt to run DVC on NFS that has some
 configuration problems. There is a

@@ -2,17 +2,23 @@
 title: DVC project ideas for Google Season of Docs 2019
 date: 2019-04-23
 description: |
-  DVC.org is applying for Google Season of Docs — a new and unique program sponsored by Google that pairs technical writers with open source projects to collaborate on the open source project documentation.
+  DVC.org is applying for Google Season of Docs — a new and unique program
+  sponsored by Google that pairs technical writers with open source projects to
+  collaborate on the open source project documentation.
 descriptionLong: |
-  DVC.org is applying for Google Season of Docs — a new and unique program sponsored by Google that pairs technical writers with open source projects to collaborate on the open source project documentation. It’s happening for the first time in 2019 and we are excited about the opportunity to be a part of it!
+  DVC.org is applying for Google Season of Docs — a new and unique program
+  sponsored by Google that pairs technical writers with open source projects to
+  collaborate on the open source project documentation. It’s happening for the
+  first time in 2019 and we are excited about the opportunity to be a part of
+  it!
 picture: /uploads/images/2019-04-23/post-image.png
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/dvc-project-ideas-for-google-season-of-docs-2019/291
 tags:
-  - Open Source
-  - Gsod
-  - Machine Learning
+  - Google Season of Docs
   - Python
   - Documentation
+  - DVC
 ---
 
 We strongly believe that well-shaped documentation is key for making the product
@@ -214,6 +220,6 @@ inspiration.
 If you are a tech writer — check the
 [Technical writer guide](https://developers.google.com/season-of-docs/docs/tech-writer-guide).
 From April 30, 2019 you can see the list of participating open source
-organizations on the Season of Docs website at
-[g.co/seasonofdocs](https://g.co/seasonofdocs). The application period for
-technical writers opens on **May 29, 2019** and ends on June 28, 2019.
+organizations on the [Season of Docs website](https://g.co/seasonofdocs). The
+application period for technical writers opens on **May 29, 2019** and ends on
+June 28, 2019.

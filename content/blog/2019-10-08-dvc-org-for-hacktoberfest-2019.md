@@ -2,29 +2,18 @@
 title: DVC.org for Hacktoberfest 2019
 date: 2019-10-08
 description: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
+  Our favorite month of the year Hacktoberfest is already in full swing and we
+  at DVC.org are so excited to be a part of it!
 descriptionLong: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its
-  journey. The others are a collection of exciting stories and ideas centered
-  around ML best practices and workflow.
+  Our favorite month of the year Hacktoberfest is already in full swing and we
+  at DVC.org are so excited to be a part of it!
 picture: /uploads/images/2019-10-08/post-image.png
 author: ../authors/svetlana_grinchenko.md
+commentsUrl: https://discuss.dvc.org/t/dvc-org-for-hacktoberfest-2019/286
 tags:
-  - Open Source
-  - Machine Learning
-  - Data Science
-  - Version Control
-  - AI
+  - Hacktoberfest
+  - DVC
 ---
-
-Our favourite month of the year
-[Hacktoberfest](https://hacktoberfest.digitalocean.com/) is already in full
-swing and we at DVC.org are so excited to be a part of it!
-
-### What is Hacktoberfest?
 
 [Hacktoberfest](https://hacktoberfest.digitalocean.com/) is a monthly-long
 program that celebrates open source and encourages you to contribute to open

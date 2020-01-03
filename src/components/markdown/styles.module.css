@@ -127,7 +127,7 @@
     }
   }
 
-  blockquote {
+  blockquote:not(:global(.twitter-tweet)) {
     margin: 30px 0;
     padding-left: 25px;
     font-style: italic;

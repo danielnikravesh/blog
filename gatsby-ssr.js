@@ -9,10 +9,5 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
       src="//embed.redditmedia.com/widgets/platform.js"
       charSet="UTF-8"
     />,
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charSet="utf-8"
-    />
   ]);
 };
