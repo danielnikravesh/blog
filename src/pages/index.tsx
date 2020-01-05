@@ -92,10 +92,20 @@ export const pageQuery = graphql`
             descriptionLong
             picture {
               childImageSharp {
-                big: fluid(maxWidth: 650, maxHeight: 450) {
+                big: fluid(
+                  maxWidth: 650
+                  maxHeight: 450
+                  cropFocus: CENTER
+                  quality: 90
+                ) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
-                small: fluid(maxWidth: 300, maxHeight: 250) {
+                small: fluid(
+                  maxWidth: 300
+                  maxHeight: 250
+                  cropFocus: CENTER
+                  quality: 90
+                ) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
