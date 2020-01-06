@@ -171,6 +171,7 @@ const plugins = [
       modulePath: `${__dirname}/config/netlify/index.js`
     }
   },
+  'gatsby-plugin-sitemap',
   netlifyCMSPathConfig
 ];
 

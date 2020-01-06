@@ -65,6 +65,7 @@
     "gatsby-plugin-postcss": "^2.1.14",
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.1.16",
