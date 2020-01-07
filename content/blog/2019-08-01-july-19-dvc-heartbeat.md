@@ -11,7 +11,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its journey. The others
   are a collection of exciting stories and ideas centered around ML best
   practices and workflow.
-picture: /uploads/images/2019-08-01/post-image.png
+picture: ../../static/uploads/images/2019-08-01/post-image.png
 pictureComment:
   Special edition DVC shirt. We made this one for Ruslan — DVC maintainer and
   the best tech lead.

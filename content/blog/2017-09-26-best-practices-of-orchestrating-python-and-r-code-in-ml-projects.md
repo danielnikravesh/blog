@@ -9,7 +9,7 @@ descriptionLong: |
   R, some prefer Python. I will try to find an answer to a question: “What is
   the best way to integrate both languages in one data science project? What are
   the best practices?”
-picture: /uploads/images/2017-09-26/post-image.jpg
+picture: ../../static/uploads/images/2017-09-26/post-image.jpg
 pictureComment: 'Image was taken from intersog.com'
 author: ../authors/marija_ilic.md
 commentsUrl: https://discuss.dvc.org/t/best-practices-of-orchestrating-python-and-r-code-in-ml-projects/295
