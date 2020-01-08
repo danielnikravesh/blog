@@ -1,0 +1,9 @@
+restylers:
+  - name: prettier
+    arguments: ['--write']
+    include:
+      - './**/*.{js,jsx,md,tsx,ts,json}'
+  - name: stylelint
+    include:
+      - 'src/**/*.css'
+
