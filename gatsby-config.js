@@ -1,15 +1,8 @@
 const path = require('path');
 const dvc = require('./config/prismjs/dvc');
 
-const netlifyCMSPathConfig = {
-  resolve: 'gatsby-plugin-netlify-cms-paths',
-  options: {
-    cmsConfig: '/static/admin/config.yml'
-  }
-};
-
 const title = 'Data Version Control · DVC';
-const keywords = 'data, machine learning models management, datasets, git';
+const keywords = 'git, data, version control, machine learning models management, datasets';
 const description =
   'Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
@@ -76,8 +69,7 @@ const plugins = [
           }
         },
         'gatsby-remark-copy-linked-files',
-        'gatsby-remark-smartypants',
-        netlifyCMSPathConfig
+        'gatsby-remark-smartypants'
       ]
     }
   },
@@ -165,14 +157,7 @@ const plugins = [
     }
   },
   'gatsby-plugin-react-helmet',
-  {
-    resolve: 'gatsby-plugin-netlify-cms',
-    options: {
-      modulePath: `${__dirname}/config/netlify/index.js`
-    }
-  },
-  'gatsby-plugin-sitemap',
-  netlifyCMSPathConfig
+  'gatsby-plugin-sitemap'
 ];
 
 if (process.env.CONTEXT === 'production') {

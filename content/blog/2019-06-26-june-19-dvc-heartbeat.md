@@ -10,7 +10,7 @@ descriptionLong: |
   Some of those are related to our brainchild DVC and its journey. The others
   are a collection of exciting stories and ideas centered around ML best
   practices and workflow.
-picture: /uploads/images/2019-06-26/post-image.png
+picture: ../../static/uploads/images/2019-06-26/post-image.png
 pictureComment: Thanks to the amazing Signaturit Tech team for this photo!
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/june-19-dvc-heartbeat/289

@@ -1,7 +1,7 @@
 ---
 path: ../authors/george_vyshnya.md
 name: George Vyshnya
-avatar: /uploads/avatars/george_vyshnya.jpeg
+avatar: ../../static/uploads/avatars/george_vyshnya.jpeg
 ---
 
 Seasoned Data Scientist / Software Developer with blended experience in software
