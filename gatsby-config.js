@@ -2,8 +2,7 @@ const path = require('path');
 const dvc = require('./config/prismjs/dvc');
 
 const title = 'Data Version Control · DVC';
-const keywords =
-  'git, data, version control, machine learning models management, datasets';
+const keywords = 'git, data, version control, machine learning models management, datasets';
 const description =
   'Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
@@ -38,9 +37,10 @@ const plugins = [
     }
   },
   {
-    resolve: 'gatsby-transformer-remark',
+    resolve: 'gatsby-plugin-mdx',
     options: {
-      plugins: [
+      extensions: [`.mdx`, `.md`],
+      gatsbyRemarkPlugins: [
         {
           resolve: 'gatsby-remark-embed-gist',
           options: {
@@ -49,10 +49,6 @@ const plugins = [
         },
         {
           resolve: 'gatsby-remark-relative-images'
-        },
-        {
-          resolve: 'gatsby-remark-component',
-          options: { components: ['inline-block'] }
         },
         {
           resolve: 'gatsby-remark-images',
@@ -91,7 +87,7 @@ const plugins = [
   'gatsby-plugin-sharp',
 
   {
-    resolve: `gatsby-plugin-feed`,
+    resolve: `gatsby-plugin-feed-mdx`,
     options: {
       query: `
           {
@@ -107,8 +103,8 @@ const plugins = [
         `,
       feeds: [
         {
-          serialize: ({ query: { site, allMarkdownRemark } }) => {
-            return allMarkdownRemark.edges.map(edge => {
+          serialize: ({ query: { site, allMdx } }) => {
+            return allMdx.edges.map(edge => {
               return Object.assign({}, edge.node.frontmatter, {
                 description:
                   edge.node.descriptionLong || edge.node.descriptionLong,
@@ -121,7 +117,7 @@ const plugins = [
           },
           query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   sort: { fields: [frontmatter___date], order: DESC }
                   filter: { fileAbsolutePath: { regex: "/content/blog/" } }
                 ) {

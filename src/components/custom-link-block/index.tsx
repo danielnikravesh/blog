@@ -1,34 +1,34 @@
 import React from 'react';
 
-interface IInlineBlockProps {
+interface ICustinLinkBlock {
   href: string;
   title: string;
   description: string;
-  picture: string;
-  link: string;
+  image: string;
+  hrefTextOnly: string;
 }
 
-function InlineBlock({
+function CustomLinkBlock({
   href,
   title,
   description,
-  picture,
-  link
-}: IInlineBlockProps) {
+  image,
+  hrefTextOnly
+}: ICustinLinkBlock) {
   return (
-    <a href={href} target="_blank" className="external-link-preview">
+    <a href={href} className="external-link-preview">
       <section className="elp-content-holder">
         <div className="elp-description-holder">
           <h4 className="elp-title">{title}</h4>
           <div className="elp-description">{description}</div>
-          <div className="elp-link">{link}</div>
+          <div className="elp-link">{hrefTextOnly}</div>
         </div>
         <div className="elp-image-holder">
-          <img src={picture} />
+          <img src={image} />
         </div>
       </section>
     </a>
   );
 }
 
-export default InlineBlock;
+export default CustomLinkBlock;

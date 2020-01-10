@@ -21,7 +21,7 @@ export interface IBlogPostFrontmatter {
   };
   pictureComment?: string;
   author: {
-    childMarkdownRemark: {
+    childMdx: {
       frontmatter: {
         name: string;
         avatar: {
@@ -36,7 +36,7 @@ export interface IBlogPostFrontmatter {
 
 export interface IBlogPostData {
   id: string;
-  htmlAst: string;
+  body: string;
   timeToRead: string;
   fields: {
     slug: string;
@@ -46,7 +46,7 @@ export interface IBlogPostData {
 
 interface IBlogPostTemplateProps {
   data: {
-    markdownRemark: IBlogPostData;
+    mdx: IBlogPostData;
   };
   pageContext: {
     next: IBlogPostData;
@@ -55,7 +55,7 @@ interface IBlogPostTemplateProps {
 }
 
 function BlogPostTemplate({ data }: IBlogPostTemplateProps) {
-  const post = data.markdownRemark;
+  const post = data.mdx;
 
   return (
     <Layout>
@@ -76,10 +76,9 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(format: HTML)
-      htmlAst
+      body
       timeToRead
       fields {
         slug
@@ -92,7 +91,7 @@ export const pageQuery = graphql`
         tags
         commentsUrl
         author {
-          childMarkdownRemark {
+          childMdx {
             frontmatter {
               name
               avatar {

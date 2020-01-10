@@ -3,15 +3,12 @@ import Image from 'gatsby-image';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useWindowScroll, useWindowSize } from 'react-use';
-import rehypeReact from 'rehype-react';
 
 import { IBlogPostData } from '../../templates/blog-post';
 
 import { getCommentsCount } from '../../api';
-// import { siteLinks } from '../../data';
+import { siteLinks } from '../../data';
 import { pluralizeComments } from '../../utils/i18n';
-
-import InlineBlock from '../inline-block';
 
 import Markdown from '../markdown';
 import Meta from '../meta';
@@ -20,12 +17,7 @@ import Share from '../share';
 
 import styles from './styles.module.css';
 
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: { 'inline-block': InlineBlock }
-}).Compiler;
-
-function Post({ htmlAst, timeToRead, frontmatter, fields }: IBlogPostData) {
+function Post({ body, timeToRead, frontmatter, fields }: IBlogPostData) {
   const {
     title,
     date,
@@ -36,7 +28,7 @@ function Post({ htmlAst, timeToRead, frontmatter, fields }: IBlogPostData) {
     commentsUrl,
     tags,
     author: {
-      childMarkdownRemark: {
+      childMdx: {
         frontmatter: { name, avatar }
       }
     }
@@ -109,7 +101,7 @@ function Post({ htmlAst, timeToRead, frontmatter, fields }: IBlogPostData) {
         </>
       )}
       <div className={styles.content}>
-        <Markdown htmlAst={htmlAst} renderAst={renderAst} />
+        <Markdown body={body} />
       </div>
       {tags && (
         <div className={styles.tags}>
