@@ -17,7 +17,7 @@ import Share from '../share';
 
 import styles from './styles.module.css';
 
-function Post({ body, timeToRead, frontmatter, fields }: IBlogPostData) {
+function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
   const {
     title,
     date,
@@ -28,7 +28,7 @@ function Post({ body, timeToRead, frontmatter, fields }: IBlogPostData) {
     commentsUrl,
     tags,
     author: {
-      childMdx: {
+      childMarkdownRemark: {
         frontmatter: { name, avatar }
       }
     }
@@ -101,7 +101,7 @@ function Post({ body, timeToRead, frontmatter, fields }: IBlogPostData) {
         </>
       )}
       <div className={styles.content}>
-        <Markdown body={body} />
+        <Markdown html={html} />
       </div>
       {tags && (
         <div className={styles.tags}>

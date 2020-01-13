@@ -1,5 +1,5 @@
 ---
-path: ../authors/marija_ilic.mdx
+path: ../authors/marija_ilic.md
 name: Marija Ilić
 avatar: ../../static/uploads/avatars/marija_ilic.png
 ---

@@ -15,7 +15,7 @@ picture: ../../static/uploads/images/2019-08-01/post-image.png
 pictureComment:
   Special edition DVC shirt. We made this one for Ruslan — DVC maintainer and
   the best tech lead.
-author: ../authors/svetlana_grinchenko.mdx
+author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/july-19-dvc-heartbeat/288
 tags:
   - Heartbeat
@@ -40,35 +40,21 @@ talks and we will run a booth. So looking forward to it! Stop by for a chat and
 some cool swag. And if you are in San Diego on those days and want to catch up —
 please let us know [here](http://dvc.org/support) or on Twitter!
 
-<a href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man...</h4>
-      <div class="elp-description">Speakers Software Engineer, Iterative AI Ruslan is a Software Engineer at Iterative AI. Previously he worked on live…</div>
-      <div class="elp-link">ossna19.sched.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai"
+title='Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man...'
+description="Speakers Software Engineer, Iterative AI Ruslan is a Software Engineer at Iterative AI. Previously he worked on live…"
+link='ossna19.sched.com'
+image='/uploads/images/2019-08-01/open-source-north-america-summit.png'>
+</external-link>
 
-<br />
-
-<a href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a...</h4>
-      <div class="elp-description">Speakers Head of Developer Relations, DVC.org Svetlana is driving developer relations and community at DVC.org…</div>
-      <div class="elp-link">ossna19.sched.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
-    </div>
-  </section>
-</a>
-
-<hr />
+<external-link
+href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg"
+title='Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a...'
+description="Speakers Head of Developer Relations, DVC.org Svetlana is driving developer relations and community at DVC.org…"
+link='ossna19.sched.com'
+image='/uploads/images/2019-08-01/open-source-north-america-summit.png'>
+</external-link>
 
 Every month our team is excited to discover new great pieces of content
 addressing some of the burning ML issues. Here are some of the links that caught
@@ -77,18 +63,13 @@ our eye in June:
 - **[Principled Machine Learning: Practices and Tools for Efficient Collaboration](https://dev.to/robogeek/principled-machine-learning-4eho)
   by [David Herron](https://medium.com/@7genblogger)**
 
-<a href="https://dev.to/robogeek/principled-machine-learning-4eho" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Principled Machine Learning: Practices and Tools for Efficient Collaboration</h4>
-      <div class="elp-description">Machine learning projects are often harder than they should be. The code to train an ML model is just software, and we…</div>
-      <div class="elp-link">dev.to</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-08-01/principled-machine-learning.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://dev.to/robogeek/principled-machine-learning-4eho"
+title='Principled Machine Learning: Practices and Tools for Efficient Collaboration'
+description="Machine learning projects are often harder than they should be. The code to train an ML model is just software, and we…"
+link='dev.to'
+image='/uploads/images/2019-08-01/principled-machine-learning.jpeg'>
+</external-link>
 
 > As we’ve seen in this article some tools and practices can be borrowed from
 > regular software engineering. However, the needs of machine learning projects
@@ -99,18 +80,12 @@ our eye in June:
   hosted by [Raiffeisen DGTL](https://www.raiffeisen-digital.ru/?utm_referrer=)
   — check out the video and slide decks.**
 
-<a href="http://ml-repa.ru/" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Machine Learning REPA</h4>
-      <div class="elp-description">Анонсы мероприятий, проектов, обзоров инструментов и кейсов про ML проекты, управление экспериментами, автоматизацию и…</div>
-      <div class="elp-link">ml-repa.ru</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-08-01/machine-learning-repa.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="http://ml-repa.ru/"
+title='Machine Learning REPA'
+description="Анонсы мероприятий, проектов, обзоров инструментов и кейсов про ML проекты, управление экспериментами, автоматизацию и…"
+link='ml-repa.ru'
+image='/uploads/images/2019-08-01/machine-learning-repa.png'> </external-link>
 
 [ML-REPA](http://ml-repa.ru/) is an a new fantastic resource for
 Russian-speaking folks interested in Reproducibility, Experiments and Pipelines

@@ -12,7 +12,7 @@ descriptionLong: |
   development.
 picture: ../../static/uploads/images/2018-10-18/post-image.jpeg
 pictureComment: 'The image source: blog.hubspot.com'
-author: ../authors/dmitry_petrov.mdx
+author: ../authors/dmitry_petrov.md
 commentsUrl: https://discuss.dvc.org/t/ml-best-practices-in-pytorch-dev-conf-2018/294
 tags:
   - Machine Learning

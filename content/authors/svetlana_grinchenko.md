@@ -1,5 +1,5 @@
 ---
-path: ../authors/svetlana_grinchenko.mdx
+path: ../authors/svetlana_grinchenko.md
 name: Svetlana Grinchenko
 avatar: ../../static/uploads/avatars/svetlana_grinchenko.jpeg
 ---

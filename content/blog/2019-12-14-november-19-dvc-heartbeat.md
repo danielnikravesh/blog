@@ -14,7 +14,7 @@ descriptionLong: |
 picture: ../../static/uploads/images/2019-12-14/post-image.jpeg
 pictureComment:
   How cool is this handmade swag from our community? We were in tears!
-author: ../authors/svetlana_grinchenko.mdx
+author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/november-19-dvc-heartbeat/284
 tags:
   - Meetup
@@ -23,19 +23,9 @@ tags:
   - DVC
 ---
 
-import CustomLinkBlock from '../../src/components/custom-link-block';
-const info = {
-  href: 'https://www.deploymachinelearning.com/',
-  title: 'Deploy Machine Learning Models with Django',
-  description: 'Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…',
-  hrefTextOnly: 'deploymachinelearning.com',
-  image: '/uploads/images/2019-12-14/deploy-machine-learning-models.png'
-}
-
-<CustomLinkBlock {...info} />
-
 The past few months have been so busy and full of great events! We love how
 involved our community is and can’t wait to share more with you:
+
 - We have organized our very first
   [meetup](https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/)!
   So many great conversations, new use cases and insights! Many thanks to
@@ -95,18 +85,12 @@ discovered in October and November:
 > you wish. This tutorial is for readers who are familiar with ML and would like
 > to learn how to build ML web services.
 
-<a href="https://www.deploymachinelearning.com/" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Deploy Machine Learning Models with Django</h4>
-      <div class="elp-description">Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…</div>
-      <div class="elp-link">deploymachinelearning.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-12-14/deploy-machine-learning-models.png" />
-    </div>
-  </section>
-</a>
+<external-link 
+href="https://www.deploymachinelearning.com/" 
+title='Deploy Machine Learning Models with Django' 
+description='Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…' 
+link='deploymachinelearning.com' 
+image='/uploads/images/2019-12-14/deploy-machine-learning-models.png'></external-link>
 
 - **[How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker](https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0)
   by [James Le](https://towardsdatascience.com/@james_aka_yale).**
@@ -115,18 +99,13 @@ discovered in October and November:
 > machine learning development within an organization by making it easy to
 > track, reproduce, manage, and deploy models.
 
-<a href="https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">How to Manage Your Machine Learning Workflow withDVC, Weights & Biases, and Docker</h4>
-      <div class="elp-description">Managing a machine learning workflow is hard!</div>
-      <div class="elp-link">towardsdatascience.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0"
+title='How to Manage Your Machine Learning Workflow withDVC, Weights & Biases,
+and Docker' description='Managing a machine learning workflow is hard!'
+link='towardsdatascience.com'
+image='/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg'>
+</external-link>
 
 - **[Creating a solid Data Science development environment](https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34)
   by
@@ -136,36 +115,26 @@ discovered in October and November:
 > using best practices in project development and that Conda, Git, DVC, and
 > JupyterLab are key components of this new approach
 
-<a href="https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Creating a solid Data Science development environment</h4>
-      <div class="elp-description">How to organize and replicate your development environment using Conda, Git, DVC, and JupyterLab.</div>
-      <div class="elp-link">towardsdatascience.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-12-14/creating-solid-data-science-dev-env.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34"
+title='Creating a solid Data Science development environment' 
+description='How to organize and replicate your development environment using Conda, Git, DVC, and JupyterLab.'
+link='towardsdatascience.com'
+image='/uploads/images/2019-12-14/creating-solid-data-science-dev-env.png'>
+</external-link>
 
 - **[Creating reproducible data science workflows with DVC](https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b)
   by [Gleb Ivashkevich](https://medium.com/@glib.ivashkevych).**
 
 > DVC is a powerful tool and we covered only the fundamentals of it.
 
-<a href="https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Creating reproducible data science workflows with DVC</h4>
-      <div class="elp-description">“Getting started” tutorial into DVC to make a structure and order in your daily ML routine</div>
-      <div class="elp-link">medium.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-12-14/creating-reproducible-data-science-workflows.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b"
+title='Creating reproducible data science workflows with DVC'
+description='Getting started” tutorial into DVC to make a structure and order in your daily ML routine'
+link='medium.com'
+image='/uploads/images/2019-12-14/creating-reproducible-data-science-workflows.jpeg'>
+</external-link>
 
 <hr />
 

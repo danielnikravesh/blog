@@ -1,5 +1,5 @@
 ---
-path: ../authors/george_vyshnya.mdx
+path: ../authors/george_vyshnya.md
 name: George Vyshnya
 avatar: ../../static/uploads/avatars/george_vyshnya.jpeg
 ---

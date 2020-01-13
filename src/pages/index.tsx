@@ -24,7 +24,7 @@ export interface IFeedPostData {
       };
     };
     author: {
-      childMdx: {
+      childMarkdownRemark: {
         frontmatter: {
           name: string;
           avatar: {
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    posts: allMdx(
+    posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/content/blog/" } }
     ) {
@@ -111,7 +111,7 @@ export const pageQuery = graphql`
               }
             }
             author {
-              childMdx {
+              childMarkdownRemark {
                 frontmatter {
                   name
                   avatar {

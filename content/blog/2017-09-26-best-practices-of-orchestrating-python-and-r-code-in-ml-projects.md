@@ -11,7 +11,7 @@ descriptionLong: |
   the best practices?”
 picture: ../../static/uploads/images/2017-09-26/post-image.jpg
 pictureComment: 'Image was taken from intersog.com'
-author: ../authors/marija_ilic.mdx
+author: ../authors/marija_ilic.md
 commentsUrl: https://discuss.dvc.org/t/best-practices-of-orchestrating-python-and-r-code-in-ml-projects/295
 tags:
   - R

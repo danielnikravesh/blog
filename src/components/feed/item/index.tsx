@@ -18,7 +18,7 @@ interface IFeedItemPorps extends IFeedPostData {
 
 function FeedItem({ big, fields, frontmatter, timeToRead }: IFeedItemPorps) {
   const { title, description, date, picture, author } = frontmatter;
-  const { avatar, name } = author.childMdx.frontmatter;
+  const { avatar, name } = author.childMarkdownRemark.frontmatter;
   const bodyRef = useRef<HTMLDivElement>(null);
   const { width } = useWindowSize();
   const [isOverflown, setIsOverflown] = useRafState(true);

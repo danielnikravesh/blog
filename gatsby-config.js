@@ -2,7 +2,8 @@ const path = require('path');
 const dvc = require('./config/prismjs/dvc');
 
 const title = 'Data Version Control · DVC';
-const keywords = 'git, data, version control, machine learning models management, datasets';
+const keywords =
+  'git, data, version control, machine learning models management, datasets';
 const description =
   'Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
@@ -37,10 +38,9 @@ const plugins = [
     }
   },
   {
-    resolve: 'gatsby-plugin-mdx',
+    resolve: 'gatsby-transformer-remark',
     options: {
-      extensions: [`.mdx`, `.md`],
-      gatsbyRemarkPlugins: [
+      plugins: [
         {
           resolve: 'gatsby-remark-embed-gist',
           options: {
@@ -70,7 +70,8 @@ const plugins = [
           }
         },
         'gatsby-remark-copy-linked-files',
-        'gatsby-remark-smartypants'
+        'gatsby-remark-smartypants',
+        'external-linc-plugin'
       ]
     }
   },
@@ -87,7 +88,7 @@ const plugins = [
   'gatsby-plugin-sharp',
 
   {
-    resolve: `gatsby-plugin-feed-mdx`,
+    resolve: `gatsby-plugin-feed`,
     options: {
       query: `
           {
@@ -103,8 +104,8 @@ const plugins = [
         `,
       feeds: [
         {
-          serialize: ({ query: { site, allMdx } }) => {
-            return allMdx.edges.map(edge => {
+          serialize: ({ query: { site, allMarkdownRemark } }) => {
+            return allMarkdownRemark.edges.map(edge => {
               return Object.assign({}, edge.node.frontmatter, {
                 description:
                   edge.node.descriptionLong || edge.node.descriptionLong,
@@ -117,7 +118,7 @@ const plugins = [
           },
           query: `
               {
-                allMdx(
+                allMarkdownRemark(
                   sort: { fields: [frontmatter___date], order: DESC }
                   filter: { fileAbsolutePath: { regex: "/content/blog/" } }
                 ) {
