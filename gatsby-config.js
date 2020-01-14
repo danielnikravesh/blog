@@ -2,7 +2,8 @@ const path = require('path');
 const dvc = require('./config/prismjs/dvc');
 
 const title = 'Data Version Control · DVC';
-const keywords = 'git, data, version control, machine learning models management, datasets';
+const keywords =
+  'git, data, version control, machine learning models management, datasets';
 const description =
   'Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
@@ -69,7 +70,8 @@ const plugins = [
           }
         },
         'gatsby-remark-copy-linked-files',
-        'gatsby-remark-smartypants'
+        'gatsby-remark-smartypants',
+        'external-linc-plugin'
       ]
     }
   },
