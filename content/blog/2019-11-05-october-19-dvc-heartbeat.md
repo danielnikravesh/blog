@@ -80,18 +80,13 @@ Here are some of the links that caught our eye past month:
 > practices from Continuous Delivery, we can better manage the risks of
 > releasing changes to Machine Learning applications in a safe and reliable way.
 
-<a href="https://martinfowler.com/articles/cd4ml.html" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Continuous Delivery for Machine Learning</h4>
-      <div class="elp-description">bio I am a consultant at ThoughtWorks Germany, where I am leading our data and machine learning activities. I enjoy…</div>
-      <div class="elp-link">martinfowler.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://martinfowler.com/articles/cd4ml.html"
+title='Continuous Delivery for Machine Learning'
+description="bio I am a consultant at ThoughtWorks Germany, where I am leading our data and machine learning activities. I enjoy…"
+link='martinfowler.com'
+image='/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png'>
+</external-link>
 
 - **[The Path to Identity Validation](https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9)
   by [Víctor Segura](https://medium.com/@victor.segura).**
@@ -101,18 +96,13 @@ Here are some of the links that caught our eye past month:
 > to build the machine learning ecosystem to train our models efficiently and
 > not die trying? At **Signaturit**, we have the solution ;)
 
-<a href="https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">The Path to Identity Validation (2/3)</h4>
-      <div class="elp-description">How to start your own machine learning project?</div>
-      <div class="elp-link">medium.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9"
+title='The Path to Identity Validation (2/3)'
+description="How to start your own machine learning project?"
+link='medium.com'
+image='/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg'>
+</external-link>
 
 - **Talk:
   [Managing Big Data in Machine Learning projects](https://pretalx.com/pyconuk-2019/talk/GCLBFH/)
@@ -138,18 +128,13 @@ Here are some of the links that caught our eye past month:
 > tracking used to look like, the current Weights & Biases business success
 > strategy, and what his team is working on today.
 
-<a href="https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Managing Deep Learning Experiments with Lukas Biewald — Talk #295</h4>
-      <div class="elp-description">Today we are joined by Lukas Biewald, CEO and Co-Founder of Weights & Biases. Lukas, previously CEO and Founder of…</div>
-      <div class="elp-link">twimlai.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-11-05/managing-deep-learning-experiments.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/"
+title='Managing Deep Learning Experiments with Lukas Biewald — Talk #295'
+description="Today we are joined by Lukas Biewald, CEO and Co-Founder of Weights & Biases. Lukas, previously CEO and Founder of…"
+link='twimlai.com'
+image='/uploads/images/2019-11-05/managing-deep-learning-experiments.jpeg'>
+</external-link>
 
 <hr />
 
