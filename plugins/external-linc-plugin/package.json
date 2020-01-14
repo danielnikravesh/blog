@@ -1,0 +1,10 @@
+{
+  "name": "external-linc-plugin",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Anton Mandrychenko",
+  "license": "MIT",
+  "dependencies": {
+    "unist-util-visit": "^2.0.1"
+  }
+}
