@@ -74,18 +74,12 @@ A brilliant comprehensive read on the current data management issues. It might
 be the best article we have ever read on this subject. Every word strongly
 resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 
-<a href="https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">The Rise of DataOps (from the ashes of Data Governance)</h4>
-      <div class="elp-description">Legacy Data Governance is broken in the ML era. Let’s rebuild it as an engineering discipline to drive…</div>
-      <div class="elp-link">towardsdatascience.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-06-26/the-rise-of-data-ops.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4"
+title='The Rise of DataOps (from the ashes of Data Governance)'
+description="Legacy Data Governance is broken in the ML era. Let’s rebuild it as an engineering discipline to drive…"
+link='towardsdatascience.com'
+image='/uploads/images/2019-06-26/the-rise-of-data-ops.png'> </external-link>
 
 > Legacy Data Governance is broken in the ML era. Let’s rebuild it as an
 > engineering discipline. At the end of the transformation, data governance will
@@ -95,18 +89,13 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 - **[First Impressions of Data Science Version Control (DVC)](https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda)
   by [Christopher Samiullah](https://christophergs.github.io/)**
 
-<a href="https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">First Impressions of Data Science Version Control (DVC)</h4>
-      <div class="elp-description">A Powerful New Machine Learning Tool</div>
-      <div class="elp-link">medium.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-06-26/first-impressions-of-data-science-version-control.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda"
+title='First Impressions of Data Science Version Control (DVC)'
+description="A Powerful New Machine Learning Tool"
+link='medium.com'
+image='/uploads/images/2019-06-26/first-impressions-of-data-science-version-control.png'>
+</external-link>
 
 > In 2019, we tend to find organizations using a mix of git, Makefiles, ad hoc
 > scripts and reference files to try and achieve reproducibility. DVC enters
@@ -125,18 +114,13 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 - **[Becoming a machine learning company means investing in foundational technologies](https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies)
   by [Ben Lorica](https://www.oreilly.com/people/4e7ad-ben-lorica)**
 
-<a href="https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Becoming a machine learning company means investing in foundational technologies</h4>
-      <div class="elp-description">Get expert knowledge on the tools and technologies you need to put your data strategies to work. Join us at the…</div>
-      <div class="elp-link">oreilly.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-06-26/becoming-a-machine-learning-company.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies"
+title='Becoming a machine learning company means investing in foundational technologies'
+description="Get expert knowledge on the tools and technologies you need to put your data strategies to work. Join us at the…"
+link='oreilly.com'
+image='/uploads/images/2019-06-26/becoming-a-machine-learning-company.jpeg'>
+</external-link>
 
 > With an eye toward the growing importance of machine learning, we recently
 > completed

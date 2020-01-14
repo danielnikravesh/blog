@@ -77,18 +77,13 @@ our favorite links from the past month:
 - **[Version Control For Your Machine Learning Projects — Episode 206](https://www.pythonpodcast.com/data-version-control-episode-206/)**
   by **[Tobias Macey](https://www.linkedin.com/in/tmacey/)**
 
-<a href="https://www.pythonpodcast.com/data-version-control-episode-206/" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Version Control For Machine Learning Projects</h4>
-      <div class="elp-description">An interview with the creator of DVC about how it improves collaboration and reduces duplicate effort on data science…</div>
-      <div class="elp-link">pythonpodcast.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-05-21/version-control-for-your-machine-learning-projects.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://www.pythonpodcast.com/data-version-control-episode-206/"
+title='Version Control For Machine Learning Projects'
+description="An interview with the creator of DVC about how it improves collaboration and reduces duplicate effort on data science…"
+link='pythonpodcast.com'
+image='/uploads/images/2019-05-21/version-control-for-your-machine-learning-projects.png'>
+</external-link>
 
 > Version control has become table stakes for any software team, but for machine
 > learning projects there has been no good answer for tracking all of the data
@@ -104,33 +99,23 @@ our favorite links from the past month:
   by [Favio Vázquez](https://medium.com/@faviovazquez) with a transcript of this
   podcast episode.**
 
-<a href="https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Data version control with DVC. What do the authors have to say?</h4>
-      <div class="elp-description">Data versioning is one of the most ignored features in data science projects, but that has to change. Here I’ll discuss…</div>
-      <div class="elp-link">towardsdatascience.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-05-21/data-version-control-with-dvc.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee"
+title='Data version control with DVC. What do the authors have to say?'
+description="Data versioning is one of the most ignored features in data science projects, but that has to change. Here I’ll discuss…"
+link='towardsdatascience.com'
+image='/uploads/images/2019-05-21/data-version-control-with-dvc.png'>
+</external-link>
 
 - **[Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis](https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8)**
 
-<a href="https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis</h4>
-      <div class="elp-description">Some claim the machine learning field is in a crisis due to software tooling that’s insufficient to ensure repeatable…</div>
-      <div class="elp-link">towardsdatascience.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-05-21/why-git-and-git-lfs-is-not-enough.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8"
+title='Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis'
+description="Some claim the machine learning field is in a crisis due to software tooling that’s insufficient to ensure repeatable…"
+link='towardsdatascience.com'
+image='/uploads/images/2019-05-21/why-git-and-git-lfs-is-not-enough.jpeg'>
+</external-link>
 
 > With Git-LFS your team has better control over the data, because it is now
 > version controlled. Does that mean the problem is solved? Earlier we said the

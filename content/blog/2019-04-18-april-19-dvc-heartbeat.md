@@ -52,18 +52,12 @@ Here is a number of interesting reads that caught our eye:
 - **[A walkthrough of DVC](https://blog.codecentric.de/en/2019/03/walkthrough-dvc/)
   by [Bert Besser](https://www.linkedin.com/in/bert-besser-284564182/)**
 
-<a href="https://blog.codecentric.de/en/2019/03/walkthrough-dvc/" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">A walkthrough of DVC — codecentric AG Blog</h4>
-      <div class="elp-description">This post is on how to systematially organize Machine Learning (ML) model development. A model’s performance improves…</div>
-      <div class="elp-link">blog.codecentric.de</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-04-18/walkthrough-of-dvc.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://blog.codecentric.de/en/2019/03/walkthrough-dvc/"
+title='A walkthrough of DVC — codecentric AG Blog'
+description="This post is on how to systematially organize Machine Learning (ML) model development. A model’s performance improves…"
+link='blog.codecentric.de'
+image='/uploads/images/2019-04-18/walkthrough-of-dvc.png'> </external-link>
 
 A great article about using DVC with a quite advanced scenario and docker. If
 you haven’t had a chance to try [DVC.org](http://dvc.org/) yet — this is a great
@@ -72,18 +66,13 @@ comprehensive read on why you should do so right away.
 - **[The state of machine learning operations](https://github.com/EthicalML/state-of-mlops-2019)
   by [Alejandro Saucedo](https://www.linkedin.com/in/axsaucedo/)**
 
-<a href="https://github.com/EthicalML/state-of-mlops-2019" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">The state of machine learning operations</h4>
-      <div class="elp-description">Contribute to EthicalML/state-of-mlops-2019 development by creating an account on GitHub.</div>
-      <div class="elp-link">github.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-04-18/the-state-of-machine-learning-operations.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://github.com/EthicalML/state-of-mlops-2019"
+title='The state of machine learning operations'
+description="Contribute to EthicalML/state-of-mlops-2019 development by creating an account on GitHub."
+link='github.com'
+image='/uploads/images/2019-04-18/the-state-of-machine-learning-operations.jpeg'>
+</external-link>
 
 A short (only 8 minutes!) and inspiring talk by Alejandro Saucedo at FOSDEM.
 Alejandro covers the key trends in machine learning operations, as well as most
@@ -94,18 +83,13 @@ of ML operations.
 - **[Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov](https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c)
   by [Sanyam Bhutani](https://twitter.com/bhutanisanyam1)**
 
-<a href="https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov</h4>
-      <div class="elp-description">Part 24 of The series where I interview my heroes.</div>
-      <div class="elp-link">hackernoon.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-04-18/interview-with-kaggle-grandmaster.jpeg" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c"
+title='Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov'
+description="Part 24 of The series where I interview my heroes."
+link='hackernoon.com'
+image='/uploads/images/2019-04-18/interview-with-kaggle-grandmaster.jpeg'>
+</external-link>
 
 > There is no way you will become Kaggle Master and not learn how to approach
 > anew, the unknown problem in a fast hacking way with a very high number of
