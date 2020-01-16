@@ -97,7 +97,8 @@
   width: 100%;
 
   @media (--lg-scr) {
-    width: 1000px;
+    max-width: 850px;
+    max-height: 650px;
   }
 }
 
